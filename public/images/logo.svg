@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 150">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&amp;display=swap');
+      .text { font-family: 'Space Grotesk', sans-serif; font-weight: 700; fill: #101519; }
+      .icon-primary { fill: #101519; }
+      .icon-accent { fill: #A1EA34; }
+    </style>
+  </defs>
+  
+  <!-- Background (Optional, for transparency remove rect) -->
+  <rect width="500" height="150" fill="#ffffff" rx="10" ry="10"/>
+
+  <!-- Hexagon Icon -->
+  <g transform="translate(40, 35) scale(0.8)">
+    <path class="icon-primary" d="M50 0 L93.3 25 V75 L50 100 L6.7 75 V25 Z" fill="none" stroke="#101519" stroke-width="8"/>
+    <path class="icon-accent" d="M50 20 L50 80" stroke="#A1EA34" stroke-width="6" stroke-linecap="round"/>
+    <circle cx="50" cy="50" r="10" fill="#A1EA34"/>
+  </g>
+
+  <!-- Text -->
+  <text x="140" y="95" font-size="52" class="text" letter-spacing="-1">ST BERATUNG</text>
+</svg>
