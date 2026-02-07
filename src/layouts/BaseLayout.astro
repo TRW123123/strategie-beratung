@@ -10,6 +10,11 @@ const { title, description, canonical, robots = "index, follow" } = Astro.props;
 const siteName = "KI Beratung";
 
 import "../styles/global.css";
+import "@fontsource/space-grotesk/300.css";
+import "@fontsource/space-grotesk/400.css";
+import "@fontsource/space-grotesk/500.css";
+import "@fontsource/space-grotesk/600.css";
+import "@fontsource/space-grotesk/700.css";
 ---
 
 <!doctype html>
@@ -30,14 +35,16 @@ import "../styles/global.css";
         <meta property="og:title" content={title} />
         <meta property="og:description" content={description} />
         <meta property="og:url" content={canonical} />
+        <!-- Twitter Card -->
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={title} />
+        <meta name="twitter:description" content={description} />
 
-        <!-- Fonts -->
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
-            rel="stylesheet"
-        />
+        <!-- Fonts (Local - GDPR Compliant) -->
+        <!-- Space Grotesk imported via global.css or here directly -->
+
+        <slot name="head" />
+
         <script type="application/ld+json" is:inline>
             {
                 "@context": "https://schema.org",
@@ -72,11 +79,15 @@ import "../styles/global.css";
                     <span class="logo-sub">KI & Prozesse</span>
                 </a>
 
-<nav class="flex gap-6">
+                <nav class="flex gap-6">
                     <a href="/" class="nav-link">Home</a>
                     <a href="/ki-im-unternehmen" class="nav-link">Analyse</a>
-                    <a href="/ki-einfuehrung-unternehmen" class="nav-link">Einführung</a>
-                    <a href="mailto:info@st-automatisierung.de" class="nav-link">Kontakt</a>
+                    <a href="/ki-einfuehrung-unternehmen" class="nav-link"
+                        >Einführung</a
+                    >
+                    <a href="mailto:info@st-automatisierung.de" class="nav-link"
+                        >Kontakt</a
+                    >
                 </nav>
             </div>
         </header>

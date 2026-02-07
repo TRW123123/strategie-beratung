@@ -19,7 +19,12 @@ export default async (request: Request, context: Context) => {
 
     // 3. Remove .html Extension (Clean URLs)
     if (path.endsWith(".html")) {
-        url.pathname = path.slice(0, -5);
+        let newPath = path.slice(0, -5);
+        // Handle /index -> /
+        if (newPath === "/index") {
+            newPath = "/";
+        }
+        url.pathname = newPath;
         return Response.redirect(url.toString(), 301);
     }
 
@@ -37,5 +42,5 @@ export default async (request: Request, context: Context) => {
 
 export const config = {
     path: "/*",
-    excludedPath: ["/_astro/*", "/images/*", "/favicon.ico", "*.css", "*.js"]
+    excludedPath: ["/_astro/*", "/images/*", "/favicon.ico", "*.css", "*.js", "*.xml", "*.txt", "*.json"]
 };
