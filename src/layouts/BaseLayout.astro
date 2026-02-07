@@ -1,0 +1,248 @@
+---
+interface Props {
+    title: string;
+    description: string;
+    canonical: string;
+    robots?: string;
+}
+
+const { title, description, canonical, robots = "index, follow" } = Astro.props;
+const siteName = "KI Beratung";
+
+import "../styles/global.css";
+---
+
+<!doctype html>
+<html lang="de" itemscope itemtype="https://schema.org/WebPage">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="robots" content={robots} />
+
+        <title>{title}</title>
+        <meta name="description" content={description} />
+        <link rel="canonical" href={canonical} />
+
+        <!-- Open Graph -->
+        <meta property="og:type" content="website" />
+        <meta property="og:locale" content="de_DE" />
+        <meta property="og:site_name" content={siteName} />
+        <meta property="og:title" content={title} />
+        <meta property="og:description" content={description} />
+        <meta property="og:url" content={canonical} />
+
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
+        <script type="application/ld+json" is:inline>
+            {
+                "@context": "https://schema.org",
+                "@type": "Organization",
+                "name": "ST-Automatisierung",
+                "url": "https://st-automatisierung.de",
+                "logo": "https://st-automatisierung.de/images/logo.png",
+                "sameAs": [],
+                "address": {
+                    "@type": "PostalAddress",
+                    "streetAddress": "Heidestraße 2",
+                    "addressLocality": "Schwerte",
+                    "postalCode": "58239",
+                    "addressCountry": "DE"
+                },
+                "contactPoint": {
+                    "@type": "ContactPoint",
+                    "telephone": "+49-162-724-6504",
+                    "contactType": "customer service",
+                    "email": "info@st-automatisierung.de"
+                }
+            }
+        </script>
+    </head>
+    <body class="bg-gray-900 text-white font-sans antialiased">
+        <a href="#main-content" class="skip-link">Zum Inhalt springen</a>
+
+        <header class="site-header">
+            <div class="container header-inner">
+                <a href="/" class="logo" aria-label="Zur Startseite">
+                    <span class="logo-text">ST-Automatisierung</span>
+                    <span class="logo-sub">KI & Prozesse</span>
+                </a>
+
+<nav class="flex gap-6">
+                    <a href="/" class="nav-link">Home</a>
+                    <a href="/ki-im-unternehmen" class="nav-link">Analyse</a>
+                    <a href="/ki-einfuehrung-unternehmen" class="nav-link">Einführung</a>
+                    <a href="mailto:info@st-automatisierung.de" class="nav-link">Kontakt</a>
+                </nav>
+            </div>
+        </header>
+
+        <slot />
+
+        <footer class="site-footer">
+            <div class="container footer-grid">
+                <div class="footer-col">
+                    <span class="footer-logo">ST-Automatisierung</span>
+                    <p class="footer-desc">
+                        Strategische KI-Einführung und Prozessautomatisierung
+                        für den Mittelstand.
+                    </p>
+                </div>
+
+                <div class="footer-col">
+                    <h4 class="footer-heading">Rechtliches</h4>
+                    <ul class="footer-links">
+                        <li><a href="/impressum">Impressum</a></li>
+                        <li><a href="/datenschutz">Datenschutz</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4 class="footer-heading">Kontakt</h4>
+                    <p>
+                        Heidestraße 2<br />
+                        58239 Schwerte<br />
+                        <a href="mailto:info@st-automatisierung.de"
+                            >info@st-automatisierung.de</a
+                        >
+                    </p>
+                </div>
+            </div>
+            <div class="container footer-bottom">
+                &copy; {new Date().getFullYear()} ST-Automatisierung. Alle Rechte
+                vorbehalten.
+            </div>
+        </footer>
+
+        <style>
+            /* Header Styles */
+            .site-header {
+                padding: 1.5rem 0;
+                border-bottom: 1px solid var(--color-border);
+                position: sticky;
+                top: 0;
+                background: rgba(16, 21, 25, 0.95);
+                backdrop-filter: blur(10px);
+                z-index: 1000;
+                box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            }
+
+            .header-inner {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            .logo {
+                display: flex;
+                flex-direction: column;
+                line-height: 1;
+                text-decoration: none;
+            }
+
+            .logo-text {
+                font-family: var(--font-heading);
+                font-weight: 700;
+                font-size: 1.25rem;
+                color: var(--color-text-main);
+                letter-spacing: -0.02em;
+            }
+
+            .logo-sub {
+                font-family: var(--font-body);
+                font-size: 0.75rem;
+                color: var(--color-primary);
+                letter-spacing: 0.2em;
+                text-transform: uppercase;
+                margin-top: 2px;
+            }
+
+            .nav-link {
+                color: var(--color-text-main);
+                font-weight: 500;
+                text-decoration: none;
+                transition: color 0.2s;
+            }
+
+            .nav-link:hover {
+                color: var(--color-primary);
+            }
+
+            /* Footer Styles */
+            .site-footer {
+                margin-top: 6rem;
+                padding: 4rem 0 2rem;
+                border-top: 1px solid var(--color-border);
+                background: var(--color-surface-subtle);
+            }
+
+            .footer-grid {
+                display: grid;
+                grid-template-columns: 1.5fr 1fr 1fr;
+                gap: 3rem;
+                margin-bottom: 3rem;
+            }
+
+            .footer-logo {
+                font-family: var(--font-heading);
+                font-weight: 700;
+                color: var(--color-text-main);
+                font-size: 1.25rem;
+                display: block;
+                margin-bottom: 1rem;
+            }
+
+            .footer-desc {
+                font-size: 0.9rem;
+                color: var(--color-text-muted);
+                max-width: 300px;
+            }
+
+            .footer-heading {
+                color: var(--color-text-main);
+                font-size: 0.9rem;
+                text-transform: uppercase;
+                letter-spacing: 0.1em;
+                margin-bottom: 1.25rem;
+            }
+
+            .footer-links {
+                list-style: none;
+                padding: 0;
+            }
+
+            .footer-links li {
+                margin-bottom: 0.75rem;
+            }
+
+            .footer-links a {
+                color: var(--color-text-muted);
+                text-decoration: none;
+                transition: color 0.2s;
+            }
+
+            .footer-links a:hover {
+                color: var(--color-primary);
+            }
+
+            .footer-bottom {
+                padding-top: 2rem;
+                border-top: 1px solid rgba(255, 255, 255, 0.05);
+                text-align: center;
+                font-size: 0.85rem;
+                color: var(--color-text-muted);
+            }
+
+            @media (max-width: 768px) {
+                .footer-grid {
+                    grid-template-columns: 1fr;
+                    gap: 2rem;
+                }
+            }
+        </style>
+    </body>
+</html>

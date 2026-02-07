@@ -1,0 +1,219 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import KeyTakeaways from "../components/KeyTakeaways.astro";
+
+const title = "KI-Strategie und Einführung für den deutschen Mittelstand";
+const description =
+    "Beratung für Unternehmen von 25-250 Mitarbeitenden. Realistische Einschätzung, rechtssichere Einführung und Prozesssicherheit ohne Hype.";
+const canonical = new URL(
+    Astro.url.pathname.replace(/\.html$/, ""),
+    Astro.site,
+);
+---
+
+<BaseLayout title={title} description={description} canonical={canonical}>
+    <!-- HERO: Positionierung -->
+    <section class="hero relative overflow-hidden">
+        <!-- Responsive Tech Background -->
+        <div class="hero-bg absolute inset-0 z-0 opacity-40">
+            <picture>
+                <source
+                    media="(max-width: 768px)"
+                    srcset="/images/hero_mobile_1769613427118.png"
+                />
+                <img
+                    src="/images/hero_desktop_1769613342869.png"
+                    alt="Abstract Tech Network Background"
+                    class="w-full h-full object-cover"
+                />
+            </picture>
+        </div>
+
+        <!-- Content Overlay -->
+        <div class="container hero-content relative z-10">
+            <h1>KI-Strategie und Einführung für den deutschen Mittelstand</h1>
+            <p class="hero-subhead">
+                Wir unterstützen Unternehmen (25 bis 250 Mitarbeitende) dabei,
+                künstliche Intelligenz kontrolliert, rechtssicher und
+                prozessorientiert einzuführen. Fernab von technologischem Hype
+                und unkalkulierbaren Risiken.
+            </p>
+
+            <div class="hero-cta">
+                <div>
+                    <a
+                        href="https://cal.com/safak-tepecik/30min"
+                        class="btn btn-primary">Initialgespräch vereinbaren</a
+                    >
+                    <p class="cta-microcopy">
+                        Unverbindliche Ersteinschätzung. Kein Vertrieb, sondern
+                        Orientierung.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main id="main-content" class="container">
+        <!-- SECTION: Problemstellung (Mittelstand Fokus) -->
+        <section>
+            <h2>Die Realität: Warum der Mittelstand zögert</h2>
+            <p>
+                In vielen mittelständischen Unternehmen herrscht beim Thema
+                Künstliche Intelligenz eine verständliche Zurückhaltung. Die
+                mediale Berichterstattung wird dominiert von technologischen
+                Superlativen, die an der betrieblichen Realität vorbeigehen.
+                Gleichzeitig wächst der Druck durch Marktveränderungen und
+                Fachkräftemangel.
+            </p>
+            <p>
+                Entscheider in der Geschäftsführung und IT-Leitung stehen vor
+                einem Dilemma: Einerseits droht der Anschlussverlust,
+                andererseits sind die Risiken einer unkontrollierten Einführung
+                – von Datenschutzverstößen bis hin zu Reputationsschäden – kaum
+                kalkulierbar. Es fehlt nicht an Werkzeugen ("Tools"), sondern an
+                einem verlässlichen Ordnungsrahmen für deren Einsatz.
+            </p>
+
+            <div
+                class="my-12 rounded-xl overflow-hidden shadow-2xl border border-[var(--color-border)]"
+            >
+                <img
+                    src="/images/spannungsfeld.png"
+                    alt="Grafik: Spannungsfeld Mittelstand"
+                    class="w-full h-auto"
+                />
+            </div>
+        </section>
+
+        <!-- SECTION: Trust Anchors & Methodik -->
+        <section>
+            <h2>Unser Ansatz: Sicherheit durch Methodik</h2>
+            <p>
+                Wir verstehen uns nicht als Verkäufer von Softwarelösungen,
+                sondern als Architekten betrieblicher Prozesse. Unsere Beratung
+                setzt dort an, wo technische Anbieter oft aufhören: Bei der
+                Einbettung von KI-Funktionen in die bestehende Organisation,
+                unter strikter Beachtung rechtlicher Rahmenbedingungen (DSGVO,
+                EU AI Act) und unternehmerischer Sorgfaltspflichten.
+            </p>
+            <p>
+                Unser Vorgehen basiert auf Prinzipien, die im deutschen
+                Mittelstand verankert sind: Substanz vor Geschwindigkeit,
+                Datensouveränität vor Cloud-Abhängigkeit und Wirtschaftlichkeit
+                vor Experimentierfreude.
+            </p>
+
+            <ul style="margin-top: 2rem;">
+                <li>
+                    <strong>Rechtssicherheit:</strong> Berücksichtigung aktueller
+                    Compliance-Anforderungen.
+                </li>
+                <li>
+                    <strong>Bestandsschutz:</strong> Integration in gewachsene IT-Infrastrukturen
+                    ohne "Abrissbirne".
+                </li>
+                <li>
+                    <strong>Mitarbeiterfokus:</strong> Technologie als Unterstützung,
+                    nicht als Ersatz.
+                </li>
+            </ul>
+        </section>
+
+        <!-- SECTION: Realitätssignale & Förderung -->
+        <section>
+            <h2>Rahmenbedingungen und Förderung</h2>
+            <p>
+                Die Einführung digitaler Prozesse wird durch diverse Programme
+                (z.B. "Digital Jetzt", "Go-Digital") unterstützt. Wir helfen
+                Ihnen dabei, diese Möglichkeiten realistisch einzuschätzen,
+                weisen aber darauf hin, dass Fördermittel niemals der alleinige
+                Treiber einer Investitionsentscheidung sein dürfen. Die
+                Wirtschaftlichkeit muss aus dem Prozess selbst kommen.
+            </p>
+        </section>
+
+        <!-- SECTION: Navigation / Weiche -->
+        <section
+            style="margin-top: 4rem; padding-top: 2rem; border-top: 2px solid var(--color-border);"
+        >
+            <h2>Wählen Sie Ihren Einstieg</h2>
+            <p>
+                Je nach Reifegrad Ihres Unternehmens bieten wir zwei vertiefende
+                Informationspfade an:
+            </p>
+
+            <div
+                style="display: grid; gap: 2rem; margin-top: 2rem; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));"
+            >
+                <!-- Pfad 1: Orientierung -->
+                <article
+                    style="padding: 2rem; border: 1px solid var(--color-border); background: var(--color-surface-subtle);"
+                >
+                    <h3>Grundlagen & Einordnung</h3>
+                    <p style="min-height: 80px;">
+                        Für Unternehmen, die verstehen wollen, was KI jenseits
+                        des Hypes tatsächlich leisten kann und wo die
+                        betriebswirtschaftlichen Grenzen liegen.
+                    </p>
+                    <a
+                        href="/ki-im-unternehmen"
+                        class="btn btn-primary"
+                        style="width: 100%; margin-top: 1rem;"
+                        >Zur Analyse: KI im Unternehmen</a
+                    >
+                </article>
+
+                <!-- Pfad 2: Umsetzung -->
+                <article
+                    style="padding: 2rem; border: 1px solid var(--color-border); background: var(--color-surface-subtle);"
+                >
+                    <h3>Strategie & Einführung</h3>
+                    <p style="min-height: 80px;">
+                        Für Unternehmen, die bereits entschieden haben, dass sie
+                        handeln müssen, und nun nach einem sicheren
+                        Vorgehensmodell suchen.
+                    </p>
+                    <a
+                        href="/ki-einfuehrung-unternehmen"
+                        class="btn btn-primary"
+                        style="width: 100%; margin-top: 1rem;"
+                        >Zum Vorgehensmodell</a
+                    >
+                </article>
+            </div>
+        </section>
+
+        <!-- SECTION: Soft Conversion -->
+        <section class="contact-section">
+            <h2>Dialog statt Vertrieb</h2>
+            <p>
+                Wir glauben nicht an Standardpakete für komplexe
+                Organisationsfragen. Wenn Sie nach der Lektüre unserer Inhalte
+                Klärungsbedarf sehen, laden wir Sie zu einem ersten,
+                orientierenden Gespräch ein.
+            </p>
+            <div style="margin-top: 2rem;">
+                <a
+                    href="https://cal.com/safak-tepecik/30min"
+                    class="btn btn-primary"
+                    style="background: white; color: var(--color-accent);"
+                    >Gespräch vereinbaren</a
+                >
+                <p
+                    class="cta-microcopy"
+                    style="color: rgba(255,255,255,0.7); margin-top: 1rem;"
+                >
+                    Dauer: ca. 30 Minuten. Ziel: Feststellung der Relevanz für
+                    Ihr Unternehmen.
+                </p>
+            </div>
+            <div class="contact-details">
+                <span>Sitz: Deutschland</span>
+                <a href="mailto:info@st-automatisierung.de"
+                    >info@st-automatisierung.de</a
+                >
+            </div>
+        </section>
+    </main>
+</BaseLayout>

@@ -1,0 +1,327 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import TOC from "../components/TOC.astro";
+import KeyTakeaways from "../components/KeyTakeaways.astro";
+import Callout from "../components/Callout.astro";
+import FAQMicrodata from "../components/FAQMicrodata.astro";
+
+const title =
+    "KI Einführung im Unternehmen: Strategie, Roadmap & Governance (Leitfaden)";
+const description =
+    "Schritt-für-Schritt Vorgehensmodell für den Mittelstand. Von der Daten-Bereitschaft über den Pilot bis zur Skalierung. Risikoarm und prozessorientiert.";
+const canonical = new URL(
+    Astro.url.pathname.replace(/\.html$/, ""),
+    Astro.site,
+);
+
+const tocItems = [
+    { id: "mindset", label: "Mindset: Change statt IT" },
+    { id: "fehler", label: "Warum Einführungen scheitern" },
+    { id: "phasen", label: "Das 4-Phasen-Modell" },
+    { id: "governance", label: "Governance & Verantwortung" },
+    { id: "mitarbeiter", label: "Faktor Mensch: Ängste & Training" },
+    { id: "pilot", label: "Der perfekte erste Schritt" },
+    { id: "faq", label: "Häufige Fragen" },
+];
+
+const faqItems = [
+    {
+        question:
+            "Wie lange dauert eine typische KI-Einführung im Mittelstand?",
+        answer: "Es gibt keine 'fertige' Einführung, da es ein kontinuierlicher Prozess ist. Ein erster valider Pilot (Proof of Value) sollte jedoch innerhalb von 4-8 Wochen realisierbar sein. Längere Zeiträume deuten oft auf zu komplexe Scope-Definitionen oder mangelnde Datenverfügbarkeit hin. Die anschließende Skalierung ist ein dauerhafter Organisationsentwicklungsprozess.",
+    },
+    {
+        question: "Brauchen wir einen 'Chief AI Officer'?",
+        answer: "In Unternehmen bis 250 Mitarbeiter selten. Die Verantwortung sollte jedoch klar zugeordnet sein – idealerweise als 'Tandem-Leadership' aus IT-Leitung (Technik/Security) und Geschäftsführung oder Operations (Strategie/Budget). Wichtig ist, dass das Thema nicht als reines Technik-Projekt in der IT 'geparkt' wird, sondern als strategische Initiative Treiber aus dem Business hat.",
+    },
+    {
+        question: "Wie binden wir den Betriebsrat ein?",
+        answer: "Frühzeitig und transparent. Da KI-Systeme theoretisch zur Leistungs- und Verhaltenskontrolle genutzt werden könnten, besteht oft Mitbestimmungsrecht (§ 87 BetrVG). Eine Betriebsvereinbarung zu 'KI & Ethik', die den Zweck der Systeme (Unterstützung, nicht Überwachung) festschreibt, schafft Vertrauen und Rechtssicherheit.",
+    },
+    {
+        question: "Cloud oder On-Premise – was ist die richtige Strategie?",
+        answer: "Das ist eine Abwägung zwischen Datenschutz und Leistungsfähigkeit. Die leistungsstärksten Modelle laufen aktuell in der Public Cloud (oft USA). Für unkritische Daten ist dies aus Kosten-Nutzen-Sicht oft alternativlos. Für hochsensible IP oder Personaldaten sind lokale Modelle (Open Source Llama, Mistral) oder europäische Enterprise-Cloud-Instanzen der sicherere Weg.",
+    },
+    {
+        question: "Was kostet eine KI-Einführung initial?",
+        answer: "Die Lizenzkosten für Software sind meist vernachlässigbar. Die wahren Kostentreiber sind interne Ressourcen: Datenbereinigung, Prozessanalyse, Change Management, Schulung und Governance (Rechtsberatung). Rechnen Sie Faktor 3-5 der Softwarekosten für die interne Befähigung und Implementierung.",
+    },
+];
+---
+
+<BaseLayout title={title} description={description} canonical={canonical}>
+    <!-- HERO -->
+    <section class="hero">
+        <div class="container">
+            <h1>
+                KI Einführung im Unternehmen: Strategie, Roadmap und Governance
+            </h1>
+            <p class="hero-subhead">
+                Ein Leitfaden für die kontrollierte Implementierung. Warum KI
+                primär Organisationsentwicklung ist und erst sekundär
+                Technologie. Risikominimierung durch strukturierte Phasen.
+            </p>
+        </div>
+    </section>
+
+    <main id="main-content" class="container">
+        <TOC items={tocItems} />
+
+        <!-- SECTION 1: Mindset -->
+        <section id="mindset">
+            <h2>1. Das richtige Mindset: Organisatorischer Wandel vor IT</h2>
+            <p>
+                Der häufigste Irrtum ist die Annahme, KI sei eine Software, die
+                man "installiert" wie ein Office-Paket. KI ist eine <strong
+                    >Befähigungstechnologie</strong
+                > (Enabling Technology), die tief in Arbeitsprozesse eingreift.
+            </p>
+            <p>
+                Wer KI einführt, verändert Prozesse. Wer Prozesse verändert,
+                verändert Aufgabenprofile. Wer Aufgabenprofile verändert,
+                braucht Change Management. Erfolgreiche Unternehmen behandeln
+                das Thema daher nicht als IT-Projekt ("Wir brauchen ChatGPT"),
+                sondern als Strategieprojekt ("Wie wollen wir in 3 Jahren
+                arbeiten?").
+            </p>
+
+            <div
+                class="my-12 rounded-xl overflow-hidden shadow-2xl border border-[var(--color-border)]"
+            >
+                <picture>
+                    <source
+                        media="(max-width: 768px)"
+                        srcset="/images/blueprint_mobile_v2.png"
+                    />
+                    <img
+                        src="/images/blueprint_desktop_v2.png"
+                        alt="Die KI-Einführungs-Pyramide: Daten > Prozesse > Tools"
+                        class="w-full h-auto"
+                    />
+                </picture>
+                <p
+                    class="text-sm text-center text-gray-500 mt-2 p-2 bg-[var(--color-surface-subtle)]"
+                >
+                    Strategische Hierarchie: Solide Infrastruktur und Governance
+                    sind das Fundament für erfolgreiche KI-Tools.
+                </p>
+            </div>
+        </section>
+
+        <!-- SECTION 2: Fehler -->
+        <section id="fehler">
+            <h2>2. Warum Einführungen scheitern (Lektionen aus dem Markt)</h2>
+            <p>
+                Wir beobachten bei mittelständischen "Fehlstarts" immer wieder
+                dieselben Muster:
+            </p>
+            <ul>
+                <li>
+                    <strong>Lösung sucht Problem:</strong> Ein Tool wird angeschafft,
+                    weil es im Trend liegt, ohne dass klar ist, welche operativen
+                    Schmerzen es lindern soll.
+                </li>
+                <li>
+                    <strong>Daten-Chaos:</strong> Man versucht, KI auf unstrukturierte,
+                    veraltete oder rechtlich ungeklärte Datenbestände loszulassen
+                    ("Wir werfen alles in den Bot"). Ergebnis: Halluzinationen und
+                    Datenschutzverstöße.
+                </li>
+                <li>
+                    <strong>Insel-Lösungen:</strong> Einzelne Abteilungen experimentieren
+                    ("Schatten-IT") ohne zentrale Governance. Es entstehen Datensilos
+                    und Sicherheitslücken.
+                </li>
+                <li>
+                    <strong>Unterschätzter Faktor Mensch:</strong> Mitarbeiter blockieren
+                    die Einführung aus Angst vor Wegrationalisierung, weil sie nicht
+                    mitgenommen wurden.
+                </li>
+            </ul>
+        </section>
+
+        <!-- SECTION 3: 4-Phasen-Modell -->
+        <section id="phasen">
+            <h2>3. Das 4-Phasen-Modell für den Mittelstand</h2>
+            <p>
+                Um Risiken zu minimieren, empfehlen wir ein strikt sequenzielles
+                Vorgehen. Überspringen Sie keine Phase.
+            </p>
+
+            <h3>Phase 1: Orientierung & Zielbild (Wochen 1-2)</h3>
+            <p>
+                Bildung eines interdisziplinären Kernteams (IT, Ops, Legal/HR).
+                Identifikation von "High-Impact"-Bereichen. Definition von
+                Ausschlusskriterien (Was machen wir <em>nicht</em>?). Grobe
+                Wirtschaftlichkeitsbetrachtung.
+            </p>
+
+            <h3>Phase 2: Readiness & Hygiene (Wochen 3-6)</h3>
+            <p>
+                Bestandsaufnahme der Datenqualität. Klärung der rechtlichen
+                Rahmenbedingungen (Datenschutz-Folgenabschätzung). Erstellung
+                einer vorläufigen KI-Richtlinie ("Policy"). Technische Prüfung
+                der Infrastruktur.
+            </p>
+
+            <h3>Phase 3: Der Pilot (Wochen 7-12)</h3>
+            <p>
+                Auswahl <em>eines</em> konkreten Use Cases in <em>einer</em> Abteilung.
+                Implementierung als Prototyp (Proof of Value). Sehr enges Monitoring
+                durch Menschen. Ziel: Nachweis der Machbarkeit und Akzeptanz, nicht
+                Perfektion.
+            </p>
+
+            <h3>Phase 4: Evaluation & Skalierung (ab Woche 13)</h3>
+            <p>
+                Auswertung der Pilotergebnisse. Entscheidung über "Go" oder
+                "No-Go". Bei Erfolg: Ausrollung auf weitere Abteilungen,
+                Professionalisierung des Betriebs, Schulung der breiten
+                Belegschaft.
+            </p>
+
+            <div
+                class="my-12 rounded-xl overflow-hidden shadow-2xl border border-[var(--color-border)]"
+            >
+                <img
+                    src="/images/phasen_timeline.png"
+                    alt="Visual: Phasen-Timeline"
+                    class="w-full h-auto"
+                />
+            </div>
+
+            <KeyTakeaways
+                items={[
+                    "Kein Start ohne Zielbild und Kernteam.",
+                    "Keine technische Umsetzung ohne vorherige Daten- und Rechtsklärung.",
+                    "Pilotierung immer klein und messbar halten.",
+                ]}
+            />
+        </section>
+
+        <!-- SECTION 4: Governance -->
+        <section id="governance">
+            <h2>4. Governance & Verantwortung</h2>
+            <p>
+                Governance klingt bürokratisch, ist aber der Sicherheitsgurt
+                Ihrer KI-Strategie. Sie klärt Fragen, bevor sie zu Problemen
+                werden:
+            </p>
+            <ul>
+                <li>
+                    <strong>Wer entscheidet?</strong> Klare Budget- und Projekthoheit.
+                </li>
+                <li>
+                    <strong>Wer kontrolliert?</strong> Qualitätssicherung der KI-Outputs.
+                    Vier-Augen-Prinzip ist oft Pflicht.
+                </li>
+                <li>
+                    <strong>Wer haftet?</strong> Klärung der Verantwortungskette (Vendor
+                    -> IT -> Business Owner -> Geschäftsführung).
+                </li>
+                <li>
+                    <strong>Was ist erlaubt?</strong> Eine "Acceptable Use Policy"
+                    für Mitarbeiter (Was darf in den Prompt? Was nicht?).
+                </li>
+            </ul>
+
+            <Callout variant="warning" title="Risiko Schatten-IT">
+                <p>
+                    Ohne offizielle Angebote und Regeln werden Mitarbeiter
+                    private Accounts nutzen. Governance bedeutet: Sichere
+                    Alternativen bereitstellen, statt nur zu verbieten.
+                </p>
+            </Callout>
+        </section>
+
+        <!-- SECTION 5: Mitarbeiter & Change -->
+        <section id="mitarbeiter">
+            <h2>5. Faktor Mensch: Ängste & Training</h2>
+            <p>
+                Technologie ist einfach, Menschen sind komplex. KI löst Urängste
+                aus ("Werde ich ersetzt?"). Ein erfolgreiches Projekt muss diese
+                Ebene proaktiv adressieren:
+            </p>
+            <p>
+                <strong>Ehrliche Kommunikation:</strong> Klares Benennen der Ziele
+                (z.B. "Wachstum bewältigen ohne Mehrarbeit" statt "Kosten senken").<br
+                />
+                <strong>Befähigung (Upskilling):</strong> Schulungen in "AI Literacy"
+                und Prompting-Kompetenz. Die Mitarbeiter müssen verstehen, wie das
+                Werkzeug funktioniert, um ihm zu vertrauen (und seine Fehler zu erkennen).<br
+                />
+                <strong>Partizipation:</strong> Einbindung der Betroffenen in die
+                Gestaltung der Prozesse ("Co-Creation").
+            </p>
+        </section>
+
+        <!-- SECTION 6: Perfekter erster Schritt -->
+        <section id="pilot">
+            <h2>6. Der perfekte erste Schritt</h2>
+            <p>
+                Wie fängt man morgen an? Suchen Sie nach dem sogenannten <strong
+                    >"Stillen Prozessfresser"</strong
+                >:
+            </p>
+            <ul>
+                <li>
+                    Ein Prozess, der nervt, aber notwendig ist (z.B. Daten
+                    abtippen, Dokumente sortieren).
+                </li>
+                <li>
+                    Ein Prozess, der fehlertolerant ist (keine Herz-OP, keine
+                    Steuererklärung).
+                </li>
+                <li>Ein Prozess, bei dem Daten bereits digital vorliegen.</li>
+                <li>Ein Prozess, der messbar ist (Zeit pro Vorgang).</li>
+            </ul>
+            <p>
+                Diesen Prozess zu automatisieren, schafft sofortigen Nutzen,
+                interne Fans und wertvolle Lernerfahrungen bei überschaubarem
+                Risiko.
+            </p>
+
+            <div
+                class="my-12 rounded-xl overflow-hidden shadow-2xl border border-[var(--color-border)]"
+            >
+                <img
+                    src="/images/pilot_matrix.png"
+                    alt="Visual: Auswahlmatrix für Pilotprojekte"
+                    class="w-full h-auto"
+                />
+            </div>
+        </section>
+
+        <section id="kontakt" class="contact-section">
+            <h2>Planungssicherheit gewinnen</h2>
+            <p>
+                Der Weg zur KI-Organisation ist kein Sprint. Wenn Sie diesen Weg
+                strukturiert gehen wollen, unterstützen wir Sie bei der
+                Roadmap-Erstellung, der rechtlichen Einordnung und dem Setup
+                Ihres ersten Leuchtturm-Projekts.
+            </p>
+            <div style="margin-top: 2rem;">
+                <a
+                    href="https://cal.com/safak-tepecik/30min"
+                    class="btn btn-primary"
+                    style="background: white; color: var(--color-accent);"
+                    >Einführungs-Check anfragen</a
+                >
+                <p
+                    class="cta-microcopy"
+                    style="color: rgba(255,255,255,0.7); margin-top: 1rem;"
+                >
+                    Wir prüfen Prozessreife, Datenstatus und Governance-Bedarf.
+                </p>
+            </div>
+            <div class="contact-details">
+                <a href="mailto:info@st-automatisierung.de"
+                    >info@st-automatisierung.de</a
+                >
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <FAQMicrodata items={faqItems} />
+    </main>
+</BaseLayout>
