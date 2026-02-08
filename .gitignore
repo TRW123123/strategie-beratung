@@ -9,3 +9,5 @@ yarn-error.log*
 
 # Local Netlify folder
 .netlify
+_backup_prototype/
+deno.lock

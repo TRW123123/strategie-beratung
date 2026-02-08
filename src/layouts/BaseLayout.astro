@@ -7,7 +7,7 @@ interface Props {
 }
 
 const { title, description, canonical, robots = "index, follow" } = Astro.props;
-const siteName = "KI Beratung";
+const siteName = "ST BERATUNG";
 
 import "../styles/global.css";
 import "@fontsource/space-grotesk/300.css";
@@ -27,6 +27,7 @@ import "@fontsource/space-grotesk/700.css";
         <title>{title}</title>
         <meta name="description" content={description} />
         <link rel="canonical" href={canonical} />
+        <link rel="icon" type="image/svg+xml" href="/images/logo.svg" />
 
         <!-- Open Graph -->
         <meta property="og:type" content="website" />
@@ -49,7 +50,7 @@ import "@fontsource/space-grotesk/700.css";
             {
                 "@context": "https://schema.org",
                 "@type": "Organization",
-                "name": "ST-Automatisierung",
+                "name": "ST BERATUNG",
                 "url": "https://st-automatisierung.de",
                 "logo": "https://st-automatisierung.de/images/logo.svg",
                 "sameAs": [],
@@ -97,7 +98,7 @@ import "@fontsource/space-grotesk/700.css";
         <footer class="site-footer">
             <div class="container footer-grid">
                 <div class="footer-col">
-                    <span class="footer-logo">ST-Automatisierung</span>
+                    <span class="footer-logo">ST BERATUNG</span>
                     <p class="footer-desc">
                         Strategische KI-Einführung und Prozessautomatisierung
                         für den Mittelstand.
@@ -124,8 +125,7 @@ import "@fontsource/space-grotesk/700.css";
                 </div>
             </div>
             <div class="container footer-bottom">
-                &copy; {new Date().getFullYear()} ST-Automatisierung. Alle Rechte
-                vorbehalten.
+                &copy; {new Date().getFullYear()} ST BERATUNG. Alle Rechte vorbehalten.
             </div>
         </footer>
 
