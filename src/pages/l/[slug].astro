@@ -1,0 +1,82 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+export async function getStaticPaths() {
+  const pseoEntries = await getCollection('pseo');
+  return pseoEntries.map(entry => ({
+    params: { slug: entry.slug },
+    props: { entry },
+  }));
+}
+
+const { entry } = Astro.props;
+const { Content } = await entry.render();
+
+const canonicalData = `https://st-automatisierung.de/l/${entry.slug}`;
+---
+
+<BaseLayout 
+  title={entry.data.title}
+  description={entry.data.description}
+  canonical={canonicalData}
+>
+  <main id="main-content">
+    <section class="relative pt-32 pb-20 overflow-hidden">
+      <div class="container relative z-10">
+        <!-- Badge -->
+        <div class="mb-6 flex flex-wrap gap-3 items-center">
+            {entry.data.bafa_badge && (
+              <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-green-500/10 text-green-400 ring-1 ring-inset ring-green-500/20">
+                BAFA-Förderung: Bis zu 80% Zuschuss
+              </span>
+            )}
+            <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-blue-500/10 text-blue-400 ring-1 ring-inset ring-blue-500/20 uppercase tracking-widest">
+              {entry.data.cluster}
+            </span>
+        </div>
+
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-8">
+            {entry.data.title}
+        </h1>
+
+        <div class="max-w-3xl text-lg text-gray-300 mb-12 prose prose-invert">
+          <Content />
+        </div>
+
+        <div class="flex flex-col sm:flex-row gap-4">
+            <a href="mailto:info@st-automatisierung.de" class="inline-flex justify-center items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-gray-900 bg-white hover:bg-gray-100 transition-colors">
+                Kostenlose Potenzialanalyse anfragen
+            </a>
+            <a href="/ki-im-unternehmen" class="inline-flex justify-center items-center px-6 py-3 border border-gray-700 text-base font-medium rounded-md text-white hover:bg-gray-800 transition-colors">
+                Mehr über unsere Methodik
+            </a>
+        </div>
+      </div>
+      
+      <!-- Decorative background glow -->
+      <div class="absolute top-0 right-0 -mr-32 -mt-32 w-96 h-96 rounded-full bg-blue-600/10 blur-3xl pointer-events-none"></div>
+    </section>
+
+    <!-- Trust / Method Section Structure -->
+    <section class="py-20 bg-gray-900/50 border-t border-gray-800">
+        <div class="container">
+            <h2 class="text-3xl font-bold mb-12">Unser Ansatz für {entry.data.keyword}</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="p-6 bg-gray-800/50 rounded-xl border border-gray-700">
+                    <h3 class="text-xl font-semibold mb-3">1. Prozess-Audit</h3>
+                    <p class="text-gray-400">Wir analysieren den Ist-Zustand, decken Engpässe auf und bewerten das Automatisierungspotenzial.</p>
+                </div>
+                <div class="p-6 bg-gray-800/50 rounded-xl border border-gray-700">
+                    <h3 class="text-xl font-semibold mb-3">2. Architektur-Design</h3>
+                    <p class="text-gray-400">Entwicklung einer rechtssicheren, DSGVO-konformen Lösungsarchitektur mit KI und RPA.</p>
+                </div>
+                <div class="p-6 bg-gray-800/50 rounded-xl border border-gray-700">
+                    <h3 class="text-xl font-semibold mb-3">3. Implementierung</h3>
+                    <p class="text-gray-400">Nahtlose Integration in Ihre bestehenden Systeme ohne Unterbrechung des operativen Betriebs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+  </main>
+</BaseLayout>

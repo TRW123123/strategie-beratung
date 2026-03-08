@@ -1,0 +1,85 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+
+const allPseo = await getCollection('pseo');
+
+// Group by cluster
+const clusters = {
+  loesungen: allPseo.filter(p => p.data.cluster === 'loesungen'),
+  probleme: allPseo.filter(p => p.data.cluster === 'probleme'),
+  foerderung: allPseo.filter(p => p.data.cluster === 'foerderung'),
+  compliance: allPseo.filter(p => p.data.cluster === 'compliance'),
+};
+
+const clusterTitles = {
+  loesungen: "Branchen-Lösungen & Prozesse",
+  probleme: "Pain Points & Software-Limitierungen",
+  foerderung: "Fördermittel & Zuschüsse",
+  compliance: "Compliance, DSGVO & AI Act"
+};
+---
+
+<BaseLayout 
+  title="KI-Lösungen und Branchen für den Mittelstand | ST BERATUNG"
+  description="Übersicht aller KI-Automatisierungslösungen, Fördermöglichkeiten und Compliance-Richtlinien für den deutschen Mittelstand."
+  canonical="https://st-automatisierung.de/loesungen-branchen"
+>
+  <main id="main-content">
+    <section class="relative pt-32 pb-20 bg-gray-900 border-b border-gray-800">
+      <div class="container relative z-10">
+        <h1 class="text-4xl md:text-5xl font-bold tracking-tight mb-6">Branchen & Lösungen</h1>
+        <p class="text-xl text-gray-400 max-w-3xl">
+          Von der automatisierten Rechnungsverarbeitung bis zur rechtssicheren KI-Richtlinie: Finden Sie exakt den Prozess, der in Ihrem Unternehmen aktuell am meisten Zeit und Geld kostet.
+        </p>
+      </div>
+    </section>
+
+    <section class="py-20">
+      <div class="container">
+        <div class="space-y-16">
+          {Object.entries(clusters).map(([key, rawItems]) => {
+            const items = rawItems.sort((a, b) => a.data.title.localeCompare(b.data.title));
+            if (items.length === 0) return null;
+            
+            return (
+              <div>
+                <h2 class="text-2xl font-bold mb-6 flex items-center gap-3">
+                  <span class="w-8 h-px bg-primary"></span>
+                  {(clusterTitles as any)[key]}
+                </h2>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+                  {items.map(item => (
+                    <a 
+                      href={`/l/${item.slug}`} 
+                      class="block p-4 rounded-lg bg-gray-800/30 border border-gray-800 hover:border-gray-600 hover:bg-gray-800/80 transition-colors group"
+                    >
+                      <h3 class="font-medium text-gray-200 group-hover:text-white mb-2 leading-snug">
+                        {item.data.keyword}
+                      </h3>
+                      <p class="text-sm text-gray-500 line-clamp-2">
+                        {item.data.intent}
+                      </p>
+                    </a>
+                  ))}
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+    </section>
+
+    <section class="py-20 bg-blue-900/10 border-t border-gray-800">
+      <div class="container text-center">
+        <h2 class="text-3xl font-bold mb-6">Ihr Problem ist nicht dabei?</h2>
+        <p class="text-lg text-gray-400 mb-8 max-w-2xl mx-auto">
+          Jeder Mittelständler hat historisch gewachsene, individuelle Prozesse. Lassen Sie uns in einer kostenlosen Potenzialanalyse herausfinden, wo Ihre versteckten Rendite-Killer liegen.
+        </p>
+        <a href="mailto:info@st-automatisierung.de" class="inline-flex justify-center items-center px-8 py-4 border border-transparent text-lg font-medium rounded-md text-gray-900 bg-white hover:bg-gray-100 transition-colors">
+          Prozess-Audit anfragen
+        </a>
+      </div>
+    </section>
+  </main>
+</BaseLayout>
