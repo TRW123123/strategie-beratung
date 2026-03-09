@@ -17,7 +17,7 @@ ST Beratung fungiert als ganzheitlicher Förder-Architekt.
 
 - **Schritt 1:** Abgleich der geplanten Investitionssummen mit Bundes- und Landesprogrammen (ZIM, BAFA, regionale Digitalboni). 
 - **Schritt 2:** Formulierung der Digitalstrategie zur Argumentation vor den Projektträgern. 
-- **Schritt 3:** Förderkonforme Systemarchitektur der Hard- und Software-Architektur.
+- **Schritt 3:** Förderkonforme Planung der Hard- und Software-Architektur.
 
 ## [C] Harte Zahlen & ROI (Authoritativeness)
 
