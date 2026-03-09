@@ -29,4 +29,4 @@ Als gelistetes und geprüftes Beratungsunternehmen hält ST Beratung sämtliche 
 
 ## [E] Das Systemarchitekt-Fazit
 
-Viele Berater reden in bunten Präsentationen über Innovation, wir bauen funktionierende Systeme. Suchen Sie keinen Visionär, sondern einen Architekten für Ihre digitale Werkstatt.
+Viele Berater reden in bunten Präsentationen über Innovation, wir konzipieren funktionierende Systeme. Suchen Sie keinen Visionär, sondern einen Architekten für Ihre digitale Werkstatt.

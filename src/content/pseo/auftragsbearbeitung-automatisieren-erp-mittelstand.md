@@ -16,7 +16,7 @@ Kundenbestellungen treffen unstrukturiert ein – fragmentiert über E-Mail-Frei
 ST Beratung standardisiert den Order-to-Cash-Prozess durch den Bau einer intelligenten Middleware. 
 
 - **Schritt 1:** Analyse der Bestelleingangskanäle und Identifikation der kritischen Medienbrüche. 
-- **Schritt 2:** Implementierung eines KI-Klassifikators, der unstrukturierte Orderdaten liest, validiert und mit den ERP-Stammdaten abgleicht. 
+- **Schritt 2:** Systemarchitektur eines KI-Klassifikators, der unstrukturierte Orderdaten liest, validiert und mit den ERP-Stammdaten abgleicht. 
 - **Schritt 3:** Nahtlose API-Übergabe als verifizierter Datensatz direkt in die Auftragsanlage des ERP-Systems, was die menschliche Dateneingabe obsolet macht.
 
 ## [C] Harte Zahlen & ROI (Authoritativeness)

@@ -16,7 +16,7 @@ Mitarbeiter agieren im Büro als menschliche, analoge Schnittstellen. Sie export
 ST Beratung baut das datentechnische System-Fundament des Unternehmens um. 
 
 - **Schritt 1:** Analyse der isolierten Daten-Silos. 
-- **Schritt 2:** Implementierung moderner Middleware und intelligenter APIs, um die Systeme in Echtzeit kommunizieren zu lassen. 
+- **Schritt 2:** Systemarchitektur moderner Middleware und intelligenter APIs, um die Systeme in Echtzeit kommunizieren zu lassen. 
 - **Schritt 3:** Orchestrierung einer zentralen "Single Source of Truth", die Big Data und die kontinuierliche Stammdatenpflege vollständig automatisiert.
 
 ## [C] Harte Zahlen & ROI (Authoritativeness)

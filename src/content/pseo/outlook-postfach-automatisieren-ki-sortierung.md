@@ -16,7 +16,7 @@ Die zentrale info@ E-Mail-Adresse des Unternehmens quillt förmlich über. Bewer
 ST Beratung etabliert einen intelligenten KI-Türsteher für das Postfach. 
 
 - **Schritt 1:** Analyse und Clusterung der historischen Posteingang-Kategorien. 
-- **Schritt 2:** Implementierung eines KI-Klassifikators, der Intent (Absicht) und Entitäten (Rechnungsnummer, Name) in Bruchteilen von Sekunden aus Mails ausliest. 
+- **Schritt 2:** Systemarchitektur eines KI-Klassifikators, der Intent (Absicht) und Entitäten (Rechnungsnummer, Name) in Bruchteilen von Sekunden aus Mails ausliest. 
 - **Schritt 3:** Automatisches Routing der Nachrichten in ERP-, CRM- oder HR-Systeme inklusive der Vorfertigung passender Antwortentwürfe.
 
 ## [C] Harte Zahlen & ROI (Authoritativeness)

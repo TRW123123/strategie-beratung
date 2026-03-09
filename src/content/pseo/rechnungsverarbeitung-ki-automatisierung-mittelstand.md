@@ -17,7 +17,7 @@ ST Beratung eliminiert diesen Wertschöpfungsverlust durch den Aufbau einer komp
 
 - **Schritt 1:** Ein tiefgreifendes Audit der aktuellen ERP-Datenflüsse deckt auf, an welchen Stellen Medienbrüche Zeit verbrennen. 
 - **Schritt 2:** Architektur eines OCR-basierten, externen Firmengehirns. Diese Architektur extrahiert Rechnungsdaten – unabhängig davon, ob es sich um ZUGFeRD, XRechnung oder unstrukturierte PDFs handelt – völlig autonom. 
-- **Schritt 3:** Nahtlose API-Implementierung, die den verifizierten Datensatz ohne menschliches Eingreifen direkt in den Freigabeprozess und anschließend in die Buchhaltungssoftware routet.
+- **Schritt 3:** Nahtlose API-Systemarchitektur, die den verifizierten Datensatz ohne menschliches Eingreifen direkt in den Freigabeprozess und anschließend in die Buchhaltungssoftware routet.
 
 ## [C] Harte Zahlen & ROI (Authoritativeness)
 

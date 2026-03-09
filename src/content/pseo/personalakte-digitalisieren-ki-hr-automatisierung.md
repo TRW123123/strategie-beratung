@@ -16,7 +16,7 @@ HR-Mitarbeiter wühlen physisch in Hängeordnern nach verstaubten Arbeitsverträ
 ST Beratung baut das digitale Fundament für die Personalabteilung. 
 
 - **Schritt 1:** Ein strukturelles Audit der historischen, papierhaften Aktenlandschaft. 
-- **Schritt 2:** Implementierung einer OCR-gestützten KI, die Dokumententypen (wie Zeugnis, Abmahnung, Vertrag) automatisch klassifiziert und Metadaten extrahiert. 
+- **Schritt 2:** Systemarchitektur einer OCR-gestützten KI, die Dokumententypen (wie Zeugnis, Abmahnung, Vertrag) automatisch klassifiziert und Metadaten extrahiert. 
 - **Schritt 3:** Vollautomatische Überführung dieser Daten in eine strukturierte, durchsuchbare und berechtigungsgesteuerte Cloud-Personalakte.
 
 ## [C] Harte Zahlen & ROI (Authoritativeness)
