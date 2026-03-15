@@ -41,6 +41,13 @@ const pseoCollection = defineCollection({
             answer: z.string(),
         })).min(1).max(5).optional(),
 
+        // --- Community Context (UGC Injection - Phase 06) ---
+        community_context: z.object({
+            platform: z.enum(['Reddit', 'G2', 'LinkedIn', 'Branchenforum']),
+            insight: z.string(),
+            sentiment: z.enum(['neutral', 'positive', 'kritisch']).default('neutral'),
+        }).optional(),
+
         // --- DOM Variation Hint ---
         content_format: z.enum(['prose', 'checklist', 'comparison', 'steps']).default('prose'),
     })

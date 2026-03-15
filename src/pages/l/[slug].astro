@@ -2,10 +2,29 @@
 import { getCollection } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import ArticleSchema from '../../components/ArticleSchema.astro';
+import RelatedPages from '../../components/RelatedPages.astro';
 
 export async function getStaticPaths() {
   const pseoEntries = await getCollection('pseo');
-  return pseoEntries.map(entry => ({
+  
+  // Phase 08: Bi-Modal Quality Gate
+  // Only build pages that have at least one unique enrichment metric (FAQ OR ROI)
+  // This physically enforces the 50% unique content rule against Thin Content.
+  const isDev = import.meta.env.DEV; // Allow all in dev mode for content preview
+  
+  const verifiedEntries = pseoEntries.filter(entry => {
+    const hasFaq = !!entry.data.faq;
+    const hasRoi = !!entry.data.roi_data;
+    const isEnriched = hasFaq || hasRoi;
+    
+    if (!isEnriched && !isDev) {
+      console.warn(`[Quality Gate] PRUNED: ${entry.slug} (Missing FAQ or ROI)`);
+      return false; // Skip build
+    }
+    return true; // Pass gate
+  });
+
+  return verifiedEntries.map(entry => ({
     params: { slug: entry.slug },
     props: { entry },
   }));
@@ -114,7 +133,7 @@ const contentFormat = data.content_format || (data.cluster === 'compliance' ? 'c
             </div>
           )}
 
-          <!-- Savings Range (conditional) -->
+          {/* --- Savings Range (conditional) --- */}
           {data.savings_range && (
             <div class="mb-12 p-6 bg-green-900/20 rounded-xl border border-green-500/20">
               <div class="text-sm text-green-400 uppercase tracking-widest mb-1">Einsparpotential</div>
@@ -127,7 +146,25 @@ const contentFormat = data.content_format || (data.cluster === 'compliance' ? 'c
             </div>
           )}
 
-          <div class="flex flex-col sm:flex-row gap-4">
+          {/* --- Community Context / UGC Injection (Phase 06) --- */}
+          {data.community_context && (
+            <div class="mb-12 p-6 bg-gray-800/80 rounded-xl border-l-4 border-l-purple-500 border-t border-r border-b border-gray-700 relative overflow-hidden">
+              <div class="absolute top-0 right-0 p-4 opacity-10">
+                <svg viewBox="0 0 24 24" class="w-16 h-16 fill-current text-white"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z"/></svg>
+              </div>
+              <div class="flex items-center gap-2 mb-3">
+                <span class="text-xs uppercase tracking-widest text-purple-400 font-semibold">Markt-Insight</span>
+                <span class="flex items-center gap-1 text-xs text-gray-500 bg-gray-900 px-2 py-0.5 rounded-full">
+                  Signal via {data.community_context.platform}
+                </span>
+              </div>
+              <blockquote class="text-gray-300 italic mb-0 relative z-10">
+                "{data.community_context.insight}"
+              </blockquote>
+            </div>
+          )}
+
+          <div class="flex flex-col sm:flex-row gap-4 relative z-10">
               <a href="mailto:info@st-automatisierung.de" class="inline-flex justify-center items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-gray-900 bg-white hover:bg-gray-100 transition-colors">
                   Kostenlose Potenzialanalyse anfragen
               </a>
@@ -253,6 +290,9 @@ const contentFormat = data.content_format || (data.cluster === 'compliance' ? 'c
           </div>
         </aside>
       )}
+
+      {/* --- INTERNAL LINKING (Phase 07) --- */}
+      <RelatedPages currentSlug={entry.slug} currentCluster={data.cluster} limit={3} />
 
     </article>
   </main>
