@@ -1,0 +1,85 @@
+---
+interface FaqItem {
+    question: string;
+    answer: string;
+}
+
+interface Props {
+    title: string;
+    description: string;
+    keyword: string;
+    slug: string;
+    cluster: string;
+    faq?: FaqItem[];
+    datePublished?: string;
+}
+
+const {
+    title,
+    description,
+    keyword,
+    slug,
+    cluster,
+    faq,
+    datePublished = '2026-01-15',
+} = Astro.props;
+
+const canonicalUrl = `https://st-automatisierung.de/l/${slug}`;
+
+// --- Article + Person Schema ---
+const articleSchema = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": title,
+    "description": description,
+    "url": canonicalUrl,
+    "datePublished": datePublished,
+    "dateModified": new Date().toISOString().split('T')[0],
+    "inLanguage": "de-DE",
+    "keywords": keyword,
+    "articleSection": cluster,
+    "author": {
+        "@type": "Person",
+        "name": "Savaş Topçu",
+        "jobTitle": "KI-Systemarchitekt & Unternehmensberater",
+        "url": "https://st-automatisierung.de",
+        "worksFor": {
+            "@type": "Organization",
+            "name": "ST BERATUNG",
+            "url": "https://st-automatisierung.de"
+        }
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "ST BERATUNG",
+        "url": "https://st-automatisierung.de",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://st-automatisierung.de/images/logo.svg"
+        }
+    },
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": canonicalUrl
+    }
+};
+
+// --- FAQPage Schema (only if FAQ data exists) ---
+const faqSchema = faq && faq.length > 0 ? {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": faq.map(item => ({
+        "@type": "Question",
+        "name": item.question,
+        "acceptedAnswer": {
+            "@type": "Answer",
+            "text": item.answer
+        }
+    }))
+} : null;
+---
+
+<script type="application/ld+json" is:inline set:html={JSON.stringify(articleSchema)} />
+{faqSchema && (
+    <script type="application/ld+json" is:inline set:html={JSON.stringify(faqSchema)} />
+)}

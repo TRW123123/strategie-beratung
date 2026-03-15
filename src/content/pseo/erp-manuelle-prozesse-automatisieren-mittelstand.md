@@ -5,6 +5,27 @@ intent: "ERP-Systeme sind eingeführt, aber viele Prozesse laufen trotzdem manue
 cluster: "probleme"
 description: "ERP-Systeme sind eingeführt, aber viele Prozesse laufen trotzdem manuell daneben – von der Auftragsbestätigung bis zur Lagerbuchung."
 bafa_badge: false
+content_format: "checklist"
+roi_data:
+  metric: "Durchschnittliche Fehlerreduktion nach ERP-Automatisierung"
+  value: "73% weniger manuelle Eingabefehler"
+  source: "McKinsey Digital Operations Report 2024"
+savings_range:
+  min: 25000
+  max: 80000
+  unit: "euro_per_year"
+approach_steps:
+  - title: "Diagnose der Datensilos"
+    text: "Forensische Analyse der isolierten Systeme, manuellen Workarounds und Prozessbrüche zwischen Webshop, Excel und ERP."
+  - title: "Middleware-Architektur"
+    text: "Design intelligenter APIs und Middleware, die Ihre bestehenden Systeme in Echtzeit kommunizieren lassen."
+  - title: "Single Source of Truth"
+    text: "Orchestrierung einer zentralen Datenbasis, die Stammdatenpflege und Auftrags-Fulfillment vollständig automatisiert."
+faq:
+  - question: "Muss unser bestehendes ERP-System ausgetauscht werden?"
+    answer: "Nein. Wir arbeiten mit jedem marktgängigen ERP-System (SAP, DATEV, Sage, Lexware etc.) und bauen die Automatisierung als Middleware-Schicht auf Ihre vorhandene Infrastruktur."
+  - question: "Wie lange dauert die Umstellung?"
+    answer: "Ein typisches Pilotprojekt (1-2 Kernprozesse) dauert 4-8 Wochen. Die Skalierung auf weitere Prozesse erfolgt modular ohne Betriebsunterbrechung."
 ---
 
 ## [A] Der harte Schmerz (Experience)

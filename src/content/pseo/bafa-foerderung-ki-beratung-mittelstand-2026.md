@@ -5,6 +5,33 @@ intent: "BAFA fördert Unternehmensberatungen bis 31.12.2026 mit bis zu 50% bzw.
 cluster: "foerderung"
 description: "BAFA fördert Unternehmensberatungen bis 31.12.2026 mit bis zu 50% bzw. 80% der Kosten, max. 3.500 € Bemessungsgrundlage."
 bafa_badge: true
+content_format: "steps"
+roi_data:
+  metric: "Return on Investment der geförderten Beratung"
+  value: "17:1 bis 57:1 im ersten Jahr"
+  source: "Interne Projekterfahrung ST Beratung (2024–2025)"
+savings_range:
+  min: 1750
+  max: 2800
+  unit: "euro_per_year"
+approach_steps:
+  - title: "Förderfähigkeits-Check"
+    text: "Schnelle Prüfung, ob Ihr Unternehmen die KMU-Kriterien für die BAFA-Förderung erfüllt."
+  - title: "BAFA-Antragstellung"
+    text: "Formgerechte Antragstellung über die BAFA-Leitstelle – zwingend vor Beginn der Beratung."
+  - title: "Strategieberatung mit Zuschuss"
+    text: "Durchführung der KI-Prozessberatung mit anschließender, garantierter Zuschuss-Abrechnung."
+faq:
+  - question: "Wer kann die BAFA-Förderung für KI-Beratung beantragen?"
+    answer: "Kleine und mittlere Unternehmen (KMU) mit Sitz in Deutschland, die seit mindestens einem Jahr am Markt sind und weniger als 250 Mitarbeiter beschäftigen."
+  - question: "Wie hoch ist der maximale Zuschuss?"
+    answer: "In den alten Bundesländern (z.B. NRW) beträgt der Zuschuss 50% der Beratungskosten (max. 1.750 €). In den neuen Bundesländern sind es 80% (max. 2.800 €)."
+  - question: "Muss der Antrag vor der Beratung gestellt werden?"
+    answer: "Ja, zwingend. Die Antragstellung bei einer BAFA-Leitstelle muss vor Beginn der Beratungsmaßnahme erfolgen. Nachträgliche Anträge werden abgelehnt."
+sources:
+  - name: "BAFA – Förderung von Unternehmensberatungen für KMU"
+    url: "https://www.bafa.de/DE/Wirtschaft/Beratung_Finanzierung/Unternehmensberatung/unternehmensberatung_node.html"
+  - name: "ESF Plus Programm 2021–2027"
 ---
 
 ## [A] Der harte Schmerz (Experience)
