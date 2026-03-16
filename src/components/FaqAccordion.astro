@@ -1,0 +1,89 @@
+---
+interface Props {
+  faqItem: {
+    question: string;
+    answer: string;
+  };
+}
+
+const { faqItem } = Astro.props;
+---
+
+<faq-accordion class="block bg-gray-800/50 rounded-xl border border-gray-700 overflow-hidden transition-colors duration-300">
+  <button class="w-full flex justify-between items-center p-5 cursor-pointer text-left text-white font-medium hover:bg-gray-800/80 transition-colors focus:outline-none">
+    <span>{faqItem.question}</span>
+    <span class="ml-4 flex-shrink-0 relative w-5 h-5 flex items-center justify-center">
+      <svg class="w-5 h-5 text-gray-400 absolute transition-all duration-300 icon-plus" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
+      </svg>
+      <svg class="w-5 h-5 text-blue-400 absolute transition-all duration-300 opacity-0 -rotate-90 scale-50 icon-minus" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4" />
+      </svg>
+    </span>
+  </button>
+  <div class="content overflow-hidden transition-[height] duration-300 ease-in-out" style="height: 0px;">
+    <div class="px-5 pb-5 text-gray-400 inner relative">
+      <p class="leading-relaxed">{faqItem.answer}</p>
+    </div>
+  </div>
+</faq-accordion>
+
+<script>
+  class FaqAccordion extends HTMLElement {
+    constructor() {
+      super();
+      let isOpen = false;
+      const btn = this.querySelector('button');
+      const content = this.querySelector('.content') as HTMLElement;
+      const inner = this.querySelector('.inner') as HTMLElement;
+      const iconPlus = this.querySelector('.icon-plus');
+      const iconMinus = this.querySelector('.icon-minus');
+
+      if (!btn || !content || !inner) return;
+
+      btn.addEventListener('click', () => {
+        isOpen = !isOpen;
+        
+        if (isOpen) {
+          // Calculate exact height needed
+          content.style.height = 'auto'; // Temporarily set auto to get natural height
+          const naturalHeight = inner.getBoundingClientRect().height;
+          content.style.height = '0px'; // Reset to 0
+          
+          // Force layout recalculation
+          content.offsetHeight;
+          
+          // Animate to full height
+          content.style.height = `${naturalHeight}px`;
+          
+          // Toggle icons and borders
+          iconPlus?.classList.add('opacity-0', 'rotate-90', 'scale-50');
+          iconMinus?.classList.remove('opacity-0', '-rotate-90', 'scale-50');
+          this.classList.add('border-blue-500/50');
+          this.classList.remove('border-gray-700');
+        } else {
+          // Animate back to 0
+          content.style.height = '0px';
+          
+          // Untoggle icons and borders
+          iconPlus?.classList.remove('opacity-0', 'rotate-90', 'scale-50');
+          iconMinus?.classList.add('opacity-0', '-rotate-90', 'scale-50');
+          this.classList.remove('border-blue-500/50');
+          this.classList.add('border-gray-700');
+        }
+      });
+      
+      // Handle window resize dynamically to prevent text overflow issues if open
+      window.addEventListener('resize', () => {
+          if (isOpen) {
+              content.style.height = 'auto'; // Fallback to auto so it flows naturally
+          }
+      });
+    }
+  }
+
+  // Define the custom element only if it hasn't been defined yet (Astro Island Best Practice)
+  if (!customElements.get('faq-accordion')) {
+    customElements.define('faq-accordion', FaqAccordion);
+  }
+</script>
