@@ -5,6 +5,33 @@ intent: "Aufträge aus Webshop, Telefon und E-Mail werden manuell ins ERP übert
 cluster: "loesungen"
 description: "Aufträge aus Webshop, Telefon und E-Mail werden manuell ins ERP übertragen – Fehler, Verzögerungen, Doppelarbeit."
 bafa_badge: false
+roi_data:
+  metric: "Reduktion manueller Fehler"
+  value: "- 78 %"
+  source: "Branchendurchschnitt Mittelstand"
+savings_range:
+  min: 20000
+  max: 60000
+  unit: "euro_per_year"
+approach_steps:
+  - title: "1. Prozess-Mapping"
+    text: "Wir visualisieren den gesamten Weg eines Auftrags – vom ERP bis zur Logistik."
+  - title: "2. Systemarchitektur"
+    text: "Wir entwerfen eine API-Routenplanung, die E-Mails, Shopsysteme und Ihr ERP nahtlos verknüpft."
+  - title: "3. Dunkelverarbeitung planen"
+    text: "Konzeptionierung von Workflows, bei denen Standardaufträge ohne menschlichen Klick durchgebucht werden."
+faq:
+  - question: "Was ist Dunkelverarbeitung?"
+    answer: "Dunkelverarbeitung bedeutet, dass ein Auftrag vom System komplett im Hintergrund (ohne Zutun eines Mitarbeiters) verbucht und abgewickelt wird."
+  - question: "Funktioniert das auch mit PDF-Bestellungen in E-Mails?"
+    answer: "Absolut. Mittels KI (Document Parser) können unstrukturierte PDF-Daten aus E-Mails ausgelesen und als strukturierte Datensätze an das ERP übergeben werden."
+sources:
+  - name: "Studie: Automatisierung im ERP, Fraunhofer"
+content_format: "steps"
+community_context:
+  platform: "G2"
+  insight: "Die größte Hürde für KMU ist nicht die Software, sondern die korrekte Stammdatenpflege vor der Automatisierung."
+  sentiment: "kritisch"
 ---
 
 ## [A] Der harte Schmerz (Experience)

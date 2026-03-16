@@ -5,6 +5,27 @@ intent: "Copilot for Business ist seit Dez. 2025 für KMU verfügbar, aber viele
 cluster: "probleme"
 description: "Copilot for Business ist seit Dez. 2025 für KMU verfügbar, aber viele wissen nicht, wo anfangen."
 bafa_badge: false
+roi_data:
+  metric: "Zeiteinsparung (Office-Tasks)"
+  value: "- 1.2 Std."
+  source: "Microsoft Work Trend Index"
+savings_range:
+  min: 15
+  max: 30
+  unit: "hours_per_week"
+approach_steps:
+  - title: "1. Lizenz- & Readiness-Check"
+    text: "Wir analysieren, ob Ihre aktuellen Microsoft 365 Lizenzen (z.B. Business Standard/Premium) für das Copilot-Add-on ausreichend sind."
+  - title: "2. Daten- & Strukturhygiene"
+    text: "Ein Leitfaden-Konzept, um die vorhandene Dateiablage in SharePoint/Teams strukturell aufzubereiten, sodass der Copilot präzise kontextuelle Antworten geben kann."
+  - title: "3. Champions-Strategie (Rollout)"
+    text: "Planung einer mehrstufigen Einführung: Ausbildung interner 'Power User' (Champions), die dann Best Practices für Prompts in Word, Excel und Teams an die Belegschaft weitergeben."
+faq:
+  - question: "Lohnt sich die Lizenz für jeden Mitarbeiter?"
+    answer: "In der Regel empfehlen wir einen gestuften Rollout. Copilot liefert den höchsten ROI für Wissensarbeiter (Marketing, Vertrieb, Assistenz der Geschäftsführung). Für reine Produktions- oder Lagerarbeiter ist die teure Lizenz meist wirtschaftlich unsinnig."
+  - question: "Schreibt der Copilot automatisch meine E-Mails in Outlook?"
+    answer: "Er generiert hochqualitative Textentwürfe auf Basis Ihrer Stichpunkte. Das finale Absenden (Human-in-the-Loop) bleibt aus Qualitäts- und Haftungsgründen jedoch stets beim Nutzer."
+content_format: "checklist"
 ---
 
 Stellen Sie sich vor, Copilot for Business ist seit Dez. 2025 für KMU verfügbar, aber viele wissen nicht, wo anfangen.

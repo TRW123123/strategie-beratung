@@ -5,6 +5,30 @@ intent: "KMU suchen nach aktuellen Fördermöglichkeiten für Digitalisierung. N
 cluster: "foerderung"
 description: "KMU suchen nach aktuellen Fördermöglichkeiten für Digitalisierung. Neben BAFA gibt es MID-Digitalisierung in NRW."
 bafa_badge: true
+roi_data:
+  metric: "Förderquote Beratung"
+  value: "50-80 %"
+  source: "BAFA / BMWK"
+savings_range:
+  min: 1750
+  max: 3500
+  unit: "euro_per_year"
+approach_steps:
+  - title: "1. Förder-Mapping"
+    text: "Wir gleichen Ihre Digitalisierungsziele mit dem BAFA-Beratungsprogramm und dem ZIM-Innovationsprogramm ab."
+  - title: "2. Strategische Verschachtelung"
+    text: "Konzeptionierung eines Phasenmodells: Phase 1 (Beratung) wird vom BAFA getragen, Phase 2 (Hard-/Software) über regionale Programme wie MID-NRW."
+  - title: "3. Projektplanung"
+    text: "Erstellung der offiziellen Beratungsberichte und Qualitätsnachweise, die für die finale Bewilligung zwingend gefordert sind."
+faq:
+  - question: "Gibt es 2026 noch Fördermittel für die reine Software-Anschaffung?"
+    answer: "Auf Bundesebene (BAFA) wird primär die konzeptionelle Beratung gefördert. Für Softwarelizenzen müssen Länderspezifische Programme wie der Digitalbonus Bayern oder MID in NRW herangezogen werden."
+  - question: "Wie lange darf eine Förderung maximal dauern?"
+    answer: "BAFA-Beratungen sind auf eine Laufzeit von maximal 6 Monaten ab formaler In-Aussicht-Stellung begrenzt."
+sources:
+  - name: "BMWK: Förderdatenbank"
+  - name: "BAFA: Förderung unternehmerischen Know-hows"
+content_format: "steps"
 ---
 
 ## [A] Der harte Schmerz (Experience)

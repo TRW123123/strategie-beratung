@@ -5,6 +5,30 @@ intent: "Mitarbeiter nutzen ChatGPT unkontrolliert – Kundennamen und Vertragsd
 cluster: "compliance"
 description: "Mitarbeiter nutzen ChatGPT unkontrolliert – Kundennamen und Vertragsdaten landen in Prompts ohne Rechtsgrundlage."
 bafa_badge: false
+roi_data:
+  metric: "Vermeidung von DSGVO-Bußgeldern"
+  value: "Vorbeugend"
+  source: "Art. 83 DSGVO"
+savings_range:
+  min: 10000
+  max: 50000
+  unit: "euro_per_year"
+approach_steps:
+  - title: "1. Risiko- und Bestandsanalyse"
+    text: "Wir decken auf, in welchen Abteilungen ('Schatten-IT') ChatGPT aktuell bereits unreguliert für Firmenzwecke eingesetzt wird."
+  - title: "2. Richtlinien-Konstruktion"
+    text: "Entwicklung eines klaren, rechtssicheren Regelwerks für Prompts, zulässige Datentypen und verbotene Eingaben."
+  - title: "3. Konzeption sicherer KI-Alternativen"
+    text: "Architekturplanung einer DSGVO-konformen, internen KI-Lösung (z.B. Private LLM über API), die Chatverläufe nicht für fremdes Training nutzt."
+faq:
+  - question: "Ist die normale Web-Version von ChatGPT DSGVO-konform?"
+    answer: "Nein, in der Standard-Web-Version räumt sich OpenAI das Recht ein, Ihre eingegebenen Daten (Prompts) für das Training zukünftiger Modelle zu verwenden. Firmendaten sind dort nicht geschützt."
+  - question: "Wie können Mitarbeiter ChatGPT dennoch sicher nutzen?"
+    answer: "Durch Enterprise-Lizenzen (Zero-Data-Retention) oder durch die Nutzung einer unternehmenseigenen Architektur, die auf die OpenAI API zugreift. Bei der API-Nutzung werden Daten laut Terms of Service nicht fürs Training benutzt."
+sources:
+  - name: "EU AI Act Compliance Guide"
+  - name: "Leitfaden des Bundesbeauftragten für den Datenschutz (BfDI)"
+content_format: "comparison"
 ---
 
 ## [A] Der harte Schmerz (Experience)

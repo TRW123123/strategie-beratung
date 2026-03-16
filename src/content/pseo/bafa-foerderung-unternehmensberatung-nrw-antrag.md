@@ -5,6 +5,33 @@ intent: "Unternehmen in NRW erhalten 50% Zuschuss (max. 1.750 €) pro BAFA-Bera
 cluster: "foerderung"
 description: "Unternehmen in NRW erhalten 50% Zuschuss (max. 1.750 €) pro BAFA-Beratung, bis zu 2 pro Jahr und 5 insgesamt bis 2026."
 bafa_badge: true
+roi_data:
+  metric: "Zuschuss-Höhe NRW"
+  value: "50 %"
+  source: "BAFA Förderrichtlinie"
+savings_range:
+  min: 1750
+  max: 3500
+  unit: "euro_per_year"
+approach_steps:
+  - title: "1. Vorab-Prüfung"
+    text: "Wir validieren, ob Ihr geplantes Vorhaben in NRW mit anderen Landesförderungen kollidiert."
+  - title: "2. Leitstellen-Pflicht (NRW)"
+    text: "Information über das obligatorische Erstgespräch bei NRW-Leitstellen (oft IHK) vor der Antragstellung."
+  - title: "3. Strategische Konzeption"
+    text: "Entwicklung eines belastbaren Prozess- und Digitalisierungsplans, der zu 50% vom Staat bezogen wird."
+faq:
+  - question: "Gilt für NRW eine Besonderheit beim BAFA-Antrag?"
+    answer: "Unternehmen aus NRW erhalten regulär den 50%-Fördersatz. Eine regionale Besonderheit kann sein, ob zusätzlich der 'Digitalbonus NRW' für die spätere bauliche oder technische Anschaffung komplementär genutzt werden soll."
+  - question: "Wie lange dauert die Bewilligung beim BAFA für NRW-Betriebe?"
+    answer: "Der Antragsprozess läuft komplett digital. Die 'Inaussichtstellung' (und damit die Erlaubnis, mit der Beratung zu beginnen) erfolgt oft schon nach wenigen Werktagen."
+sources:
+  - name: "IHK NRW: Förderprogramme Digitalisierung"
+content_format: "steps"
+community_context:
+  platform: "LinkedIn"
+  insight: "Viele KMUs im Münsterland verpassen lukrative Förderungen, weil sie die Differenz zwischen BAFA (für Beratung) und MID-Digitalisierung (für Umsetzung) nicht kennen."
+  sentiment: "neutral"
 ---
 
 ## [A] Der harte Schmerz (Experience)

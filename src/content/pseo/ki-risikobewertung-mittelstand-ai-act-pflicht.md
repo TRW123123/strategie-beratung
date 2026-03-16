@@ -5,6 +5,29 @@ intent: "Unternehmen müssen eine Risikobewertung ihrer KI-Systeme vornehmen und
 cluster: "compliance"
 description: "Unternehmen müssen eine Risikobewertung ihrer KI-Systeme vornehmen und dokumentieren, welche Risikoklasse vorliegt."
 bafa_badge: false
+roi_data:
+  metric: "Vermeidung von AI-Act-Strafen"
+  value: "bis 35 Mio. €"
+  source: "Verordnung (EU) 2024/1689"
+savings_range:
+  min: 25000
+  max: 100000
+  unit: "euro_per_year"
+approach_steps:
+  - title: "1. Inventarisierung der Use-Cases"
+    text: "Wir erfassen alle aktuellen und geplanten KI-Schnittstellen in Ihrem Unternehmen, vom einfachen Marketing-Bot bis zur biometrischen Auswertung."
+  - title: "2. Mapping auf die 4 Risiko-Kategorien"
+    text: "Abgleich der Use-Cases mit dem EU-Stufenmodell (Minimales Risiko, Tranzparenzrisiko, Hohes Risiko, Inakzeptables Risiko)."
+  - title: "3. Konzeption der Dokumentationspflichten"
+    text: "Erarbeitung benötigter Qualitätsmanagement-Systeme (QMS) und technischer Dokumentationen für Systeme, die in die Hochrisikoklasse fallen."
+faq:
+  - question: "Sind Automatisierungen mit ChatGPT bereits Hochrisiko?"
+    answer: "In der Regel nicht, Textgeneratoren fallen meist unter 'minimales' oder 'Transparenz-Risiko'. Hochrisiko betrifft primär Systeme in der HR, Kreditvergabe (Scoring), kritische Infrastrukturen oder Medizintechnik."
+  - question: "Wen betrifft die Risikobewertung: Nur Anbieter oder auch Nutzer?"
+    answer: "Auch sogenannte 'Betreiber' (Deployer) von KI-Systemen haben weitreichende Pflichten. Wer ein General Purpose AI Model (GPAI) in seinen eigenen Fachprozess einklinkt, ist nach dem AI Act voll in der Pflicht."
+sources:
+  - name: "EU AI Act: Obligations for Providers and Deployers"
+content_format: "checklist"
 ---
 
 Stellen Sie sich vor, Unternehmen müssen eine Risikobewertung ihrer KI-Systeme vornehmen und dokumentieren, welche Risikoklasse vorliegt.

@@ -5,6 +5,33 @@ intent: "Unternehmer wollen wissen, wie der Förderantrag konkret abläuft – o
 cluster: "foerderung"
 description: "Unternehmer wollen wissen, wie der Förderantrag konkret abläuft – online beim BAFA, Informationsschreiben abwarten, dann erst beraten lassen."
 bafa_badge: true
+roi_data:
+  metric: "Rückerstattungs-Garantie"
+  value: "100 %"
+  source: "Transparente BAFA-Prüfung"
+savings_range:
+  min: 1750
+  max: 3500
+  unit: "euro_per_year"
+approach_steps:
+  - title: "1. Erstgespräch & Leitstelle"
+    text: "Vorab-Klärung der Förderfähigkeit und, abhängig von Alter und Standort des Unternehmens, ggf. Führung des kostenlosen regionalen Leitstellengesprächs."
+  - title: "2. Online-Antrag"
+    text: "Gemeinsame, fehlerfreie Einreichung des Antrags im BAFA-Portal. WICHTIG: Mit der Beratung darf erst nach der 'Inaussichtstellung' begonnen werden."
+  - title: "3. Beratung & Verwendungsnachweis"
+    text: "Durchführung der strategischen Automatisierungsberatung und anschließende Einreichung des zwingend geforderten Beratungsberichts beim BAFA."
+faq:
+  - question: "Wann bekomme ich das Geld vom Staat zurück?"
+    answer: "Das Programm funktioniert nach dem Erstattungsprinzip. Sie bezahlen das Beratungshonorar zunächst an den Berater und reichen den Nachweis (Zahlungsbeleg, Beratungsbericht) beim BAFA ein. Der Zuschuss wird dann vom Amt rücküberwiesen."
+  - question: "Darf ich mit der Beratung direkt nach dem Erstgespräch starten?"
+    answer: "Nein, ein vorzeitiger Maßnahmenbeginn ist förderschädlich. Sie müssen rechtlich zwingend das offizielle Antwortschreiben (die Inaussichtstellung) des BAFA abwarten. Alles davor bezahlt der Staat nicht."
+sources:
+  - name: "BAFA: Formulare und Leitfäden zur Antragstellung"
+content_format: "steps"
+community_context:
+  platform: "LinkedIn"
+  insight: "Der häufigste Fehler beim BAFA-Antrag ist der vorzeitige Maßnahmenbeginn durch übereifrige Verkäufer. Warten Sie das Amtsschreiben zwingend ab."
+  sentiment: "kritisch"
 ---
 
 ## [A] Der harte Schmerz (Experience)

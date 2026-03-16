@@ -5,6 +5,33 @@ intent: "GF wollen verstehen, was eine KI-Beratung wirklich kostet und wie viel 
 cluster: "foerderung"
 description: "GF wollen verstehen, was eine KI-Beratung wirklich kostet und wie viel davon gefördert wird. Max. 3.500 € Bemessungsgrundlage, bis zu 2.800 € Zuschuss..."
 bafa_badge: true
+roi_data:
+  metric: "Reduktion initialer Beratungskosten"
+  value: "- 50 bis 80 %"
+  source: "BAFA Förderrichtlinie 2026"
+savings_range:
+  min: 1750
+  max: 2800
+  unit: "euro_per_year"
+approach_steps:
+  - title: "1. Fördersatz-Check"
+    text: "Wir prüfen Ihre KMU-Kriterien auf Basis der EU-Definition (Mitarbeiterzahl, Umsatz), um den genauen Fördersatz (50% oder 80% je nach Standort) zu ermitteln."
+  - title: "2. Kalkulation der Lösungsarchitektur"
+    text: "Neben der geförderten Beratung schätzen wir die laufenden Cloud- und API-Kosten (z.B. OpenAI-Tokenpreise, Server-Hosting) des späteren Zielsystems."
+  - title: "3. ROI-Gegenrechnung"
+    text: "Wir setzen die gesamten Projektkosten ins Verhältnis zu den eingesparten Personalstunden, um den Break-Even-Zeitpunkt zu definieren."
+faq:
+  - question: "Gibt es versteckte Gebühren beim BAFA-Antrag?"
+    answer: "Nein, weder vom Amt noch von uns. Die Erstellung des Antrags und das Vorab-Prüfgespräch sind komplett kostenlos. Die abgerechnete Dienstleistung betrifft nur die reine Konzeptions-Beratung."
+  - question: "Wie hoch ist das maximale Beratungshonorar, das gefördert wird?"
+    answer: "Die maximale Bemessungsgrundlage beim BAFA ('Förderung unternehmerischen Know-hows') liegt bei 3.500 Euro netto. Darauf wird der Zuschuss (50% oder 80%) berechnet. Alles darüber hinaus gilt als Eigenanteil."
+sources:
+  - name: "BAFA: Zuschusshöhe KMU"
+content_format: "checklist"
+community_context:
+  platform: "LinkedIn"
+  insight: "Viele Geschäftsführer überschätzen die reinen Softwarekosten von Sprachmodellen und unterschätzen die strategischen Kosten für Change-Management im Team."
+  sentiment: "neutral"
 ---
 
 Stellen Sie sich vor, GF wollen verstehen, was eine KI-Beratung wirklich kostet und wie viel davon gefördert wird. Max. 3.500 € Bemessungsgrundlage, bis zu 2.800 € Zuschuss möglich.

@@ -5,6 +5,27 @@ intent: "Mitarbeiter tippen Daten aus Lieferscheinen, Verträgen und Formularen 
 cluster: "loesungen"
 description: "Mitarbeiter tippen Daten aus Lieferscheinen, Verträgen und Formularen manuell ab – 85% schnellere Verarbeitung ist möglich."
 bafa_badge: false
+roi_data:
+  metric: "Verarbeitungszeit pro Beleg"
+  value: "- 85 %"
+  source: "Bitkom: Digital Office Index"
+savings_range:
+  min: 20
+  max: 50
+  unit: "hours_per_week"
+approach_steps:
+  - title: "1. Dokumenten-Audit"
+    text: "Wir analysieren, welche unstrukturierten Dokumente (PDFs, Scans, handschriftliche Notizen) den größten Zeitaufwand verursachen."
+  - title: "2. Auswahl der Extraction Engine"
+    text: "Je nach Anforderung konzipieren wir den Einsatz von spezialisierten Modellen (z.B. Rossum, AWS Textract oder fine-getunte LLMs)."
+  - title: "3. API-Integration"
+    text: "Architekturplanung, um die ausgelesenen, nun strukturierten JSON-Daten fehlerfrei in Ihr ERP- oder CRM-Zielsystem zu übergeben."
+faq:
+  - question: "Kann die KI auch schlechte Scans oder Handschrift entziffern?"
+    answer: "Ja, moderne Computer Vision Modelle kombinieren OCR mit semantischem Textverständnis und können auch 'verschmierte' Faxe oder Handschriften mit über 95% Genauigkeit auslesen."
+  - question: "Müssen wir für jedes neue Layout ein Template anlegen?"
+    answer: "Nein, das ist der größte Vorteil gegenüber alter Zonen-OCR. Moderne KI-Modelle suchen nach der *Bedeutung* der Felder (z.B. 'Rechnungsbetrag'), egal wo diese auf der jeweiligen PDF-Seite stehen."
+content_format: "checklist"
 ---
 
 Stellen Sie sich vor, Mitarbeiter tippen Daten aus Lieferscheinen, Verträgen und Formularen manuell ab – 85% schnellere Verarbeitung ist möglich. Das kostet nicht nur wertvolle Arbeitszeit, sondern bremst Ihre gesamte Skalierung.

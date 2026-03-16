@@ -5,6 +5,27 @@ intent: "Handwerksbetriebe können über BAFA und MID digitale Projekte fördern
 cluster: "foerderung"
 description: "Handwerksbetriebe können über BAFA und MID digitale Projekte fördern lassen – von Angebots-Automatisierung bis Auftragsmanagement."
 bafa_badge: true
+roi_data:
+  metric: "Digitalisierungs-Tempo"
+  value: "+ 30 %"
+  source: "ZDH (Zentralverband des Handwerks)"
+savings_range:
+  min: 1750
+  max: 3500
+  unit: "euro_per_year"
+approach_steps:
+  - title: "1. Baustellen-Audit"
+    text: "Wir analysieren typische Medienbrüche im Handwerk (z.B. Papierzettel auf der Baustelle vs. ERP im Büro)."
+  - title: "2. Potenzialberatung (Gefördert)"
+    text: "Erarbeitung eines strategischen Konzepts, wie KI die Angebotsschreibung (Aufmaß zu Kalkulation) automatisieren kann. Bezuschusst über BAFA."
+  - title: "3. ROI Kalkulation"
+    text: "Berechnung, ab wie vielen gesparten Meisterstunden pro Woche sich das geplante System selbst trägt."
+faq:
+  - question: "Gelten für Meisterbetriebe besondere Förderkonditionen?"
+    answer: "Ja, Handwerksbetriebe sind in der Regel klassische KMU und qualifizieren sich problemlos für die 50%-BAFA-Förderung. Zudem gibt es handwerksspezifische Digitalisierungsprämien wie den 'Meisterbonus' für Weiterbildung."
+  - question: "Werden auch reine Handwerkersoftware-Käufe (ERP) gefördert?"
+    answer: "Das BAFA fördert die Beratung zur Prozessoptimierung, aber nicht die Lizenz der fertigen Software. Für die Handwerkersoftware selbst müssen regionale Digitalisierungsprogramme beantragt werden."
+content_format: "checklist"
 ---
 
 ## [A] Der harte Schmerz (Experience)

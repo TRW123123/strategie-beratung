@@ -5,6 +5,29 @@ intent: "Handwerksbetriebe verbringen 45–60 Min. pro Angebot mit manuellem Zus
 cluster: "loesungen"
 description: "Handwerksbetriebe verbringen 45–60 Min. pro Angebot mit manuellem Zusammenkopieren aus CRM, Excel und Word."
 bafa_badge: false
+roi_data:
+  metric: "Rückgewonnene Meister-Stunden"
+  value: "+ 12h"
+  source: "Berechnung pro Woche/Betrieb"
+savings_range:
+  min: 10
+  max: 20
+  unit: "hours_per_week"
+approach_steps:
+  - title: "1. Bestandsaufnahme"
+    text: "Wir analysieren, welche Materialdatenbanken und Kalkulations-Excels aktuell in Ihrem Handwerksbetrieb genutzt werden."
+  - title: "2. Architektur der Automatisierung"
+    text: "Wir konzipieren eine Bridge zwischen Ihrem E-Mail-Postfach (Kundenanfrage) und Ihrer Handwerkersoftware."
+  - title: "3. Strategischer Rollout"
+    text: "Die neue, KI-gestützte Angebotserstellung wird schrittweise und parallel zum Tagesgeschäft eingeführt."
+faq:
+  - question: "Erkennt die KI auch handschriftliche Aufmaße?"
+    answer: "Ja, durch moderne OCR-Technologien und Vision-KI können Skizzen und handschriftliche PDFs verlässlich extrahiert werden."
+  - question: "Kann die KI direkt auf aktuelle Großhändler-Preise zugreifen?"
+    answer: "Über entsprechende Schnittstellen (Datanorm / API) können Echtzeitpreise direkt in die Vorkalkulation einfließen."
+sources:
+  - name: "ZDH: Digitalisierung im Handwerk"
+content_format: "prose"
 ---
 
 ## [A] Der harte Schmerz (Experience)

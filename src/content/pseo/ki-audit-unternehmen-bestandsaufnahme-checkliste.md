@@ -5,6 +5,29 @@ intent: "Bevor KI eingeführt wird, braucht es eine Bestandsaufnahme: KI-Inventa
 cluster: "compliance"
 description: "Bevor KI eingeführt wird, braucht es eine Bestandsaufnahme: KI-Inventar erstellen, Risiken bewerten, verbotene Praktiken prüfen."
 bafa_badge: false
+roi_data:
+  metric: "Verhinderte Fehl-Investitionen"
+  value: "Hoher Wert"
+  source: "Gartner: AI Project Avoidance"
+savings_range:
+  min: 10000
+  max: 40000
+  unit: "euro_per_year"
+approach_steps:
+  - title: "1. Schatten-IT Aufdeckung"
+    text: "Wir kartografieren detailliert, welche KI-Tools (ChatGPT, Midjourney) von Ihren Abteilungen bereits unreguliert parallel zur Unternehmens-IT genutzt werden."
+  - title: "2. Prozess-Flaschenhälse identifizieren"
+    text: "Gegenüberstellung von Zeitfressern in Fachabteilungen und der realen Lösungsfähigkeit aktueller KI-Systeme."
+  - title: "3. Heatmap & Priorisierung"
+    text: "Entwicklung einer Matrix, die Prozesse nach 'Einfachheit der Automatisierung' und 'geschäftlichem Wert (ROI)' sortiert."
+faq:
+  - question: "Warum scheitern KI-Projekte häufig ohne vorheriges Audit?"
+    answer: "Viele Unternehmen verfallen dem 'FOMO-Effekt' und lizenzieren teure KI-Suiten ohne klares Use-Case-Mapping. Ein Audit stellt sicher, dass Technologie reale Flaschenhälse löst und nicht nur als Leuchtturm-Projekt dient."
+  - question: "Gehört ein Daten-Audit dazu?"
+    answer: "Zwingend. Bevor KI (z.B. als RAG-System) eingeführt werden kann, muss geprüft werden, ob die vorhandenen Firmendaten überhaupt sauber strukturiert, zugreifbar und bereinigt sind (Garbage in, Garbage out)."
+sources:
+  - name: "ISO/IEC 42001 (KI-Managementsysteme)"
+content_format: "checklist"
 ---
 
 Stellen Sie sich vor, Bevor KI eingeführt wird, braucht es eine Bestandsaufnahme: KI-Inventar erstellen, Risiken bewerten, verbotene Praktiken prüfen.

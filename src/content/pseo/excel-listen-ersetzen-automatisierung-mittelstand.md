@@ -5,6 +5,27 @@ intent: "Kritische Geschäftsprozesse laufen über Excel-Tabellen – Versionsch
 cluster: "probleme"
 description: "Kritische Geschäftsprozesse laufen über Excel-Tabellen – Versionschaos, keine Echtzeit, keine Skalierung."
 bafa_badge: false
+roi_data:
+  metric: "Reduktion Suchzeiten / Versionsabgleich"
+  value: "- 60 %"
+  source: "McKinsey: The Data-Driven Enterprise"
+savings_range:
+  min: 10
+  max: 30
+  unit: "hours_per_week"
+approach_steps:
+  - title: "1. Prozess-Identifikation"
+    text: "Wir analysieren, welche kritischen Geschäftsdaten derzeit als 'Schatten-IT' in lokalen Excel-Dateien verwaltet werden."
+  - title: "2. Datenkonsolidierung (Single Source of Truth)"
+    text: "Konzeptionierung einer zentralen, cloud-basierten Datenbankarchitektur, auf die alle Software-Tools synchron zugreifen."
+  - title: "3. Workflow-Automatisierung"
+    text: "Planung von iPaaS-Integrationen (z.B. Make, n8n), die Daten automatisch zwischen CRM, ERP und anderen Systemen verschieben, statt sie per CSV in Excel zu ex- und importieren."
+faq:
+  - question: "Warum ist Excel für wiederkehrende Prozesse gefährlich?"
+    answer: "Excel bietet keine echte Rechte- und Zugriffskontrolle, führt bei mehreren Nutzern zu massiven Duplikaten (Versionierungs-Chaos) und hat eine extrem hohe Fehleranfälligkeit durch versehentlich überschriebene Formeln."
+  - question: "Bauen Sie uns eine komplett neue Software?"
+    answer: "Nein, zielgerichtete Digitalisierung verbindet Ihre bereits bestehenden Systeme über automatisierte Schnittstellen (APIs) im Hintergrund, sodass der manuelle Ex- und Import in Excel komplett entfällt."
+content_format: "prose"
 ---
 
 ## [A] Der harte Schmerz (Experience)

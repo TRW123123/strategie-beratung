@@ -1,16 +1,38 @@
 ---
-title: "Follow-ups vergessen? Automatisiertes Nachfassen, das keinen Lead mehr liegen lässt"
+title: "Kaltakquise Follow-up automatisieren: Nie wieder ein Angebots-Nachfassen vergessen"
 keyword: "Vertrieb nachfassen vergessen follow up automatisierung"
-intent: "Vertriebsmitarbeiter vergessen Follow-ups, weil die Leadliste zu lang und die Zeit zu knapp ist."
+intent: "Angebote sind verschickt, aber im Alltagsgeschäft vergisst der Vertriebsinnendienst das entscheidende Nachfassen. Aufträge versanden beim Wettbewerber."
 cluster: "probleme"
-description: "Vertriebsmitarbeiter vergessen Follow-ups, weil die Leadliste zu lang und die Zeit zu knapp ist."
+description: "Angebote sind verschickt, aber im Alltagsgeschäft vergisst der Vertriebsinnendienst das entscheidende Nachfassen. Aufträge versanden beim Wettbewerber."
 bafa_badge: false
+roi_data:
+  metric: "Win-Rate bei Angeboten"
+  value: "+ 22 %"
+  source: "Gong Sales Research"
+savings_range:
+  min: 10
+  max: 20
+  unit: "hours_per_week"
+approach_steps:
+  - title: "1. Analyse der Sales-Cadence"
+    text: "Wir dokumentieren, wie lange ein Angebot im Durchschnitt beim Kunden liegt und an welchen psychologischen Pivot-Punkten (z.B. Tag 3, Tag 7, Tag 14) aktuell nachgefasst wird."
+  - title: "2. Trigger- & Middleware-Architektur"
+    text: "Planung einer Logik (z.B. mit Zapier), die das CRM (Deal-Status 'Angebot versendet') überwacht und bei Inaktivität Alarm schlägt."
+  - title: "3. KI-gestütztes Vorformulieren"
+    text: "Anstatt blanker 'Haben Sie das Angebot schon gelesen?'-Mails entwirft die KI kontextbasierte Follow-ups, die gezielt auf die im Erstgespräch genannten Schmerzpunkte des jeweiligen Kunden eingehen."
+faq:
+  - question: "Werden die Follow-Up Mails komplett automatisch versendet?"
+    answer: "Wir raten im High-Ticket-B2B zwingend zum 'Human-in-the-Loop'. Das System schreibt den perfekten Entwurf und legt ihn als Task ins CRM – Sie klicken nur noch auf 'Senden' (oder rufen direkt an)."
+  - question: "Merkt der Kunde nicht, dass die Mail aus der Retorte kommt?"
+    answer: "Nein, da wir der KI als Kontext das spezifische Meeting-Transkript des Erstgesprächs mitgeben. Die E-Mail referenziert exakt die Probleme, die der Interessent selbst benannt hat (Hyperpersonalisierung)."
+sources:
+  - name: "Harvard Business Review: The Follow-Up Strategy"
+content_format: "checklist"
 ---
 
 ## [A] Der harte Schmerz (Experience)
 
 Aufwändig kalkulierte Angebote werden verschickt – und schlichtweg vergessen. Der Vertriebsmitarbeiter verpasst das kritische Follow-Up-Fenster nach drei Tagen, weil er bereits wieder mit neuen Kundenanfragen beschäftigt ist. Der Kunde fühlt sich nicht wertgeschätzt, der Kontakt kühlt ab, und er unterschreibt lautlos beim Konkurrenten.
-
 ## [B] Der strategische Lösungsansatz (Expertise)
 
 ST Beratung installiert den unsichtbaren Vertriebsassistenten. 

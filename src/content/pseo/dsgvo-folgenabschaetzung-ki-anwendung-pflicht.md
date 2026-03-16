@@ -5,6 +5,34 @@ intent: "Bei hochriskanten KI-Anwendungen ist eine Datenschutz-Folgenabschätzun
 cluster: "compliance"
 description: "Bei hochriskanten KI-Anwendungen ist eine Datenschutz-Folgenabschätzung (DSFA) nach Art. 35 DSGVO Pflicht – viele Mittelständler unterschätzen den Aufwand."
 bafa_badge: false
+roi_data:
+  metric: "Reduktion des Haftungsrisikos"
+  value: "100 %"
+  source: "Art. 35 DSGVO / AI Act"
+savings_range:
+  min: 15000
+  max: 100000
+  unit: "euro_per_year"
+approach_steps:
+  - title: "1. Schwellenwert-Analyse"
+    text: "Wir prüfen anhand der Blacklist der Konferenz der unabhängigen Datenschutzaufsichtsbehörden (DSK), ob Ihre KI eine formale Folgenabschätzung auslöst."
+  - title: "2. Architektur-Mapping"
+    text: "Dokumentation aller Datenströme (Inputs, Embeddings, API-Calls) in einem rechtssicheren Flussdiagramm."
+  - title: "3. Mitigation & Maßnahmenplan"
+    text: "Konzeption technischer Schutzmaßnahmen (z.B. Pseudonymisierung, Zero-Data-Retention-Agreements), um das identifizierte Risiko auf ein rechtmäßiges Minimum zu senken."
+faq:
+  - question: "Ist der Einsatz von ChatGPT im Browser bereits ein hochriskantes Datenverarbeitungsverfahren?"
+    answer: "Sobald personenbezogene Kundendaten (Namen, Verträge, Gesundheitsdaten) verarbeitet werden, ja. Der Standard-Web-Client von OpenAI ist in diesem Fall kritisch zu bewerten, da Daten ins Training fließen."
+  - question: "Wer im Unternehmen muss die DSFA unterschreiben?"
+    answer: "Die Datenschutz-Folgenabschätzung wird in der Regel vom Verantwortlichen der Verarbeitungskomponente (Geschäftsführung) zusammen mit dem externen oder internen betrieblichen Datenschutzbeauftragten (DSB) freigegeben."
+sources:
+  - name: "DSK - Leitfaden zur Datenschutz-Folgenabschätzung"
+    url: "https://www.datenschutzkonferenz-online.de/"
+content_format: "checklist"
+community_context:
+  platform: "LinkedIn"
+  insight: "Die meisten IT-Leiter verwechseln die DSFA mit dem einfachen Verzeichnis von Verarbeitungstätigkeiten (VVT). Bei KI ist die DSFA deutlich tiefgehender."
+  sentiment: "kritisch"
 ---
 
 ## [A] Der harte Schmerz (Experience)

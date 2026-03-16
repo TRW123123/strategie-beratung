@@ -5,6 +5,33 @@ intent: "74% der Mittelständler setzen auf Digitalisierung, um Personalmangel a
 cluster: "probleme"
 description: "74% der Mittelständler setzen auf Digitalisierung, um Personalmangel auszugleichen. KI macht bestehende Mitarbeiter 30–40% produktiver."
 bafa_badge: false
+roi_data:
+  metric: "Produktivitätssteigerung p.P."
+  value: "+ 35 %"
+  source: "Bitkom: Digitalisierung KMU"
+savings_range:
+  min: 40
+  max: 120
+  unit: "hours_per_week"
+approach_steps:
+  - title: "1. Identifikation repetitiver Aufgaben"
+    text: "Wir analysieren im Rahmen eines Audits, welche Aufgabenanteile Ihrer Belegschaft als monotone 'Copy-Paste'-Arbeit qualifiziert werden können."
+  - title: "2. Konzeption digitaler Assistenten"
+    text: "Entwurf einer automatisierten RPA-Architektur (Robotic Process Automation), die diese Routineaufgaben als 'digitaler Kollege' im Hintergrund abarbeitet."
+  - title: "3. Fokussierung auf Wertschöpfung"
+    text: "Strategische Neuausrichtung Ihres Teams, damit die freigewordenen Kapazitäten in komplexe Problemlösungen und persönliche Kundenberatung fließen können."
+faq:
+  - question: "Ersetzt KI jetzt meine Mitarbeiter?"
+    answer: "Nein, im Gegenteil. In Zeiten des Fachkräftemangels entlastet die KI bestehende Mitarbeiter von zermürbender Routine, um Fluktuation zu stoppen und Wachstum bei gleicher Belegschaftsstärke zu ermöglichen."
+  - question: "Für welche Abteilungen lohnt sich ein 'digitaler Mitarbeiter' (RPA) am meisten?"
+    answer: "Besonders hohe Hebelwirkungen erzielen wir derzeit in der Buchhaltung (Belegvorerfassung), im Vertriebs-Follow-Up und in der klassischen Dispositions- und Auftragsabwicklung."
+sources:
+  - name: "Studie: Der demografische Wandel im Mittelstand (BMWi)"
+content_format: "checklist"
+community_context:
+  platform: "LinkedIn"
+  insight: "Die Lösung für mangelndes Personal ist nicht mehr Rekrutierungbudget, sondern systematische Entkopplung von Wachstum und Headcount."
+  sentiment: "neutral"
 ---
 
 ## [A] Der harte Schmerz (Experience)

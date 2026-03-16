@@ -5,6 +5,29 @@ intent: "Bestellungen, Auftragsbestätigungen, Lieferscheine und Rechnungen im E
 cluster: "loesungen"
 description: "Bestellungen, Auftragsbestätigungen, Lieferscheine und Rechnungen im Einkauf erfordern manuellen Abgleich – KI erledigt den Dreifach-Abgleich automatisch."
 bafa_badge: false
+roi_data:
+  metric: "Bearbeitungszeit pro Bestellvorgang"
+  value: "< 1 Min."
+  source: "Logistik Heute Benchmark"
+savings_range:
+  min: 40
+  max: 100
+  unit: "hours_per_week"
+approach_steps:
+  - title: "1. Analyse des Belegflusses"
+    text: "Wir kartografieren den Weg von der Bestellanforderung (BANF) über Lieferschein bis zur Rechnung (3-Way-Matching)."
+  - title: "2. OCR- & KI-Integration"
+    text: "Konzeptionierung eines intelligenten Posteingangs, der Artikelnummern, Mengen und Preise aus PDFs ohne manuelles Zutun extrahiert."
+  - title: "3. ERP-Bridging & Ampellogik"
+    text: "Architektur einer Workflow-Logik: Nur wenn Preis oder Menge abweichen (rote Ampel), wird ein menschlicher Einkäufer eingeschaltet. Der Rest läuft dunkel."
+faq:
+  - question: "Was bedeutet '3-Way-Matching'?"
+    answer: "Es ist der automatische Dreifach-Abgleich zwischen der ursprünglichen Bestellung (ERP), dem tatsächlichen Lieferschein und der finalen Eingangsrechnung. Stimmen alle drei überein, bucht die KI automatisch."
+  - question: "Kann die KI auch Teillieferungen verarbeiten?"
+    answer: "Ja, modern konzipierte Workflows vermerken den offenen Saldo der Bestellung im ERP und verbuchen den Lieferschein entsprechend partiell."
+sources:
+  - name: "BME e.V.: Digitalisierung im Einkauf"
+content_format: "checklist"
 ---
 
 ## [A] Der harte Schmerz (Experience)

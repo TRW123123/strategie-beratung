@@ -5,6 +5,27 @@ intent: "Das Postfach quillt über – Rechnungen, Anfragen und Bestellungen lan
 cluster: "probleme"
 description: "Das Postfach quillt über – Rechnungen, Anfragen und Bestellungen landen unsortiert im Eingang. KI kann Dokumente automatisch aus dem E-Mail-Postfach a..."
 bafa_badge: false
+roi_data:
+  metric: "Manuelle E-Mail Bearbeitung"
+  value: "- 80 %"
+  source: "McKinsey: The social economy"
+savings_range:
+  min: 20
+  max: 50
+  unit: "hours_per_week"
+approach_steps:
+  - title: "1. Analyse des E-Mail Inflows"
+    text: "Wir kartografieren die häufigsten E-Mail-Typen im zentralen Info-Postfach (z.B. Eingangsrechnungen, Support-Tickets, Lieferantenanfragen)."
+  - title: "2. Routing-Logik via LLM"
+    text: "Konzeptionierung einer Middleware (wie n8n oder Make), deren KI-Modul E-Mails liest, die Intention (Intent) der Nachricht versteht und vollautomatisch dem richtigen Sachbearbeiter zuweist."
+  - title: "3. Extraktion (Z.B. Anhänge)"
+    text: "Planung von Workflows, die PDF-Rechnungen im Anhang automatisch identifizieren, via OCR auslesen und ohne menschliches Weiterleiten direkt auf den Cloud-Speicher (bspw. SharePoint) legen."
+faq:
+  - question: "Was passiert, wenn die KI eine E-Mail falsch einsortiert?"
+    answer: "In der Aufbauphase definieren wir einen Zuverlässigkeits-Schwellenwert (Confidence Score). E-Mails, bei denen die KI unter 90% sicher ist, landen in einem 'Manuell prüfen'-Ordner – der Rest läuft dunkel."
+  - question: "Ist es DSGVO-konform, wenn KI E-Mails von Kunden mitliest?"
+    answer: "Ja, solange ein Auftragsverarbeitungsvertrag (AVV) mit dem Betreiber der verwendeten KI (z.B. OpenAI) geschlossen ist und die Nutzung über eine sichere API stattfindet (Training an Ihren Daten muss ausgeschlossen sein)."
+content_format: "checklist"
 ---
 
 ## [A] Der harte Schmerz (Experience)

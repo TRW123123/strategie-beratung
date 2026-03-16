@@ -5,6 +5,29 @@ intent: "Jede KI-Anwendung muss DSGVO-konform sein – Rechtsgrundlage, Datenspa
 cluster: "compliance"
 description: "Jede KI-Anwendung muss DSGVO-konform sein – Rechtsgrundlage, Datensparsamkeit, Transparenzpflichten und ggf. Datenschutz-Folgenabschätzung sind Pflicht."
 bafa_badge: false
+roi_data:
+  metric: "Compliance-Sicherheit"
+  value: "Zero-Trust"
+  source: "EU Data Privacy Framework"
+savings_range:
+  min: 5000
+  max: 25000
+  unit: "euro_per_year"
+approach_steps:
+  - title: "1. Technisches Datenschutz-Audit"
+    text: "Prüfung geplanter KI-Systeme (Copilot, API-Schnittstellen) auf Server-Standorte und Auftragsverarbeitungsverträge (AVV)."
+  - title: "2. Privacy-by-Design Architektur"
+    text: "Konzeptionierung von IT-Strukturen, die personenbezogene Daten lokal filtern (PII-Stripping), bevor sie an ein Sprachmodell übergeben werden."
+  - title: "3. Strategische Rollout-Begleitung"
+    text: "Erstellung von unternehmensinternen Nutzungspolicies und Berechtigungskonzepten für die Belegschaft."
+faq:
+  - question: "Sind amerikanische KI-Anbieter wie OpenAI oder Anthropic überhaupt DSGVO-konform nutzbar?"
+    answer: "Ja, aber nur unter bestimmten Voraussetzungen: Es muss ein AVV geschlossen werden, das EU-US Data Privacy Framework muss greifen, und in der Regel raten wir zur API-Nutzung, da hier ein 'Zero Data Retention'-Vertrag ein Training an Ihren Daten ausschließt."
+  - question: "Muss der Betriebsrat bei der KI-Einführung zustimmen?"
+    answer: "In Deutschland unterliegen Systeme, die zur Leistungskontrolle von Mitarbeitern fähig sind, der Mitbestimmungspflicht. Eine offene und frühe Einbindung des Betriebsrats ist daher strategisch unerlässlich."
+sources:
+  - name: "EU AI Act: Compliance Requirements for SMEs"
+content_format: "steps"
 ---
 
 ## [A] Der harte Schmerz (Experience)

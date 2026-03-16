@@ -1,10 +1,33 @@
 ---
-title: "Prozessberatung mit Zuschuss: So lassen Sie Ihre Automatisierungsstrategie fördern"
+title: "Betriebliche Prozessberatung: Fördermittel für die Automatisierung der Reisekostenabrechnung"
 keyword: "Prozessberatung mittelstand foerderung zuschuss"
-intent: "GF wollen wissen, ob ihre geplante Prozessoptimierung förderfähig ist. BAFA fördert konzeptionelle Einzelberatungen zu Digitalisierung und Organisation."
-cluster: "foerderung"
-description: "GF wollen wissen, ob ihre geplante Prozessoptimierung förderfähig ist. BAFA fördert konzeptionelle Einzelberatungen zu Digitalisierung und Organisation."
+intent: "Zettelwirtschaft bei Spesen und Reisekosten: Mitarbeiter sammeln Tankbelege im Geldbeutel, die Buchhaltung jagt Monaten später fehlenden Quittungen hinterher."
+cluster: "loesungen"
+description: "Zettelwirtschaft bei Spesen und Reisekosten: Mitarbeiter sammeln Tankbelege im Geldbeutel, die Buchhaltung jagt Monaten später fehlenden Quittungen hinterher."
 bafa_badge: true
+roi_data:
+  metric: "Bearbeitungszeit pro Spesenabrechnung"
+  value: "- 70 %"
+  source: "VDR Geschäftsreiseanalyse"
+savings_range:
+  min: 10
+  max: 30
+  unit: "hours_per_week"
+approach_steps:
+  - title: "1. Schwachstellenanalyse der FiBu"
+    text: "Wir dokumentieren den Ist-Prozess: Von der verlorenen Taxi-Quittung bis zur verspäteten Spesenauszahlung durch die Buchhaltung."
+  - title: "2. Mobile-First Konzeptionierung"
+    text: "Planung einer App-zentrierten Architektur, bei der Mitarbeiter Belege direkt im Zug per Smartphone-Kamera fotografieren, während die KI sofort Betrag und MwSt extrahiert."
+  - title: "3. Compliance & Freigabe-Workflow"
+    text: "Design automatisierter 'Vier-Augen-Prinzipien'. Ein Bewirtungsbeleg unter 50 Euro geht sofort in die DATEV-Schnittstelle, alles darüber erfordert erst einen digitalen Klick des Vorgesetzten."
+faq:
+  - question: "Wird die Beratung für solche Schnittstellen vom Staat gefördert?"
+    answer: "Ja, die strategische Prozessanalyse zur Digitalisierung solcher Papier-Workflows kann bis zu 80% über das BAFA ('Förderung unternehmerischen Know-hows') bezuschusst werden."
+  - question: "Erkennt die KI auch verknitterte Tankbelege?"
+    answer: "Moderne OCR-Engines sind auf thermogedruckte Kassenbons spezialisiert und gleichen fehlerhafte Buchstaben ('B' vs. '8') semantisch durch das Verständnis des Gesamtzusammenhangs aus."
+sources:
+  - name: "BAFA: Prozessberatung KMU"
+content_format: "checklist"
 ---
 
 Stellen Sie sich vor, GF wollen wissen, ob ihre geplante Prozessoptimierung förderfähig ist. BAFA fördert konzeptionelle Einzelberatungen zu Digitalisierung und Organisation.

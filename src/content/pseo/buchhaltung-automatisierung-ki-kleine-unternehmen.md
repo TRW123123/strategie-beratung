@@ -5,6 +5,29 @@ intent: "RPA-Bots können Routinetätigkeiten in Buchhaltung und Einkauf überne
 cluster: "loesungen"
 description: "RPA-Bots können Routinetätigkeiten in Buchhaltung und Einkauf übernehmen und Fehler drastisch reduzieren."
 bafa_badge: false
+roi_data:
+  metric: "Reduktion Erfassungsaufwand"
+  value: "- 80 %"
+  source: "Datev / Branchenmittel KMU"
+savings_range:
+  min: 15
+  max: 30
+  unit: "hours_per_week"
+approach_steps:
+  - title: "1. Belegfluss-Analyse"
+    text: "Wir kartografieren exakt, über welche digitalen und physischen Kanäle Rechnungen in Ihr Unternehmen fließen."
+  - title: "2. KI-Architektur Design"
+    text: "Konzeptionierung einer OCR-gestützten Pipeline, die Belegdaten semantisch erkennt und vorkontiert."
+  - title: "3. Dunkelbuchungs-Strategie"
+    text: "Wir definieren klare Workflows, wie Standardrechnungen ohne menschlichen Klick an Ihr Buchhaltungssystem übergeben werden."
+faq:
+  - question: "Was bedeutet Dunkelbuchung für kleine Unternehmen?"
+    answer: "Dunkelbuchung meint, dass wiederkehrende Rechnungen (z.B. Telefon, Leasing) von der KI erkannt, verbucht und direkt zur Zahlung freigegeben werden – komplett unsichtbar im Hintergrund."
+  - question: "Ist die Datenextraktion durch KI DSGVO-konform?"
+    answer: "Ja, wir konzipieren ausschließlich Architekturen, die europäische Server nutzen (wie z.B. Aleph Alpha oder GDPR-konforme Azure-Setups), um sensible Finanzdaten zu schützen."
+sources:
+  - name: "Studie: Automatisierung in der Finanzbuchhaltung"
+content_format: "checklist"
 ---
 
 ## [A] Der harte Schmerz (Experience)

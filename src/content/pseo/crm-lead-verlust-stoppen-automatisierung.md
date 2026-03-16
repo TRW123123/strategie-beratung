@@ -5,6 +5,33 @@ intent: "Leads verschwinden im CRM, weil Follow-ups vergessen werden. Fehlende T
 cluster: "probleme"
 description: "Leads verschwinden im CRM, weil Follow-ups vergessen werden. Fehlende Transparenz im Lead-Status kostet Umsatz."
 bafa_badge: false
+roi_data:
+  metric: "Gesteigerte Conversion Rate"
+  value: "+ 22 %"
+  source: "B2B Sales Benchmark"
+savings_range:
+  min: 15
+  max: 30
+  unit: "hours_per_week"
+approach_steps:
+  - title: "1. Pipeline-Audit"
+    text: "Wir analysieren Ihre Deal-Stages und identifizieren die typischen 'schwarzen Löcher', in denen Interessenten verschwinden."
+  - title: "2. Trigger-Konzeption"
+    text: "Definition klarer Wenn-Dann-Regeln (z.B. 'Angebot gesendet, aber 4 Tage keine Antwort -> Reminder-Aufgabe')."
+  - title: "3. Architektur der Follow-Up-Strecken"
+    text: "Planung unsichtbarer Automatisierungen, die den Vertriebler entlasten und zur richtigen Zeit per E-Mail oder CRM-Ping warnen."
+faq:
+  - question: "Ersetzt die Automatisierung den persönlichen Anruf?"
+    answer: "Keinesfalls. Sie sorgt lediglich dafür, dass der Vertriebler zum perfekten Zeitpunkt mit allen relevanten Informationen daran erinnert wird, zum Hörer zu greifen."
+  - question: "Wir haben ein völlig veraltetes CRM – rechnet sich das?"
+    answer: "Oft ja. Modernes Workflow-Design (etwa mit n8n) kann oftmals auch als 'Exoskelett' über bestehende Alt-Systeme gelegt werden, ohne diese sofort ersetzen zu müssen."
+sources:
+  - name: "Vertriebsprozesse im Mittelstand, Fraunhofer IAO"
+content_format: "checklist"
+community_context:
+  platform: "LinkedIn"
+  insight: "Wer Follow-ups manuell aus einer Excel-Liste plant, hat im B2B-Sales bereits gegen die strukturierte Konkurrenz verloren."
+  sentiment: "kritisch"
 ---
 
 ## [A] Der harte Schmerz (Experience)

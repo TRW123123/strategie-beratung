@@ -5,6 +5,30 @@ intent: "Nur beim BAFA registrierte Berater dürfen geförderte Beratungen durch
 cluster: "foerderung"
 description: "Nur beim BAFA registrierte Berater dürfen geförderte Beratungen durchführen – mit Qualitätssicherungssystem und mind. 50% Beratungsumsatz."
 bafa_badge: true
+roi_data:
+  metric: "Zuschuss zur Beratung"
+  value: "50 - 80 %"
+  source: "BAFA-Richtlinie 2026"
+savings_range:
+  min: 1750
+  max: 2800
+  unit: "euro_per_year"
+approach_steps:
+  - title: "1. Förderfähigkeits-Check"
+    text: "Wir prüfen unverbindlich, ob Ihr Unternehmen die strengen KMU-Kriterien der EU für eine Förderung erfüllt."
+  - title: "2. Erstgespräch & Antrag"
+    text: "Gemeinsam definieren wir den Prozess-Fokus (z.B. KI-Integration) und stellen den Online-Antrag beim BAFA."
+  - title: "3. Konzeption & Strategie"
+    text: "Nach der Bewilligung startet die hochbezuschusste strategische Architekturplanung für Ihr Unternehmen."
+faq:
+  - question: "Kann jeder Berater über das BAFA abrechnen?"
+    answer: "Nein, nur offiziell gelistete Berater mit nachgewiesener Expertise und einem zertifizierten Qualitätssicherungssystem dürfen BAFA-Beratungen durchführen."
+  - question: "Darf der Berater mir nach der Beratung Software verkaufen oder diese implementieren?"
+    answer: "Vorsicht! Das BAFA fördert strikt nur unabhängige strategische und konzeptionelle Beratung. Vertriebsprovisionen oder das direkte Weiterverkaufen von Software (Vendor Lock-in) sind strengstens untersagt und können zur Rückforderung der Gelder führen."
+sources:
+  - name: "BAFA: Förderung von Unternehmensberatungen"
+    url: "https://www.bafa.de"
+content_format: "checklist"
 ---
 
 ## [A] Der harte Schmerz (Experience)

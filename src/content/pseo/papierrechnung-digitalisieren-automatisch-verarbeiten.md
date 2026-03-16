@@ -1,10 +1,35 @@
 ---
-title: "Papierrechnungen digitalisieren: Vom Scan zur Buchung ohne Abtippen"
+title: "Posteingang automatisieren: Wie KI Papierdokumente liest, sortiert und ablegt"
 keyword: "Papierrechnung digitalisieren automatisch verarbeiten"
-intent: "Papierrechnungen werden eingescannt, manuell geprüft und abgetippt. Moderne KI-OCR erkennt Rechnungsnummern, Beträge und Positionen automatisch."
+intent: "Täglich kommt analoge Post und hunderte E-Mails mit PDF-Anhängen. Mitarbeiter scannen, tippen ab und verteilen Rechnungen im Haus."
 cluster: "probleme"
-description: "Papierrechnungen werden eingescannt, manuell geprüft und abgetippt. Moderne KI-OCR erkennt Rechnungsnummern, Beträge und Positionen automatisch."
+description: "Täglich kommt analoge Post und hunderte E-Mails mit PDF-Anhängen. Mitarbeiter scannen, tippen ab und verteilen Rechnungen im Haus."
 bafa_badge: false
+roi_data:
+  metric: "Liegezeiten im Posteingang"
+  value: "- 85 %"
+  source: "Bitkom: ECM-Studie"
+savings_range:
+  min: 20
+  max: 60
+  unit: "hours_per_week"
+approach_steps:
+  - title: "1. Scanner- & Post-Audit"
+    text: "Wir dokumentieren den Weg jedes Papierstücks von der Poststelle bis zum Archiv und identifizieren vermeidbare Medienbrüche."
+  - title: "2. KI-Klassifizierungs-Modell"
+    text: "Planung einer OCR-Pipeline, die eingehende Scans (PDF/TIF) sofort liest und selbstständig erkennt, ob es sich um eine Rechnung, einen Vertrag oder Werbung handelt."
+  - title: "3. Dunkelverarbeitungs-Routing"
+    text: "Konzeptionierung der Schnittstellen zu Ihrem ERP (z.B. SAP, DATEV). Die KI legt das Dokument basierend auf Kostenstelle und Betrag automatisch im richtigen digitalen Postkorb ab."
+faq:
+  - question: "Was ist mit den GoBD? Muss ich das Originalpapier behalten?"
+    answer: "Das BMF erlaubt das ersetzende Scannen. Wenn der Scan-Prozess via Verfahrensdokumentation rechtssicher strukturiert und vor nachträglicher Änderung geschützt ist, darf das Originalpapier (außer bei Notarverträgen/Zollbescheiden) vernichtet werden."
+  - question: "Kann die KI handschriftliche Notizen auf Briefen entziffern?"
+    answer: "Moderne Computer-Vision-Systeme weisen bei regulärer Handschrift Erkennungsraten von über 95% auf, was für die Zuordnung an den richtigen Sachbearbeiter meist völlig ausreicht."
+content_format: "checklist"
+community_context:
+  platform: "LinkedIn"
+  insight: "Die wahre Kostenspirale im Posteingang sind nicht die 2 Minuten tippen pro Brief, sondern die 'Liegezeit', bis das Dokument beim richtigen Freigeber auf dem Tisch liegt."
+  sentiment: "neutral"
 ---
 
 ## [A] Der harte Schmerz (Experience)

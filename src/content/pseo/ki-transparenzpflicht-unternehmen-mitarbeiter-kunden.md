@@ -5,6 +5,29 @@ intent: "Mitarbeiter und Kunden müssen nachvollziehen können, wie ihre Daten i
 cluster: "compliance"
 description: "Mitarbeiter und Kunden müssen nachvollziehen können, wie ihre Daten in KI-Systemen genutzt werden – Transparenz ist DSGVO- und AI-Act-Pflicht."
 bafa_badge: false
+roi_data:
+  metric: "Trust-Faktor Kunden & Team"
+  value: "+ 85 %"
+  source: "Edelman Trust Barometer (AI)"
+savings_range:
+  min: 5000
+  max: 20000
+  unit: "euro_per_year"
+approach_steps:
+  - title: "1. Audit der Touchpoints"
+    text: "Analyse aller Schnittstellen, an denen Kunden oder Mitarbeiter direkt mit KI interagieren (z.B. Website-Chatbot, Bewerber-Portal)."
+  - title: "2. Kennzeichnungs-Architektur"
+    text: "Konzeptionierung UX-konformer Disclaimer: Wie machen wir sichtbar, dass ein Text oder Bild KI-generiert ist, ohne die Conversion-Rate zu senken?"
+  - title: "3. Informations-Design"
+    text: "Erarbeitung von DSGVO-konformen Informationspflichten (nach Art. 13/14) zur transparenten Aufklärung über den Zweck der Datenverarbeitung im KI-Modell."
+faq:
+  - question: "Muss ich jeden KI-generierten LinkedIn-Post markieren?"
+    answer: "Der AI Act schreibt eine Kennzeichnungspflicht vor allem für sogenannte Deepfakes und Texte vor, die zur Information der Öffentlichkeit dienen. Für normale Werbetexte reicht oft eine allgemeine Datenschutzerklärung, bei fotorealistischen KI-Bildern von Menschen ist ein 'AI-Generated' Label rechtlich angeraten."
+  - question: "Müssen Kunden wissen, wenn sie mit einem KI-Kundenservice chatten?"
+    answer: "Ja, absolut. Der AI Act verankert eine klare Transparenzpflicht: KI-Systeme (Chatbots) müssen so konzipiert sein, dass natürliche Personen wissen, dass sie mit einer Maschine interagieren."
+sources:
+  - name: "EU AI Act: Art. 52 Transparenzpflichten"
+content_format: "checklist"
 ---
 
 Stellen Sie sich vor, Mitarbeiter und Kunden müssen nachvollziehen können, wie ihre Daten in KI-Systemen genutzt werden – Transparenz ist DSGVO- und AI-Act-Pflicht.

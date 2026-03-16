@@ -5,6 +5,33 @@ intent: "IT-Leiter fragen sich, ob Microsoft Copilot wirklich datenschutzkonform
 cluster: "compliance"
 description: "IT-Leiter fragen sich, ob Microsoft Copilot wirklich datenschutzkonform ist. Business-Lösungen arbeiten innerhalb der firmeneigenen Microsoft 365-Daten."
 bafa_badge: false
+roi_data:
+  metric: "Datensicherheit Core-IP"
+  value: "100 %"
+  source: "Microsoft Commercial Data Protection"
+savings_range:
+  min: 5000
+  max: 25000
+  unit: "euro_per_year"
+approach_steps:
+  - title: "1. Tenant-Sicherheitsprüfung"
+    text: "Überprüfung Ihrer aktuellen Microsoft 365 Tenant-Einstellungen auf Standort-Zonierung (EU-Boundaries) und Compliance-Richtlinien."
+  - title: "2. Berechtigungs-Architektur (Zero Trust)"
+    text: "Bevor Copilot aktiviert wird, müssen SharePoint- und OneDrive-Rechte strikt konsolidiert werden. Der Copilot findet sonst Dokumente, die für Mitarbeiter nicht bestimmt waren ('Oversharing'-Risiko)."
+  - title: "3. Policy-Erarbeitung"
+    text: "Erstellung von Betriebsvereinbarungen zum vertrauensvollen Umgang mit sensiblen Mitarbeiter- oder Kundendaten innerhalb der Microsoft-Umgebung."
+faq:
+  - question: "Trainiert Microsoft mit meinen Firmendaten seine KI?"
+    answer: "Nein, sofern Sie 'Copilot for Microsoft 365' (die Business-Lizenz) nutzen, greift die Commercial Data Protection. Ihre Prompts, Firmendaten und Antworten verlassen Ihren sicheren Tenant nicht und werden nicht zum Training der Basis-Modelle verwendet."
+  - question: "Ist der Copilot somit automatisch zu 100% DSGVO-konform?"
+    answer: "Die technische Infrastruktur ist konform. Ein hohes Datenschutz-Risiko entsteht jedoch oft intern durch historisch gewachsene, fehlerhafte Freigaben in SharePoint ('Oversharing'), auf die Copilot dann zugreift."
+sources:
+  - name: "Microsoft Trust Center: Copilot Privacy"
+content_format: "steps"
+community_context:
+  platform: "LinkedIn"
+  insight: "Das größte Risiko bei der Copilot-Aktivierung ist nicht Microsoft, sondern das eigene, jahrelang verwilderte SharePoint-Rechtesystem."
+  sentiment: "kritisch"
 ---
 
 Stellen Sie sich vor, IT-Leiter fragen sich, ob Microsoft Copilot wirklich datenschutzkonform ist. Business-Lösungen arbeiten innerhalb der firmeneigenen Microsoft 365-Daten.

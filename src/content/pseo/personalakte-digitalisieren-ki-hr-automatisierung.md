@@ -1,10 +1,33 @@
 ---
-title: "Digitale Personalakte mit KI: Schluss mit Aktenschränken und Sucherei in der HR"
+title: "Die digitale Personalakte mit KI: Ablage und Datenerfassung im HR automatisieren"
 keyword: "Personalakte digitalisieren ki hr automatisierung"
-intent: "HR-Abteilungen ertrinken in Papierakten – vom Arbeitsvertrag bis zur Krankmeldung. KI kann Dokumente automatisch klassifizieren und zuordnen."
+intent: "HR verbringt massiv Zeit mit dem Scannen, Einpflegen und Aktualisieren von Bewerberdaten, Arbeitsverträgen und AU-Bescheinigungen."
 cluster: "loesungen"
-description: "HR-Abteilungen ertrinken in Papierakten – vom Arbeitsvertrag bis zur Krankmeldung. KI kann Dokumente automatisch klassifizieren und zuordnen."
+description: "HR verbringt massiv Zeit mit dem Scannen, Einpflegen und Aktualisieren von Bewerberdaten, Arbeitsverträgen und AU-Bescheinigungen."
 bafa_badge: false
+roi_data:
+  metric: "Compliance-Sicherheit HR"
+  value: "Zero-Trust"
+  source: "EU AI Act - Anhang III"
+savings_range:
+  min: 10
+  max: 30
+  unit: "hours_per_week"
+approach_steps:
+  - title: "1. Prozess-Mapping des HR-Lifecycles"
+    text: "Wir kartografieren die Dokumentenflüsse: Vom initialen CV-Parsing im Recruiting bis zur automatischen Fristenprüfung bei Befristungen."
+  - title: "2. Risiko-Einstufung (AI Act)"
+    text: "Zwingende Evaluierung der geplanten Softwarelösungen gegen Anhang III der europäischen KI-Verordnung, da HR-Anwendungen oft als 'Hochrisikosysteme' eingestuft werden."
+  - title: "3. Anonymisierungs-Architektur"
+    text: "Planung von PII-Filtern (Personal Identifiable Information), die sensible Mitarbeiterdaten (Gesundheit, Herkunft) schwärzen, bevor generische Sprachmodelle sie zur Zusammenfassung verarbeiten dürfen."
+faq:
+  - question: "Darf eine KI Bewerbungsunterlagen sortieren?"
+    answer: "Das reine maschinelle Auslesen (CV-Parsing) in Formularfelder ist unproblematisch. Ein maschinelles Scoring (Aussortieren von Kandidaten) fällt jedoch unter Art. 22 DSGVO und ist ohne 'Human-in-the-Loop' strengstens verboten."
+  - question: "Können wir Krankschreibungen (AUs) vollautomatisch ablegen lassen?"
+    answer: "Ja. Spezielle inländische (EU-basierte) OCR-Systeme erkennen den Dokumenttyp 'AU', extrahieren den Datumsbereich und legen das Dokument ohne menschliches Zutun revisionssicher in der digitalen Personalakte des Mitarbeiters ab."
+sources:
+  - name: "Datenschutzkonferenz (DSK) KI & HR"
+content_format: "checklist"
 ---
 
 ## [A] Der harte Schmerz (Experience)
