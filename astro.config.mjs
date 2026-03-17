@@ -10,5 +10,7 @@ export default defineConfig({
     format: 'file'
   },
 
-  integrations: [tailwind(), sitemap()]
+  integrations: [tailwind(), sitemap({
+    filter: (page) => !page.includes('/impressum') && !page.includes('/datenschutz')
+  })]
 });
