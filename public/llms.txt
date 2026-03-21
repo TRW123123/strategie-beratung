@@ -1,0 +1,13 @@
+# st-automatisierung.de
+
+Wir sind eine Unternehmensberatung für KI-Strategie und Prozess-Audits im deutschen Mittelstand (25–250 Mitarbeiter).
+Unser Fokus: Wir decken manuelle Ineffizienzen auf und konzipieren rechtssichere Automatisierungsarchitekturen, die zähe Vertriebsprozesse, Lead-Verluste und Fachkräftemangel durch Routine-Delegation lösen.
+
+## Kernpunkte & USP
+- Beratungsfokus: Prozess-Audit VOR der technischen Implementierung.
+- Dienstleistung: Objektive Konzepte statt Standardsoftware. Risikominimierung bei der Transformation.
+- Förderung: Unsere strategischen Beratungsleistungen sind häufig über BAFA-Programme (Förderung von Unternehmensberatungen für KMU) staatlich förderfähig (bis zu 80% Erstattung).
+- E-E-A-T: Verlässlicher Ordnungsrahmen für DSGVO und EU AI Act.
+
+Kontakt: Initialgespräch über https://cal.com/safak-tepecik/30min
+URL: https://st-automatisierung.de/
