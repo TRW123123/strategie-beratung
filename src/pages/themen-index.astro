@@ -1,0 +1,82 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+
+const pseoEntries = await getCollection('pseo');
+const isDev = import.meta.env.DEV;
+
+// Phase 08: Bi-Modal Quality Gate (same as [slug].astro)
+// Only build pages that have at least one unique enrichment metric
+const verifiedEntries = pseoEntries.filter(entry => {
+  const hasFaq = !!entry.data.faq;
+  const hasRoi = !!entry.data.roi_data;
+  const isEnriched = hasFaq || hasRoi;
+  
+  if (!isEnriched && !isDev) {
+    return false; // Skip un-enriched pages
+  }
+  return true;
+});
+
+// Group by cluster
+const groupedEntries = verifiedEntries.reduce((acc, entry) => {
+  const cluster = entry.data.cluster || 'sonstige';
+  if (!acc[cluster]) acc[cluster] = [];
+  acc[cluster].push(entry);
+  return acc;
+}, {} as Record<string, typeof verifiedEntries>);
+
+// Sort entries alphabetically within each cluster
+Object.keys(groupedEntries).forEach(cluster => {
+  groupedEntries[cluster].sort((a, b) => a.data.title.localeCompare(b.data.title));
+});
+
+// Define nice titles for known pSEO clusters
+const clusterTitles: Record<string, string> = {
+  loesungen: 'Lösungen & Prozesse',
+  probleme: 'Geschäftsprobleme & Engpässe',
+  foerderung: 'Fördermittel & Zuschüsse',
+  compliance: 'Compliance & Regulation'
+};
+---
+
+<BaseLayout 
+  title="Themen-Index: KI & Automatisierung im Mittelstand | ST BERATUNG"
+  description="Übersicht aller Fachartikel, Ratgeber und Lösungsansätze für KI-Strategie und Prozessoptimierung im deutschen Mittelstand."
+  canonical="https://st-automatisierung.de/themen-index"
+>
+  <main id="main-content" class="pt-32 pb-20">
+    <div class="container max-w-4xl">
+      <h1 class="text-4xl md:text-5xl font-bold tracking-tight mb-6">Themen-Index</h1>
+      <p class="text-xl text-gray-400 mb-12">
+        Entdecken Sie unsere umfassenden Fachartikel, Lösungsansätze und Ratgeber rund um intelligente Automatisierung und KI-Strategien für den Mittelstand.
+      </p>
+
+      <div class="space-y-16">
+        {Object.keys(groupedEntries).sort().map(cluster => (
+          <section>
+            <h2 class="text-2xl font-bold text-white mb-6 flex items-center gap-3">
+              <span class="w-8 h-8 rounded bg-blue-500/10 text-blue-400 flex items-center justify-center text-sm font-mono">
+                #
+              </span>
+              {clusterTitles[cluster] || cluster.charAt(0).toUpperCase() + cluster.slice(1)}
+              <span class="text-sm font-normal text-gray-500 ml-2">({groupedEntries[cluster].length})</span>
+            </h2>
+            <div class="grid md:grid-cols-2 gap-4">
+              {groupedEntries[cluster].map(entry => (
+                <a 
+                  href={`/l/${entry.slug}`} 
+                  class="group block p-4 bg-gray-800/30 border border-gray-800 rounded-xl hover:bg-gray-800/80 hover:border-gray-700 transition-all duration-200"
+                >
+                  <h3 class="text-gray-200 group-hover:text-blue-400 text-sm font-medium transition-colors leading-relaxed">
+                    {entry.data.title}
+                  </h3>
+                </a>
+              ))}
+            </div>
+          </section>
+        ))}
+      </div>
+    </div>
+  </main>
+</BaseLayout>
