@@ -28,11 +28,11 @@ faq:
 content_format: "checklist"
 ---
 
-## [A] Der harte Schmerz (Experience)
+## Das Problem im Alltag
 
 Hochbezahlte Vertriebsmitarbeiter telefonieren sich stundenlang durch ungefilterte Kontaktlisten von Messen oder Website-Formularen. Sie stoßen auf endlose Mailboxen und qualifizieren Kontakte, die weder das nötige Budget noch einen akuten Bedarf haben. Die Abschlussquote stagniert, die Frustration im Sales-Team steigt, während wirklich heiße Leads in der Masse abkühlen.
 
-## [B] Der strategische Lösungsansatz (Expertise)
+## Unser strategischer Lösungsansatz
 
 ST Beratung baut eine KI-gestützte Lead-Firewall auf. 
 
@@ -40,14 +40,14 @@ ST Beratung baut eine KI-gestützte Lead-Firewall auf.
 - **Schritt 2:** Integration eines KI-Scoring-Modells, das Web-Interaktionen, Firmographics und E-Mail-Verhalten quantitativ auswertet. 
 - **Schritt 3:** Automatisches Routing – ausschließlich Leads mit einem Score über dem Schwellenwert landen direkt im Kalender des Closers.
 
-## [C] Harte Zahlen & ROI (Authoritativeness)
+## Zahlen, Daten & Einsparpotenzial
 
 Vertriebsproduktivität: Steigerung um 30–50%. Volumen vertriebsbereiter Leads: Erhöhung um 50%. Kundenakquisekosten (CAC): Senkung um bis zu 60%. Conversion-Rate (Abschlussquote): Steigerung um 30%. Die automatisierte Lead-Bewertung steigert die Produktivität der Mitarbeiter messbar um 30 bis 50 Prozent.
 
-## [D] Sicherheit & Compliance (Trustworthiness)
+## Datenschutz & Compliance
 
 Das Lead-Scoring operiert strikt nach den engen DSGVO-Vorgaben, nutzt ausschließlich legitime First-Party-Daten und verlangt Double-Opt-In-Zustimmungen ohne verstecktes, illegales Profiling.
 
-## [E] Das Systemarchitekt-Fazit
+## Fazit
 
 Vertriebszeit ist die teuerste und wertvollste Ressource im Unternehmen. Kaltakquise ohne ein datengetriebenes Scoring-Fundament ist kein Fleiß, sondern betriebswirtschaftliche Inkompetenz.

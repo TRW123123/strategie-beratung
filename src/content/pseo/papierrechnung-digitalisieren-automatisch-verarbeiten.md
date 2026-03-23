@@ -32,11 +32,11 @@ community_context:
   sentiment: "neutral"
 ---
 
-## [A] Der harte Schmerz (Experience)
+## Das Problem im Alltag
 
 Der Postbote bringt weiterhin dicke Umschläge mit Lieferantenrechnungen. Die Buchhaltung stempelt das Eingangsdatum, scannt die Papiere ein und tippt IBANs und Rechnungsnummern mühevoll ab. Dieser Medienbruch ist extrem fehleranfällig, physische Belege gehen regelmäßig auf dem unaufgeräumten Schreibtisch des Geschäftsführers verloren, und der Steuerberater verlangt teure Nacharbeit.
 
-## [B] Der strategische Lösungsansatz (Expertise)
+## Unser strategischer Lösungsansatz
 
 ST Beratung vernichtet den Papierstau im Finanzwesen. 
 
@@ -44,14 +44,14 @@ ST Beratung vernichtet den Papierstau im Finanzwesen.
 - **Schritt 2:** Einsatz von Scan-Applikationen in Kombination mit OCR-Dunkelverarbeitung für die Restpost. 
 - **Schritt 3:** Automatischer Abgleich der extrahierten Daten mit Bestellnummern und direkte ERP-Übergabe für den anstehenden Zahllauf.
 
-## [C] Harte Zahlen & ROI (Authoritativeness)
+## Zahlen, Daten & Einsparpotenzial
 
 Mit der gesetzlichen Einführung der E-Rechnungspflicht ab 2025 und der vollen Empfangspflicht wird Papier im B2B-Sektor rechtlich obsolet. Wer Papierrechnungen weiterhin manuell prozessiert, zahlt interne Prozesskosten von 10 bis 20 Euro pro Beleg – die digitale Dunkelverarbeitung drückt diese Belastung auf einen marginalen Bruchteil.
 
-## [D] Sicherheit & Compliance (Trustworthiness)
+## Datenschutz & Compliance
 
 Das System archiviert die digitalisierten Belege unmittelbar und GoBD-konform und sichert sie in europäischen Rechenzentren physisch und digital vor Manipulation.
 
-## [E] Das Systemarchitekt-Fazit
+## Fazit
 
 Papier im B2B-Geschäft ist Totholz. Wer es in der Buchhaltung weiterhin duldet, verlangsamt nicht nur die eigene Liquiditätsplanung, sondern ignoriert schlichtweg die aktuelle Steuergesetzgebung.

@@ -30,10 +30,10 @@ sources:
 content_format: "checklist"
 ---
 
-## [A] Der harte Schmerz (Experience)
+## Das Problem im Alltag
 
 Aufwändig kalkulierte Angebote werden verschickt – und schlichtweg vergessen. Der Vertriebsmitarbeiter verpasst das kritische Follow-Up-Fenster nach drei Tagen, weil er bereits wieder mit neuen Kundenanfragen beschäftigt ist. Der Kunde fühlt sich nicht wertgeschätzt, der Kontakt kühlt ab, und er unterschreibt lautlos beim Konkurrenten.
-## [B] Der strategische Lösungsansatz (Expertise)
+## Unser strategischer Lösungsansatz
 
 ST Beratung installiert den unsichtbaren Vertriebsassistenten. 
 
@@ -41,14 +41,14 @@ ST Beratung installiert den unsichtbaren Vertriebsassistenten.
 - **Schritt 2:** Konfiguration automatisierter Trigger (z.B. 'Angebot seit 72 Stunden ungelesen'). 
 - **Schritt 3:** Automatisierter Versand von personalisierten Nachfass-E-Mails an den Kunden sowie Push-Remindern an das Sales-Team zum Griffhörer.
 
-## [C] Harte Zahlen & ROI (Authoritativeness)
+## Zahlen, Daten & Einsparpotenzial
 
 Unternehmen, die automatisierte Kontaktstrecken im Marketing und Vertrieb nutzen, steigern ihre Conversion-Raten um bis zu 30 Prozent. Gleichzeitig halbieren standardisierte CRM-Routinen die Dauer des Vertriebszyklus.
 
-## [D] Sicherheit & Compliance (Trustworthiness)
+## Datenschutz & Compliance
 
 Automatisierte B2B-Kommunikation erfolgt streng nach den Vorgaben des UWG und der DSGVO, verknüpft mit sauberen Werbeeinwilligungen durch ein integriertes Consent Management.
 
-## [E] Das Systemarchitekt-Fazit
+## Fazit
 
 Hoffnung ist keine tragfähige Vertriebsstrategie. Wer die Follow-Ups bei Angeboten dem Zufall überlässt, lässt den fertigen Umsatz buchstäblich auf der Straße liegen.

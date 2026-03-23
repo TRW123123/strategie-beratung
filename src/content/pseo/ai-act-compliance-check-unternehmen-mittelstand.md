@@ -28,11 +28,11 @@ sources:
   - name: "BMAS – Leitfaden zur KI-Verordnung"
 ---
 
-## [A] Der harte Schmerz (Experience)
+## Die regulatorische Herausforderung
 
 Unternehmen setzen KI-Tools ein – von ChatGPT bis zu automatisierten Schadenserkennungs-Algorithmen – ohne zu wissen, in welche Risikokategorie ihre Anwendungen fallen. Der EU AI Act kommt, und die Frage ist nicht ob, sondern wann ein Audit-Versäumnis zum kostspieligen Compliance-Desaster wird.
 
-## [B] Der strategische Lösungsansatz (Expertise)
+## Unser Beratungsansatz für AI Act Compliance-Check
 
 ST Beratung führt eine vollständige KI-Risikoklassifizierung durch.
 
@@ -40,14 +40,14 @@ ST Beratung führt eine vollständige KI-Risikoklassifizierung durch.
 - **Schritt 2:** Risikoklassifizierung nach den vier Stufen des AI Acts (minimal, limitiert, hoch, unakzeptabel).
 - **Schritt 3:** Erstellung eines konkreten Compliance-Fahrplans mit technischen und organisatorischen Maßnahmen.
 
-## [C] Harte Zahlen & ROI (Authoritativeness)
+## Zahlen & Fakten
 
 Bußgelder bei Verstößen gegen den AI Act reichen bis zu 35 Mio. € oder 7% des globalen Jahresumsatzes. Die Kosten für einen präventiven Compliance-Check liegen typischerweise bei wenigen Tausend Euro – ein Bruchteil des Risikos bei Nichthandeln.
 
-## [D] Sicherheit & Compliance (Trustworthiness)
+## Datenschutz & rechtliche Absicherung
 
 Unsere Systematik basiert auf den offiziellen Leitfäden des BMAS und der EU-Kommission. Die Ergebnisse sind dokumentationsfest und können als Nachweis gegenüber Aufsichtsbehörden vorgelegt werden.
 
-## [E] Das Systemarchitekt-Fazit
+## Fazit
 
 KI ohne Compliance-Check einzusetzen, ist wie ein Fahrzeug ohne TÜV auf die Straße zu stellen. Der AI Act ist kein fernes Risiko – er ist geltendes Recht. Wer jetzt nicht prüft, zahlt später.

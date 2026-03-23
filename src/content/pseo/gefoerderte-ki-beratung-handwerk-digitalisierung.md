@@ -28,11 +28,11 @@ faq:
 content_format: "checklist"
 ---
 
-## [A] Der harte Schmerz (Experience)
+## Die Förderlücke: Warum viele Mittelständler Geld verschenken
 
 Ein Meisterbetrieb im Handwerk kämpft mit chronischem Stundennachverlust, Materialverschwendung und schrecklich unprofessionellen Angeboten auf abgenutzten Briefbögen, die in Excel zusammengeklickt werden. KI fühlt sich an wie Raumfahrttechnologie – scheinbar unerreichbar und unbezahlbar.
 
-## [B] Der strategische Lösungsansatz (Expertise)
+## Unser Beratungsansatz für Geförderte KI-Beratung fürs Handwerk
 
 ST Beratung macht KI für das Handwerk greifbar und zugänglich. 
 
@@ -40,14 +40,14 @@ ST Beratung macht KI für das Handwerk greifbar und zugänglich.
 - **Schritt 2:** Konfiguration von sofort nutzenbringenden KI-Tools (z.B. Sprachsteuerung für Baustellenfotos, Diktier-Apps für die Aufmaßerstellung, Chatbots für Standardanfragen). 
 - **Schritt 3:** Abruf der BAFA-Förderung, damit der Meisterbetrieb nur einen Bruchteil der Beratungskosten selbst trägt.
 
-## [C] Harte Zahlen & ROI (Authoritativeness)
+## Fördersummen & wirtschaftlicher Nutzen
 
 BAFA-Förderrate neue Bundesländer: bis zu 80 Prozent, max. 2.800 Euro. Handwerk Digital (Bayern/BaWü): zusätzliche Landes-Digitalboni bis zu 7.500 Euro für Software. Go-Digital: bis zu 16.500 Euro für digitale Markterschließung und IT-Sicherheit.
 
-## [D] Sicherheit & Compliance (Trustworthiness)
+## Rechtssicherheit & Antragskonformität
 
 Alle eingesetzten Tools müssen handwerkstaugliche Datenschutzstandards erfüllen; sensible Auftrags- und Kundendaten verbleiben kompromisslos in der Hand des Meisters, nicht bei einem Drittanbieter.
 
-## [E] Das Systemarchitekt-Fazit
+## Fazit
 
 KI im Handwerk ist kein Luxus, sondern die Antwort auf den Fachkräftemangel. Die staatliche Förderung drückt die Einstiegshürde auf ein paar hundert Euro Eigenanteil – es gibt keine rationale Entschuldigung mehr.

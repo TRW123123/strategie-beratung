@@ -30,11 +30,11 @@ sources:
 content_format: "checklist"
 ---
 
-## [A] Der harte Schmerz (Experience)
+## Warum Buchhaltung automatisieren jetzt entscheidend ist
 
 Am Monatsende bricht in der Verwaltung regelmäßig das Chaos aus. Belege fehlen, Spesenzettel sind unleserlich, und der Steuerberater mahnt den Datenexport an. Die Geschäftsführung erhält die betriebswirtschaftliche Auswertung (BWA) für den Vormonat erst am 20. des Folgemonats. In der Konsequenz werden strategische Investitionsentscheidungen im absoluten Blindflug getroffen, weil die Finanzdaten stets vier Wochen veraltet sind.
 
-## [B] Der strategische Lösungsansatz (Expertise)
+## So lösen wir Buchhaltung automatisieren strategisch
 
 ST Beratung etabliert eine autonome Vorkontierung und Datensammlung. 
 
@@ -42,14 +42,14 @@ ST Beratung etabliert eine autonome Vorkontierung und Datensammlung.
 - **Schritt 2:** Einsatz einer KI-gestützten Datenextraktion, die Kreditor, Bruttobetrag und Steuersatz ausliest. 
 - **Schritt 3:** Erzeugung regelbasierter Kontierungsvorschläge, die per DATEV-Schnittstelle ohne manuellen Aufwand direkt an die Buchhaltung übergeben werden.
 
-## [C] Harte Zahlen & ROI (Authoritativeness)
+## ROI & Einsparpotenzial
 
 84 Prozent der kleinen Unternehmen haben die E-Rechnungspflicht verschlafen. Die manuelle Bearbeitung und Suche von Belegen kostet bis zu 20 Euro pro Beleg – eine automatisierte Lösung drückt die Bearbeitungskosten auf unter 4 Euro. Gleichzeitig verkürzt sich die Durchlaufzeit von Auslagenerstattungen von mehreren Wochen auf wenige Tage.
 
-## [D] Sicherheit & Compliance (Trustworthiness)
+## Datenschutz & Compliance
 
 Die revisionssichere Ablage erfolgt zertifiziert nach den Richtlinien der GoBD, während strikte Rollenkonzepte den unerlaubten Datenzugriff auf Managementbelege blockieren.
 
-## [E] Das Systemarchitekt-Fazit
+## Fazit
 
 Buchhaltung ist die Betrachtung der Historie, Automatisierung ist die Steuerung der Zukunft. Wer seine Finanzprozesse nicht dunkelverarbeitet, bezahlt andauernde Strafzölle in Form von Personalzeit und Mahngebühren.

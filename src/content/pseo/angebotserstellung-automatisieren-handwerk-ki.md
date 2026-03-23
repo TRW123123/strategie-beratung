@@ -30,11 +30,11 @@ sources:
 content_format: "prose"
 ---
 
-## [A] Der harte Schmerz (Experience)
+## Warum Angebotserstellung im Handwerk automatisieren jetzt entscheidend ist
 
 Der Inhaber eines Handwerksbetriebs sitzt nach Feierabend bis 22 Uhr im Büro, um komplexe Materiallisten aus verschiedenen Excel-Dateien zusammenzusuchen und individuelle Leistungsverzeichnisse zu schreiben. Der potenzielle Kunde wartet derweil vier Tage auf den Preis – und unterschreibt letztlich beim agileren Konkurrenten, der ein strukturiertes Angebot 48 Stunden früher per Knopfdruck geliefert hat. Fachliches Können auf der Baustelle verliert gegen administrative Langsamkeit im Büro.
 
-## [B] Der strategische Lösungsansatz (Expertise)
+## So lösen wir Angebotserstellung im Handwerk automatisieren strategisch
 
 ST Beratung digitalisiert die gesamte Kalkulationslogik des Betriebs. 
 
@@ -42,7 +42,7 @@ ST Beratung digitalisiert die gesamte Kalkulationslogik des Betriebs.
 - **Schritt 2:** Anbindung einer intelligenten Logikschicht (API) an das bestehende CRM- oder ERP-System. 
 - **Schritt 3:** Automatisierte Generierung fertiger Leistungsverzeichnisse und Dokumente auf Basis weniger Eingabeparameter des Mitarbeiters.
 
-## [C] Harte Zahlen & ROI (Authoritativeness)
+## ROI & Einsparpotenzial
 
 Ein systemgestützter Prozess erlaubt es demselben Team, deutlich mehr Leads in Umsatz umzuwandeln.
 
@@ -50,10 +50,10 @@ Ein systemgestützter Prozess erlaubt es demselben Team, deutlich mehr Leads in 
 - **Response-Zeit auf Kundenanfrage:** von 48 Stunden auf 4 Stunden – 92% schneller. 
 - **Quote Angebot zu Auftrag:** von 35% auf 58% – 66% höhere Abschlussrate. 
 
-## [D] Sicherheit & Compliance (Trustworthiness)
+## Datenschutz & Compliance
 
 Kundendaten sowie betriebsinterne Kalkulationsmargen werden durch lokale System-Leitplanken (Guardrails) gesichert und fließen zu keinem Zeitpunkt in das öffentliche Training von US-Sprachmodellen ein.
 
-## [E] Das Systemarchitekt-Fazit
+## Fazit
 
 Reaktionszeit schlägt den Preis. Eine systemgestützte Angebotskalkulation macht den Inhaber wieder zum strategischen Unternehmer, anstatt ihn als abendlichen Tipp-Sklaven seiner eigenen Firma zu missbrauchen.

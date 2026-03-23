@@ -30,11 +30,11 @@ sources:
 content_format: "checklist"
 ---
 
-## [A] Der harte Schmerz (Experience)
+## Warum KI-Chatbot im Kundenservice jetzt entscheidend ist
 
 Das Service-Team ertrinkt täglich in redundanten Tickets wie 'Wo ist mein Paket?', 'Wie lautet meine Kundennummer?' oder 'Wann haben Sie geöffnet?'. Echte Kunden mit komplexen Problemen hängen ewig in der Warteschleife auf, die Kundenzufriedenheit sinkt rapide, während die Service-Mitarbeiter bei der ständigen Beantwortung derselben Fragen mental abstumpfen.
 
-## [B] Der strategische Lösungsansatz (Expertise)
+## So lösen wir KI-Chatbot im Kundenservice strategisch
 
 ST Beratung implementiert ein KI-gestütztes externes Firmengehirn im First-Level-Support. 
 
@@ -42,14 +42,14 @@ ST Beratung implementiert ein KI-gestütztes externes Firmengehirn im First-Leve
 - **Schritt 2:** Aufbau eines RAG-Systems (Retrieval-Augmented Generation), das präzise und ausschließlich auf Basis verifizierter Unternehmensdaten antwortet. 
 - **Schritt 3:** Einrichtung eines nahtlosen Human-Handovers, der die Konversation bei komplexen Eskalationen sofort an einen echten Mitarbeiter übergibt.
 
-## [C] Harte Zahlen & ROI (Authoritativeness)
+## ROI & Einsparpotenzial
 
 Menschlicher Support (Call Center): 5–10 USD pro Interaktion. Automatisierte KI-Session (Chatbot): ca. 0,50 USD. Direkte Kostenreduktion von über 90 Prozent für First-Level-Anfragen.
 
-## [D] Sicherheit & Compliance (Trustworthiness)
+## Datenschutz & Compliance
 
 Der Chatbot agiert konform zum EU AI Act, deklariert sich gegenüber dem Nutzer transparent als KI-System und speichert Kundeneingaben niemals für das Training öffentlicher Sprachmodelle.
 
-## [E] Das Systemarchitekt-Fazit
+## Fazit
 
 Wiederkehrende Standardfragen von teuren Menschen beantworten zu lassen, ist respektlos gegenüber der Intelligenz der Mitarbeiter. Hohe KI-Deflection-Raten schützen das Team vor Burnout und das Unternehmen vor dem schleichenden Margenverfall.

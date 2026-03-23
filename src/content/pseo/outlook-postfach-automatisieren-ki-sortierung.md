@@ -28,11 +28,11 @@ faq:
 content_format: "checklist"
 ---
 
-## [A] Der harte Schmerz (Experience)
+## Das Problem im Alltag
 
 Die zentrale info@ E-Mail-Adresse des Unternehmens quillt förmlich über. Bewerbungen, Lieferantenrechnungen, Spam und eskalierende VIP-Kundenanfragen vermischen sich in einem chaotischen Posteingang. Vertriebs- oder Assistenzmitarbeiter lesen jede E-Mail manuell, leiten sie händisch an die Zuständigen weiter und verbringen Stunden mit der unproduktiven Tätigkeit des reinen E-Mail-Sortierens.
 
-## [B] Der strategische Lösungsansatz (Expertise)
+## Unser strategischer Lösungsansatz
 
 ST Beratung etabliert einen intelligenten KI-Türsteher für das Postfach. 
 
@@ -40,14 +40,14 @@ ST Beratung etabliert einen intelligenten KI-Türsteher für das Postfach.
 - **Schritt 2:** Systemarchitektur eines KI-Klassifikators, der Intent (Absicht) und Entitäten (Rechnungsnummer, Name) in Bruchteilen von Sekunden aus Mails ausliest. 
 - **Schritt 3:** Automatisches Routing der Nachrichten in ERP-, CRM- oder HR-Systeme inklusive der Vorfertigung passender Antwortentwürfe.
 
-## [C] Harte Zahlen & ROI (Authoritativeness)
+## Zahlen, Daten & Einsparpotenzial
 
 Berufstätige in Deutschland erhalten im Schnitt 53 berufliche E-Mails pro Tag. Bei Führungskräften liegt die Belastung noch höher: Etwa 14 Prozent erhalten täglich 100 oder mehr berufliche E-Mails. Die automatisierte Vorab-Kategorisierung erspart jedem Mitarbeiter täglich bis zu 45 Minuten Lese-, Filter- und Weiterleitungszeit.
 
-## [D] Sicherheit & Compliance (Trustworthiness)
+## Datenschutz & Compliance
 
 Die KI-Klassifizierung läuft DSGVO-konform ohne das Mitlesen externer Drittanbieter; sensible Bewerberdaten aus E-Mails werden sofort verschlüsselt und sicher in das HR-System geroutet.
 
-## [E] Das Systemarchitekt-Fazit
+## Fazit
 
 Ein manuell durch Menschen verwaltetes Info-Postfach ist ein schwarzes Produktivitätsloch. KI übernimmt die Sortierarbeit, damit Ihre Teams sich auf die Lösung der eigentlichen Probleme konzentrieren können.
