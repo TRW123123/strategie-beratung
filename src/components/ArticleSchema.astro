@@ -43,6 +43,9 @@ const articleSchema = {
         "name": "Savaş Topçu",
         "jobTitle": "KI-Systemarchitekt & Unternehmensberater",
         "url": "https://st-automatisierung.de",
+        "sameAs": [
+            "https://www.linkedin.com/in/savas-tepecik/"
+        ],
         "worksFor": {
             "@type": "Organization",
             "name": "ST BERATUNG",
@@ -61,6 +64,10 @@ const articleSchema = {
     "mainEntityOfPage": {
         "@type": "WebPage",
         "@id": canonicalUrl
+    },
+    "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": ["[itemprop='headline']", "[itemprop='description']"]
     }
 };
 

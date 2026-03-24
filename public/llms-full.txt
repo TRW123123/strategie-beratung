@@ -1,0 +1,206 @@
+# ST BERATUNG – Vollständiges Inhaltsverzeichnis
+
+> Unternehmensberatung für KI-Strategie und Prozess-Audits im deutschen Mittelstand. Fokus: Manuelle Ineffizienzen aufdecken, rechtssichere Automatisierungsarchitekturen konzipieren, BAFA-Förderung sichern.
+
+## Hauptseiten
+
+### Startseite
+URL: https://st-automatisierung.de/
+Strategische Unternehmensberatung für Prozessoptimierung und Automatisierung im Mittelstand.
+
+### Lösungen & Branchen
+URL: https://st-automatisierung.de/loesungen-branchen
+Branchenspezifische KI-Automatisierungslösungen für Handwerk, Produktion, Vertrieb, Finanzen und HR.
+
+### KI-Analyse
+URL: https://st-automatisierung.de/ki-im-unternehmen
+Unsere Analyse-Methodik: Systematisches Prozess-Audit mit KI-Potenzial-Mapping und ROI-Kalkulation.
+
+### KI-Strategie
+URL: https://st-automatisierung.de/ki-einfuehrung-unternehmen
+Der strategische Dreischritt zur KI-Einführung: Diagnose → Architektur → Pilotierung.
+
+### Themen-Index
+URL: https://st-automatisierung.de/themen-index
+Alle Fachbeiträge, gruppiert nach Themenclustern.
+
+## KI-Automatisierungslösungen
+
+### Angebotserstellung im Handwerk automatisieren: KI erstellt Ihr Angebot in 8 statt 50 Minuten
+URL: https://st-automatisierung.de/l/angebotserstellung-automatisieren-handwerk-ki
+Handwerksbetriebe verbringen 45–60 Min. pro Angebot mit manuellem Zusammenkopieren aus CRM, Excel und Word.
+
+### Auftragsbearbeitung automatisieren: Vom Bestelleingang zur Rechnung ohne Medienbruch
+URL: https://st-automatisierung.de/l/auftragsbearbeitung-automatisieren-erp-mittelstand
+Aufträge aus Webshop, Telefon und E-Mail werden manuell ins ERP übertragen – Fehler, Verzögerungen, Doppelarbeit.
+
+### Buchhaltung automatisieren: Wie KI Ihre Fibu von manueller Dateneingabe befreit
+URL: https://st-automatisierung.de/l/buchhaltung-automatisierung-ki-kleine-unternehmen
+RPA-Bots können Routinetätigkeiten in Buchhaltung und Einkauf übernehmen und Fehler drastisch reduzieren.
+
+### Dokumentenextraktion mit KI: Daten aus jedem Beleg automatisch ins System
+URL: https://st-automatisierung.de/l/dokumentenextraktion-ki-mittelstand-automatisierung
+Mitarbeiter tippen Daten aus Lieferscheinen, Verträgen und Formularen manuell ab – 85% schnellere Verarbeitung ist möglich.
+
+### Dunkelverarbeitung im Einkauf: KI verarbeitet Ihre Belege vollautomatisch
+URL: https://st-automatisierung.de/l/einkauf-dunkelverarbeitung-ki-automatisierung
+Bestellungen, Auftragsbestätigungen, Lieferscheine und Rechnungen im Einkauf erfordern manuellen Abgleich – KI erledigt den Dreifach-Abgleich automatisch.
+
+### KI-Chatbot im Kundenservice: Anfragen beantworten, ohne Personal aufzustocken
+URL: https://st-automatisierung.de/l/kundenservice-chatbot-ki-mittelstand-automatisierung
+Kundenanfragen per Telefon und Mail stapeln sich – Fachkräftemangel macht schnelle Reaktionszeiten unmöglich. KI-Chatbots skalieren den Service ohne N...
+
+### Die digitale Personalakte mit KI: Ablage und Datenerfassung im HR automatisieren
+URL: https://st-automatisierung.de/l/personalakte-digitalisieren-ki-hr-automatisierung
+HR verbringt massiv Zeit mit dem Scannen, Einpflegen und Aktualisieren von Bewerberdaten, Arbeitsverträgen und AU-Bescheinigungen.
+
+### Predictive Maintenance: Ungeplante Maschinenstillstände mit KI verhindern
+URL: https://st-automatisierung.de/l/produktion-wartung-ki-vorhersage-mittelstand
+Ungeplante Maschinenstillstände kosten die deutsche Fertigung durchschnittlich 1,53 Mio. € pro Stunde. KI-basierte Vorhersagemodelle erkennen Verschleiß, bevor er zum Ausfall führt.
+
+### Betriebliche Prozessberatung: Fördermittel für die Automatisierung der Reisekostenabrechnung
+URL: https://st-automatisierung.de/l/prozessberatung-mittelstand-foerderung-zuschuss
+Zettelwirtschaft bei Spesen und Reisekosten: Mitarbeiter sammeln Tankbelege im Geldbeutel, die Buchhaltung jagt Monaten später fehlenden Quittungen hinterher.
+
+### Rechnungsverarbeitung im Mittelstand: So automatisiert KI Ihren Rechnungseingang in unter 10 Minuten
+URL: https://st-automatisierung.de/l/rechnungsverarbeitung-ki-automatisierung-mittelstand
+Eingangsrechnungen werden manuell geprüft, abgetippt und freigegeben – dauert Tage statt Minuten. KI-basierte Dunkelverarbeitung kann die Bearbeitungszeit um 50% senken.
+
+## Typische Mittelstandsprobleme & Automatisierung
+
+### Angebote schreiben dauert zu lange? So automatisieren Sie den Prozess auf 10 Minuten
+URL: https://st-automatisierung.de/l/angebote-schreiben-zu-lange-automatisierung
+30+ Angebote pro Woche, jedes dauert fast eine Stunde. Automatisierte Angebotstools reduzieren die Zeit auf unter 10 Minuten.
+
+### Lead-Verlust im CRM stoppen: Automatisierte Follow-ups, die kein Kontakt mehr durchs Raster fällt
+URL: https://st-automatisierung.de/l/crm-lead-verlust-stoppen-automatisierung
+Leads verschwinden im CRM, weil Follow-ups vergessen werden. Fehlende Transparenz im Lead-Status kostet Umsatz.
+
+### Manuelle ERP-Prozesse automatisieren: Die versteckten Effizienz-Killer in Ihrem System
+URL: https://st-automatisierung.de/l/erp-manuelle-prozesse-automatisieren-mittelstand
+ERP-Systeme sind eingeführt, aber viele Prozesse laufen trotzdem manuell daneben – von der Auftragsbestätigung bis zur Lagerbuchung.
+
+### Excel-Chaos beenden: Wie Automatisierung Ihre Tabellen-Workflows ersetzt
+URL: https://st-automatisierung.de/l/excel-listen-ersetzen-automatisierung-mittelstand
+Kritische Geschäftsprozesse laufen über Excel-Tabellen – Versionschaos, keine Echtzeit, keine Skalierung.
+
+### Fachkräftemangel kompensieren: KI-Automatisierung als Produktivitäts-Turbo für Ihr Team
+URL: https://st-automatisierung.de/l/fachkraeftemangel-kompensieren-ki-automatisierung
+74% der Mittelständler setzen auf Digitalisierung, um Personalmangel auszugleichen. KI macht bestehende Mitarbeiter 30–40% produktiver.
+
+### Manuelle Dateneingabe in DATEV automatisieren: Schluss mit Abtippen und Doppelerfassung
+URL: https://st-automatisierung.de/l/manuelle-dateneingabe-datev-automatisieren
+Steuerberater und Mandanten übertragen Buchungsdaten manuell zwischen Lexware, DATEV und ERP – zeitfressend und fehleranfällig.
+
+### Microsoft Copilot für den Mittelstand einrichten: KI-Assistent in Ihrer Office-Umgebung aktivieren
+URL: https://st-automatisierung.de/l/microsoft-copilot-einrichten-mittelstand-automatisierung
+Copilot for Business ist seit Dez. 2025 für KMU verfügbar, aber viele wissen nicht, wo anfangen.
+
+### Outlook-Postfach automatisieren: KI sortiert, extrahiert und verteilt Ihre E-Mails
+URL: https://st-automatisierung.de/l/outlook-postfach-automatisieren-ki-sortierung
+Das Postfach quillt über – Rechnungen, Anfragen und Bestellungen landen unsortiert im Eingang. KI kann Dokumente automatisch aus dem E-Mail-Postfach a...
+
+### Posteingang automatisieren: Wie KI Papierdokumente liest, sortiert und ablegt
+URL: https://st-automatisierung.de/l/papierrechnung-digitalisieren-automatisch-verarbeiten
+Täglich kommt analoge Post und hunderte E-Mails mit PDF-Anhängen. Mitarbeiter scannen, tippen ab und verteilen Rechnungen im Haus.
+
+### KI-Lead-Qualifizierung im Vertrieb: So erkennen Sie kaufbereite B2B-Kunden sofort
+URL: https://st-automatisierung.de/l/vertrieb-lead-qualifizierung-ki-mittelstand
+Messebesuche und Website-Formulare generieren hunderte Leads, aber der Vertrieb weiß nicht, wer davon 'heiß' ist. KI bewertet Leads automatisch vor de...
+
+### Kaltakquise Follow-up automatisieren: Nie wieder ein Angebots-Nachfassen vergessen
+URL: https://st-automatisierung.de/l/vertrieb-nachfassen-vergessen-follow-up-automatisierung
+Angebote sind verschickt, aber im Alltagsgeschäft vergisst der Vertriebsinnendienst das entscheidende Nachfassen. Aufträge versanden beim Wettbewerber.
+
+## Fördermittel & BAFA-Programme
+
+### BAFA-Berater für KI & Prozessoptimierung finden: So kommen Sie an geförderte Beratung
+URL: https://st-automatisierung.de/l/bafa-berater-finden-ki-prozessoptimierung
+Nur beim BAFA registrierte Berater dürfen geförderte Beratungen durchführen – mit Qualitätssicherungssystem und mind. 50% Beratungsumsatz.
+
+### BAFA-Förderung für KI-Beratung 2026: Bis zu 80% Zuschuss für Ihre Prozessoptimierung
+URL: https://st-automatisierung.de/l/bafa-foerderung-ki-beratung-mittelstand-2026
+BAFA fördert Unternehmensberatungen bis 31.12.2026 mit bis zu 50% bzw. 80% der Kosten, max. 3.500 € Bemessungsgrundlage.
+
+### BAFA-Förderung in NRW beantragen: Schritt-für-Schritt zur geförderten KI-Beratung
+URL: https://st-automatisierung.de/l/bafa-foerderung-unternehmensberatung-nrw-antrag
+Unternehmen in NRW erhalten 50% Zuschuss (max. 1.750 €) pro BAFA-Beratung, bis zu 2 pro Jahr und 5 insgesamt bis 2026.
+
+### Digitalisierung-Förderung Bayern: Welche Zuschüsse Mittelständler für KI-Projekte nutzen können
+URL: https://st-automatisierung.de/l/digitalisierung-foerderung-bayern-mittelstand-ki
+Bayerische Mittelständler suchen nach regionalen Förderprogrammen für KI-Einführung. BAFA gilt bundesweit, daneben existieren Länderprogramme.
+
+### Fördermittel Digitalisierung 2026: Alle Zuschüsse für den Mittelstand im Überblick
+URL: https://st-automatisierung.de/l/foerdermittel-digitalisierung-mittelstand-2026
+KMU suchen nach aktuellen Fördermöglichkeiten für Digitalisierung. Neben BAFA gibt es MID-Digitalisierung in NRW.
+
+### Förderung für Automatisierung beantragen: Der komplette Antrags-Fahrplan für KMU
+URL: https://st-automatisierung.de/l/foerderung-automatisierung-unternehmen-antrag-stellen
+Unternehmer wollen wissen, wie der Förderantrag konkret abläuft – online beim BAFA, Informationsschreiben abwarten, dann erst beraten lassen.
+
+### Geförderte KI-Beratung fürs Handwerk: Digitalisierung mit staatlichem Zuschuss starten
+URL: https://st-automatisierung.de/l/gefoerderte-ki-beratung-handwerk-digitalisierung
+Handwerksbetriebe können über BAFA und MID digitale Projekte fördern lassen – von Angebots-Automatisierung bis Auftragsmanagement.
+
+### Was kostet KI-Beratung für den Mittelstand? Kosten, Förderung & ROI im Überblick
+URL: https://st-automatisierung.de/l/ki-beratung-kosten-foerderung-mittelstand-rechner
+GF wollen verstehen, was eine KI-Beratung wirklich kostet und wie viel davon gefördert wird. Max. 3.500 € Bemessungsgrundlage, bis zu 2.800 € Zuschuss...
+
+### MID-Digitalisierung NRW: Bis zu 15.000 € Zuschuss für Ihr KI-Projekt
+URL: https://st-automatisierung.de/l/mid-digitalisierung-nrw-foerderung-ki-projekt
+NRW fördert über MID-Digitalisierung KI-Projekte und digitale Produkte für KMU mit bis zu 15.000 € Zuschuss bei 50% Förderquote.
+
+## Compliance, DSGVO & AI Act
+
+### AI Act Compliance-Check: So machen Sie Ihr Unternehmen gesetzeskonform
+URL: https://st-automatisierung.de/l/ai-act-compliance-check-unternehmen-mittelstand
+Ab 2026 gilt der EU AI Act – Unternehmen brauchen eine systematische Risikoklassifizierung und Compliance-Prüfung ihrer KI-Systeme.
+
+### ChatGPT im Unternehmen datenschutzkonform nutzen: Richtlinie für den sicheren KI-Einsatz
+URL: https://st-automatisierung.de/l/chatgpt-unternehmen-datenschutz-richtlinie
+Mitarbeiter nutzen ChatGPT unkontrolliert – Kundennamen und Vertragsdaten landen in Prompts ohne Rechtsgrundlage.
+
+### Datenschutz-Folgenabschätzung für KI: Wann sie Pflicht ist und wie Sie sie durchführen
+URL: https://st-automatisierung.de/l/dsgvo-folgenabschaetzung-ki-anwendung-pflicht
+Bei hochriskanten KI-Anwendungen ist eine Datenschutz-Folgenabschätzung (DSFA) nach Art. 35 DSGVO Pflicht – viele Mittelständler unterschätzen den Aufwand.
+
+### DSGVO-konforme KI-Einführung im Mittelstand: Rechtssicher automatisieren ohne Datenschutz-Risiko
+URL: https://st-automatisierung.de/l/dsgvo-konforme-ki-einfuehrung-mittelstand
+Jede KI-Anwendung muss DSGVO-konform sein – Rechtsgrundlage, Datensparsamkeit, Transparenzpflichten und ggf. Datenschutz-Folgenabschätzung sind Pflicht.
+
+### KI-Audit für Ihr Unternehmen: Bestandsaufnahme und Checkliste vor der KI-Einführung
+URL: https://st-automatisierung.de/l/ki-audit-unternehmen-bestandsaufnahme-checkliste
+Bevor KI eingeführt wird, braucht es eine Bestandsaufnahme: KI-Inventar erstellen, Risiken bewerten, verbotene Praktiken prüfen.
+
+### KI im Personalwesen rechtssicher einsetzen: DSGVO & AI Act für HR-Verantwortliche
+URL: https://st-automatisierung.de/l/ki-einsatz-personalwesen-rechtssicher-dsgvo
+KI im HR-Bereich (Bewerbungsscreening, Personalakte) ist besonders sensibel – Hochrisiko-Einstufung nach AI Act droht bei Personalentscheidungen.
+
+### KI-Richtlinie für Ihr Unternehmen erstellen: Vorlage & Anleitung für den Mittelstand
+URL: https://st-automatisierung.de/l/ki-richtlinie-unternehmen-erstellen-vorlage
+Eine interne KI-Leitlinie wird unverzichtbar – sie verbindet AI Act mit DSGVO-Pflichten und schafft Rechtssicherheit.
+
+### KI-Risikobewertung nach AI Act: Welche Pflichten Ihr Unternehmen jetzt hat
+URL: https://st-automatisierung.de/l/ki-risikobewertung-mittelstand-ai-act-pflicht
+Unternehmen müssen eine Risikobewertung ihrer KI-Systeme vornehmen und dokumentieren, welche Risikoklasse vorliegt.
+
+### KI-Transparenzpflicht: Was Sie Mitarbeitern und Kunden über Ihren KI-Einsatz mitteilen müssen
+URL: https://st-automatisierung.de/l/ki-transparenzpflicht-unternehmen-mitarbeiter-kunden
+Mitarbeiter und Kunden müssen nachvollziehen können, wie ihre Daten in KI-Systemen genutzt werden – Transparenz ist DSGVO- und AI-Act-Pflicht.
+
+### Microsoft Copilot & Datenschutz: So setzen Sie den KI-Assistenten sicher im Unternehmen ein
+URL: https://st-automatisierung.de/l/microsoft-copilot-datenschutz-unternehmen-sicher
+IT-Leiter fragen sich, ob Microsoft Copilot wirklich datenschutzkonform ist. Business-Lösungen arbeiten innerhalb der firmeneigenen Microsoft 365-Daten.
+
+## Über ST BERATUNG
+
+Gründer: Savaş Topçu, KI-Systemarchitekt & Unternehmensberater
+Standort: Heidestraße 2, 58239 Schwerte, Deutschland
+Zielgruppe: KMU im DACH-Raum, 25–250 Mitarbeiter
+Kernkompetenz: Objektive, herstellerneutrale Prozessberatung VOR der technischen Implementierung
+Zertifizierung: BAFA-gelisteter Berater (Förderung von Unternehmensberatungen für KMU)
+Förderfähig: Beratungskosten bis zu 80% erstattbar (50% West, 80% Ost)
+Sprache: Deutsch
+Terminbuchung: https://cal.com/safak-tepecik/30min
+E-Mail: info@st-automatisierung.de
+LinkedIn: https://www.linkedin.com/in/savas-tepecik/

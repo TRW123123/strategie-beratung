@@ -1,4 +1,41 @@
+# st-automatisierung.de Robots Configuration
+# Last updated: 2026-03-24
+
 User-agent: *
 Allow: /
+
+# === AI Search Crawlers (ALLOWED) ===
+# These crawlers power AI-assisted search (ChatGPT web search, Perplexity, Gemini, etc.)
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+# === AI Training Crawlers (BLOCKED) ===
+# These crawlers scrape data exclusively for model training, not search.
+User-agent: CCBot
+Disallow: /
+
+User-agent: Bytespider
+Disallow: /
+
+User-agent: anthropic-ai
+Disallow: /
+
+User-agent: cohere-ai
+Disallow: /
 
 Sitemap: https://st-automatisierung.de/sitemap-index.xml

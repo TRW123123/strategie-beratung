@@ -85,6 +85,13 @@ const contentFormat = data.content_format || (data.cluster === 'compliance' ? 'c
     cluster={data.cluster}
     faq={data.faq}
   />
+  <!-- GEO: Citation Meta Tags for AI Crawlers -->
+  <meta slot="head" name="citation_title" content={data.title} />
+  <meta slot="head" name="citation_author" content="Savaş Topçu" />
+  <meta slot="head" name="citation_publication_date" content="2026-01-15" />
+  <meta slot="head" name="citation_publisher" content="ST BERATUNG" />
+  <meta slot="head" name="citation_language" content="de" />
+  <meta slot="head" itemprop="description" content={data.description} />
 
   <main id="main-content">
     <article itemscope itemtype="https://schema.org/Article">
