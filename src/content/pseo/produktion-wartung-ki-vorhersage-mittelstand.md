@@ -6,25 +6,25 @@ cluster: "loesungen"
 description: "Ungeplante Maschinenstillstände kosten die deutsche Fertigung durchschnittlich 1,53 Mio. € pro Stunde. KI-basierte Vorhersagemodelle erkennen Verschleiß, bevor er zum Ausfall führt."
 bafa_badge: false
 roi_data:
-  metric: "Geringere Fehlerquote im ERP"
-  value: "- 60 %"
-  source: "Gartner Data Quality Benchmark"
+  metric: "Ungeplante Stillstandskosten"
+  value: "- 70 %"
+  source: "Senseye Industrial Report"
 savings_range:
   min: 15
   max: 25
   unit: "hours_per_week"
 approach_steps:
-  - title: "1. Daten-Audit & Silo-Identifikation"
-    text: "Wir ermitteln, warum Datensätze mehrfach existieren (z.B. Vertrieb nutzt Pipedrive, Produktion nutzt SAP, Marketing nutzt Mailchimp)."
-  - title: "2. Master-Data-Management Architektur"
-    text: "Konzeptionierung einer 'Single Source of Truth', die klare Regeln etabliert, welches System im Konfliktfall (z.B. zwei verschiedene Firmenadressen) die Datenhoheit besitzt."
-  - title: "3. KI-Fuzzy-Matching"
-    text: "Einsatz von semantischen Algorithmen, die erkennen, dass 'Meier GmbH & Co. KG' in München dasselbe Unternehmen ist wie 'Fa. Meyer Kg' am selben Ort, und die Datensätze mergen."
+  - title: "1. Sensor- & Anlagen-Audit"
+    text: "Wir identifizieren Ihre kritischsten Engpass-Maschinen und prüfen, welche Sensordaten (Vibration, Temperatur, Druck) bereits verfügbar sind oder nachgerüstet werden müssen."
+  - title: "2. Datenpipeline-Architektur"
+    text: "Konzeptionierung einer Edge-to-Cloud-Pipeline, die Maschinendaten in Echtzeit sammelt, normalisiert und für KI-Modelle aufbereitet."
+  - title: "3. Predictive-Modell & ERP-Integration"
+    text: "Training eines Anomalie-Erkennungsmodells, das Verschleiß prognostiziert und automatisch Wartungstickets im ERP-System anlegt, bevor der Ausfall eintritt."
 faq:
-  - question: "Löscht das System aus Versehen wichtige Kundendaten?"
-    answer: "Nein, in der Architekturplanung setzen wir auf 'Soft-Deletes' und 'Confidence Thresholds'. Nur bei 99% Wahrscheinlichkeit wird automatisch (dunkel) zusammengelegt, alles andere landet in einer manuellen Review-Queue."
-  - question: "Warum reicht nicht einfach eine Excel-Tabelle zum Abgleich?"
-    answer: "Weil Excel statisch ist. Sobald Mitarbeiter im Vertrieb einen neuen Kontakt anlegen, ist die Excel-Tabelle veraltet. Stammdatenbereinigung muss eine dauerhafte, API-getriebene Middleware-Automatisierung sein, kein Einmalprojekt."
+  - question: "Brauchen wir teure neue Sensoren an jeder Maschine?"
+    answer: "Nicht zwingend. Viele moderne CNC-Anlagen und SPSen liefern bereits verwertbare Betriebsdaten über OPC UA oder MQTT-Schnittstellen. Wir prüfen zuerst, welche Daten schon vorhanden sind, bevor zusätzliche Sensorik empfohlen wird."
+  - question: "Wie genau sind die Vorhersagen der KI?"
+    answer: "In der Praxis erreichen gut trainierte Predictive-Maintenance-Modelle Vorhersagegenauigkeiten von 85–95%. Das Minimum-Viable-Modell startet oft schon mit den vorhandenen historischen Ausfalldaten und wird mit jedem realen Wartungszyklus präziser."
 content_format: "checklist"
 ---
 

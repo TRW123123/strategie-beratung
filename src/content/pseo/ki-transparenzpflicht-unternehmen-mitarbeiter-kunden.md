@@ -30,19 +30,28 @@ sources:
 content_format: "checklist"
 ---
 
-Stellen Sie sich vor, Mitarbeiter und Kunden müssen nachvollziehen können, wie ihre Daten in KI-Systemen genutzt werden – Transparenz ist DSGVO- und AI-Act-Pflicht.
+## Die regulatorische Herausforderung
 
-**[A] Der harte Schmerz (Experience):**
-Ein Mittelständler setzt einen KI-Chatbot auf seiner Website ein. Der Bot beantwortet Kundenanfragen souverän – aber nirgendwo steht, dass es sich um eine KI handelt. Ein Kunde beschwert sich bei der Aufsichtsbehörde: "Ich dachte, ich spreche mit einem Menschen." Der EU AI Act ist hier eindeutig: Nutzer müssen informiert werden, dass sie mit einer KI interagieren (Art. 50). Die Abmahnung droht.
+Ein Mittelständler setzt einen KI-Chatbot auf seiner Website ein. Der Bot beantwortet Kundenanfragen souverän – aber nirgendwo steht, dass es sich um eine KI handelt. Ein Kunde beschwert sich bei der Aufsichtsbehörde: „Ich dachte, ich spreche mit einem Menschen." Der EU AI Act ist hier eindeutig: Nutzer müssen informiert werden, dass sie mit einer KI interagieren (Art. 50). Die Abmahnung droht.
 
-**[B] Der strategische Lösungsansatz (Expertise):**
-ST Beratung setzt die gesetzlichen Transparenzpflichten für Sie pragmatisch um. 1. Transparenz-Audit: Welche KI-Systeme in Ihrem Unternehmen interagieren direkt mit Menschen? (Chatbots, Sprachassistenten, E-Mail-Bots). 2. Kennzeichnung implementieren: Wir entwerfen den klaren, rechtssicheren Hinweis: "Sie kommunizieren mit einem KI-Assistenten." 3. KI-generierte Inhalte kennzeichnen: Texte, Bilder und Audio müssen für Nutzer erkennbar und maschinenlesbar gekennzeichnet sein. 4. Mitarbeiter gezielt zum Umgang informieren.
+## Unser Beratungsansatz für KI-Transparenzpflichten
 
-**[C] Harte Zahlen & ROI (Authoritativeness):**
-Die Transparenzpflichten gelten für alle KI-Systeme – selbst solche mit "begrenztem Risiko". Das betrifft faktisch fast alle modernen Chatbots und generativen KI-Anwendungen im B2B-Umfeld. Der einmalige Umsetzungsaufwand ist gering (Texthinweis, Meta-Tags) und liegt bei 500–2.000 €. Die Wirkung jedoch ist massiv: Unmittelbarer Vertrauensaufbau bei Kunden und Mitarbeitern.
+ST Beratung setzt die gesetzlichen Transparenzpflichten für Sie pragmatisch um.
 
-**[D] Sicherheit & Compliance (Trustworthiness):**
+- **Schritt 1:** Transparenz-Audit: Welche KI-Systeme in Ihrem Unternehmen interagieren direkt mit Menschen? (Chatbots, Sprachassistenten, E-Mail-Bots).
+- **Schritt 2:** Kennzeichnung implementieren: Wir entwerfen den klaren, rechtssicheren Hinweis: „Sie kommunizieren mit einem KI-Assistenten."
+- **Schritt 3:** KI-generierte Inhalte kennzeichnen: Texte, Bilder und Audio müssen für Nutzer erkennbar und maschinenlesbar gekennzeichnet sein.
+- **Schritt 4:** Mitarbeiter gezielt zum Umgang informieren.
+
+## Zahlen & Fakten
+
+Die Transparenzpflichten gelten für alle KI-Systeme – selbst solche mit „begrenztem Risiko". Das betrifft faktisch fast alle modernen Chatbots und generativen KI-Anwendungen im B2B-Umfeld. Der einmalige Umsetzungsaufwand ist gering (Texthinweis, Meta-Tags) und liegt bei 500–2.000 €. Die Wirkung jedoch ist massiv: Unmittelbarer Vertrauensaufbau bei Kunden und Mitarbeitern.
+
+## Datenschutz & rechtliche Absicherung
+
 Die Transparenzpflicht nach Art. 50 AI Act ergänzt die bestehenden DSGVO-Informationspflichten (Art. 13/14); beide Informationsaspekte müssen spätestens zum Zeitpunkt der allerersten Interaktion in klarer und barrierefreier Sprache erfüllt werden.
 
-**[E] Das Systemarchitekt-Fazit:**
+## Fazit
+
 Gesetzliche Transparenz kostet 500 €. Regulatorische Intransparenz kostet das Kundenvertrauen. Und Vertrauen ist im deutschen Mittelstand die härteste Währung. Wer seinen Kunden bewusst verschweigt, dass im Hintergrund eine KI antwortet, hat die wahre Lektion des AI Acts nicht verstanden – es geht nicht nur um Regulierung. Es geht um puren Respekt.
+
