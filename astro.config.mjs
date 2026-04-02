@@ -4,10 +4,10 @@ import sitemap from '@astrojs/sitemap';
 
 export default defineConfig({
   site: 'https://st-automatisierung.de',
-  trailingSlash: 'never',
+  trailingSlash: 'always',
 
   build: {
-    format: 'file'
+    format: 'directory'
   },
 
   integrations: [tailwind(), sitemap({
