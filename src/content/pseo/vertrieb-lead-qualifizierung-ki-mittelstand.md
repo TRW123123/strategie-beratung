@@ -1,9 +1,9 @@
 ---
-title: "KI-Lead-Qualifizierung im Vertrieb: So erkennen Sie kaufbereite B2B-Kunden sofort"
+title: "Lead-Scoring mit KI: 35% mehr Conversions im B2B-Vertrieb"
 keyword: "Vertrieb lead qualifizierung ki mittelstand"
 intent: "Messebesuche und Website-Formulare generieren hunderte Leads, aber der Vertrieb weiß nicht, wer davon 'heiß' ist. KI bewertet Leads automatisch vor dem ersten Anruf."
 cluster: "probleme"
-description: "Messebesuche und Website-Formulare generieren hunderte Leads, aber der Vertrieb weiß nicht, wer davon 'heiß' ist. KI bewertet Leads automatisch vor de..."
+description: "KI bewertet Leads automatisch nach Kaufbereitschaft — kein Cold-Calling mehr. +35% Conversion Rate im B2B-Mittelstand. Kostenlose Strategieberatung anfragen."
 bafa_badge: false
 roi_data:
   metric: "Conversion Rate (MQL to SQL)"

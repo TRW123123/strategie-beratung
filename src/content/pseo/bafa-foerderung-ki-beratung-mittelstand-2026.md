@@ -1,9 +1,9 @@
 ---
-title: "BAFA-Förderung für KI-Beratung 2026: Bis zu 80% Zuschuss für Ihre Prozessoptimierung"
+title: "BAFA-Förderung KI-Beratung 2026: 50% Zuschuss für KMU"
 keyword: "Bafa foerderung ki beratung mittelstand 2026"
 intent: "BAFA fördert Unternehmensberatungen bis 31.12.2026 mit bis zu 50% bzw. 80% der Kosten, max. 3.500 € Bemessungsgrundlage."
 cluster: "foerderung"
-description: "BAFA fördert Unternehmensberatungen bis 31.12.2026 mit bis zu 50% bzw. 80% der Kosten, max. 3.500 € Bemessungsgrundlage."
+description: "KMU erhalten bis zu 1.750 € Zuschuss für KI-Strategieberatung — nicht rückzahlbar. Antrag vor Beratungsstart stellen. Jetzt Förderfähigkeit kostenlos prüfen."
 bafa_badge: true
 content_format: "steps"
 roi_data:
