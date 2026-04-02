@@ -10,21 +10,20 @@ export default async (request: Request, context: Context) => {
         return Response.redirect(url.toString(), 301);
     }
 
-    // 2. Remove Trailing Slashes (Strict No-Slash Policy)
-    // Exception: Root path "/" should not be redirected
-    if (path !== "/" && path.endsWith("/")) {
-        url.pathname = path.slice(0, -1);
+    // 2. Enforce Trailing Slashes (Hard Rule: alle URLs mit /)
+    // Exception: Root path "/", files with extensions
+    if (path !== "/" && !path.endsWith("/") && !path.includes(".")) {
+        url.pathname = path + "/";
         return Response.redirect(url.toString(), 301);
     }
 
     // 3. Remove .html Extension (Clean URLs)
     if (path.endsWith(".html")) {
         let newPath = path.slice(0, -5);
-        // Handle /index -> /
         if (newPath === "/index") {
             newPath = "/";
         }
-        url.pathname = newPath;
+        url.pathname = newPath + "/";
         return Response.redirect(url.toString(), 301);
     }
 
