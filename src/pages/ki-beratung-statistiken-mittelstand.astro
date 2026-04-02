@@ -1,0 +1,274 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+const lastUpdated = "April 2026";
+
+const title = "KI-Beratung im Mittelstand: Zahlen, Kosten & Marktdaten 2026";
+const description = "Aktuelle Statistiken zur KI-Beratung im deutschen Mittelstand: Beratungsmarkt, BAFA-Förderung, Tagessätze, Fachkräftemangel und Digitalisierungsgrad. Quartalsaktuell.";
+
+const stats = [
+  {
+    number: "€49 Mrd.",
+    text: "Gesamtumsatz der deutschen Beratungsbranche 2025",
+    source: "BDU Facts & Figures",
+    year: "2025",
+    url: "https://www.bdu.de/news/facts-figures-zum-consultingmarkt-2025",
+    context: "+0,5% Wachstum. Für 2026 wird ein Anstieg auf €51,1 Mrd. (+4,5%) prognostiziert.",
+    category: "markt",
+  },
+  {
+    number: "+22%",
+    text: "Wachstum im KI-Beratungssegment 2026 (Prognose)",
+    source: "BDU / Presseportal",
+    year: "2026",
+    url: "https://www.presseportal.de/pm/9562/6244900",
+    context: "KI ist der mit Abstand stärkste Wachstumstreiber im Consulting. 2025 lag das KI-Wachstum bei +18,8%.",
+    category: "markt",
+  },
+  {
+    number: "€1.300",
+    text: "Durchschnittlicher Tagessatz im Consulting (2025)",
+    source: "BDU Honorarstudie",
+    year: "2025",
+    url: "https://www.bdu.de/news/studie-honorare-im-consulting-2025-tagessaetze-leicht-ruecklaeufig",
+    context: "Partner: €1.600/Tag, Analyst: €700/Tag. KI-Beratung Freelance: €80–150/Stunde.",
+    category: "kosten",
+  },
+  {
+    number: "50–80%",
+    text: "BAFA-Zuschuss für KMU-Strategieberatung",
+    source: "BAFA",
+    year: "2026",
+    url: "https://www.bafa.de/DE/Wirtschaft/Beratung_Finanzierung/Unternehmensberatung/unternehmensberatung_node.html",
+    context: "Max. €3.500 Bemessungsgrundlage pro Beratung. Alte Bundesländer 50% (€1.750), neue Bundesländer 80% (€2.800). Bis 31.12.2026.",
+    category: "foerderung",
+  },
+  {
+    number: "5",
+    text: "Maximal geförderte Beratungen pro KMU bis Ende 2026",
+    source: "BAFA-Richtlinie",
+    year: "2026",
+    url: "https://www.bafa.de/DE/Wirtschaft/Beratung_Finanzierung/Unternehmensberatung/unternehmensberatung_node.html",
+    context: "Max. 2 pro Jahr. Antrag zwingend vor Beratungsbeginn über eine BAFA-Leitstelle.",
+    category: "foerderung",
+  },
+  {
+    number: "20%",
+    text: "der mittelständischen Unternehmen nutzen KI",
+    source: "KfW-Digitalisierungsbericht",
+    year: "2025",
+    url: "https://www.kfw.de/%C3%9Cber-die-KfW/KfW-Research/Digitalisierung.html",
+    context: "5x mehr als noch vor sechs Jahren. Aber 80% des Mittelstands haben noch keinen KI-Einsatz.",
+    category: "digitalisierung",
+  },
+  {
+    number: "53%",
+    text: "der Unternehmen haben Schwierigkeiten, ihre Digitalisierung zu steuern",
+    source: "Bitkom Digitalisierung der Wirtschaft",
+    year: "2025",
+    url: "https://www.bitkom.org/Studienberichte/2025/Digitalisierung-Wirtschaft",
+    context: "Anstieg von 34% (2022) auf 53% (2025). Die Komplexität wächst schneller als die interne Kompetenz.",
+    category: "digitalisierung",
+  },
+  {
+    number: "82%",
+    text: "sehen die Wirtschaftskrise auch als Krise zögerlicher Digitalisierung",
+    source: "Bitkom",
+    year: "2025",
+    url: "https://www.bitkom.org/Studienberichte/2025/Digitalisierung-Wirtschaft",
+    context: "Die Mehrheit der deutschen Unternehmen erkennt: Wer nicht digitalisiert, verliert.",
+    category: "digitalisierung",
+  },
+  {
+    number: "Platz 14",
+    text: "von 27 EU-Staaten im Digitalisierungsranking",
+    source: "EU DESI Index",
+    year: "August 2025",
+    url: "https://www.bitkom.org/Digitales-Deutschland-2025",
+    context: "Deutschland hat sich um 2 Plätze verbessert — liegt aber weiter hinter Dänemark, Finnland, Niederlande.",
+    category: "digitalisierung",
+  },
+  {
+    number: "€49.500",
+    text: "Kosten pro unbesetzter Stelle pro Jahr",
+    source: "StepStone / IW Köln",
+    year: "2025",
+    url: "https://de.statista.com/themen/887/fachkraeftemangel/",
+    context: "Produktivitätsverlust + Mehrbelastung Team + entgangene Aufträge. 149.000 IT-Stellen sind offen.",
+    category: "fachkraefte",
+  },
+  {
+    number: "€49 Mrd.",
+    text: "jährlicher Wertschöpfungsverlust durch Fachkräftemangel",
+    source: "IW Köln",
+    year: "2025",
+    url: "https://de.statista.com/themen/887/fachkraeftemangel/",
+    context: "1,1% des BIP. Bis 2027 könnten es €74 Mrd. werden.",
+    category: "fachkraefte",
+  },
+  {
+    number: "173 Tage",
+    text: "durchschnittliche Vakanzzeit für Fachkräfte",
+    source: "Bundesagentur für Arbeit",
+    year: "2025",
+    url: "https://personalvermittlungplus.de/fachkraeftemangel-2026/",
+    context: "+7 Tage ggü. Vorjahr. Im Bau: 270 Tage. KI-Automatisierung von Routineaufgaben ist der Hebel.",
+    category: "fachkraefte",
+  },
+  {
+    number: "20–35%",
+    text: "Effizienzgewinn durch systematische Prozessautomatisierung",
+    source: "McKinsey Digital",
+    year: "2025",
+    url: "https://www.mckinsey.com/capabilities/mckinsey-digital",
+    context: "Innerhalb der ersten 12 Monate. Betriebskosten sinken um bis zu 60% bei wiederkehrenden Prozessen.",
+    category: "automatisierung",
+  },
+  {
+    number: "12.000 Std.",
+    text: "durchschnittliche Zeitersparnis pro Jahr durch Prozessautomatisierung",
+    source: "Forrester Research",
+    year: "2025",
+    url: "https://www.forrester.com",
+    context: "Entspricht ca. 6 Vollzeitstellen. 75% der manuellen Tätigkeiten werden eliminiert.",
+    category: "automatisierung",
+  },
+  {
+    number: "650%",
+    text: "ROI von Change Management in Beratungsprojekten",
+    source: "BDU Fachthemenportal",
+    year: "2025",
+    url: "https://www.bdu.de/fachthemenportal/veraenderungsmanagement/der-return-on-investment-von-change-management-ist-reell/",
+    context: "Change Management beansprucht nur 10% des Projektbudgets, ermöglicht aber 30% der Gesamteinsparungen.",
+    category: "roi",
+  },
+];
+
+const categories = {
+  markt: { title: "Beratungsmarkt Deutschland", icon: "M2 11.5a9 9 0 1 1 18 0 9 9 0 0 1-18 0Zm9-3.75a.75.75 0 0 0-.75.75v3.75a.75.75 0 0 0 .374.649l2.25 1.3a.75.75 0 0 0 .752-1.298L12.25 11.8V8.5a.75.75 0 0 0-.75-.75Z" },
+  kosten: { title: "Beratungskosten & Tagessätze", icon: "M2.25 18.75a60.07 60.07 0 0 1 15.797 2.101c.727.198 1.453-.342 1.453-1.096V18.75M3.75 4.5v.75A.75.75 0 0 1 3 6h-.75m0 0v-.375c0-.621.504-1.125 1.125-1.125H20.25M2.25 6v9m18-10.5v.75c0 .414.336.75.75.75h.75m-1.5-1.5h.375c.621 0 1.125.504 1.125 1.125v9.75c0 .621-.504 1.125-1.125 1.125h-.375m1.5-1.5H21a.75.75 0 0 0-.75.75v.75m0 0H3.75m0 0h-.375a1.125 1.125 0 0 1-1.125-1.125V15m1.5 1.5v-.75A.75.75 0 0 0 3 15h-.75M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm3 0h.008v.008H18V10.5Zm-12 0h.008v.008H6V10.5Z" },
+  foerderung: { title: "BAFA-Förderung", icon: "M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z" },
+  digitalisierung: { title: "Digitalisierungsgrad Mittelstand", icon: "M3.75 3v11.25A2.25 2.25 0 0 0 6 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0 1 18 16.5h-2.25m-7.5 0h7.5m-7.5 0-1 3m8.5-3 1 3m0 0 .5 1.5m-.5-1.5h-9.5m0 0-.5 1.5m.75-9 3-3 2.148 2.148A12.061 12.061 0 0 1 16.5 7.605" },
+  fachkraefte: { title: "Fachkräftemangel & Kosten", icon: "M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" },
+  automatisierung: { title: "Prozessautomatisierung & ROI", icon: "M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75Z" },
+  roi: { title: "Return on Investment", icon: "M2.25 18 9 11.25l4.306 4.306a11.95 11.95 0 0 1 5.814-5.518l2.74-1.22m0 0-5.94-2.281m5.94 2.28-2.28 5.941" },
+};
+
+const canonical = "https://st-automatisierung.de/ki-beratung-statistiken-mittelstand/";
+---
+
+<BaseLayout title={title} description={description} canonical={canonical}>
+  <meta slot="head" name="citation_title" content={title} />
+  <meta slot="head" name="citation_author" content="Savaş Topçu" />
+  <meta slot="head" name="citation_publication_date" content="2026-04-02" />
+  <meta slot="head" name="citation_publisher" content="ST BERATUNG" />
+
+  <script slot="head" type="application/ld+json" is:inline>
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "KI-Beratung im Mittelstand: Zahlen, Kosten & Marktdaten 2026",
+    "author": { "@type": "Person", "name": "Savaş Topçu" },
+    "publisher": { "@type": "Organization", "name": "ST BERATUNG" },
+    "datePublished": "2026-04-02",
+    "dateModified": "2026-04-02",
+    "description": "Aktuelle Statistiken zur KI-Beratung im deutschen Mittelstand: Beratungsmarkt, BAFA-Förderung, Tagessätze, Fachkräftemangel und Digitalisierungsgrad."
+  }
+  </script>
+
+  <main id="main-content">
+    <!-- Hero -->
+    <section class="relative pt-32 pb-20 overflow-hidden">
+      <div class="container relative z-10">
+        <div class="mb-6 flex flex-wrap gap-3 items-center">
+          <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-green-500/10 text-green-400 ring-1 ring-inset ring-green-500/20">
+            Quartalsaktuell
+          </span>
+          <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-blue-500/10 text-blue-400 ring-1 ring-inset ring-blue-500/20">
+            Zuletzt aktualisiert: {lastUpdated}
+          </span>
+        </div>
+
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-8">
+          KI-Beratung im Mittelstand:<br/>Zahlen, Kosten & Marktdaten
+        </h1>
+        <p class="text-xl text-gray-400 max-w-3xl mb-8">
+          Die wichtigsten Statistiken rund um KI-Strategieberatung, BAFA-Förderung, Beratungskosten und den Digitalisierungsstand des deutschen Mittelstands. Alle Daten mit Quellenangabe — zum Zitieren, Verlinken und Teilen.
+        </p>
+
+        <div class="flex items-center gap-3 text-sm text-gray-400">
+          <div class="w-8 h-8 rounded-full bg-blue-500/20 flex items-center justify-center text-blue-400 font-bold text-xs">ST</div>
+          <div>
+            <span class="text-gray-200">Savaş Topçu</span>
+            <span class="mx-2">·</span>
+            <span>KI-Systemarchitekt & Unternehmensberater</span>
+          </div>
+        </div>
+      </div>
+      <div class="absolute top-0 right-0 -mr-32 -mt-32 w-96 h-96 rounded-full bg-blue-600/10 blur-3xl pointer-events-none"></div>
+    </section>
+
+    <!-- Stats by Category -->
+    {Object.entries(categories).map(([key, cat]) => {
+      const catStats = stats.filter(s => s.category === key);
+      if (catStats.length === 0) return null;
+      return (
+        <section class="py-16 border-t border-gray-800 reveal">
+          <div class="container">
+            <h2 class="text-2xl font-bold mb-8 flex items-center gap-3">
+              <span class="w-10 h-10 rounded-lg bg-blue-500/10 flex items-center justify-center flex-shrink-0">
+                <svg class="w-5 h-5 text-blue-400" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" d={cat.icon} />
+                </svg>
+              </span>
+              {cat.title}
+            </h2>
+
+            <div class="grid gap-6 md:grid-cols-2 reveal-stagger">
+              {catStats.map(stat => (
+                <div class="p-6 bg-gray-800/50 rounded-xl border border-gray-700 hover:border-blue-500/30 transition-colors">
+                  <div class="text-4xl font-bold text-white mb-2">{stat.number}</div>
+                  <div class="text-lg text-gray-200 mb-3">{stat.text}</div>
+                  <p class="text-gray-400 text-sm mb-4">{stat.context}</p>
+                  <div class="flex items-center gap-2 text-xs text-gray-500">
+                    <span>Quelle:</span>
+                    <a href={stat.url} target="_blank" rel="noopener noreferrer" class="text-blue-400 hover:text-blue-300 transition-colors">
+                      {stat.source} ({stat.year})
+                    </a>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      );
+    })}
+
+    <!-- CTA -->
+    <section class="py-20 bg-blue-900/10 border-t border-gray-800 reveal">
+      <div class="container text-center">
+        <h2 class="text-3xl font-bold mb-6">Diese Zahlen betreffen Ihr Unternehmen?</h2>
+        <p class="text-lg text-gray-400 mb-8 max-w-2xl mx-auto">
+          80% des Mittelstands haben noch keinen KI-Einsatz. Der BAFA-Zuschuss deckt bis zu 80% der Beratungskosten. Lassen Sie uns in einem kostenlosen Erstgespräch prüfen, wo Ihr größtes Einsparpotenzial liegt.
+        </p>
+        <a href="https://cal.com/safak-tepecik/30min" class="inline-flex justify-center items-center px-8 py-4 border border-transparent text-lg font-medium rounded-md text-gray-900 bg-white hover:bg-gray-100 transition-colors">
+          Kostenloses Erstgespräch vereinbaren
+        </a>
+        <p class="text-sm text-gray-500 mt-4">Inklusive BAFA-Förderfähigkeits-Check. Keine Kosten, keine Verpflichtung.</p>
+      </div>
+    </section>
+
+    <!-- Methodology -->
+    <section class="py-12 border-t border-gray-800">
+      <div class="container max-w-3xl">
+        <h3 class="text-sm uppercase tracking-widest text-gray-500 mb-4">Methodik & Quellen</h3>
+        <p class="text-sm text-gray-500 mb-4">
+          Alle Statistiken stammen aus öffentlich zugänglichen Studien und Berichten renommierter Institutionen. Diese Seite wird quartalsweise aktualisiert. Jede Kennzahl enthält eine direkte Quellenangabe mit Erscheinungsjahr.
+        </p>
+        <p class="text-sm text-gray-500">
+          <strong class="text-gray-400">Hauptquellen:</strong> BDU (Bundesverband Deutscher Unternehmensberatungen), BAFA, Bitkom Research, KfW-Digitalisierungsbericht, IW Köln, Statista, McKinsey Digital, Forrester Research, Bundesagentur für Arbeit, EU DESI Index.
+        </p>
+      </div>
+    </section>
+  </main>
+</BaseLayout>
