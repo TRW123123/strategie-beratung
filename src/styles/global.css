@@ -439,3 +439,61 @@ a:hover {
 .skip-link:focus {
   top: 0;
 }
+
+/* ===== Scroll Reveal Animations ===== */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Elements waiting to be revealed */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.reveal.revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Stagger children: each child delays slightly more */
+.reveal-stagger > * {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.reveal-stagger.revealed > *:nth-child(1) { transition-delay: 0s; }
+.reveal-stagger.revealed > *:nth-child(2) { transition-delay: 0.1s; }
+.reveal-stagger.revealed > *:nth-child(3) { transition-delay: 0.2s; }
+.reveal-stagger.revealed > *:nth-child(4) { transition-delay: 0.3s; }
+.reveal-stagger.revealed > *:nth-child(5) { transition-delay: 0.35s; }
+.reveal-stagger.revealed > *:nth-child(6) { transition-delay: 0.4s; }
+
+.reveal-stagger.revealed > * {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .reveal,
+  .reveal-stagger > * {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}

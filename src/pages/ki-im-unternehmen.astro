@@ -24,6 +24,14 @@ const tocItems = [
     { id: "faq", label: "Häufige Fragen" },
 ];
 
+// Fetch related pSEO pages for internal linking
+import { getCollection } from 'astro:content';
+const allPseo = await getCollection('pseo');
+const relatedArticles = allPseo
+  .filter(p => (p.data.faq || p.data.roi_data) && ['compliance', 'probleme'].includes(p.data.cluster))
+  .sort(() => Math.random() - 0.5)
+  .slice(0, 6);
+
 const faqItems = [
     {
         question:
@@ -352,6 +360,21 @@ const faqItems = [
                 >Zum Vorgehensmodell: Strategie & Einführung</a
             >
         </section>
+
+        <!-- Vertiefende Artikel (Internal Linking to pSEO) -->
+        {relatedArticles.length > 0 && (
+          <section class="reveal" style="margin-top: 4rem; padding-top: 2rem; border-top: 1px solid var(--color-border);">
+            <h2>Vertiefende Analysen & Compliance</h2>
+            <div style="display: grid; gap: 1rem; margin-top: 1.5rem; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
+              {relatedArticles.map(page => (
+                <a href={`/l/${page.slug}/`} style="display: block; padding: 1.25rem; border: 1px solid var(--color-border); border-radius: 0.75rem; text-decoration: none; transition: border-color 0.2s, background 0.2s; background: var(--color-surface-subtle);">
+                  <span style="font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.1em; color: #60a5fa;">{page.data.cluster}</span>
+                  <h3 style="font-size: 0.95rem; margin-top: 0.5rem; color: var(--color-text-main); line-height: 1.4;">{page.data.title}</h3>
+                </a>
+              ))}
+            </div>
+          </section>
+        )}
 
         <!-- FAQ -->
         <FAQMicrodata items={faqItems} />
