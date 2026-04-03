@@ -63,6 +63,6 @@
 - USP: Objektive Prozessberatung VOR Implementierung
 - Förderung: BAFA-zertifiziert (bis zu 80% Erstattung)
 - Sprache: Deutsch
-- Terminbuchung: https://cal.com/safak-tepecik/30min
+- Terminbuchung: https://calendly.com/st-automatisierung-info/30min
 - E-Mail: info@st-automatisierung.de
 - Erweiterte Inhalte: https://st-automatisierung.de/llms-full.txt
