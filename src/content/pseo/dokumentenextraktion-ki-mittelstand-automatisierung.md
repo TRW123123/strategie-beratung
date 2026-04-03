@@ -1,5 +1,5 @@
 ---
-title: "Dokumentenextraktion mit KI: Daten aus jedem Beleg automatisch ins System"
+title: "Dokumentenextraktion mit KI: 85% weniger manuelle Dateneingabe im Mittelstand"
 keyword: "Dokumentenextraktion ki mittelstand automatisierung"
 intent: "Mitarbeiter tippen Daten aus Lieferscheinen, Verträgen und Formularen manuell ab – 85% schnellere Verarbeitung ist möglich."
 cluster: "loesungen"

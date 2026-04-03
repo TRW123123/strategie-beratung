@@ -1,13 +1,31 @@
 ---
+interface BreadcrumbItem {
+    name: string;
+    url: string;
+}
+
 interface Props {
     title: string;
     description: string;
     canonical: string;
     robots?: string;
+    breadcrumbs?: BreadcrumbItem[];
 }
 
-const { title, description, canonical, robots = "index, follow" } = Astro.props;
+const { title, description, canonical, robots = "index, follow", breadcrumbs } = Astro.props;
 const siteName = "ST BERATUNG";
+
+// Generate BreadcrumbList JSON-LD if breadcrumbs provided
+const breadcrumbSchema = breadcrumbs ? JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": breadcrumbs.map((item, i) => ({
+        "@type": "ListItem",
+        "position": i + 1,
+        "name": item.name,
+        "item": item.url
+    }))
+}) : null;
 
 import "../styles/global.css";
 import "@fontsource/space-grotesk/300.css";
@@ -47,6 +65,8 @@ import "@fontsource/space-grotesk/700.css";
         <!-- Space Grotesk imported via global.css or here directly -->
 
         <slot name="head" />
+
+        {breadcrumbSchema && <script type="application/ld+json" set:html={breadcrumbSchema} />}
 
         <script type="application/ld+json" is:inline>
             {

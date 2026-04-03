@@ -1,5 +1,5 @@
 ---
-title: "Die digitale Personalakte mit KI: Ablage und Datenerfassung im HR automatisieren"
+title: "Personalakte digitalisieren: Automatisierte Erfassung von Personaldaten mit KI"
 keyword: "Personalakte digitalisieren ki hr automatisierung"
 intent: "HR verbringt massiv Zeit mit dem Scannen, Einpflegen und Aktualisieren von Bewerberdaten, Arbeitsverträgen und AU-Bescheinigungen."
 cluster: "loesungen"

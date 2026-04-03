@@ -11,6 +11,11 @@ export default defineConfig({
   },
 
   integrations: [tailwind(), sitemap({
-    filter: (page) => !page.includes('/impressum') && !page.includes('/datenschutz')
+    filter: (page) => !page.includes('/impressum') && !page.includes('/datenschutz'),
+    serialize: (item) => {
+      // Dynamic lastmod: build date for all pages
+      item.lastmod = new Date().toISOString().split('T')[0];
+      return item;
+    }
   })]
 });

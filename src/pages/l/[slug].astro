@@ -35,7 +35,21 @@ const { entry } = Astro.props;
 const { Content } = await entry.render();
 const data = entry.data;
 
-const canonicalData = `https://st-automatisierung.de/l/${entry.slug}`;
+const canonicalData = `https://st-automatisierung.de/l/${entry.slug}/`;
+
+// Cluster label mapping for breadcrumbs
+const clusterLabels: Record<string, string> = {
+  loesungen: 'Lösungen',
+  probleme: 'Probleme',
+  foerderung: 'Förderung',
+  compliance: 'Compliance',
+};
+
+const breadcrumbs = [
+  { name: 'Home', url: 'https://st-automatisierung.de/' },
+  { name: clusterLabels[data.cluster] || data.cluster, url: 'https://st-automatisierung.de/loesungen-branchen/' },
+  { name: data.title.length > 60 ? data.title.substring(0, 57) + '...' : data.title, url: canonicalData },
+];
 
 // --- Polymorphe DOM: Approach Steps ---
 // Falls approach_steps im Frontmatter definiert sind, nutze diese.
@@ -70,10 +84,11 @@ const approachSteps = data.approach_steps || clusterDefaults[data.cluster] || cl
 const contentFormat = data.content_format || (data.cluster === 'compliance' ? 'checklist' : data.cluster === 'foerderung' ? 'steps' : 'prose');
 ---
 
-<BaseLayout 
+<BaseLayout
   title={data.title}
   description={data.description}
   canonical={canonicalData}
+  breadcrumbs={breadcrumbs}
 >
   <!-- JSON-LD Schema Injection (P0) -->
   <ArticleSchema

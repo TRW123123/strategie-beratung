@@ -1,5 +1,5 @@
 ---
-title: "Angebote schreiben dauert zu lange? So automatisieren Sie den Prozess auf 10 Minuten"
+title: "Angebote in 10 Minuten statt 2 Stunden: KI-Automatisierung für den Mittelstand"
 keyword: "Angebote schreiben zu lange automatisierung"
 intent: "30+ Angebote pro Woche, jedes dauert fast eine Stunde. Automatisierte Angebotstools reduzieren die Zeit auf unter 10 Minuten."
 cluster: "probleme"
