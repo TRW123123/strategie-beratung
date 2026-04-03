@@ -4,6 +4,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import ArticleSchema from '../../components/ArticleSchema.astro';
 import RelatedPages from '../../components/RelatedPages.astro';
 import FaqAccordion from '../../components/FaqAccordion.astro';
+import ContactForm from '../../components/ContactForm.astro';
 
 export async function getStaticPaths() {
   const pseoEntries = await getCollection('pseo');
@@ -188,7 +189,7 @@ const contentFormat = data.content_format || (data.cluster === 'compliance' ? 'c
           )}
 
           <div class="flex flex-col sm:flex-row gap-4 relative z-10">
-              <a href="mailto:info@st-automatisierung.de" class="inline-flex justify-center items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-gray-900 bg-white hover:bg-gray-100 transition-colors">
+              <a href="#kontaktformular" class="inline-flex justify-center items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-gray-900 bg-white hover:bg-gray-100 transition-colors">
                   Kostenlose Potenzialanalyse anfragen
               </a>
               <a href="/ki-im-unternehmen/" class="inline-flex justify-center items-center px-6 py-3 border border-gray-700 text-base font-medium rounded-md text-white hover:bg-gray-800 transition-colors">
@@ -303,6 +304,13 @@ const contentFormat = data.content_format || (data.cluster === 'compliance' ? 'c
           </div>
         </aside>
       )}
+
+      <!-- ===== CONTACT FORM ===== -->
+      <section class="py-20 border-t border-gray-800">
+        <div class="container max-w-2xl">
+          <ContactForm sourcePage={`/l/${entry.slug}/`} />
+        </div>
+      </section>
 
       {/* --- INTERNAL LINKING (Phase 07) --- */}
       <RelatedPages currentSlug={entry.slug} currentCluster={data.cluster} limit={3} />
