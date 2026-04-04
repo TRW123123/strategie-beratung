@@ -1,67 +1,125 @@
 ---
-title: "KI-Verordnung Risikoklassen: So klassifizieren Unternehmen ihre KI-Systeme richtig"
+title: "KI-Verordnung Risikoklassen: In welche Kategorie fällt Ihre Software?"
 keyword: "ki verordnung risikoklassen unternehmen"
-intent: "Unternehmen verstehen die Risikoklassen der EU KI-Verordnung und können ihre eigenen KI-Systeme korrekt einordnen."
+intent: "Unternehmen ordnen ihre KI-Systeme korrekt in die vier Risikoklassen des EU AI Act ein — mit Annex-III-Prüfung, Software-Beispielen und Grenzfällen."
 cluster: "compliance"
-description: "KI-Verordnung Risikoklassen: Wie Unternehmen ihre KI-Systeme nach EU AI Act klassifizieren — mit konkreten Beispielen aus dem Mittelstand."
+description: "KI-Verordnung Risikoklassen erklärt: Alle 8 Hochrisiko-Bereiche aus Anhang III mit konkreten Software-Beispielen (SAP, Personio, Copilot) und Grenzfällen für den Mittelstand."
 content_format: "checklist"
 roi_data:
-  metric: "Zeitaufwand für strukturierte KI-Klassifizierung im Mittelstand"
-  value: "1–3 Tage mit externem Berater vs. 4–8 Wochen intern"
-  source: "Projekterfahrung ST Strategieberatung UG"
+  metric: "Anteil der KI-Systeme in Unternehmen, die als Hochrisiko klassifiziert werden"
+  value: "ca. 18% aller eingesetzten KI-Systeme"
+  source: "Initiative for Applied AI (Analyse 100+ Unternehmens-KI-Systeme)"
 approach_steps:
-  - title: "KI-System-Inventar anlegen"
-    text: "Systematische Erfassung aller eingesetzten KI-Systeme — inkl. eingebetteter KI in Standardsoftware wie ERP, CRM, HR-Tools."
-  - title: "Annex-III-Prüfung durchführen"
-    text: "Abgleich jedes Systems gegen die Hochrisiko-Kategorien in Anhang III der KI-Verordnung. Kein Bauchgefühl — die Annex-Kriterien sind verbindlich."
-  - title: "Maßnahmen je Risikoklasse ableiten"
-    text: "Für Hochrisiko: Technische Dokumentation, Konformitätsbewertung, EU-Datenbankregistrierung. Für begrenztes Risiko: Transparenzpflichten. Für minimales Risiko: keine gesonderten Maßnahmen."
+  - title: "KI-Inventar erstellen"
+    text: "Systematische Erfassung aller eingesetzten KI-Systeme — inkl. eingebetteter KI in ERP, CRM und HR-Software. 40–60% der KI-Systeme werden ohne Inventar nicht erkannt."
+  - title: "Annex-III-Prüfung pro System"
+    text: "Abgleich jedes Systems gegen die 8 Hochrisiko-Bereiche in Anhang III. Entscheidend ist der Einsatzzweck, nicht die Technologie. B2B-Lead-Scoring: kein Hochrisiko. Bewerber-Screening mit demselben Tool: Hochrisiko."
+  - title: "Art. 6(3) Ausnahmen prüfen"
+    text: "Auch ein Annex-III-gelistetes System kann ausgenommen sein — wenn es nur enge Verfahrensaufgaben erfüllt oder ein zuvor abgeschlossenes menschliches Ergebnis verbessert. Aber: Profiling natürlicher Personen ist IMMER Hochrisiko, ohne Ausnahme."
 faq:
   - question: "Was sind die vier Risikoklassen der EU KI-Verordnung?"
-    answer: "Die EU KI-Verordnung kennt vier Stufen: (1) Inakzeptables Risiko — verboten, z.B. Social Scoring durch Behörden. (2) Hochrisiko — umfangreiche Pflichten, z.B. KI in Personalentscheidungen. (3) Begrenztes Risiko — Transparenzpflichten, z.B. Chatbots. (4) Minimales Risiko — keine gesonderten Pflichten, z.B. KI-Spamfilter."
-  - question: "Wie erkenne ich, ob meine Software als Hochrisiko-KI gilt?"
-    answer: "Hochrisiko gilt, wenn das System in einem der Bereiche aus Anhang III der Verordnung eingesetzt wird: biometrische Identifizierung, Personalentscheidungen, Kreditvergabe, Bildung, kritische Infrastruktur, Strafverfolgung, Migration. Entscheidend ist der konkrete Einsatzzweck, nicht die Technologie selbst."
-  - question: "Ich kaufe KI-Software ein — muss ich sie trotzdem klassifizieren?"
-    answer: "Ja. Als Betreiber tragen Sie eigene Pflichten, unabhängig vom Anbieter. Sie müssen sicherstellen, dass das System bestimmungsgemäß eingesetzt wird, Mitarbeiter entsprechend schulen und Vorfälle melden. Die Klassifizierung ist Ihre Verantwortung — auch wenn der Anbieter sie bereits vorgenommen hat."
-  - question: "Was ist der Unterschied zwischen Anbieter und Betreiber im AI Act?"
-    answer: "Anbieter sind Unternehmen, die KI-Systeme entwickeln und in Verkehr bringen. Betreiber sind Unternehmen, die KI-Systeme im eigenen Betrieb einsetzen. Die meisten Mittelständler sind Betreiber — sie kaufen und nutzen KI, entwickeln sie nicht selbst. Betreiberpflichten sind geringer als Anbieterpflichten, aber keineswegs trivial."
-  - question: "Brauche ich für jede KI-Anwendung eine eigene Dokumentation?"
-    answer: "Nur für Hochrisiko-KI ist eine vollständige technische Dokumentation und Konformitätsbewertung verpflichtend. Für begrenztes Risiko reicht eine Transparenzmaßnahme (z.B. Hinweis auf KI-Nutzung). Für minimales Risiko keine Dokumentationspflicht. Eine Übersichtstabelle aller eingesetzten Systeme mit Risikoklassen ist aber für alle Unternehmen empfehlenswert."
+    answer: "Stufe 1 — Inakzeptables Risiko (verboten seit 02.02.2025): Social Scoring, unterschwellige Manipulation, biometrische Echtzeit-Fernidentifikation, Emotionserkennung am Arbeitsplatz. Stufe 2 — Hochrisiko: KI in Personalentscheidungen, Kreditvergabe, Bildung, kritischer Infrastruktur und 4 weiteren Anhang-III-Bereichen. Stufe 3 — Begrenztes Risiko: Chatbots und KI-generierte Inhalte (nur Transparenzpflicht). Stufe 4 — Minimales Risiko: Spamfilter, Empfehlungssysteme, Suchalgorithmen (keine gesonderten Pflichten)."
+  - question: "Fällt meine HR-Software unter Hochrisiko?"
+    answer: "Ja, wenn sie KI-basiert Bewerbungen filtert, Kandidaten rankt oder Mitarbeiterleistung bewertet — das ist Anhang III, Nr. 4. SAP SuccessFactors mit KI-Recruiting, Personio mit KI-Bewerbungsfilterung und Workday AI Recruiting fallen alle unter Hochrisiko. Eine reine Personalverwaltung ohne KI-Entscheidungslogik dagegen nicht."
+  - question: "Ist Microsoft Copilot Hochrisiko?"
+    answer: "Copilot als allgemeines Produktivitätstool (E-Mails schreiben, Dokumente zusammenfassen) ist kein Hochrisiko — es fällt unter GPAI mit minimalem Risiko. Wird Copilot aber eingesetzt, um Bewerber zu ranken oder Mitarbeiterleistung zu bewerten, wird es durch den Einsatzzweck zu Hochrisiko (Anhang III, Nr. 4). Und: Der Betreiber kann unter Art. 25 zum Anbieter mit vollen Anbieter-Pflichten werden."
+  - question: "Ist B2B-Lead-Scoring im CRM Hochrisiko?"
+    answer: "Nein. Standard-B2B-Lead-Scoring für Vertriebsprioritäten bewertet keine natürlichen Personen bezüglich wesentlicher Dienste. Es ist typischerweise minimales Risiko. Anders bei Kredit-Scoring von Verbrauchern — das fällt unter Anhang III, Nr. 5(b). Die Grenze liegt beim Verwendungszweck: B2B-Vertrieb vs. Entscheidungen über natürliche Personen."
+  - question: "Kann ein Annex-III-System trotzdem NICHT hochriskant sein?"
+    answer: "Ja — Art. 6(3) definiert vier Ausnahmen: (a) Das System erfüllt nur eine enge Verfahrensaufgabe, (b) es verbessert ein zuvor abgeschlossenes menschliches Ergebnis, (c) es erkennt Entscheidungsmuster ohne menschliche Bewertung zu ersetzen, (d) es bereitet eine Anhang-III-Bewertung nur vor. Aber: Diese Ausnahmen greifen NIEMALS bei Profiling natürlicher Personen. Profiling ist immer Hochrisiko."
 sources:
-  - name: "EU AI Act – Anhang III (Hochrisiko-KI-Systeme)"
+  - name: "EU AI Act – Anhang III (Hochrisiko-KI-Systeme), Verordnung (EU) 2024/1689"
     url: "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX:32024R1689"
   - name: "EU AI Office – Leitlinien für KMU"
     url: "https://digital-strategy.ec.europa.eu/en/policies/european-approach-artificial-intelligence"
+  - name: "Bitkom KI-Monitor 2025/2026 (n=604 Unternehmen)"
+  - name: "Initiative for Applied AI – Analyse Hochrisiko-Anteil"
 ---
 
-## Das Klassifizierungsproblem: Viele Unternehmen wissen nicht, was sie nutzen
+## Das Klassifizierungsproblem: Die meisten Unternehmen wissen nicht, was sie nutzen
 
-Bevor ein Unternehmen seine KI-Systeme klassifizieren kann, muss es wissen, welche Systeme es überhaupt einsetzt. Das klingt trivial — ist es aber nicht. Moderne Unternehmenssoftware enthält KI-Komponenten, die weder im Kaufvertrag noch im Marketingmaterial explizit als solche ausgewiesen sind. Ein CRM-System mit automatischem Lead-Scoring, eine HR-Plattform mit Bewerberranking, ein ERP-Modul mit Demand-Forecasting — all das fällt unter die KI-Verordnung.
+Laut Bitkom (März 2026) setzen 41% der deutschen Unternehmen KI ein — mehr als doppelt so viele wie ein Jahr zuvor. Aber nur 23% erwarten eine direkte Betroffenheit als Betreiber unter dem AI Act. Die Realität: Die Initiative for Applied AI schätzt, dass ca. 18% aller eingesetzten KI-Systeme als Hochrisiko einzustufen sind. Bei durchschnittlich 1,5 Hochrisiko-Systemen pro betroffenem Unternehmen ist die Lücke zwischen Wahrnehmung und Betroffenheit erheblich.
 
-Der erste Schritt ist immer das KI-Inventar: eine vollständige Liste aller Systeme, die automatisierte Entscheidungen treffen oder Menschen bei Entscheidungen unterstützen.
+Der Grund: Moderne Unternehmenssoftware enthält KI-Komponenten, die im Kaufvertrag nicht als solche ausgewiesen sind. Ein CRM mit Lead-Scoring, eine HR-Plattform mit Bewerberranking, ein ERP-Modul mit Demand-Forecasting — all das fällt unter die KI-Verordnung.
 
-## Die Hochrisiko-Kategorien konkret für den Mittelstand
+## Die vier Risikoklassen im Überblick
 
-Anhang III der Verordnung listet die Hochrisiko-Kategorien abschließend auf. Für den Mittelstand sind besonders relevant:
+**Stufe 1 — Inakzeptables Risiko (verboten seit 02.02.2025):**
+Acht KI-Praktiken sind verboten: unterschwellige Manipulation, Ausnutzung von Vulnerabilitäten, Social Scoring, prädiktive Polizeiarbeit, ungerichtetes Gesichtsbilder-Scraping, Emotionserkennung am Arbeitsplatz und in Bildungseinrichtungen, biometrische Kategorisierung nach sensiblen Merkmalen und biometrische Echtzeit-Fernidentifikation. Für die meisten Mittelständler relevant: Emotionserkennung am Arbeitsplatz — keine Software darf die Emotionen Ihrer Mitarbeiter überwachen.
 
-**Personalmanagement und Zugang zu Beschäftigung:** KI-Systeme, die bei der Einstellung, Beförderung, Kündigung oder Leistungsbewertung eingesetzt werden. Wer Software nutzt, die Bewerbungen automatisch filtert oder Mitarbeiterleistungen bewertet, ist in dieser Kategorie.
+**Stufe 2 — Hochrisiko (8 Bereiche in Anhang III):**
+Umfangreiche Pflichten: technische Dokumentation, menschliche Aufsicht, Protokollaufbewahrung (6 Monate), Registrierung in EU-Datenbank. Details siehe unten.
 
-**Kreditvergabe und Bonitätsbewertung:** Automatisierte Kreditentscheidungen oder Scoring-Systeme. Betrifft Banken direkt — aber auch FinTech-Integrationen in B2B-Plattformen.
+**Stufe 3 — Begrenztes Risiko:**
+Chatbots, KI-generierte Inhalte, Deepfakes. Einzige Pflicht: Transparenz — der Nutzer muss wissen, dass er mit einer KI interagiert.
 
-**Bildung und Berufsausbildung:** KI-gestützte Lernplattformen, die Lernergebnisse bewerten oder Lernwege empfehlen.
+**Stufe 4 — Minimales Risiko:**
+Spamfilter, Empfehlungssysteme, KI-Suchalgorithmen. Keine gesonderten Pflichten.
 
-**Sicherheitskomponenten kritischer Infrastruktur:** Energie, Wasser, Verkehr. Für die meisten Mittelständler nicht relevant — Ausnahme: Zulieferer kritischer Infrastruktur.
+## Die 8 Hochrisiko-Bereiche aus Anhang III — konkret für den Mittelstand
 
-## Typische Klassifizierungsfehler im Mittelstand
+**1. Biometrie:** Gesichtserkennung im öffentlichen Raum, biometrische Kategorisierung. Ausnahme: 1:1-Verifikation (Geräte-Entsperrung) ist NICHT hochriskant.
 
-**Fehler 1 — Unterschätzung von HR-Tools:** „Unsere HR-Software ist nur ein Verwaltungssystem." Stimmt nicht, wenn das System Bewerbungen filtert, Kandidaten rankt oder Leistungsbewertungen automatisiert. Das ist Hochrisiko.
+**2. Kritische Infrastruktur:** KI als Sicherheitskomponente in Energie-, Wasser-, Verkehrsversorgung. Relevant für Zulieferer und Betreiber.
 
-**Fehler 2 — Anbietervertrauen ohne Prüfung:** „Der Softwareanbieter hat uns gesagt, es ist kein Hochrisiko." Die Einschätzung des Anbieters ist nicht bindend. Als Betreiber tragen Sie die Verantwortung für Ihre Klassifizierung.
+**3. Bildung:** KI-basierte Hochschulzulassung, automatisierte Essay-Bewertung, adaptive Lernsysteme, KI-Proctoring.
 
-**Fehler 3 — Nur explizit als KI vermarktete Tools erfassen:** Maschinelles Lernen steckt in vielen Tools, ohne dass „KI" auf der Verpackung steht. Die Technologie, nicht das Marketing, entscheidet über die Klassifizierung.
+**4. Beschäftigung — der relevanteste Bereich für den Mittelstand:**
+- (a) Einstellung: Bewerbungsfilterung, Kandidaten-Ranking, KI-Interview-Bewertung
+- (b) Arbeitsverhältnis: Beförderung, Kündigung, Aufgabenzuweisung, Leistungsüberwachung
 
-## Was ein strukturierter Compliance-Check kostet
+93% der betroffenen Unternehmen erwarten hohen Umsetzungsaufwand in diesem Bereich (Bitkom 2025).
 
-Ein professionell durchgeführter AI-Act-Compliance-Check für einen Mittelstandsbetrieb mit 10–50 KI-Systemen dauert erfahrungsgemäß 1 bis 3 Beratertage. Das Ergebnis ist eine Klassifizierungsmatrix mit konkreten Handlungsempfehlungen je System — kein akademisches Gutachten, sondern ein Arbeitsdokument.
+**5. Wesentliche Dienste:** Kreditwürdigkeit/Kredit-Scoring (Ausnahme: reine Betrugserkennung), Sozialleistungsbewilligung, Versicherungs-Risikoprüfung. Wichtig: SCHUFA-ähnliche Systeme fallen hierunter.
 
-Über die BAFA-Beratungsförderung ist dieser Check zu 50% förderbar. ST Strategieberatung führt diese Assessments regelmäßig durch — mit einem strukturierten Fragebogen, der die Annex-III-Kriterien systematisch abbildet.
+**6. Strafverfolgung:** Predictive Policing, KI-Lügendetektoren, Rückfallprognosen. Für die meisten Mittelständler nicht relevant.
+
+**7. Migration/Asyl/Grenze:** Automatisierte Grenzrisikobewertung, KI-Asylentscheidungen. Für die meisten Mittelständler nicht relevant.
+
+**8. Justiz/Demokratie:** KI-Urteilsempfehlungen, KI-Wähler-Targeting. Für die meisten Mittelständler nicht relevant.
+
+## Welche Standard-Software ist Hochrisiko?
+
+Die Klassifizierung hängt nicht von der Software ab, sondern vom Einsatzzweck. Trotzdem gibt es klare Muster:
+
+**SAP SuccessFactors** (KI-Bewerbungsscreening, Performance): Hochrisiko bei HR-KI-Funktionen (Anhang III, Nr. 4). SAP hat ISO/IEC 42001 erlangt und ein AI Ethics Office eingerichtet. Betreiber werden zu Deployern mit Art.-26-Pflichten.
+
+**Microsoft 365 Copilot** (allgemein): Kein Hochrisiko als Produktivitätstool. Wird Copilot aber für Bewerbungsfilterung oder Performance-Bewertung eingesetzt, wird es durch den Zweck zu Hochrisiko.
+
+**Salesforce Einstein** (Standard-CRM): Kein Hochrisiko bei B2B-Lead-Scoring. Hochrisiko bei Kreditwürdigkeitsbewertung natürlicher Personen.
+
+**Personio** (KI-Rekrutierung): Hochrisiko bei KI-basierter Bewerbungsfilterung und Performance-Bewertung.
+
+**Workday** (KI-Recruiting): Hochrisiko. Bereits US-Sammelklage wegen KI-Diskriminierung (Mobley v. Workday, N.D. Cal.).
+
+**DATEV** (Steuer-/Buchführung): Typischerweise kein Hochrisiko — klassische regelbasierte Systeme fallen nicht unter die KI-Definition.
+
+## Grenzfälle: Wann wird es Hochrisiko?
+
+Die häufigsten Grenzfälle im Mittelstand:
+
+- B2B-Lead-Scoring für Vertriebsprioritäten → **Kein Hochrisiko** (kein Einfluss auf Rechte natürlicher Personen)
+- KI-Screening von Bewerbungen → **Hochrisiko** (Anhang III, Nr. 4(a))
+- Copilot erstellt E-Mails → **Kein Hochrisiko** (minimales Risiko)
+- Copilot rankt Bewerber → **Hochrisiko** (Betreiber wird ggf. Anbieter unter Art. 25)
+- KI-Kredit-Scoring von Verbrauchern → **Hochrisiko** (Anhang III, Nr. 5(b))
+- KI-Betrugserkennung bei Transaktionen → **Kein Hochrisiko** (explizit ausgenommen)
+- Chatbot beantwortet HR-FAQ → **Begrenztes Risiko** (nur Transparenzpflicht)
+- KI bewertet Mitarbeiterleistung → **Hochrisiko** (Anhang III, Nr. 4(b))
+- KI-Vorsortierung mit anschließender Human Review → **Trotzdem Hochrisiko** (wesentlicher Einfluss auf Ergebnis)
+
+**Entscheidend ist der Verwendungszweck**, nicht die technische Fähigkeit des Tools. Nutzt ein Betreiber das System für einen Anhang-III-Zweck, der vom Anbieter nicht vorgesehen war, wird der Betreiber unter Art. 25 selbst zum Anbieter — mit vollen Anbieter-Pflichten.
+
+## Die drei häufigsten Klassifizierungsfehler
+
+**Fehler 1 — HR-Tools unterschätzen:** 60% der geprüften Unternehmen erkennen ihre HR-Software nicht als Hochrisiko. Bewerbungsfilterung, Kandidaten-Ranking und Performance-Monitoring fallen alle unter Anhang III, Nr. 4.
+
+**Fehler 2 — Anbietervertrauen ohne eigene Prüfung:** Die Einschätzung des Softwareanbieters ist nicht bindend. Als Betreiber tragen Sie die Verantwortung für Ihre eigene Klassifizierung.
+
+**Fehler 3 — GPAI-Zweckentfremdung nicht erkennen:** Wer ChatGPT oder Copilot für Anhang-III-Zwecke (Bewerberbewertung, Kreditentscheidungen) einsetzt, schafft unter Art. 25 ein Hochrisiko-System und wird zum Anbieter.
+
+## Nächster Schritt: Vom Inventar zum Compliance-Check
+
+Die Klassifizierung ist der erste Schritt. Was danach kommt — die konkreten Pflichten je Risikoklasse — beschreiben wir im Detail auf unserer Seite zu den [EU KI-Verordnung Pflichten für den Mittelstand](/l/eu-ki-verordnung-mittelstand-pflichten-2026/). Den vollständigen Audit-Prozess in 5 Schritten finden Sie auf unserer Seite zum [AI Act Compliance-Check](/l/ai-act-compliance-check-unternehmen-mittelstand/).
+
+Über die BAFA-Beratungsförderung ist eine professionelle Klassifizierung zu 50% förderbar (max. 1.750 € Eigenanteil). ST Strategieberatung führt strukturierte Risikoklassifizierungen durch — mit Annex-III-Fragebogen und konkreter Software-Zuordnung.
