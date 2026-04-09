@@ -1,9 +1,9 @@
 ---
-title: "EU KI-Verordnung: Alle Pflichten und Fristen für den Mittelstand (Stand April 2026)"
+title: "EU KI-Verordnung 2026: Pflichten für Mittelständler als Betreiber"
 keyword: "eu ki verordnung mittelstand pflichten"
 intent: "Mittelständler kennen ihre konkreten Pflichten als KI-Betreiber — mit exakten Fristen, Betreiber-Pflichten nach Art. 26 und dem aktuellen Stand des Digital-Omnibus-Pakets."
 cluster: "compliance"
-description: "EU KI-Verordnung Pflichten 2026: Was gilt seit wann? Betreiber-Pflichten Art. 26 im Detail, Bußgeld-Staffelung mit KMU-Sonderregel, Digital-Omnibus Fristverlängerung und 4-Phasen-Umsetzungsfahrplan."
+description: "Betreiber-Pflichten Art. 26, Bußgelder mit KMU-Sonderregel, Digital-Omnibus-Fristverlängerung: Was Mittelständler jetzt konkret tun müssen — 4-Phasen-Fahrplan."
 content_format: "checklist"
 roi_data:
   metric: "Geschätzte Compliance-Kosten für einen Mittelständler als reiner Betreiber"
