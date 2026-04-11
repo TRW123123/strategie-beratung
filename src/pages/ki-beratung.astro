@@ -1,0 +1,432 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import TOC from "../components/TOC.astro";
+import KeyTakeaways from "../components/KeyTakeaways.astro";
+import Callout from "../components/Callout.astro";
+import FAQMicrodata from "../components/FAQMicrodata.astro";
+import { getCollection } from "astro:content";
+
+const title = "KI-Beratung fuer den Mittelstand: Strategie, Kosten, BAFA";
+const description =
+    "Externe KI-Beratung fuer KMU: Prozess-Audit, Roadmap, Pilotprojekt. Bis 2.800 Euro BAFA-Zuschuss. Was Sie erwartet und wann sich die Investition rechnet.";
+const canonical = new URL("/ki-beratung/", Astro.site);
+
+const breadcrumbs = [
+    { name: "Home", url: "/" },
+    { name: "KI-Beratung", url: "/ki-beratung/" },
+];
+
+const tocItems = [
+    { id: "was-ki-beratung-leistet", label: "Was KI-Beratung leistet" },
+    { id: "fuer-wen", label: "Fuer wen sich KI-Beratung lohnt" },
+    { id: "kosten-und-foerderung", label: "Kosten und BAFA-Foerderung" },
+    { id: "ablauf", label: "Ablauf bei ST Strategieberatung" },
+    { id: "vorbehalte", label: "Vorbehalte und Praxis" },
+    { id: "faq", label: "Haeufige Fragen" },
+];
+
+const allPseo = await getCollection("pseo");
+const relatedArticles = allPseo
+    .filter(
+        (p) =>
+            (p.data.faq || p.data.roi_data) &&
+            ["loesungen", "foerderung"].includes(p.data.cluster),
+    )
+    .sort(() => Math.random() - 0.5)
+    .slice(0, 6);
+
+const faqItems = [
+    {
+        question: "Was unterscheidet KI-Beratung von IT-Beratung?",
+        answer: "KI-Beratung analysiert Ihre Geschaeftsprozesse und erstellt eine Strategie mit priorisierten Anwendungsfaellen. IT-Beratung setzt konkrete Software-Loesungen um. Die Beratung kommt vor der Technik. Ohne Strategie fehlt die Grundlage fuer eine sinnvolle Umsetzung.",
+    },
+    {
+        question: "Wie hoch ist der BAFA-Zuschuss fuer KI-Beratung?",
+        answer: "50 Prozent in den alten Bundeslaendern (maximal 1.750 Euro), 80 Prozent in den neuen Bundeslaendern (maximal 2.800 Euro). Die Bemessungsgrundlage liegt bei 3.500 Euro netto. Der Zuschuss ist nicht rueckzahlbar.",
+    },
+    {
+        question: "Wer kann die BAFA-Foerderung beantragen?",
+        answer: "KMU mit Sitz in Deutschland, mindestens 1 Jahr am Markt, unter 250 Mitarbeiter und unter 50 Millionen Euro Jahresumsatz. Der Antrag muss zwingend vor Beratungsbeginn gestellt werden. Ein vorzeitiger Vertragsschluss fuehrt zum Foerderverlust.",
+    },
+    {
+        question: "Wie lange dauert eine KI-Strategieberatung?",
+        answer: "3 bis 4 Wochen von der Erstanalyse bis zur fertigen Roadmap. Woche 1: Prozess-Interview. Woche 2 bis 3: Analyse und Roadmap-Erstellung. Woche 4: Praesentation und Umsetzungsplanung.",
+    },
+    {
+        question: "Was erhalte ich am Ende der Beratung?",
+        answer: "Ein Strategiedokument mit Prozessanalyse, priorisierten KI-Anwendungsfaellen, ROI-Schaetzung pro Use Case, Tool-Empfehlungen und einem 90-Tage-Umsetzungsplan. Das Dokument dient gleichzeitig als BAFA-Verwendungsnachweis.",
+    },
+    {
+        question: "Muessen wir bereits KI-Tools im Einsatz haben?",
+        answer: "Nein. Die Beratung richtet sich an Unternehmen, die am Anfang stehen. Der Prozess-Audit identifiziert, wo KI sinnvoll ist und wo nicht. 64 Prozent der Unternehmen sehen sich als Nachzuegler (Bitkom 2025). Genau fuer diese Gruppe ist die Beratung gedacht.",
+    },
+    {
+        question: "Kann die Umsetzung nach der Beratung begleitet werden?",
+        answer: "Die BAFA-gefoerderte Beratung ist strategisch. Fuer die technische Umsetzung vermitteln wir Partner oder begleiten den Piloten im Rahmen eines separaten Auftrags. Landesprogramme wie der Bayern Digitalbonus (bis 7.500 Euro) foerdern die Umsetzungsphase.",
+    },
+];
+---
+
+<BaseLayout
+    title={title}
+    description={description}
+    canonical={canonical}
+    breadcrumbs={breadcrumbs}
+>
+    <section class="hero">
+        <div class="container">
+            <h1>KI-Beratung fuer den Mittelstand</h1>
+            <p class="hero-subhead">
+                Was sie bringt, was sie kostet und wie der Staat sie bezahlt.
+                Eine Orientierung fuer Geschaeftsfuehrer, die KI strategisch
+                angehen wollen, statt auf Verdacht Tools einzukaufen.
+            </p>
+        </div>
+    </section>
+
+    <main id="main-content" class="container">
+        <TOC items={tocItems} />
+
+        <section id="was-ki-beratung-leistet">
+            <h2>1. Was eine KI-Beratung konkret leistet</h2>
+            <p>
+                KI-Beratung ist keine IT-Beratung. Sie verkauft keine Software
+                und baut keine Systeme. Sie analysiert Ihre Geschaeftsprozesse
+                und beantwortet eine Frage: Wo spart KI in Ihrem Unternehmen
+                tatsaechlich Geld, und wo nicht?
+            </p>
+            <p>
+                36 Prozent der deutschen Unternehmen nutzen bereits KI (Bitkom
+                2025). Aber nur 5 Prozent erzielen damit skalierten
+                wirtschaftlichen Wert (BCG 2025). Der Unterschied liegt nicht in
+                der Technik. Er liegt in der Vorarbeit: Die richtige
+                Use-Case-Auswahl, die richtigen Daten, die richtige Reihenfolge.
+            </p>
+            <p>
+                Eine KI-Strategieberatung liefert drei Ergebnisse:
+            </p>
+            <ul>
+                <li>
+                    <strong>Prozess-Audit:</strong> Welche Ablaeufe kosten Zeit, welche
+                    eignen sich fuer Automatisierung, welche nicht?
+                </li>
+                <li>
+                    <strong>KI-Roadmap:</strong> 3 bis 5 priorisierte Anwendungsfaelle
+                    mit ROI-Schaetzung, statt einer generischen Empfehlungsliste.
+                </li>
+                <li>
+                    <strong>Pilotprojekt-Definition:</strong> Welches Projekt starten Sie
+                    zuerst, mit welchem Budget und welchem Zeithorizont?
+                </li>
+            </ul>
+            <p>
+                82 Prozent der KI-nutzenden Unternehmen berichten
+                Produktivitaetssteigerungen von durchschnittlich 13 Prozent pro
+                Jahr (IW Koeln 2025). 50 Prozent der GenAI-Projekte scheitern
+                nach dem Proof-of-Concept (Gartner 2025). Professionelle
+                Beratung reduziert dieses Risiko, weil sie die haeufigsten
+                Fehlerquellen vor dem Projektstart beseitigt.
+            </p>
+
+            <KeyTakeaways
+                items={[
+                    "KI-Beratung analysiert Prozesse und erstellt eine Strategie, bevor Technik eingekauft wird.",
+                    "Der durchschnittliche Produktivitaetsgewinn liegt bei 13 Prozent pro Jahr (IW Koeln 2025).",
+                    "50 Prozent der GenAI-Projekte scheitern nach dem Proof-of-Concept. Strategische Vorarbeit senkt diese Rate.",
+                ]}
+            />
+        </section>
+
+        <section id="fuer-wen">
+            <h2>2. Fuer welche Unternehmen sich KI-Beratung lohnt</h2>
+            <p>
+                Nicht jedes Unternehmen braucht KI. Aber jedes Unternehmen mit
+                wiederkehrenden Prozessen, digitalen Daten und 10 oder mehr
+                Mitarbeitern sollte pruefen lassen, wo Automatisierung konkret
+                ansetzt.
+            </p>
+
+            <h3>Fuenf Einstiegsszenarien mit dem schnellsten Payback</h3>
+            <ul>
+                <li>
+                    <strong>Rechnungsverarbeitung:</strong> Automatische Erfassung und
+                    Verbuchung. Amortisation in 6 bis 12 Monaten. Bei 200
+                    Belegen pro Monat spart das rund 36.000 Euro pro Jahr.
+                </li>
+                <li>
+                    <strong>Angebotserstellung:</strong> KI-gestuetzte Kalkulation im
+                    Handwerk und in der Produktion. Zeitersparnis pro Angebot: 40
+                    bis 60 Prozent.
+                </li>
+                <li>
+                    <strong>Kundenservice:</strong> Ticket-Vorqualifizierung und
+                    Antwortvorschlaege. Kostenreduktion bis 68 Prozent pro
+                    Interaktion. Payback in 8 bis 14 Monaten.
+                </li>
+                <li>
+                    <strong>Dokumentenanalyse:</strong> Vertraege, Lieferscheine,
+                    Zertifikate automatisch auslesen und strukturieren.
+                    Investition: 25.000 bis 40.000 Euro.
+                </li>
+                <li>
+                    <strong>Personalverwaltung:</strong> Bewerbungen vorsortieren,
+                    Personalakten digitalisieren. Zeitersparnis: 5 bis 10
+                    Stunden pro Woche.
+                </li>
+            </ul>
+
+            <Callout title="60 Prozent nennen fehlende Ressourcen als groesste Huerde" variant="info">
+                <p>
+                    Die DIHK meldet: 60 Prozent der KMU scheitern nicht am
+                    Willen, sondern an Zeit und Ressourcen fuer die
+                    Digitalisierung. Genau hier setzt externe Beratung an. Sie
+                    ersetzt keine interne Kapazitaet. Sie identifiziert, wo
+                    interne Kapazitaet durch Automatisierung freigesetzt wird.
+                </p>
+            </Callout>
+
+            <h3>Wann sich KI-Beratung nicht lohnt</h3>
+            <p>
+                Unter 5 Mitarbeitern ist die Prozesslandschaft meist zu klein
+                fuer strukturierte KI-Projekte. Wenn keine digitalen Daten
+                vorliegen (alles auf Papier), muss zuerst digitalisiert werden.
+                Bei reinen Hardware-Problemen (Maschinenpark, Gebaeude) ist
+                KI-Beratung das falsche Instrument.
+            </p>
+        </section>
+
+        <section id="kosten-und-foerderung">
+            <h2>3. Was KI-Beratung kostet und wie der Staat foerdert</h2>
+            <p>
+                Kein Anbieter in den Google-Suchergebnissen nennt konkrete
+                Preise. Wir tun es: Eine BAFA-gefoerderte KI-Strategieberatung
+                bei ST Strategieberatung kostet <strong>3.500 Euro netto</strong
+                >. Das ist die maximale BAFA-Bemessungsgrundlage.
+            </p>
+
+            <h3>BAFA-Zuschuss nach Region</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Region</th>
+                        <th>Zuschuss</th>
+                        <th>Max. Betrag</th>
+                        <th>Eigenanteil</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Alte Bundeslaender (inkl. Berlin)</td>
+                        <td>50 %</td>
+                        <td>1.750 Euro</td>
+                        <td>1.750 Euro</td>
+                    </tr>
+                    <tr>
+                        <td>Neue Bundeslaender (ohne Berlin)</td>
+                        <td>80 %</td>
+                        <td>2.800 Euro</td>
+                        <td>700 Euro</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p>
+                2024 wurden 24.000 Antraege gestellt. 2025 waren es 30.000 bis
+                Ende November, ein Anstieg von 25 Prozent (BAFA Jahresrueckblick
+                2025). Die Nachfrage steigt, weil das Programm auslaeuft.
+            </p>
+
+            <Callout title="Programmende 31.12.2026" variant="warning">
+                <p>
+                    Das BAFA-Programm endet am 31. Dezember 2026. Es gibt keine
+                    offizielle Ankuendigung einer Verlaengerung. Die
+                    ESF+-Foerderperiode 2021-2027 macht das Ende plausibel. Wer
+                    foerdern lassen will, muss jetzt handeln. Ein vorzeitiger
+                    Vertragsschluss vor dem BAFA-Informationsschreiben fuehrt zum
+                    vollstaendigen Foerderverlust.
+                </p>
+            </Callout>
+
+            <h3>Kombination mit Landesprogrammen</h3>
+            <p>
+                BAFA zahlt die Strategie. Landesprogramme zahlen die Umsetzung.
+                Beides ist kombinierbar:
+            </p>
+            <ul>
+                <li>
+                    <strong>Bayern:</strong> Digitalbonus Standard (bis 7.500 Euro) oder
+                    Plus (bis 30.000 Euro). Kombiniert mit BAFA: bis 9.250 Euro
+                    Gesamtfoerderung.
+                </li>
+                <li>
+                    <strong>NRW:</strong> MID-Digitalisierung (bis 15.000 Euro). BAFA
+                    fuer Strategie, MID fuer Software und Integration.
+                </li>
+                <li>
+                    <strong>Sachsen:</strong> Digitalisierungszuschuss EFRE (bis 35.000
+                    Euro, bis 60 Prozent).
+                </li>
+            </ul>
+
+            <p class="mt-8">
+                <a
+                    href="https://calendly.com/st-automatisierung-info/30min"
+                    class="cta-button"
+                    >Kostenlosen Foerderfaehigkeitscheck vereinbaren</a
+                >
+            </p>
+        </section>
+
+        <section id="ablauf">
+            <h2>4. So laeuft eine KI-Beratung bei ST Strategieberatung ab</h2>
+            <p>
+                4 Wochen von der Erstanalyse bis zur fertigen Roadmap. Kein
+                6-Monats-Projekt, kein Workshop-Marathon.
+            </p>
+
+            <h3>Woche 1: Prozess-Interview</h3>
+            <p>
+                2 bis 3 Stunden vor Ort oder digital. Wir sprechen mit den
+                Leuten, die die Ablaeufe kennen: Buchhaltung, Vertrieb,
+                Produktion, Geschaeftsfuehrung. Ergebnis: dokumentierte
+                Prozesslandkarte mit Zeitaufwaenden.
+            </p>
+
+            <h3>Woche 2 bis 3: Analyse und Roadmap</h3>
+            <p>
+                Wir bewerten jeden Prozess nach Automatisierungspotenzial,
+                Datenverfuegbarkeit und ROI. Daraus entstehen 3 bis 5
+                priorisierte Use Cases mit konkreter Aufwands- und
+                Ertragsschaetzung.
+            </p>
+
+            <h3>Woche 4: Praesentation und 90-Tage-Plan</h3>
+            <p>
+                Sie erhalten ein schriftliches Strategiedokument mit:
+            </p>
+            <ul>
+                <li>Prozessanalyse mit identifizierten Engpaessen</li>
+                <li>
+                    3 bis 5 priorisierte KI-Anwendungsfaelle mit
+                    ROI-Schaetzung
+                </li>
+                <li>
+                    Tool-Empfehlungen (keine Produktverkauf, sondern neutrale
+                    Bewertung)
+                </li>
+                <li>90-Tage-Umsetzungsplan mit Meilensteinen</li>
+            </ul>
+            <p>
+                Das Strategiedokument dient gleichzeitig als
+                BAFA-Verwendungsnachweis. Sie muessen keinen separaten Bericht
+                erstellen.
+            </p>
+
+            <KeyTakeaways
+                items={[
+                    "4 Wochen von Erstgespraech bis fertige Roadmap.",
+                    "Das Strategiedokument dient als BAFA-Verwendungsnachweis.",
+                    "Sie erhalten priorisierte Use Cases mit ROI-Schaetzung, keine generischen Empfehlungen.",
+                ]}
+            />
+        </section>
+
+        <section id="vorbehalte">
+            <h2>5. Vorbehalte und was die Praxis zeigt</h2>
+
+            <h3>"Wir sind zu klein fuer KI"</h3>
+            <p>
+                780.000 Mittelstaendler nutzen KI (KfW Mittelstandspanel 2026).
+                Unternehmen mit 20 bis 99 Beschaeftigten liegen bei 23 Prozent
+                KI-Nutzung (Bitkom 2025). Das BAFA-Programm existiert fuer KMU
+                mit unter 250 Mitarbeitern. Zu klein gibt es selten. Zu
+                unstrukturiert schon.
+            </p>
+
+            <h3>"Wir haben keine Daten"</h3>
+            <p>
+                53 Prozent der Unternehmen haben Probleme mit der
+                Digitalisierung (Bitkom 2025). Der Prozess-Audit klaert genau
+                diese Frage: Welche Daten sind vorhanden? Welche fehlen? Welche
+                lassen sich mit vertretbarem Aufwand aufbauen?
+            </p>
+
+            <h3>"Das dauert zu lange"</h3>
+            <p>
+                4 Wochen. Nicht 4 Monate. Sie investieren 2 bis 3 Stunden fuer
+                das Prozess-Interview. Den Rest erledigt die Beratung. Der
+                durchschnittliche B2B-Sales-Cycle liegt bei 9 bis 17 Wochen
+                (Saupe Communication 2025). Die Beratung selbst ist kuerzer als
+                der typische Entscheidungsprozess.
+            </p>
+
+            <h3>"Unsere IT macht das intern"</h3>
+            <p>
+                51 Prozent der Unternehmen fehlt technisches Know-how fuer KI
+                (Bitkom 2025). 53 Prozent fehlen die personellen Ressourcen.
+                Interne IT kann die Umsetzung begleiten. Aber die strategische
+                Frage, welche Projekte sich lohnen und welche nicht, erfordert
+                Erfahrung aus mehreren Unternehmen und Branchen.
+            </p>
+
+            <h3>"ROI ist unklar"</h3>
+            <p>
+                Prozessautomatisierung amortisiert sich in 6 bis 9 Monaten
+                (Forrester: 210 Prozent ROI ueber 3 Jahre).
+                Dokumentenverarbeitung spart bei 200 Belegen pro Monat rund
+                36.000 Euro pro Jahr. Predictive Maintenance refinanziert sich
+                oft durch den ersten verhinderten ungeplanten Stillstand. Die
+                Beratung liefert die Zahlen fuer Ihren konkreten Fall, nicht
+                generische Branchendurchschnitte.
+            </p>
+        </section>
+
+        <section id="faq">
+            <h2>6. Haeufige Fragen</h2>
+            <FAQMicrodata items={faqItems} />
+        </section>
+
+        <section class="cta-section">
+            <h2>Der naechste Schritt</h2>
+            <p>
+                Ein kostenloses Erstgespraech klaert drei Dinge: Wo steht Ihr
+                Unternehmen? Was ist der naechste sinnvolle Schritt? Und wie
+                finanziert die BAFA den groessten Teil davon?
+            </p>
+            <p>
+                <a
+                    href="https://calendly.com/st-automatisierung-info/30min"
+                    class="cta-button"
+                    >Jetzt Erstgespraech vereinbaren</a
+                >
+            </p>
+            <p class="mt-4 text-sm text-gray-400">
+                Oder direkt: <a href="mailto:info@st-automatisierung.de"
+                    >info@st-automatisierung.de</a
+                > | <a href="tel:+4915234639525">+49 1523 4639525</a>
+            </p>
+        </section>
+
+        {
+            relatedArticles.length > 0 && (
+                <section class="related-articles">
+                    <h2>Weitergehende Analysen</h2>
+                    <div class="related-grid">
+                        {relatedArticles.map((article) => (
+                            <a
+                                href={`/l/${article.slug}/`}
+                                class="related-card"
+                            >
+                                <span class="related-cluster">
+                                    {article.data.cluster}
+                                </span>
+                                <h3>{article.data.title}</h3>
+                                <p>{article.data.description}</p>
+                            </a>
+                        ))}
+                    </div>
+                </section>
+            )
+        }
+    </main>
+</BaseLayout>
