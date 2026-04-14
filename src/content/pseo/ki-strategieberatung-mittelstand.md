@@ -52,7 +52,7 @@ Das Problem ist nicht die Technologie. Das Problem ist das Fehlen einer Strategi
 2. In welcher Reihenfolge setzen wir um?
 3. Wie messen wir den Erfolg?
 
-Eine KI-Strategieberatung liefert diese Antworten — bevor Budget für Tools ausgegeben wird, die niemand nutzt.
+Eine KI-Strategieberatung liefert diese Antworten, bevor Budget für Tools ausgegeben wird, die niemand nutzt. Der nächste Schritt nach der Roadmap ist der Aufbau eines [KI-Betriebssystems für den Mittelstand](/l/ki-betriebssystem-mittelstand-strategie/), das alle einzelnen KI-Anwendungen auf eine gemeinsame Architektur stellt.
 
 ## Was eine KI-Strategieberatung für den Mittelstand konkret leistet
 

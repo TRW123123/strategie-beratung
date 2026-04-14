@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" role="img" aria-label="Das KI-Betriebssystem: fuenf Schichten die zusammenspielen muessen">
+  <title>KI-Betriebssystem: 5-Schichten-Modell</title>
+  <desc>Fuenf horizontale Schichten eines KI-Betriebssystems: Mensch-Maschine-Schnittstelle, Governance und Kontrolle, Workflow-Orchestrierung, Modell-Zugang, Datenbasis.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0F172A"/>
+      <stop offset="1" stop-color="#111827"/>
+    </linearGradient>
+    <linearGradient id="l5" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#60A5FA"/><stop offset="1" stop-color="#3B82F6"/></linearGradient>
+    <linearGradient id="l4" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#34D399"/><stop offset="1" stop-color="#10B981"/></linearGradient>
+    <linearGradient id="l3" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#FBBF24"/><stop offset="1" stop-color="#F59E0B"/></linearGradient>
+    <linearGradient id="l2" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#F472B6"/><stop offset="1" stop-color="#EC4899"/></linearGradient>
+    <linearGradient id="l1" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#A78BFA"/><stop offset="1" stop-color="#8B5CF6"/></linearGradient>
+    <filter id="s" x="-5%" y="-5%" width="110%" height="115%"><feGaussianBlur stdDeviation="6" in="SourceAlpha"/><feOffset dx="0" dy="4"/><feComponentTransfer><feFuncA type="linear" slope="0.35"/></feComponentTransfer><feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+
+  <rect width="1200" height="720" fill="url(#bg)"/>
+
+  <!-- Header -->
+  <text x="60" y="60" fill="#F8FAFC" font-family="Inter, system-ui, sans-serif" font-size="30" font-weight="700">Das KI-Betriebssystem</text>
+  <text x="60" y="92" fill="#94A3B8" font-family="Inter, system-ui, sans-serif" font-size="17">Fuenf Schichten, die zusammenspielen muessen. Faellt eine weg, scheitert das System.</text>
+
+  <!-- Layer 5: Mensch-Maschine -->
+  <g filter="url(#s)">
+    <rect x="60" y="130" width="1080" height="92" rx="12" fill="url(#l5)"/>
+    <text x="90" y="166" fill="#0F172A" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="600" letter-spacing="1.5">SCHICHT 5</text>
+    <text x="90" y="196" fill="#0F172A" font-family="Inter, system-ui, sans-serif" font-size="24" font-weight="700">Mensch-Maschine-Schnittstelle</text>
+    <text x="640" y="178" fill="#0F172A" font-family="Inter, system-ui, sans-serif" font-size="15">Prompts, Eingabemasken, Schulung, Feedback</text>
+    <text x="640" y="202" fill="#0F172A" font-family="Inter, system-ui, sans-serif" font-size="13" opacity="0.8">Ohne sie wird die beste Technik nicht genutzt.</text>
+  </g>
+
+  <!-- Layer 4: Governance -->
+  <g filter="url(#s)">
+    <rect x="60" y="238" width="1080" height="92" rx="12" fill="url(#l4)"/>
+    <text x="90" y="274" fill="#0F172A" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="600" letter-spacing="1.5">SCHICHT 4</text>
+    <text x="90" y="304" fill="#0F172A" font-family="Inter, system-ui, sans-serif" font-size="24" font-weight="700">Governance und Kontrolle</text>
+    <text x="640" y="286" fill="#0F172A" font-family="Inter, system-ui, sans-serif" font-size="15">Rollen, Freigaben, EU-KI-Verordnung, DSGVO</text>
+    <text x="640" y="310" fill="#0F172A" font-family="Inter, system-ui, sans-serif" font-size="13" opacity="0.8">Am haeufigsten vergessen, am teuersten nachzuruesten.</text>
+  </g>
+
+  <!-- Layer 3: Workflow -->
+  <g filter="url(#s)">
+    <rect x="60" y="346" width="1080" height="92" rx="12" fill="url(#l3)"/>
+    <text x="90" y="382" fill="#0F172A" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="600" letter-spacing="1.5">SCHICHT 3</text>
+    <text x="90" y="412" fill="#0F172A" font-family="Inter, system-ui, sans-serif" font-size="24" font-weight="700">Workflow-Orchestrierung</text>
+    <text x="640" y="394" fill="#0F172A" font-family="Inter, system-ui, sans-serif" font-size="15">KI-Aufrufe zu Geschaeftsprozessen verketten</text>
+    <text x="640" y="418" fill="#0F172A" font-family="Inter, system-ui, sans-serif" font-size="13" opacity="0.8">Aus isoliertem Tool wird ein echter Prozess.</text>
+  </g>
+
+  <!-- Layer 2: Modell-Zugang -->
+  <g filter="url(#s)">
+    <rect x="60" y="454" width="1080" height="92" rx="12" fill="url(#l2)"/>
+    <text x="90" y="490" fill="#F8FAFC" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="600" letter-spacing="1.5">SCHICHT 2</text>
+    <text x="90" y="520" fill="#F8FAFC" font-family="Inter, system-ui, sans-serif" font-size="24" font-weight="700">Modell-Zugang</text>
+    <text x="640" y="502" fill="#F8FAFC" font-family="Inter, system-ui, sans-serif" font-size="15">Cloud-API, lokale Modelle oder hybrid</text>
+    <text x="640" y="526" fill="#F8FAFC" font-family="Inter, system-ui, sans-serif" font-size="13" opacity="0.85">Entscheidung pro Anwendungsfall, nicht pauschal.</text>
+  </g>
+
+  <!-- Layer 1: Datenbasis -->
+  <g filter="url(#s)">
+    <rect x="60" y="562" width="1080" height="92" rx="12" fill="url(#l1)"/>
+    <text x="90" y="598" fill="#F8FAFC" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="600" letter-spacing="1.5">SCHICHT 1</text>
+    <text x="90" y="628" fill="#F8FAFC" font-family="Inter, system-ui, sans-serif" font-size="24" font-weight="700">Datenbasis</text>
+    <text x="640" y="610" fill="#F8FAFC" font-family="Inter, system-ui, sans-serif" font-size="15">ERP, CRM, Dokumentenablage, Branchensoftware</text>
+    <text x="640" y="634" fill="#F8FAFC" font-family="Inter, system-ui, sans-serif" font-size="13" opacity="0.85">Nicht neu bauen, sondern einraeumen.</text>
+  </g>
+
+  <!-- Footer -->
+  <text x="60" y="692" fill="#64748B" font-family="Inter, system-ui, sans-serif" font-size="13">ST Strategieberatung, BAFA-gelisteter Berater, Schwerte/NRW</text>
+  <text x="1140" y="692" fill="#64748B" font-family="Inter, system-ui, sans-serif" font-size="13" text-anchor="end">st-automatisierung.de</text>
+</svg>
