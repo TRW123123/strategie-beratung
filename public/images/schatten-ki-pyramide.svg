@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" role="img" aria-label="Schatten-KI im Mittelstand, Iceberg der sichtbaren und verborgenen KI-Nutzung">
+  <title>Schatten-KI: Das Eisberg-Modell der KI-Nutzung im Mittelstand</title>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0F172A"/>
+      <stop offset="1" stop-color="#1E3A5F"/>
+    </linearGradient>
+    <linearGradient id="water" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1E3A5F"/>
+      <stop offset="1" stop-color="#0F172A"/>
+    </linearGradient>
+    <linearGradient id="iceTop" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#E0F2FE"/>
+      <stop offset="1" stop-color="#7DD3FC"/>
+    </linearGradient>
+    <linearGradient id="iceBot" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#38BDF8"/>
+      <stop offset="1" stop-color="#1E40AF"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="300" fill="url(#sky)"/>
+  <rect y="300" width="1200" height="420" fill="url(#water)"/>
+  <line x1="0" y1="300" x2="1200" y2="300" stroke="#38BDF8" stroke-width="2" stroke-dasharray="8,6" opacity="0.5"/>
+
+  <text x="60" y="60" fill="#F8FAFC" font-family="Inter, system-ui, sans-serif" font-size="30" font-weight="700">Schatten-KI im Mittelstand</text>
+  <text x="60" y="90" fill="#94A3B8" font-family="Inter, system-ui, sans-serif" font-size="17">Was die Geschaeftsfuehrung sieht versus was taeglich wirklich laeuft</text>
+
+  <!-- Iceberg top (visible) -->
+  <polygon points="450,290 600,130 750,290" fill="url(#iceTop)" stroke="#BAE6FD" stroke-width="2"/>
+  <text x="600" y="185" text-anchor="middle" fill="#0F172A" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="700">SICHTBAR</text>
+  <text x="600" y="215" text-anchor="middle" fill="#0F172A" font-family="Inter, system-ui, sans-serif" font-size="14">Copilot-Lizenzen</text>
+  <text x="600" y="235" text-anchor="middle" fill="#0F172A" font-family="Inter, system-ui, sans-serif" font-size="14">offizielle Tools</text>
+  <text x="600" y="265" text-anchor="middle" fill="#0F172A" font-family="Inter, system-ui, sans-serif" font-size="12" opacity="0.75">2 bis 3 Anwendungen</text>
+
+  <!-- Iceberg below (hidden) -->
+  <polygon points="450,310 290,680 910,680 750,310" fill="url(#iceBot)" stroke="#38BDF8" stroke-width="2"/>
+  <text x="600" y="355" text-anchor="middle" fill="#F8FAFC" font-family="Inter, system-ui, sans-serif" font-size="16" font-weight="700" letter-spacing="1.5">SCHATTEN-KI</text>
+
+  <text x="600" y="400" text-anchor="middle" fill="#F8FAFC" font-family="Inter, system-ui, sans-serif" font-size="15">private ChatGPT-Accounts mit Kundendaten</text>
+  <text x="600" y="430" text-anchor="middle" fill="#F8FAFC" font-family="Inter, system-ui, sans-serif" font-size="15">Browser-Erweiterungen mit KI-Funktion</text>
+  <text x="600" y="460" text-anchor="middle" fill="#F8FAFC" font-family="Inter, system-ui, sans-serif" font-size="15">heimliche Recruiting-KI in HR</text>
+  <text x="600" y="490" text-anchor="middle" fill="#F8FAFC" font-family="Inter, system-ui, sans-serif" font-size="15">KI-Module in Branchensoftware</text>
+  <text x="600" y="520" text-anchor="middle" fill="#F8FAFC" font-family="Inter, system-ui, sans-serif" font-size="15">KI-Tools einzelner Abteilungen</text>
+  <text x="600" y="550" text-anchor="middle" fill="#F8FAFC" font-family="Inter, system-ui, sans-serif" font-size="15">Quellcode in Privat-Prompts</text>
+  <text x="600" y="580" text-anchor="middle" fill="#F8FAFC" font-family="Inter, system-ui, sans-serif" font-size="15">Angebote und Kundenlisten in Chatbots</text>
+
+  <text x="600" y="635" text-anchor="middle" fill="#FCA5A5" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="700">7 bis 15 nicht genehmigte Anwendungen pro Betrieb</text>
+
+  <!-- Side stats -->
+  <g>
+    <rect x="30" y="340" width="210" height="70" rx="8" fill="#1E293B" stroke="#334155"/>
+    <text x="45" y="365" fill="#F8FAFC" font-family="Inter, system-ui, sans-serif" font-size="24" font-weight="700">78%</text>
+    <text x="45" y="385" fill="#94A3B8" font-family="Inter, system-ui, sans-serif" font-size="12">bringen eigene KI-Tools</text>
+    <text x="45" y="400" fill="#94A3B8" font-family="Inter, system-ui, sans-serif" font-size="11" opacity="0.8">Microsoft Work Trend Index 2024</text>
+  </g>
+  <g>
+    <rect x="30" y="420" width="210" height="70" rx="8" fill="#1E293B" stroke="#334155"/>
+    <text x="45" y="445" fill="#F8FAFC" font-family="Inter, system-ui, sans-serif" font-size="24" font-weight="700">55%</text>
+    <text x="45" y="465" fill="#94A3B8" font-family="Inter, system-ui, sans-serif" font-size="12">verschweigen KI-Nutzung</text>
+    <text x="45" y="480" fill="#94A3B8" font-family="Inter, system-ui, sans-serif" font-size="11" opacity="0.8">KPMG Trust in AI 2025</text>
+  </g>
+
+  <g>
+    <rect x="960" y="340" width="210" height="70" rx="8" fill="#1E293B" stroke="#334155"/>
+    <text x="975" y="365" fill="#F8FAFC" font-family="Inter, system-ui, sans-serif" font-size="24" font-weight="700">+485%</text>
+    <text x="975" y="385" fill="#94A3B8" font-family="Inter, system-ui, sans-serif" font-size="12">sensible Daten in GenAI</text>
+    <text x="975" y="400" fill="#94A3B8" font-family="Inter, system-ui, sans-serif" font-size="11" opacity="0.8">Cyberhaven 2024, YoY</text>
+  </g>
+  <g>
+    <rect x="960" y="420" width="210" height="70" rx="8" fill="#1E293B" stroke="#334155"/>
+    <text x="975" y="445" fill="#F8FAFC" font-family="Inter, system-ui, sans-serif" font-size="24" font-weight="700">4,88 Mio $</text>
+    <text x="975" y="465" fill="#94A3B8" font-family="Inter, system-ui, sans-serif" font-size="12">Ø Kosten pro Datenleck</text>
+    <text x="975" y="480" fill="#94A3B8" font-family="Inter, system-ui, sans-serif" font-size="11" opacity="0.8">IBM Cost of Data Breach 2024</text>
+  </g>
+
+  <text x="60" y="692" fill="#64748B" font-family="Inter, system-ui, sans-serif" font-size="13">ST Strategieberatung, BAFA-gelisteter Berater</text>
+  <text x="1140" y="692" fill="#64748B" font-family="Inter, system-ui, sans-serif" font-size="13" text-anchor="end">st-automatisierung.de</text>
+</svg>

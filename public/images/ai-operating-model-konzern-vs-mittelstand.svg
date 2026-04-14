@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" role="img" aria-label="AI Operating Model im Vergleich, Konzern versus Mittelstand">
+  <title>AI Operating Model: Konzern versus Mittelstand</title>
+  <defs>
+    <linearGradient id="bg2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0F172A"/><stop offset="1" stop-color="#111827"/></linearGradient>
+    <linearGradient id="corp" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#64748B"/><stop offset="1" stop-color="#475569"/></linearGradient>
+    <linearGradient id="mit" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#34D399"/><stop offset="1" stop-color="#10B981"/></linearGradient>
+  </defs>
+  <rect width="1200" height="720" fill="url(#bg2)"/>
+
+  <text x="60" y="60" fill="#F8FAFC" font-family="Inter, system-ui, sans-serif" font-size="30" font-weight="700">AI Operating Model</text>
+  <text x="60" y="90" fill="#94A3B8" font-family="Inter, system-ui, sans-serif" font-size="17">Dieselbe Logik, andere Skalierung. Sieben Dimensionen im Vergleich.</text>
+
+  <!-- Column headers -->
+  <rect x="60" y="130" width="540" height="50" rx="8" fill="url(#corp)"/>
+  <text x="330" y="162" text-anchor="middle" fill="#F8FAFC" font-family="Inter, system-ui, sans-serif" font-size="22" font-weight="700">KONZERN-AOM</text>
+  <rect x="620" y="130" width="540" height="50" rx="8" fill="url(#mit)"/>
+  <text x="890" y="162" text-anchor="middle" fill="#0F172A" font-family="Inter, system-ui, sans-serif" font-size="22" font-weight="700">MITTELSTAND AOM-LIGHT</text>
+
+  <!-- Dimension rows -->
+  <g font-family="Inter, system-ui, sans-serif" font-size="14">
+    <!-- Row 1 Strategy -->
+    <rect x="60" y="200" width="540" height="60" rx="6" fill="#1E293B" stroke="#334155"/>
+    <text x="80" y="225" fill="#94A3B8" font-size="11" font-weight="600" letter-spacing="1">STRATEGIE</text>
+    <text x="80" y="248" fill="#F8FAFC">80-seitiges Strategiepapier, 12-Monats-OKRs</text>
+    <rect x="620" y="200" width="540" height="60" rx="6" fill="#064E3B" stroke="#10B981"/>
+    <text x="640" y="225" fill="#6EE7B7" font-size="11" font-weight="600" letter-spacing="1">STRATEGIE</text>
+    <text x="640" y="248" fill="#F8FAFC">Zwei-Seiten-Dokument, 3-5 priorisierte Use Cases</text>
+
+    <!-- Row 2 Governance -->
+    <rect x="60" y="274" width="540" height="60" rx="6" fill="#1E293B" stroke="#334155"/>
+    <text x="80" y="299" fill="#94A3B8" font-size="11" font-weight="600" letter-spacing="1">GOVERNANCE</text>
+    <text x="80" y="322" fill="#F8FAFC">AI Governance Board, monatliche Sitzungen</text>
+    <rect x="620" y="274" width="540" height="60" rx="6" fill="#064E3B" stroke="#10B981"/>
+    <text x="640" y="299" fill="#6EE7B7" font-size="11" font-weight="600" letter-spacing="1">GOVERNANCE</text>
+    <text x="640" y="322" fill="#F8FAFC">6-8 Seiten Richtlinie, Quartals-Review im GF-Jour-Fixe</text>
+
+    <!-- Row 3 Daten -->
+    <rect x="60" y="348" width="540" height="60" rx="6" fill="#1E293B" stroke="#334155"/>
+    <text x="80" y="373" fill="#94A3B8" font-size="11" font-weight="600" letter-spacing="1">DATEN</text>
+    <text x="80" y="396" fill="#F8FAFC">Data Lake auf Databricks/Snowflake, MLOps</text>
+    <rect x="620" y="348" width="540" height="60" rx="6" fill="#064E3B" stroke="#10B981"/>
+    <text x="640" y="373" fill="#6EE7B7" font-size="11" font-weight="600" letter-spacing="1">DATEN</text>
+    <text x="640" y="396" fill="#F8FAFC">Punkt-Integration in DATEV, CRM, SharePoint</text>
+
+    <!-- Row 4 Technology -->
+    <rect x="60" y="422" width="540" height="60" rx="6" fill="#1E293B" stroke="#334155"/>
+    <text x="80" y="447" fill="#94A3B8" font-size="11" font-weight="600" letter-spacing="1">TECHNOLOGIE</text>
+    <text x="80" y="470" fill="#F8FAFC">eigenes MLOps, custom Modelle, Platform Engineering</text>
+    <rect x="620" y="422" width="540" height="60" rx="6" fill="#064E3B" stroke="#10B981"/>
+    <text x="640" y="447" fill="#6EE7B7" font-size="11" font-weight="600" letter-spacing="1">TECHNOLOGIE</text>
+    <text x="640" y="470" fill="#F8FAFC">SaaS-Tools mit Business-Lizenz, keine Eigenentwicklung</text>
+
+    <!-- Row 5 Talent -->
+    <rect x="60" y="496" width="540" height="60" rx="6" fill="#1E293B" stroke="#334155"/>
+    <text x="80" y="521" fill="#94A3B8" font-size="11" font-weight="600" letter-spacing="1">TALENT</text>
+    <text x="80" y="544" fill="#F8FAFC">Center of Excellence mit 8-20 FTE, Chief AI Officer</text>
+    <rect x="620" y="496" width="540" height="60" rx="6" fill="#064E3B" stroke="#10B981"/>
+    <text x="640" y="521" fill="#6EE7B7" font-size="11" font-weight="600" letter-spacing="1">TALENT</text>
+    <text x="640" y="544" fill="#F8FAFC">1 AI-Lead mit 20-40% Freistellung + externer Sparring</text>
+
+    <!-- Row 6 Operating -->
+    <rect x="60" y="570" width="540" height="60" rx="6" fill="#1E293B" stroke="#334155"/>
+    <text x="80" y="595" fill="#94A3B8" font-size="11" font-weight="600" letter-spacing="1">OPERATING</text>
+    <text x="80" y="618" fill="#F8FAFC">zentrale KI-Abteilung, Hub-and-Spoke weltweit</text>
+    <rect x="620" y="570" width="540" height="60" rx="6" fill="#064E3B" stroke="#10B981"/>
+    <text x="640" y="595" fill="#6EE7B7" font-size="11" font-weight="600" letter-spacing="1">OPERATING</text>
+    <text x="640" y="618" fill="#F8FAFC">Use-Case-Teams in Fachbereichen, keine zentrale Stelle</text>
+  </g>
+
+  <!-- Budget band -->
+  <rect x="60" y="644" width="1100" height="44" rx="8" fill="#FBBF24" opacity="0.2" stroke="#FBBF24"/>
+  <text x="80" y="672" fill="#FCD34D" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="700">BUDGET: Konzern zweistelliger Millionenbereich p.a. - Mittelstand 20.000 bis 150.000 EUR ueber 12 Monate</text>
+
+  <text x="60" y="710" fill="#64748B" font-family="Inter, system-ui, sans-serif" font-size="12">Quelle: PwC AI TOM, McKinsey Rewired, IW Koeln Report 2025</text>
+  <text x="1140" y="710" fill="#64748B" font-family="Inter, system-ui, sans-serif" font-size="12" text-anchor="end">st-automatisierung.de</text>
+</svg>

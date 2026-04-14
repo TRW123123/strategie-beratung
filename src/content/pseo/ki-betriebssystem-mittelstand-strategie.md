@@ -139,6 +139,14 @@ In NRW ist die Ausgangslage günstig. Die BAFA-Beratungsförderung Unternehmeris
 > "Unternehmen, die KI nur als Werkzeug begreifen, geben viel Geld für wenig Wirkung aus. Wer KI als Betriebssystem versteht, baut einen Vorteil, den Wettbewerber in zwei bis drei Jahren nicht mehr einholen."
 > — Safak Tepecik, Inhaber ST Strategieberatung, BAFA-gelisteter Berater
 
+## Vertiefungen pro Schicht
+
+Jede der fünf Schichten hat eigene Detailthemen, die in separaten Beiträgen behandelt sind:
+
+- **Governance-Schicht:** [Schatten-KI im Mittelstand](/l/schatten-ki-mittelstand-risiken-governance/) zeigt, was in Ihren Abteilungen ohne Ihr Wissen läuft. [KI-Governance und EU-KI-Verordnung](/l/ki-governance-eu-ki-verordnung-mittelstand/) klärt, was die Verordnung bis 2027 von Ihnen verlangt.
+- **Organisatorische Architektur:** [AI Operating Model für den Mittelstand](/l/ai-operating-model-mittelstand-unterschied-konzern/) erklärt, warum der PwC-Blueprint bei Ihnen nicht funktioniert und wie die Light-Variante aussieht.
+- **Reifegrad und Start:** [KI-Reifegrad-Modell](/l/ki-reifegrad-modell-mittelstand-assessment/) liefert die ehrliche Selbsteinschätzung vor der ersten Investition. [Warum KI-Piloten scheitern](/l/ki-pilot-scheitert-poc-falle-mittelstand/) zeigt die fünf strukturellen Ursachen, damit Ihr zweiter Anlauf anders verläuft.
+
 ## Häufige Fragen
 
 Die fünf Kernfragen zum KI-Betriebssystem sind im FAQ-Block dieser Seite beantwortet: Definition, Unternehmensgröße, Abgrenzung zum AI Operating Model, BAFA-Förderung und Dauer.

@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" role="img" aria-label="KI-PoC Trichter, warum 88 Prozent nie in Produktion gehen">
+  <title>Der PoC-Trichter: Wo KI-Piloten sterben</title>
+  <defs>
+    <linearGradient id="bg3" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0F172A"/><stop offset="1" stop-color="#111827"/></linearGradient>
+    <linearGradient id="tier1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F472B6"/><stop offset="1" stop-color="#EC4899"/></linearGradient>
+    <linearGradient id="tier2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FBBF24"/><stop offset="1" stop-color="#F59E0B"/></linearGradient>
+    <linearGradient id="tier3" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FB923C"/><stop offset="1" stop-color="#EA580C"/></linearGradient>
+    <linearGradient id="tier4" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#EF4444"/><stop offset="1" stop-color="#B91C1C"/></linearGradient>
+    <linearGradient id="tier5" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#34D399"/><stop offset="1" stop-color="#059669"/></linearGradient>
+  </defs>
+  <rect width="1200" height="720" fill="url(#bg3)"/>
+
+  <text x="60" y="60" fill="#F8FAFC" font-family="Inter, system-ui, sans-serif" font-size="30" font-weight="700">Der PoC-Trichter</text>
+  <text x="60" y="90" fill="#94A3B8" font-family="Inter, system-ui, sans-serif" font-size="17">Von 33 gestarteten KI-Piloten schaffen es durchschnittlich 4 in den Regelbetrieb.</text>
+
+  <!-- Funnel stages -->
+  <!-- Stage 1 widest -->
+  <polygon points="200,140 1000,140 920,220 280,220" fill="url(#tier1)"/>
+  <text x="600" y="178" text-anchor="middle" fill="#0F172A" font-family="Inter, system-ui, sans-serif" font-size="18" font-weight="700">1. IDEE / PROBLEMDEFINITION</text>
+  <text x="600" y="203" text-anchor="middle" fill="#0F172A" font-family="Inter, system-ui, sans-serif" font-size="14">100% starten, aber 80% mit falscher Problemdefinition (RAND)</text>
+
+  <polygon points="280,230 920,230 855,310 345,310" fill="url(#tier2)"/>
+  <text x="600" y="268" text-anchor="middle" fill="#0F172A" font-family="Inter, system-ui, sans-serif" font-size="18" font-weight="700">2. DATEN-CHECK</text>
+  <text x="600" y="293" text-anchor="middle" fill="#0F172A" font-family="Inter, system-ui, sans-serif" font-size="14">76% der KMU haben mangelhafte Datenqualitaet (Bitkom)</text>
+
+  <polygon points="345,320 855,320 790,400 410,400" fill="url(#tier3)"/>
+  <text x="600" y="358" text-anchor="middle" fill="#F8FAFC" font-family="Inter, system-ui, sans-serif" font-size="18" font-weight="700">3. PROOF OF CONCEPT</text>
+  <text x="600" y="383" text-anchor="middle" fill="#F8FAFC" font-family="Inter, system-ui, sans-serif" font-size="14">Pilot laeuft technisch, Technical Debt ignoriert (-29% ROI, IBM)</text>
+
+  <!-- Stage 4 Scale-Up Gate - highlight as killer -->
+  <polygon points="410,410 790,410 725,490 475,490" fill="url(#tier4)" stroke="#FEF2F2" stroke-width="2"/>
+  <text x="600" y="448" text-anchor="middle" fill="#FEF2F2" font-family="Inter, system-ui, sans-serif" font-size="18" font-weight="700">4. SCALE-UP GATE ← KILLER</text>
+  <text x="600" y="473" text-anchor="middle" fill="#FEE2E2" font-family="Inter, system-ui, sans-serif" font-size="14">46% aller Projekte sterben hier (S&amp;P Global 2025)</text>
+
+  <!-- Stage 5 success narrow -->
+  <polygon points="475,500 725,500 700,580 500,580" fill="url(#tier5)"/>
+  <text x="600" y="538" text-anchor="middle" fill="#0F172A" font-family="Inter, system-ui, sans-serif" font-size="18" font-weight="700">5. REGELBETRIEB</text>
+  <text x="600" y="563" text-anchor="middle" fill="#0F172A" font-family="Inter, system-ui, sans-serif" font-size="14">nur 12% aller PoCs kommen hier an (IDC/Lenovo)</text>
+
+  <!-- Stats side -->
+  <g>
+    <rect x="20" y="500" width="170" height="160" rx="8" fill="#1E293B" stroke="#334155"/>
+    <text x="35" y="530" fill="#F8FAFC" font-family="Inter, system-ui, sans-serif" font-size="28" font-weight="700">88%</text>
+    <text x="35" y="552" fill="#94A3B8" font-family="Inter, system-ui, sans-serif" font-size="13">scheitern gesamt</text>
+    <text x="35" y="572" fill="#94A3B8" font-family="Inter, system-ui, sans-serif" font-size="11" opacity="0.8">IDC/Lenovo 2024</text>
+
+    <text x="35" y="605" fill="#F8FAFC" font-family="Inter, system-ui, sans-serif" font-size="28" font-weight="700">4%</text>
+    <text x="35" y="627" fill="#94A3B8" font-family="Inter, system-ui, sans-serif" font-size="13">schaffen Wert</text>
+    <text x="35" y="647" fill="#94A3B8" font-family="Inter, system-ui, sans-serif" font-size="11" opacity="0.8">BCG 2024</text>
+  </g>
+  <g>
+    <rect x="1010" y="500" width="170" height="160" rx="8" fill="#1E293B" stroke="#334155"/>
+    <text x="1025" y="530" fill="#F8FAFC" font-family="Inter, system-ui, sans-serif" font-size="28" font-weight="700">42%</text>
+    <text x="1025" y="552" fill="#94A3B8" font-family="Inter, system-ui, sans-serif" font-size="13">Abbruchrate 2025</text>
+    <text x="1025" y="572" fill="#94A3B8" font-family="Inter, system-ui, sans-serif" font-size="11" opacity="0.8">S&amp;P, vs. 17% in 2024</text>
+
+    <text x="1025" y="605" fill="#F8FAFC" font-family="Inter, system-ui, sans-serif" font-size="28" font-weight="700">2x</text>
+    <text x="1025" y="627" fill="#94A3B8" font-family="Inter, system-ui, sans-serif" font-size="13">Fail-Rate vs. non-KI-IT</text>
+    <text x="1025" y="647" fill="#94A3B8" font-family="Inter, system-ui, sans-serif" font-size="11" opacity="0.8">RAND RR-A2680-1</text>
+  </g>
+
+  <text x="60" y="700" fill="#64748B" font-family="Inter, system-ui, sans-serif" font-size="13">ST Strategieberatung, BAFA-gelisteter Berater</text>
+  <text x="1140" y="700" fill="#64748B" font-family="Inter, system-ui, sans-serif" font-size="13" text-anchor="end">st-automatisierung.de</text>
+</svg>
