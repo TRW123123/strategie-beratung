@@ -55,4 +55,4 @@ Microsoft Copilot verarbeitet bei der "For Enterprise"-Lizenz Daten strikt inner
 
 ## Fazit
 
-Copilot an sich ist nicht Ihr Datenschutz-Problem – Ihr historisch gewachsenes Berechtigungskonzept aus 10 Jahren IT-Betrieb ist das Problem. Copilot fördert nur zutage, was schon immer schief lag. Die DSFA kostet 5.000 €. Die interne Datenpanne, wenn der Praktikant alle Vorstandsgehälter sieht, kostet das Vertrauen der gesamten Belegschaft.
+Copilot an sich ist nicht Ihr Datenschutz-Problem, Ihr historisch gewachsenes Berechtigungskonzept aus 10 Jahren IT-Betrieb ist das Problem. Copilot fördert nur zutage, was schon immer schief lag. Die DSFA kostet 5.000 €. Die interne Datenpanne, wenn der Praktikant alle Vorstandsgehälter sieht, kostet das Vertrauen der gesamten Belegschaft. Parallel dazu laufen in den meisten Betrieben weitere, nicht freigegebene KI-Werkzeuge: [Schatten-KI im Mittelstand](/l/schatten-ki-mittelstand-risiken-governance/) zeigt, wie Sie diese zweite Baustelle strukturiert schließen.

@@ -51,4 +51,4 @@ Das strukturierte KI-Audit deckt den AI Act (Bestandsaufnahme, Risikoklassifizie
 
 ## Fazit
 
-Ein KI-Audit ist kein Luxus für Konzerne – es ist die absolute Pflichtübung vor dem Start. Wer KI ohne Inventar einführt, baut ein Haus, ohne zu wissen, welcher Boden und welches juristische Minenfeld sich darunter befindet.
+Ein KI-Audit ist kein Luxus für Konzerne, es ist die absolute Pflichtübung vor dem Start. Wer KI ohne Inventar einführt, baut ein Haus, ohne zu wissen, welcher Boden und welches juristische Minenfeld sich darunter befindet. Das Audit liefert die Bestandsaufnahme. Die Einordnung des Ist-Stands in eine belastbare Entwicklungsstufe und die Ableitung des nächsten sinnvollen Schritts liefert das [KI-Reifegrad-Modell](/l/ki-reifegrad-modell-mittelstand-assessment/) mit sechs Bewertungsdimensionen.

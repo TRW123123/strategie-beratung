@@ -52,4 +52,4 @@ ChatGPT-Business-Versionen verarbeiten Daten nicht für Modelltraining; ein AV-V
 
 ## Fazit
 
-Ihre Mitarbeiter nutzen ChatGPT bereits. Die Frage ist nicht ob, sondern ob kontrolliert oder unkontrolliert. Jeder Tag ohne KI-Richtlinie ist ein Tag, an dem Kundendaten in fremden Trainingssets landen können.
+Ihre Mitarbeiter nutzen ChatGPT bereits. Die Frage ist nicht ob, sondern ob kontrolliert oder unkontrolliert. Jeder Tag ohne KI-Richtlinie ist ein Tag, an dem Kundendaten in fremden Trainingssets landen können. Die organisatorische Seite des Problems, also der unsichtbare Wildwuchs hinter ChatGPT, Copilot und Co, beschreibt die Seite zu [Schatten-KI im Mittelstand](/l/schatten-ki-mittelstand-risiken-governance/).

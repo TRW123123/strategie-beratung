@@ -174,7 +174,7 @@ import "@fontsource/space-grotesk/700.css";
 
                 <div class="footer-col">
                     <h4 class="footer-heading">Kontakt</h4>
-                    <p>
+                    <p class="footer-contact">
                         Heidestraße 2<br />
                         58239 Schwerte<br />
                         <a href="tel:+4915234639525">01523 4639525</a><br />
@@ -402,6 +402,23 @@ import "@fontsource/space-grotesk/700.css";
             }
 
             .footer-links a:hover {
+                color: var(--color-primary);
+            }
+
+            .footer-contact {
+                font-size: 0.9rem;
+                color: var(--color-text-muted);
+                line-height: 1.7;
+            }
+
+            .footer-contact a {
+                color: var(--color-text-muted);
+                text-decoration: none;
+                font-size: inherit;
+                transition: color 0.2s;
+            }
+
+            .footer-contact a:hover {
                 color: var(--color-primary);
             }
 

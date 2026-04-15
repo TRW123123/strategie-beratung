@@ -50,4 +50,4 @@ Unser Template ist strikt an die Anforderungen des EU AI Act, der DSGVO (insb. A
 
 ## Fazit
 
-Freiheit ohne flankierende Regeln endet in operationellem Chaos. Wer seinen Mitarbeitern den Einsatz von KI ohne verbindliche interne Richtlinie erlaubt, haftet am Ende als Geschäftsführer persönlich für den nächsten unvermeidbaren Datenschutz- oder Urheberrechtsverstoß.
+Freiheit ohne flankierende Regeln endet in operationellem Chaos. Wer seinen Mitarbeitern den Einsatz von KI ohne verbindliche interne Richtlinie erlaubt, haftet am Ende als Geschäftsführer persönlich für den nächsten unvermeidbaren Datenschutz- oder Urheberrechtsverstoß. Die Richtlinie ist die Antwort auf ein Problem, das heute bereits in jedem Betrieb läuft: [Schatten-KI im Mittelstand](/l/schatten-ki-mittelstand-risiken-governance/) zeigt, was Ihre Mitarbeiter nutzen, bevor Sie es formal regeln.

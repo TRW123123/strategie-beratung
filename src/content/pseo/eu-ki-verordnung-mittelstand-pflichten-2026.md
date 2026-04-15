@@ -104,7 +104,7 @@ Die meisten Mittelständler sind Betreiber (Deployer), nicht Anbieter. Als Betre
 - Startup mit 500.000 € Umsatz: max. 35.000 € (7% × 500K) statt 35 Mio. €
 - Mittelständler mit 20 Mio. € Umsatz: max. 1,4 Mio. € (7% × 20M) statt 35 Mio. €
 
-Bußgelder für Hochrisiko-Pflichten sind ab 02.08.2026 durchsetzbar — unabhängig vom Digital-Omnibus-Paket für die materiellen Pflichten.
+Bußgelder für Hochrisiko-Pflichten sind ab 02.08.2026 durchsetzbar, unabhängig vom Digital-Omnibus-Paket für die materiellen Pflichten. Wie Sie die Einhaltung organisatorisch sicherstellen, beschreiben wir im Detail auf der Seite zum [KI-Governance-Rahmen für den Mittelstand](/l/ki-governance-eu-ki-verordnung-mittelstand/).
 
 ## Deutschland: Wer überwacht den AI Act?
 

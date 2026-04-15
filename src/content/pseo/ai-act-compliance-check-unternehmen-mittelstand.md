@@ -95,3 +95,7 @@ Die Alternative: keine Prüfung, und ab August 2026 das Risiko von Bußgeldern b
 ## Wie ST Strategieberatung den Check durchführt
 
 Wir arbeiten mit einem standardisierten Fragebogen, der die Annex-III-Kriterien systematisch abbildet. Das Ergebnis ist kein akademisches Gutachten, sondern ein Arbeitsdokument: KI-Register, Gap-Matrix, Maßnahmenplan. Das Erstgespräch ist kostenlos.
+
+## Nach dem Check: Governance dauerhaft verankern
+
+Ein einmaliger Compliance-Check beantwortet die Frage, wo Sie heute stehen. Die Frage, wie Sie die Anforderungen dauerhaft erfüllen, beantwortet ein [KI-Governance-Rahmen](/l/ki-governance-eu-ki-verordnung-mittelstand/) mit klaren Rollen, Richtlinie und Quartalsüberprüfung. Der Check liefert die Ist-Analyse, die Governance macht daraus einen Regelbetrieb.

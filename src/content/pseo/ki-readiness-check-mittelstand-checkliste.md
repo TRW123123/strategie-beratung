@@ -124,7 +124,7 @@ Erster Schritt: KI-Richtlinie erstellen, Datenschutz-Folgenabschaetzung durchfue
 
 ## Der naechste Schritt nach dem Check
 
-Egal ob Score 3 oder 11: Der Check zeigt Ihnen wo Sie stehen. Er zeigt aber nicht, welcher konkrete Schritt den groessten Hebel hat. Dafuer ist eine professionelle Analyse noetig.
+Egal ob Score 3 oder 11: Der Check zeigt Ihnen wo Sie stehen. Er zeigt aber nicht, welcher konkrete Schritt den groessten Hebel hat. Dafuer ist eine professionelle Analyse noetig. Der Readiness-Check ist eine Ja-Nein-Einordnung in vier Dimensionen. Eine differenziertere Einstufung ueber fuenf Reifestufen, inklusive Hindernissen beim Stufensprung, liefert das [KI-Reifegrad-Modell fuer den Mittelstand](/l/ki-reifegrad-modell-mittelstand-assessment/).
 
 780.000 Mittelstaendler nutzen bereits KI (KfW 2026). 51 Prozent der Unternehmen glauben: Wer KI nicht einsetzt, hat langfristig keine Zukunft (Bitkom 2025). Die Frage ist nicht ob KI kommt, sondern ob Sie vorbereitet sind wenn es soweit ist.
 

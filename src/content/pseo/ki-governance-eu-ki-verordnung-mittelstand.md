@@ -128,7 +128,7 @@ Die typische KMU-Reaktion auf die EU-KI-Verordnung ist Überforderung. Die Folge
 3. **Rollenverteilung.** Datenschutzbeauftragter, IT-Verantwortlicher, Fachbereichsleitung, Geschäftsführung. Wer macht was, wer eskaliert an wen.
 4. **Quartalsweise Prüfung.** Im GF-Jour-Fixe, nicht in einem separaten Board. Dokumentiert in einem Protokoll.
 
-Dieser Rahmen ist die Governance-Schicht des [KI-Betriebssystems für den Mittelstand](/l/ki-betriebssystem-mittelstand-strategie/). Ohne sie sind alle anderen Schichten haftungsrechtlich exponiert.
+Dieser Rahmen ist die Governance-Schicht des [KI-Betriebssystems für den Mittelstand](/l/ki-betriebssystem-mittelstand-strategie/). Ohne sie sind alle anderen Schichten haftungsrechtlich exponiert. Für die konkreten Umsetzungsschritte der Compliance-Pflichten siehe unseren [AI Act Compliance-Check in fünf Schritten](/l/ai-act-compliance-check-unternehmen-mittelstand/) und die detaillierte [Klassifizierung nach Risikoklassen](/l/ki-verordnung-risikoklassen-unternehmen-audit/).
 
 ## Was das mit BAFA zu tun hat
 
