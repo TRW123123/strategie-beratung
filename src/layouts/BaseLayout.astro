@@ -124,7 +124,7 @@ import "@fontsource/space-grotesk/700.css";
             }
         </script>
     </head>
-    <body class="bg-gray-900 text-white font-sans antialiased">
+    <body>
         <a href="#main-content" class="skip-link">Zum Inhalt springen</a>
 
         <header class="site-header">
@@ -145,7 +145,7 @@ import "@fontsource/space-grotesk/700.css";
                     <a href="/loesungen-branchen/" class="nav-link">Lösungen & Branchen</a>
                     <a href="/ki-im-unternehmen/" class="nav-link">Analyse</a>
                     <a href="/ki-einfuehrung-unternehmen/" class="nav-link">Strategie</a>
-                    <a href="mailto:info@st-automatisierung.de" class="nav-link">Kontakt</a>
+                    <a href="mailto:info@st-automatisierung.de" class="nav-link nav-link-cta">Kontakt</a>
                 </nav>
             </div>
         </header>
@@ -185,11 +185,26 @@ import "@fontsource/space-grotesk/700.css";
                 </div>
             </div>
             <div class="container footer-bottom">
-                &copy; {new Date().getFullYear()} ST BERATUNG. Alle Rechte vorbehalten.
+                &copy; {new Date().getFullYear()} ST-Strategieberatung UG (haftungsbeschr&auml;nkt). Alle Rechte vorbehalten.
             </div>
         </footer>
 
         <script is:inline>
+            // Header: transparent → solid on scroll
+            (function() {
+                const header = document.querySelector('.site-header');
+                if (!header) return;
+                const check = () => {
+                    if (window.scrollY > 80) {
+                        header.classList.add('scrolled');
+                    } else {
+                        header.classList.remove('scrolled');
+                    }
+                };
+                window.addEventListener('scroll', check, { passive: true });
+                check();
+            })();
+
             // Scroll Reveal: IntersectionObserver for .reveal elements
             document.addEventListener('DOMContentLoaded', () => {
                 const reveals = document.querySelectorAll('.reveal, .reveal-stagger');
@@ -207,22 +222,31 @@ import "@fontsource/space-grotesk/700.css";
         </script>
 
         <style>
-            /* Header Styles */
+            /* Header — dark initially (matches hero), solid white on scroll */
             .site-header {
-                padding: 1.5rem 0;
-                border-bottom: 1px solid var(--color-border);
+                padding: 0;
+                height: var(--header-height);
+                border-bottom: 1px solid rgba(255, 255, 255, 0.08);
                 position: sticky;
                 top: 0;
-                background: rgba(16, 21, 25, 0.95);
-                backdrop-filter: blur(10px);
+                background: #0B1120;
+                backdrop-filter: none;
                 z-index: 1000;
-                box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+                transition: background 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+            }
+
+            .site-header.scrolled {
+                background: rgba(255, 255, 255, 0.97);
+                backdrop-filter: blur(12px);
+                border-bottom-color: var(--color-border);
+                box-shadow: 0 1px 3px rgba(0,0,0,0.04);
             }
 
             .header-inner {
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
+                height: 100%;
             }
 
             .logo {
@@ -232,39 +256,81 @@ import "@fontsource/space-grotesk/700.css";
                 text-decoration: none;
             }
 
+            .logo:hover {
+                text-decoration: none;
+            }
+
             .logo-text {
                 font-family: var(--font-heading);
                 font-weight: 700;
-                font-size: 1.25rem;
+                font-size: 1.2rem;
+                color: #FFFFFF;
+                letter-spacing: -0.01em;
+                transition: color 0.3s ease;
+            }
+
+            .scrolled .logo-text {
                 color: var(--color-text-main);
-                letter-spacing: -0.02em;
             }
 
             .logo-sub {
                 font-family: var(--font-body);
-                font-size: 0.75rem;
-                color: var(--color-primary);
-                letter-spacing: 0.2em;
+                font-size: 0.7rem;
+                color: var(--color-warm);
+                letter-spacing: 0.15em;
                 text-transform: uppercase;
                 margin-top: 2px;
+                transition: color 0.3s ease;
+            }
+
+            .scrolled .logo-sub {
+                color: var(--color-accent);
             }
 
             /* Desktop Nav */
             .main-nav {
                 display: flex;
-                gap: 1.5rem;
+                gap: 2rem;
                 align-items: center;
             }
 
             .nav-link {
-                color: var(--color-text-main);
+                color: rgba(255, 255, 255, 0.75);
                 font-weight: 500;
+                font-size: 0.9375rem;
                 text-decoration: none;
-                transition: color 0.2s;
+                transition: color 0.3s ease;
+                padding: 0.25rem 0;
             }
 
             .nav-link:hover {
-                color: var(--color-primary);
+                color: #FFFFFF;
+                text-decoration: none;
+            }
+
+            .scrolled .nav-link {
+                color: var(--color-text-body);
+            }
+
+            .scrolled .nav-link:hover {
+                color: var(--color-text-main);
+            }
+
+            .nav-link-cta {
+                color: var(--color-warm);
+                font-weight: 600;
+            }
+
+            .nav-link-cta:hover {
+                color: #FFFFFF;
+            }
+
+            .scrolled .nav-link-cta {
+                color: var(--color-accent);
+            }
+
+            .scrolled .nav-link-cta:hover {
+                color: var(--color-accent-hover);
             }
 
             /* Hamburger Toggle (hidden on desktop) */
@@ -283,12 +349,18 @@ import "@fontsource/space-grotesk/700.css";
             .hamburger::before,
             .hamburger::after {
                 display: block;
-                width: 24px;
+                width: 22px;
                 height: 2px;
-                background: var(--color-text-main);
+                background: #FFFFFF;
                 border-radius: 2px;
                 transition: all 0.3s ease;
                 position: relative;
+            }
+
+            .scrolled .hamburger,
+            .scrolled .hamburger::before,
+            .scrolled .hamburger::after {
+                background: var(--color-text-main);
             }
 
             .hamburger::before,
@@ -301,7 +373,7 @@ import "@fontsource/space-grotesk/700.css";
             .hamburger::before { top: -7px; }
             .hamburger::after { top: 7px; }
 
-            /* Hamburger → X animation */
+            /* Hamburger -> X animation */
             .nav-toggle-input:checked ~ .nav-toggle-label .hamburger {
                 background: transparent;
             }
@@ -326,7 +398,7 @@ import "@fontsource/space-grotesk/700.css";
                     right: -100%;
                     width: 280px;
                     height: 100vh;
-                    background: rgba(16, 21, 25, 0.98);
+                    background: rgba(255, 255, 255, 0.98);
                     backdrop-filter: blur(20px);
                     flex-direction: column;
                     padding: 5rem 2rem 2rem;
@@ -334,13 +406,15 @@ import "@fontsource/space-grotesk/700.css";
                     transition: right 0.3s ease;
                     z-index: 1001;
                     border-left: 1px solid var(--color-border);
+                    box-shadow: -8px 0 30px rgba(0, 0, 0, 0.08);
                 }
 
                 .main-nav .nav-link {
                     padding: 1rem 0;
-                    font-size: 1.1rem;
-                    border-bottom: 1px solid rgba(255,255,255,0.05);
+                    font-size: 1.05rem;
+                    border-bottom: 1px solid var(--color-border);
                     width: 100%;
+                    color: var(--color-text-main);
                 }
 
                 .nav-toggle-input:checked ~ .main-nav {
@@ -348,42 +422,44 @@ import "@fontsource/space-grotesk/700.css";
                 }
             }
 
-            /* Footer Styles */
+            /* Footer */
             .site-footer {
-                margin-top: 6rem;
-                padding: 4rem 0 2rem;
+                margin-top: 0;
+                padding: 3.5rem 0 2rem;
                 border-top: 1px solid var(--color-border);
-                background: var(--color-surface-subtle);
+                background: var(--color-bg-alt);
             }
 
             .footer-grid {
                 display: grid;
                 grid-template-columns: 1.5fr 1fr 1fr;
                 gap: 3rem;
-                margin-bottom: 3rem;
+                margin-bottom: 2.5rem;
             }
 
             .footer-logo {
                 font-family: var(--font-heading);
                 font-weight: 700;
                 color: var(--color-text-main);
-                font-size: 1.25rem;
+                font-size: 1.15rem;
                 display: block;
-                margin-bottom: 1rem;
+                margin-bottom: 0.75rem;
             }
 
             .footer-desc {
-                font-size: 0.9rem;
+                font-size: 0.875rem;
                 color: var(--color-text-muted);
-                max-width: 300px;
+                max-width: 280px;
+                line-height: 1.6;
             }
 
             .footer-heading {
                 color: var(--color-text-main);
-                font-size: 0.9rem;
+                font-size: 0.8125rem;
                 text-transform: uppercase;
-                letter-spacing: 0.1em;
-                margin-bottom: 1.25rem;
+                letter-spacing: 0.08em;
+                margin-bottom: 1rem;
+                font-weight: 600;
             }
 
             .footer-links {
@@ -392,23 +468,25 @@ import "@fontsource/space-grotesk/700.css";
             }
 
             .footer-links li {
-                margin-bottom: 0.75rem;
+                margin-bottom: 0.6rem;
             }
 
             .footer-links a {
                 color: var(--color-text-muted);
                 text-decoration: none;
+                font-size: 0.875rem;
                 transition: color 0.2s;
             }
 
             .footer-links a:hover {
-                color: var(--color-primary);
+                color: var(--color-accent);
+                text-decoration: none;
             }
 
             .footer-contact {
-                font-size: 0.9rem;
+                font-size: 0.875rem;
                 color: var(--color-text-muted);
-                line-height: 1.7;
+                line-height: 1.8;
             }
 
             .footer-contact a {
@@ -419,14 +497,15 @@ import "@fontsource/space-grotesk/700.css";
             }
 
             .footer-contact a:hover {
-                color: var(--color-primary);
+                color: var(--color-accent);
+                text-decoration: none;
             }
 
             .footer-bottom {
                 padding-top: 2rem;
-                border-top: 1px solid rgba(255, 255, 255, 0.05);
+                border-top: 1px solid var(--color-border);
                 text-align: center;
-                font-size: 0.85rem;
+                font-size: 0.8125rem;
                 color: var(--color-text-muted);
             }
 

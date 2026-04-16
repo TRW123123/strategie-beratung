@@ -13,7 +13,7 @@ const canonical = new URL(
 <BaseLayout title={title} description={description} canonical={canonical}>
     <!-- HERO: Positionierung -->
     <section class="hero relative overflow-hidden">
-        <!-- Responsive Tech Background -->
+        <!-- Responsive Tech Background (hidden via CSS, kept for OG fallback) -->
         <div class="hero-bg absolute inset-0 z-0 opacity-40">
             <picture>
                 <source
@@ -31,22 +31,58 @@ const canonical = new URL(
             </picture>
         </div>
 
-        <!-- Content Overlay -->
-        <div class="container hero-content relative z-10">
-            <h1>Unternehmensberatung für KI-Strategie & Prozess-Audits im Mittelstand</h1>
-            <p class="hero-subhead">
-                Wir decken Ineffizienzen im deutschen Mittelstand auf. Als strategische Unternehmensberatung konzipieren wir rechtssichere Automatisierungsarchitekturen und Leitfäden, die Ihre manuellen Engpässe eliminieren. Wir begleiten Sie konzeptionell von der Analyse bis zum fertigen Strategieplan. Häufig durch Bundesmittel kofinanzierbar.
-            </p>
+        <!-- Content: Split Layout -->
+        <div class="container hero-content hero-split relative z-10">
+            <div class="hero-text">
+                <span class="section-label">Strategische Unternehmensberatung</span>
+                <h1>Unternehmensberatung für <span class="keyword-highlight">KI-Strategie</span> & Prozess-Audits im Mittelstand</h1>
+                <p class="hero-subhead">
+                    Wir decken Ineffizienzen im deutschen Mittelstand auf. Als strategische Unternehmensberatung konzipieren wir rechtssichere Automatisierungsarchitekturen und Leitfäden, die Ihre manuellen Engpässe eliminieren. Wir begleiten Sie konzeptionell von der Analyse bis zum fertigen Strategieplan. Häufig durch Bundesmittel kofinanzierbar.
+                </p>
 
-            <div class="hero-cta">
-                <div>
-                    <a
-                        href="https://calendly.com/st-automatisierung-info/30min"
-                        class="btn btn-primary">Initialgespräch vereinbaren</a
-                    >
-                    <p class="cta-microcopy">
-                        Kostenfreies Erstgespräch. Inklusive Prüfung Ihrer BAFA-Förderfähigkeit.
-                    </p>
+                <div class="hero-cta">
+                    <div>
+                        <a
+                            href="https://calendly.com/st-automatisierung-info/30min"
+                            class="btn btn-primary">Initialgespräch vereinbaren</a
+                        >
+                        <p class="cta-microcopy">
+                            Kostenfreies Erstgespräch. Inklusive Prüfung Ihrer BAFA-Förderfähigkeit.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Trust Indicators -->
+                <div class="hero-trust">
+                    <div class="trust-item">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                        <span>BAFA-akkreditiert</span>
+                    </div>
+                    <div class="trust-item">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                        <span>DSGVO & EU AI Act konform</span>
+                    </div>
+                    <div class="trust-item">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                        <span>Herstellerunabhängig</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Portrait -->
+            <div class="hero-portrait">
+                <div class="portrait-glow"></div>
+                <img
+                    src="/images/safak-tepecik.jpg"
+                    alt="Safak Tepecik — Geschäftsführer & KI-Strategieberater"
+                    width="400"
+                    height="500"
+                    class="portrait-img"
+                    loading="eager"
+                />
+                <div class="portrait-badge">
+                    <strong>Safak Tepecik</strong>
+                    <span>Geschäftsführer & KI-Strategieberater</span>
                 </div>
             </div>
         </div>
@@ -54,8 +90,9 @@ const canonical = new URL(
 
     <main id="main-content">
         <!-- SECTION: Problemstellung (Mittelstand Fokus) -->
-        <section class="py-20 border-t border-gray-800 reveal">
+        <section class="section-block reveal">
           <div class="container">
+            <span class="section-label">Ausgangslage</span>
             <h2>Die Realität: Warum der Mittelstand zögert</h2>
             <p>
                 In vielen mittelständischen Unternehmen herrscht beim Thema
@@ -74,13 +111,40 @@ const canonical = new URL(
                 einem verlässlichen Ordnungsrahmen für deren Einsatz.
             </p>
 
-            <div
-                class="my-12 rounded-xl overflow-hidden shadow-2xl border border-[var(--color-border)]"
-            >
+            <!-- Spannungsfeld: Clean CSS version replacing neon image -->
+            <div class="spannungsfeld-visual" role="img" aria-label="Grafik: Spannungsfeld Mittelstand">
+                <div class="sf-header">Das Spannungsfeld</div>
+                <div class="sf-grid">
+                    <div class="sf-pole">
+                        <div class="sf-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/></svg>
+                        </div>
+                        <span class="sf-label">Innovation</span>
+                        <span class="sf-desc">Wettbewerbsfähigkeit sichern</span>
+                    </div>
+                    <div class="sf-pole">
+                        <div class="sf-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
+                        </div>
+                        <span class="sf-label">Rechtssicherheit</span>
+                        <span class="sf-desc">DSGVO & EU AI Act</span>
+                    </div>
+                    <div class="sf-pole">
+                        <div class="sf-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z"/></svg>
+                        </div>
+                        <span class="sf-label">Stabilität</span>
+                        <span class="sf-desc">Bestehende Prozesse schützen</span>
+                    </div>
+                </div>
+                <p class="sf-bottom">Unsere Beratung navigiert dieses Spannungsfeld — strukturiert und herstellerunabhängig.</p>
+            </div>
+
+            <!-- Keep original img in DOM for SEO continuity, hidden -->
+            <div class="hidden">
                 <img
                     src="/images/spannungsfeld.png"
                     alt="Grafik: Spannungsfeld Mittelstand"
-                    class="w-full h-auto"
                     width="1024"
                     height="1024"
                     loading="lazy"
@@ -89,50 +153,52 @@ const canonical = new URL(
           </div>
         </section>
 
-        <!-- SECTION: Engpässe (Pains) -->
-        <section class="py-20 bg-gray-800/30 border-t border-gray-800 reveal">
+        <!-- SECTION: Engpässe (Pains) — Dark Contrast -->
+        <section class="section-block section-dark reveal">
           <div class="container">
+            <span class="section-label">Typische Engpässe</span>
             <h2>Welche Engpässe wir analytisch lösen</h2>
             <p>
                 Technologische Strategie ist wertlos, wenn sie keine echten betriebswirtschaftlichen Schmerzen lindert. Als reine Unternehmensberatung fokussieren wir uns auf die konzeptionelle Beseitigung konkreter Wachstumsbremsen:
             </p>
-            <div class="grid gap-8 mt-8 md:grid-cols-3 reveal-stagger">
-                <article class="p-8 border border-gray-700 bg-gray-800/50 rounded-xl">
-                    <div class="w-12 h-12 mb-4 text-green-400">
+            <div class="card-grid reveal-stagger">
+                <article class="card">
+                    <div class="card-icon card-icon-blue">
                         <svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
                         </svg>
                     </div>
-                    <h3 class="mb-3 text-xl font-semibold">Zähe Vertriebsprozesse</h3>
-                    <p class="mb-0 text-gray-400">Untersuchung manueller Angebots- und Vertriebsstrukturen. Wir entwickeln Konzepte, wie der Angebotszyklus signifikant reduziert werden kann.</p>
+                    <h3>Zähe Vertriebsprozesse</h3>
+                    <p class="card-text">Untersuchung manueller Angebots- und Vertriebsstrukturen. Wir entwickeln Konzepte, wie der Angebotszyklus signifikant reduziert werden kann.</p>
                 </article>
 
-                <article class="p-8 border border-gray-700 bg-gray-800/50 rounded-xl">
-                    <div class="w-12 h-12 mb-4 text-green-400">
+                <article class="card">
+                    <div class="card-icon card-icon-blue">
                         <svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 13.5h3.86a2.25 2.25 0 012.012 1.244l.256.512a2.25 2.25 0 002.013 1.244h3.218a2.25 2.25 0 002.013-1.244l.256-.512a2.25 2.25 0 012.013-1.244h3.859m-19.5.338V18a2.25 2.25 0 002.25 2.25h15A2.25 2.25 0 0021.75 18v-4.162c0-.224-.034-.447-.1-.661L19.24 5.338a2.25 2.25 0 00-2.15-1.588H6.911a2.25 2.25 0 00-2.15 1.588L2.35 13.177a2.25 2.25 0 00-.1.661z" />
                         </svg>
                     </div>
-                    <h3 class="mb-3 text-xl font-semibold">Struktureller Lead-Verlust</h3>
-                    <p class="mb-0 text-gray-400">Analyse fehlender Follow-Up-Strukturen. Wir entwerfen konzeptionelle Architekturen für Systeme, die Leads lückenlos qualifizieren können.</p>
+                    <h3>Struktureller Lead-Verlust</h3>
+                    <p class="card-text">Analyse fehlender Follow-Up-Strukturen. Wir entwerfen konzeptionelle Architekturen für Systeme, die Leads lückenlos qualifizieren können.</p>
                 </article>
 
-                <article class="p-8 border border-gray-700 bg-gray-800/50 rounded-xl">
-                    <div class="w-12 h-12 mb-4 text-green-400">
+                <article class="card">
+                    <div class="card-icon card-icon-blue">
                         <svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
                         </svg>
                     </div>
-                    <h3 class="mb-3 text-xl font-semibold">Fachkräftemangel</h3>
-                    <p class="mb-0 text-gray-400">Identifikation von Routine-Tätigkeiten (Copy-Paste), die Mitarbeiter blockieren. Erstellung von Strategien, wie dieses Grundrauschen delegiert werden kann.</p>
+                    <h3>Fachkräftemangel</h3>
+                    <p class="card-text">Identifikation von Routine-Tätigkeiten (Copy-Paste), die Mitarbeiter blockieren. Erstellung von Strategien, wie dieses Grundrauschen delegiert werden kann.</p>
                 </article>
             </div>
           </div>
         </section>
 
         <!-- SECTION: Trust Anchors & Methodik -->
-        <section class="py-20 border-t border-gray-800 reveal">
+        <section class="section-block reveal">
           <div class="container">
+            <span class="section-label">Unser Ansatz</span>
             <h2>Unser Ansatz: Konzepte statt Standardsoftware</h2>
             <p>
                 Als strategische Unternehmensberatung konzentrieren wir uns auf das Prozess-Audit und die strategische Konzeption. Wir entwickeln fundierte Konzepte und Prozess-Audits, die Ihre manuellen Engpässe identifizieren und auflösen.
@@ -144,50 +210,66 @@ const canonical = new URL(
                 Wir liefern Ihnen den objektiven, herstellerunabhängigen Bauplan. Die spätere Umsetzung bleibt in Ihren Händen oder denen Ihrer bestehenden IT-Dienstleister.
             </p>
 
-            <ul class="mt-8 space-y-3">
-                <li>
-                    <strong>Rechtssicherheit:</strong> Berücksichtigung aktueller
-                    Compliance-Anforderungen.
-                </li>
-                <li>
-                    <strong>Bestandsschutz:</strong> Integration in gewachsene IT-Infrastrukturen
-                    ohne "Abrissbirne".
-                </li>
-                <li>
-                    <strong>Mitarbeiterfokus:</strong> Technologie als Unterstützung,
-                    nicht als Ersatz.
-                </li>
-            </ul>
+            <div class="principles-list">
+                <div class="principle-item">
+                    <div class="principle-icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+                    </div>
+                    <div>
+                        <strong>Rechtssicherheit:</strong> Berücksichtigung aktueller
+                        Compliance-Anforderungen.
+                    </div>
+                </div>
+                <div class="principle-item">
+                    <div class="principle-icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
+                    </div>
+                    <div>
+                        <strong>Bestandsschutz:</strong> Integration in gewachsene IT-Infrastrukturen
+                        ohne "Abrissbirne".
+                    </div>
+                </div>
+                <div class="principle-item">
+                    <div class="principle-icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/></svg>
+                    </div>
+                    <div>
+                        <strong>Mitarbeiterfokus:</strong> Technologie als Unterstützung,
+                        nicht als Ersatz.
+                    </div>
+                </div>
+            </div>
           </div>
         </section>
 
         <!-- SECTION: Realitätssignale & Förderung -->
-        <section class="py-20 bg-gray-800/30 border-t border-gray-800 reveal">
+        <section class="section-block section-alt reveal">
           <div class="container">
+            <span class="section-label">Staatliche Förderung</span>
             <h2>Risiko halbiert. ROI verdoppelt. (Staatliche Förderung)</h2>
             <p>
-                Unsere strategischen Beratungsleistungen zur Digitalisierung und Prozessoptimierung sind staatlich förderfähig. Über das offizielle Programm des Bundes („Förderung von Unternehmensberatungen für KMU” der BAFA) können kleine und mittlere Unternehmen einen massiven Teil der Beratungskosten zurückerhalten:
+                Unsere strategischen Beratungsleistungen zur Digitalisierung und Prozessoptimierung sind staatlich förderfähig. Über das offizielle Programm des Bundes („Förderung von Unternehmensberatungen für KMU" der BAFA) können kleine und mittlere Unternehmen einen massiven Teil der Beratungskosten zurückerhalten:
             </p>
 
             <!-- ROI Highlight Boxes -->
-            <div class=”reveal-stagger” style=”display: grid; gap: 1.5rem; margin: 2rem 0; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));”>
-                <div style=”padding: 1.5rem; background: linear-gradient(135deg, rgba(34, 197, 94, 0.1), transparent); border: 1px solid rgba(34, 197, 94, 0.2); border-radius: 0.75rem;”>
-                    <div style=”font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em; color: #4ade80; margin-bottom: 0.25rem;”>Alte Bundesländer</div>
-                    <div style=”font-size: 2.5rem; font-weight: 700; color: white; line-height: 1;”>50 %</div>
-                    <div style=”color: #9CA3AF; margin-top: 0.25rem;”>Zuschuss (max. 1.750 €)</div>
+            <div class="stat-grid reveal-stagger">
+                <div class="stat-card stat-card-green">
+                    <div class="stat-label">Alte Bundesländer</div>
+                    <div class="stat-value">50 %</div>
+                    <div class="stat-desc">Zuschuss (max. 1.750 €)</div>
                 </div>
-                <div style=”padding: 1.5rem; background: linear-gradient(135deg, rgba(34, 197, 94, 0.15), transparent); border: 1px solid rgba(34, 197, 94, 0.25); border-radius: 0.75rem;”>
-                    <div style=”font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em; color: #4ade80; margin-bottom: 0.25rem;”>Neue Bundesländer</div>
-                    <div style=”font-size: 2.5rem; font-weight: 700; color: white; line-height: 1;”>80 %</div>
-                    <div style=”color: #9CA3AF; margin-top: 0.25rem;”>Zuschuss (max. 2.800 €)</div>
+                <div class="stat-card stat-card-green">
+                    <div class="stat-label">Neue Bundesländer</div>
+                    <div class="stat-value">80 %</div>
+                    <div class="stat-desc">Zuschuss (max. 2.800 €)</div>
                 </div>
-                <div style=”padding: 1.5rem; background: linear-gradient(135deg, rgba(59, 130, 246, 0.1), transparent); border: 1px solid rgba(59, 130, 246, 0.2); border-radius: 0.75rem;”>
-                    <div style=”font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em; color: #60a5fa; margin-bottom: 0.25rem;”>ROI der Beratung</div>
-                    <div style=”font-size: 2.5rem; font-weight: 700; color: white; line-height: 1;”>17:1</div>
-                    <div style=”color: #9CA3AF; margin-top: 0.25rem;”>im ersten Jahr</div>
+                <div class="stat-card stat-card-blue">
+                    <div class="stat-label">ROI der Beratung</div>
+                    <div class="stat-value">17:1</div>
+                    <div class="stat-desc">im ersten Jahr</div>
                 </div>
             </div>
-            
+
             <p>
                 Wir prüfen noch vor dem ersten Handschlag, ob Ihr Unternehmen das Raster erfüllt, und begleiten den strategischen Transformationsprozess von der Potenzialanalyse bis zur detaillierten Handlungsempfehlung. Der Staat trägt das Risiko der Strategiefindung – Sie behalten die volle Entscheidungskontrolle.
             </p>
@@ -195,19 +277,21 @@ const canonical = new URL(
         </section>
 
         <!-- SECTION: Navigation / Weiche -->
-        <section class="py-20 border-t border-gray-800 reveal">
+        <section class="section-block reveal">
           <div class="container">
+            <span class="section-label">Ihr nächster Schritt</span>
             <h2>Wählen Sie Ihren Einstieg</h2>
             <p>
                 Je nach Reifegrad Ihres Unternehmens bieten wir zwei vertiefende
                 Informationspfade an:
             </p>
 
-            <div class="grid gap-8 mt-8 md:grid-cols-2 reveal-stagger">
+            <div class="path-grid reveal-stagger">
                 <!-- Pfad 1: Orientierung -->
-                <article class="p-8 border border-gray-700 bg-gray-800/50 rounded-xl">
+                <article class="path-card">
+                    <div class="path-number">1</div>
                     <h3>Grundlagen & Einordnung</h3>
-                    <p class="min-h-[80px]">
+                    <p>
                         Für Unternehmen, die verstehen wollen, was KI jenseits
                         des Hypes tatsächlich leisten kann und wo die
                         betriebswirtschaftlichen Grenzen liegen.
@@ -215,15 +299,15 @@ const canonical = new URL(
                     <a
                         href="/ki-im-unternehmen/"
                         class="btn btn-primary"
-                        class="w-full mt-4"
                         >Zur Analyse: KI im Unternehmen</a
                     >
                 </article>
 
                 <!-- Pfad 2: Umsetzung -->
-                <article class="p-8 border border-gray-700 bg-gray-800/50 rounded-xl">
+                <article class="path-card">
+                    <div class="path-number">2</div>
                     <h3>Strategie & Einführung</h3>
-                    <p class="min-h-[80px]">
+                    <p>
                         Für Unternehmen, die bereits entschieden haben, dass sie
                         handeln müssen, und nun nach einem sicheren
                         Vorgehensmodell suchen.
@@ -231,7 +315,6 @@ const canonical = new URL(
                     <a
                         href="/ki-einfuehrung-unternehmen/"
                         class="btn btn-primary"
-                        class="w-full mt-4"
                         >Zum Vorgehensmodell</a
                     >
                 </article>
@@ -241,33 +324,443 @@ const canonical = new URL(
 
         <!-- SECTION: Soft Conversion -->
         <section class="contact-section">
-            <h2>Klares Gespräch statt Vertrieb</h2>
-            <p>
-                Wir glauben nicht an Standardpakete für komplexe
-                Organisationsfragen. Wenn Sie nach der Lektüre unserer Inhalte
-                Klärungsbedarf sehen, laden wir Sie zu einem ersten,
-                orientierenden Gespräch ein.
-            </p>
-            <div style="margin-top: 2rem;">
-                <a
-                    href="https://calendly.com/st-automatisierung-info/30min"
-                    class="btn btn-primary"
-                    style="background: white; color: var(--color-bg);"
-                    >Initialgespräch vereinbaren</a
-                >
-                <p
-                    class="cta-microcopy"
-                    style="color: rgba(255,255,255,0.7); margin-top: 1rem;"
-                >
-                    Kostenfreies Erstgespräch. Inklusive Prüfung Ihrer BAFA-Förderfähigkeit.
+            <div class="container">
+                <h2>Klares Gespräch statt Vertrieb</h2>
+                <p>
+                    Wir glauben nicht an Standardpakete für komplexe
+                    Organisationsfragen. Wenn Sie nach der Lektüre unserer Inhalte
+                    Klärungsbedarf sehen, laden wir Sie zu einem ersten,
+                    orientierenden Gespräch ein.
                 </p>
-            </div>
-            <div class="contact-details">
-                <span>Sitz: Deutschland</span>
-                <a href="mailto:info@st-automatisierung.de"
-                    >info@st-automatisierung.de</a
-                >
+                <div style="margin-top: 2rem;">
+                    <a
+                        href="https://calendly.com/st-automatisierung-info/30min"
+                        class="btn btn-primary"
+                        >Initialgespräch vereinbaren</a
+                    >
+                    <p class="cta-microcopy" style="color: rgba(255,255,255,0.7); margin-top: 1rem;">
+                        Kostenfreies Erstgespräch. Inklusive Prüfung Ihrer BAFA-Förderfähigkeit.
+                    </p>
+                </div>
+                <div class="contact-details">
+                    <span>Sitz: Deutschland</span>
+                    <a href="mailto:info@st-automatisierung.de"
+                        >info@st-automatisierung.de</a
+                    >
+                </div>
             </div>
         </section>
     </main>
 </BaseLayout>
+
+<style>
+    /* ===== Hero Split Layout ===== */
+    .hero-split {
+        display: grid;
+        grid-template-columns: 1.15fr 0.85fr;
+        gap: 3rem;
+        align-items: center;
+    }
+
+    .hero-portrait {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .portrait-glow {
+        position: absolute;
+        width: 360px;
+        height: 360px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: conic-gradient(
+            from 180deg,
+            rgba(37, 99, 235, 0.25),
+            rgba(217, 119, 6, 0.15),
+            rgba(167, 139, 250, 0.2),
+            rgba(37, 99, 235, 0.25)
+        );
+        filter: blur(60px);
+        border-radius: 50%;
+        z-index: -1;
+    }
+
+    .portrait-img {
+        width: 300px;
+        height: 375px;
+        object-fit: cover;
+        object-position: top;
+        border-radius: var(--radius-lg);
+        box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+        border: 2px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .portrait-badge {
+        margin-top: 1.25rem;
+        text-align: center;
+    }
+
+    .portrait-badge strong {
+        display: block;
+        font-size: 1rem;
+        color: #FFFFFF;
+    }
+
+    .portrait-badge span {
+        font-size: 0.8125rem;
+        color: rgba(255, 255, 255, 0.5);
+    }
+
+    /* Hero Trust */
+    .hero-trust {
+        display: flex;
+        gap: 1.5rem;
+        margin-top: 2rem;
+        padding-top: 1.5rem;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        flex-wrap: wrap;
+    }
+
+    .trust-item {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        font-size: 0.8125rem;
+        color: rgba(255, 255, 255, 0.5);
+        font-weight: 500;
+    }
+
+    .trust-item svg {
+        color: var(--color-warm);
+        flex-shrink: 0;
+    }
+
+    /* ===== Sections ===== */
+    .section-block {
+        padding: 5rem 0;
+    }
+
+    .section-alt {
+        background-color: var(--color-bg-alt);
+    }
+
+    /* ===== Spannungsfeld ===== */
+    .spannungsfeld-visual {
+        margin: 3rem 0;
+        padding: 2.5rem;
+        background: linear-gradient(135deg, rgba(37,99,235,0.03) 0%, rgba(5,150,105,0.03) 100%);
+        border: 1px solid var(--color-border);
+        border-radius: var(--radius-lg);
+        text-align: center;
+        transition: all 0.4s var(--spring-smooth);
+    }
+
+    .spannungsfeld-visual:hover {
+        border-color: rgba(37,99,235,0.3);
+        box-shadow: var(--elev-3);
+        transform: translateY(-2px);
+    }
+
+    .sf-header { font-size: 0.8125rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; color: var(--color-text-muted); margin-bottom: 2rem; }
+    .sf-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; }
+    .sf-pole { display: flex; flex-direction: column; align-items: center; gap: 0.5rem; }
+
+    .sf-icon {
+        width: 56px;
+        height: 56px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        background: var(--color-primary-light);
+        color: var(--color-accent);
+        margin-bottom: 0.5rem;
+        transition: all 0.3s var(--spring-bounce);
+    }
+
+    .spannungsfeld-visual:hover .sf-icon {
+        transform: scale(1.1);
+        box-shadow: 0 6px 16px rgba(37,99,235,0.2);
+    }
+
+    .sf-label { font-weight: 700; color: var(--color-text-main); font-size: 1rem; }
+    .sf-desc { font-size: 0.8125rem; color: var(--color-text-muted); }
+    .sf-bottom { margin-top: 2rem; font-size: 0.9375rem; color: var(--color-text-body); margin-bottom: 0; font-style: italic; }
+
+    /* ===== Cards (Premium Hover) ===== */
+    .card-grid {
+        display: grid;
+        gap: 1.5rem;
+        margin-top: 2rem;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+
+    .card {
+        border: 1px solid rgba(255,255,255,0.15);
+        border-radius: var(--radius-md);
+        padding: 2rem;
+        transition: all 0.3s var(--spring-smooth);
+        position: relative;
+    }
+
+    /* Light section cards */
+    .section-block:not(.section-dark) .card {
+        background: var(--color-surface);
+        border-color: var(--color-border);
+    }
+
+    .section-block:not(.section-dark) .card:hover {
+        transform: translateY(-6px);
+        box-shadow: var(--elev-4);
+        border-color: rgba(37,99,235,0.2);
+    }
+
+    /* Dark section cards with colored top accents */
+    .section-dark .card {
+        background: rgba(255,255,255,0.05);
+        backdrop-filter: blur(8px);
+        border-top: 3px solid rgba(96, 165, 250, 0.5);
+    }
+
+    .section-dark .card:nth-child(2) {
+        border-top-color: rgba(167, 139, 250, 0.5);
+    }
+
+    .section-dark .card:nth-child(3) {
+        border-top-color: rgba(217, 119, 6, 0.5);
+    }
+
+    .section-dark .card:hover {
+        background: rgba(255,255,255,0.1);
+        border-color: rgba(147,197,253,0.3);
+        transform: translateY(-6px);
+        box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+    }
+
+    .section-dark .card:hover {
+        border-top-color: rgba(96, 165, 250, 0.8);
+    }
+
+    .section-dark .card:nth-child(2):hover {
+        border-top-color: rgba(167, 139, 250, 0.8);
+    }
+
+    .section-dark .card:nth-child(3):hover {
+        border-top-color: rgba(217, 119, 6, 0.8);
+    }
+
+    .section-dark .card-text {
+        color: rgba(255,255,255,0.7);
+    }
+
+    .section-dark .card-icon-blue {
+        background: rgba(37,99,235,0.2);
+        color: #93C5FD;
+    }
+
+    .card-icon {
+        width: 44px;
+        height: 44px;
+        border-radius: var(--radius-sm);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 1.25rem;
+        transition: all 0.3s var(--spring-bounce);
+    }
+
+    .card:hover .card-icon {
+        transform: scale(1.1) translateY(-2px);
+    }
+
+    .card-icon svg { width: 24px; height: 24px; }
+
+    .card-icon-blue {
+        background: var(--color-primary-light);
+        color: var(--color-accent);
+    }
+
+    .card h3 {
+        font-size: 1.125rem;
+        margin-bottom: 0.75rem;
+        transition: color 0.2s ease;
+    }
+
+    .section-block:not(.section-dark) .card:hover h3 {
+        color: var(--color-accent);
+    }
+
+    .card-text {
+        color: var(--color-text-body);
+        font-size: 0.9375rem;
+        line-height: 1.7;
+        margin-bottom: 0;
+    }
+
+    /* ===== Principles ===== */
+    .principles-list {
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .principle-item {
+        display: flex;
+        align-items: flex-start;
+        gap: 1rem;
+        padding: 1.25rem 1.5rem;
+        background: var(--color-bg-alt);
+        border-radius: var(--radius-sm);
+        border: 1px solid var(--color-border);
+        font-size: 1rem;
+        line-height: 1.6;
+        transition: all 0.3s var(--spring-smooth);
+    }
+
+    .principle-item:hover {
+        transform: translateX(6px);
+        border-color: rgba(37,99,235,0.2);
+        box-shadow: var(--elev-2);
+    }
+
+    .principle-icon {
+        flex-shrink: 0;
+        width: 36px;
+        height: 36px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        background: linear-gradient(135deg, var(--color-accent), var(--color-primary));
+        color: white;
+        margin-top: 2px;
+        box-shadow: 0 4px 12px rgba(37,99,235,0.2);
+        transition: all 0.3s var(--spring-bounce);
+    }
+
+    .principle-item:hover .principle-icon {
+        transform: rotate(8deg) scale(1.1);
+    }
+
+    /* ===== Stat Cards ===== */
+    .stat-grid {
+        display: grid;
+        gap: 1.5rem;
+        margin: 2rem 0;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    .stat-card {
+        padding: 1.75rem;
+        border-radius: var(--radius-md);
+        border: 1px solid var(--color-border);
+        background: var(--color-surface);
+        transition: all 0.3s var(--spring-smooth);
+    }
+
+    .stat-card:hover {
+        transform: translateY(-4px);
+        box-shadow: var(--elev-3);
+    }
+
+    .stat-card-green { border-left: 4px solid var(--color-success); }
+    .stat-card-blue { border-left: 4px solid var(--color-accent); }
+    .stat-label { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--color-text-muted); margin-bottom: 0.5rem; font-weight: 600; }
+    .stat-value { font-size: 2.5rem; font-weight: 700; color: var(--color-text-main); line-height: 1; margin-bottom: 0.25rem; }
+    .stat-card-green .stat-value { color: var(--color-success); }
+    .stat-card-blue .stat-value { color: var(--color-accent); }
+    .stat-desc { color: var(--color-text-muted); font-size: 0.875rem; }
+
+    /* ===== Path Cards ===== */
+    .path-grid {
+        display: grid;
+        gap: 1.5rem;
+        margin-top: 2rem;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+
+    .path-card {
+        background: var(--color-surface);
+        border: 1px solid var(--color-border);
+        border-radius: var(--radius-md);
+        padding: 2.5rem;
+        transition: all 0.4s var(--spring-smooth);
+        position: relative;
+    }
+
+    .path-card:hover {
+        transform: translateY(-8px);
+        box-shadow: var(--elev-4);
+        border-color: rgba(37,99,235,0.2);
+    }
+
+    .path-number {
+        width: 32px;
+        height: 32px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        background: var(--color-accent);
+        color: white;
+        font-weight: 700;
+        font-size: 0.875rem;
+        margin-bottom: 1.25rem;
+        transition: all 0.3s var(--spring-bounce);
+    }
+
+    .path-card:hover .path-number {
+        transform: scale(1.15);
+        box-shadow: 0 6px 16px rgba(37,99,235,0.3);
+    }
+
+    .path-card h3 { font-size: 1.25rem; margin-bottom: 0.75rem; }
+    .path-card p { color: var(--color-text-body); font-size: 0.9375rem; line-height: 1.7; margin-bottom: 1.5rem; }
+    .path-card .btn { width: 100%; text-align: center; }
+
+    .hidden { display: none; }
+
+    /* ===== Responsive ===== */
+    @media (max-width: 768px) {
+        .hero-split {
+            grid-template-columns: 1fr;
+            gap: 2rem;
+        }
+
+        .hero-portrait {
+            order: -1;
+        }
+
+        .portrait-img {
+            width: 220px;
+            height: 275px;
+        }
+
+        .portrait-glow {
+            width: 220px;
+            height: 220px;
+        }
+
+        .hero-trust {
+            flex-direction: column;
+            gap: 0.75rem;
+        }
+
+        .sf-grid {
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
+        }
+
+        .section-block {
+            padding: 3.5rem 0;
+        }
+
+        .stat-grid {
+            grid-template-columns: 1fr;
+        }
+    }
+</style>

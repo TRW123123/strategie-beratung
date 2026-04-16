@@ -13,58 +13,62 @@ const {
 ---
 
 <div class="contact-form-wrapper" id="kontaktformular">
-  <h3 class="text-2xl font-bold mb-6">{headline}</h3>
+  <h3 class="text-2xl font-bold mb-6" style="color: var(--color-text-main);">{headline}</h3>
   <form id="st-contact-form" class="space-y-4">
     <input type="hidden" name="source_page" value={sourcePage} />
 
     <div class="grid md:grid-cols-2 gap-4">
       <div>
-        <label for="cf-name" class="block text-sm text-gray-400 mb-1">Name *</label>
+        <label for="cf-name" class="block text-sm mb-1" style="color: var(--color-text-muted);">Name *</label>
         <input type="text" id="cf-name" name="name" required
-          class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg text-white placeholder-gray-500 focus:border-blue-500 focus:ring-1 focus:ring-blue-500 outline-none transition-colors"
+          class="w-full px-4 py-3 rounded-lg outline-none transition-colors"
+          style="background: var(--color-bg-alt); border: 1px solid var(--color-border); color: var(--color-text-main);"
           placeholder="Ihr Name" />
       </div>
       <div>
-        <label for="cf-email" class="block text-sm text-gray-400 mb-1">E-Mail *</label>
+        <label for="cf-email" class="block text-sm mb-1" style="color: var(--color-text-muted);">E-Mail *</label>
         <input type="email" id="cf-email" name="email" required
-          class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg text-white placeholder-gray-500 focus:border-blue-500 focus:ring-1 focus:ring-blue-500 outline-none transition-colors"
+          class="w-full px-4 py-3 rounded-lg outline-none transition-colors"
+          style="background: var(--color-bg-alt); border: 1px solid var(--color-border); color: var(--color-text-main);"
           placeholder="ihre@email.de" />
       </div>
     </div>
 
     <div class="grid md:grid-cols-2 gap-4">
       <div>
-        <label for="cf-company" class="block text-sm text-gray-400 mb-1">Unternehmen</label>
+        <label for="cf-company" class="block text-sm mb-1" style="color: var(--color-text-muted);">Unternehmen</label>
         <input type="text" id="cf-company" name="company"
-          class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg text-white placeholder-gray-500 focus:border-blue-500 focus:ring-1 focus:ring-blue-500 outline-none transition-colors"
+          class="w-full px-4 py-3 rounded-lg outline-none transition-colors"
+          style="background: var(--color-bg-alt); border: 1px solid var(--color-border); color: var(--color-text-main);"
           placeholder="Firmenname" />
       </div>
       <div>
-        <label for="cf-phone" class="block text-sm text-gray-400 mb-1">Telefon</label>
+        <label for="cf-phone" class="block text-sm mb-1" style="color: var(--color-text-muted);">Telefon</label>
         <input type="text" id="cf-phone" name="phone"
-          class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg text-white placeholder-gray-500 focus:border-blue-500 focus:ring-1 focus:ring-blue-500 outline-none transition-colors"
+          class="w-full px-4 py-3 rounded-lg outline-none transition-colors"
+          style="background: var(--color-bg-alt); border: 1px solid var(--color-border); color: var(--color-text-main);"
           placeholder="+49 ..." />
       </div>
     </div>
 
     <div>
-      <label for="cf-message" class="block text-sm text-gray-400 mb-1">Ihre Nachricht</label>
+      <label for="cf-message" class="block text-sm mb-1" style="color: var(--color-text-muted);">Ihre Nachricht</label>
       <textarea id="cf-message" name="message" rows="4"
-        class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg text-white placeholder-gray-500 focus:border-blue-500 focus:ring-1 focus:ring-blue-500 outline-none transition-colors resize-y"
+        class="w-full px-4 py-3 rounded-lg outline-none transition-colors resize-y"
+        style="background: var(--color-bg-alt); border: 1px solid var(--color-border); color: var(--color-text-main);"
         placeholder="Welche Prozesse möchten Sie optimieren?"></textarea>
     </div>
 
     <div class="flex items-center gap-4">
-      <button type="submit" id="cf-submit"
-        class="px-8 py-3 bg-white text-gray-900 font-medium rounded-lg hover:bg-gray-100 transition-colors">
+      <button type="submit" id="cf-submit" class="btn btn-primary">
         {cta}
       </button>
-      <span id="cf-status" class="text-sm text-gray-400 hidden"></span>
+      <span id="cf-status" class="text-sm hidden" style="color: var(--color-text-muted);"></span>
     </div>
 
-    <p class="text-xs text-gray-600">
+    <p class="text-xs" style="color: var(--color-text-muted);">
       Ihre Daten werden ausschließlich zur Bearbeitung Ihrer Anfrage verwendet.
-      <a href="/datenschutz/" class="underline hover:text-gray-400">Datenschutzerklärung</a>
+      <a href="/datenschutz/" class="underline" style="color: var(--color-text-muted);">Datenschutzerklärung</a>
     </p>
   </form>
 </div>
@@ -100,12 +104,12 @@ const {
 
       form.reset();
       status.textContent = 'Anfrage erfolgreich gesendet! Wir melden uns innerhalb von 24 Stunden.';
-      status.className = 'text-sm text-green-400';
+      status.style.color = 'var(--color-success)';
       status.classList.remove('hidden');
-      btn.textContent = 'Gesendet ✓';
+      btn.textContent = 'Gesendet';
     } catch (err) {
       status.textContent = 'Fehler beim Senden. Bitte versuchen Sie es erneut oder schreiben Sie an info@st-automatisierung.de';
-      status.className = 'text-sm text-red-400';
+      status.style.color = '#EF4444';
       status.classList.remove('hidden');
       btn.textContent = 'Anfrage senden';
       btn.disabled = false;

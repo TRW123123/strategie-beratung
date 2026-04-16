@@ -4,11 +4,14 @@ export default {
     theme: {
         extend: {
             colors: {
-                primary: '#A1EA34',
-                'primary-hover': '#8FCD2E',
-                'primary-text': '#101519',
-                'surface': '#1A202C',
-                'surface-subtle': '#161B22',
+                primary: '#1E40AF',
+                'primary-hover': '#1E3A8A',
+                'primary-text': '#FFFFFF',
+                'accent': '#2563EB',
+                'accent-hover': '#1D4ED8',
+                'surface': '#FFFFFF',
+                'surface-subtle': '#F1F5F9',
+                'bg-alt': '#F7F8FA',
             },
             fontFamily: {
                 heading: ['Space Grotesk', 'sans-serif'],
