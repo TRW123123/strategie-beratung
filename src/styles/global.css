@@ -1013,6 +1013,21 @@ header a.logo:hover {
 
 .pseo-title::after { display: none; }
 
+.pseo-title .keyword-highlight,
+.article-hero-text .keyword-highlight,
+.themen-hero h1 .keyword-highlight,
+section:not(.hero) h1 .keyword-highlight {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  background: linear-gradient(135deg, #FBBF24 0%, #F59E0B 50%, #D97706 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  padding-right: 0.1em;
+}
+
 .pseo-intro {
   font-size: 1.0625rem;
   color: rgba(255,255,255,0.75);
