@@ -112,38 +112,51 @@ const contentFormat = data.content_format || (data.cluster === 'compliance' ? 'c
   <main id="main-content">
     <article itemscope itemtype="https://schema.org/Article">
 
-      <section class="relative pt-32 pb-20 overflow-hidden">
-        <div class="container relative z-10">
+      <section class="pseo-hero">
+        <div class="container pseo-hero-content">
           <!-- Badges -->
-          <div class="mb-6 flex flex-wrap gap-3 items-center">
+          <div class="pseo-badges">
+              <span class={`pseo-badge pseo-cluster-${data.cluster}`}>
+                {clusterLabels[data.cluster] || data.cluster}
+              </span>
               {data.bafa_badge && (
-                <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-green-500/10 text-green-400 ring-1 ring-inset ring-green-500/20">
-                  BAFA-Förderung: Bis zu 80% Zuschuss
+                <span class="pseo-badge pseo-badge-bafa">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                  BAFA-Förderung: bis zu 80% Zuschuss
                 </span>
               )}
-              <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-blue-500/10 text-blue-400 ring-1 ring-inset ring-blue-500/20 uppercase tracking-widest">
-                {data.cluster}
-              </span>
           </div>
 
-          <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-8" itemprop="headline">
+          <h1 class="pseo-title" itemprop="headline">
               {data.title}
           </h1>
 
-          <!-- Author Byline (E-E-A-T) -->
-          <div class="flex items-center gap-3 mb-8 text-sm text-gray-400">
-            <div class="w-8 h-8 rounded-full bg-blue-500/20 flex items-center justify-center text-blue-400 font-bold text-xs">ST</div>
-            <div>
-              <span itemprop="author" itemscope itemtype="https://schema.org/Person">
-                <span itemprop="name" class="text-gray-200">Şafak Tepecik</span>
-              </span>
-              <span class="mx-2">·</span>
-              <span>KI-Systemarchitekt & Unternehmensberater</span>
-            </div>
-          </div>
+          <p class="pseo-intro">
+            {data.description}
+          </p>
 
+          <!-- Author Byline (E-E-A-T) -->
+          <div class="pseo-meta">
+            <div class="pseo-author" itemprop="author" itemscope itemtype="https://schema.org/Person">
+              <div class="pseo-author-avatar">ST</div>
+              <div class="pseo-author-info">
+                <strong itemprop="name">Şafak Tepecik</strong>
+                <span>KI-Systemarchitekt & Unternehmensberater</span>
+              </div>
+            </div>
+            <span class="pseo-meta-divider"></span>
+            <span class="pseo-meta-item">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+              ~ 6 Min. Lesezeit
+            </span>
+          </div>
+        </div>
+      </section>
+
+      <section class="pseo-content">
+        <div class="container">
           <!-- Main Content (Polymorphe Prose) -->
-          <div class="max-w-3xl text-lg text-gray-300 mb-12 prose prose-invert" itemprop="articleBody">
+          <div class="pseo-body prose" itemprop="articleBody">
             <Content />
           </div>
 
@@ -188,18 +201,15 @@ const contentFormat = data.content_format || (data.cluster === 'compliance' ? 'c
             </div>
           )}
 
-          <div class="flex flex-col sm:flex-row gap-4 relative z-10">
-              <a href="#kontaktformular" class="inline-flex justify-center items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-gray-900 bg-white hover:bg-gray-100 transition-colors">
+          <div class="pseo-cta-row">
+              <a href="#kontaktformular" class="btn btn-primary">
                   Kostenlose Potenzialanalyse anfragen
               </a>
-              <a href="/ki-im-unternehmen/" class="inline-flex justify-center items-center px-6 py-3 border border-gray-700 text-base font-medium rounded-md text-white hover:bg-gray-800 transition-colors">
+              <a href="/ki-im-unternehmen/" class="btn btn-secondary">
                   Mehr über unsere Methodik
               </a>
           </div>
         </div>
-        
-        <!-- Decorative background glow -->
-        <div class="absolute top-0 right-0 -mr-32 -mt-32 w-96 h-96 rounded-full bg-blue-600/10 blur-3xl pointer-events-none"></div>
       </section>
 
       <!-- ===== POLYMORPHE "Unser Ansatz" SECTION ===== -->

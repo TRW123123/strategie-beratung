@@ -60,20 +60,152 @@ const faqItems = [
 
 <BaseLayout title={title} description={description} canonical={canonical}>
     <!-- HERO -->
-    <section class="hero">
-        <div class="container">
-            <h1>
-                KI im Unternehmen: Eine betriebswirtschaftliche und operative
-                Einordnung
-            </h1>
-            <p class="hero-subhead">
-                Jenseits der Marketing-Versprechen: Eine nüchterne Analyse für
-                Geschäftsführer und IT-Verantwortliche im deutschen Mittelstand.
-                Über Relevanz, Machbarkeit und die zwingenden rechtlichen
-                Voraussetzungen.
-            </p>
+    <section class="hero article-hero">
+        <div class="container hero-content article-hero-split">
+            <div class="article-hero-text">
+                <span class="section-label">Strategischer Leitfaden</span>
+                <h1>
+                    KI im Unternehmen: Eine <span class="keyword-highlight">betriebswirtschaftliche</span> und operative
+                    Einordnung
+                </h1>
+                <p class="hero-subhead">
+                    Jenseits der Marketing-Versprechen: Eine nüchterne Analyse für
+                    Geschäftsführer und IT-Verantwortliche im deutschen Mittelstand.
+                    Über Relevanz, Machbarkeit und die zwingenden rechtlichen
+                    Voraussetzungen.
+                </p>
+                <div class="article-meta">
+                    <span class="article-meta-item">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="7" r="4"/><path d="M5.5 21a6.5 6.5 0 0113 0"/></svg>
+                        Şafak Tepecik
+                    </span>
+                    <span class="article-meta-divider"></span>
+                    <span class="article-meta-item">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+                        ~ 12 Min. Lesezeit
+                    </span>
+                    <span class="article-meta-divider"></span>
+                    <span class="article-meta-item">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 11V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2h7"/><path d="M15 15l2 2 4-4"/></svg>
+                        BAFA-förderfähig
+                    </span>
+                </div>
+            </div>
+            <aside class="article-hero-aside">
+                <div class="article-teaser">
+                    <div class="article-teaser-label">In diesem Leitfaden</div>
+                    <ul class="article-teaser-list">
+                        <li><span>01</span>Definition & Abgrenzung zu klassischer IT</li>
+                        <li><span>02</span>Operative Realität: Was KI wirklich leistet</li>
+                        <li><span>03</span>Mittelstand-Szenarien mit höchstem ROI</li>
+                        <li><span>04</span>DSGVO & EU AI Act Pflichten</li>
+                    </ul>
+                </div>
+            </aside>
         </div>
     </section>
+
+    <style>
+        .article-hero {
+            padding: 5rem 0 4rem;
+            min-height: auto;
+        }
+        .article-hero-split {
+            display: grid;
+            grid-template-columns: 1.2fr 0.8fr;
+            gap: 3rem;
+            align-items: center;
+        }
+        .article-meta {
+            display: flex;
+            align-items: center;
+            gap: 0.9rem;
+            margin-top: 1.75rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            flex-wrap: wrap;
+        }
+        .article-meta-item {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            font-size: 0.8125rem;
+            color: rgba(255,255,255,0.65);
+            font-weight: 500;
+        }
+        .article-meta-item svg {
+            color: var(--color-warm);
+            flex-shrink: 0;
+        }
+        .article-meta-divider {
+            width: 3px;
+            height: 3px;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.2);
+        }
+        .article-teaser {
+            background: rgba(255,255,255,0.04);
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: var(--radius-lg);
+            padding: 1.75rem;
+            backdrop-filter: blur(8px);
+            position: relative;
+            overflow: hidden;
+        }
+        .article-teaser::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(90deg, var(--color-accent), var(--color-warm));
+        }
+        .article-teaser-label {
+            font-family: var(--font-heading);
+            font-size: 0.6875rem;
+            font-weight: 700;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: var(--color-warm);
+            margin-bottom: 1.25rem;
+        }
+        .article-teaser-list {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 0.875rem;
+        }
+        .article-teaser-list li {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.75rem;
+            font-size: 0.875rem;
+            color: rgba(255,255,255,0.8);
+            line-height: 1.5;
+        }
+        .article-teaser-list li span {
+            font-family: var(--font-heading);
+            font-size: 0.75rem;
+            font-weight: 700;
+            color: var(--color-warm);
+            opacity: 0.75;
+            min-width: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .article-hero-split {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+            .article-meta {
+                gap: 0.5rem;
+                font-size: 0.75rem;
+            }
+        }
+    </style>
 
     <main id="main-content" class="container">
         <TOC items={tocItems} />

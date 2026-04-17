@@ -740,6 +740,262 @@ header a.logo:hover {
   }
 }
 
+/* ===== pSEO Template ===== */
+.pseo-hero {
+  position: relative;
+  padding: 6rem 0 4rem;
+  background: linear-gradient(160deg, #0B1120 0%, #111B2E 50%, #0F1A2E 100%);
+  overflow: hidden;
+  color: #fff;
+}
+
+.pseo-hero::before {
+  content: "";
+  position: absolute;
+  top: -20%;
+  right: -10%;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(37,99,235,0.1) 0%, transparent 60%);
+  pointer-events: none;
+}
+
+.pseo-hero::after {
+  content: "";
+  position: absolute;
+  bottom: -30%;
+  left: -5%;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(217,119,6,0.08) 0%, transparent 60%);
+  pointer-events: none;
+}
+
+.pseo-hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 880px;
+}
+
+.pseo-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.pseo-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.35rem 0.85rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  font-family: var(--font-heading);
+}
+
+.pseo-cluster-loesungen {
+  background: rgba(37,99,235,0.15);
+  color: #93C5FD;
+  border: 1px solid rgba(37,99,235,0.3);
+}
+.pseo-cluster-probleme {
+  background: rgba(220,38,38,0.15);
+  color: #FCA5A5;
+  border: 1px solid rgba(220,38,38,0.3);
+}
+.pseo-cluster-foerderung {
+  background: rgba(5,150,105,0.15);
+  color: #6EE7B7;
+  border: 1px solid rgba(5,150,105,0.3);
+}
+.pseo-cluster-compliance {
+  background: rgba(217,119,6,0.15);
+  color: #FCD34D;
+  border: 1px solid rgba(217,119,6,0.3);
+}
+
+.pseo-badge-bafa {
+  background: linear-gradient(135deg, rgba(217,119,6,0.2), rgba(251,191,36,0.15));
+  color: #FDE68A;
+  border: 1px solid rgba(217,119,6,0.35);
+  text-transform: none;
+  letter-spacing: normal;
+}
+
+.pseo-title {
+  font-family: var(--font-heading);
+  font-size: clamp(1.75rem, 4vw, 2.875rem);
+  font-weight: 800;
+  color: #FFFFFF;
+  margin: 0 0 1.25rem;
+  letter-spacing: -0.025em;
+  line-height: 1.15;
+  hyphens: auto;
+}
+
+.pseo-title::after { display: none; }
+
+.pseo-intro {
+  font-size: 1.0625rem;
+  color: rgba(255,255,255,0.75);
+  line-height: 1.7;
+  margin-bottom: 2rem;
+  max-width: 720px;
+}
+
+.pseo-meta {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  flex-wrap: wrap;
+}
+
+.pseo-author {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.pseo-author-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--color-accent), var(--color-warm));
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 0.875rem;
+}
+
+.pseo-author-info {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+}
+
+.pseo-author-info strong {
+  font-family: var(--font-heading);
+  color: #fff;
+  font-size: 0.9375rem;
+  font-weight: 700;
+}
+
+.pseo-author-info span {
+  font-size: 0.75rem;
+  color: rgba(255,255,255,0.5);
+  margin-top: 2px;
+}
+
+.pseo-meta-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.8125rem;
+  color: rgba(255,255,255,0.6);
+  font-weight: 500;
+}
+
+.pseo-meta-item svg {
+  color: var(--color-warm);
+}
+
+.pseo-meta-divider {
+  width: 1px;
+  height: 28px;
+  background: rgba(255,255,255,0.1);
+}
+
+.pseo-content {
+  padding: 4rem 0 2rem;
+  background: #FFFFFF;
+}
+
+.pseo-body {
+  max-width: 760px;
+  font-size: 1.0625rem;
+  color: var(--color-text-body);
+  line-height: 1.8;
+}
+
+.pseo-body h2 {
+  font-size: 1.625rem;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.pseo-body h3 {
+  font-size: 1.25rem;
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+}
+
+.pseo-body p {
+  margin-bottom: 1.25rem;
+}
+
+.pseo-body ul, .pseo-body ol {
+  margin: 1rem 0 1.5rem;
+  padding-left: 1.5rem;
+}
+
+.pseo-body ul li, .pseo-body ol li {
+  margin-bottom: 0.5rem;
+}
+
+.pseo-body strong {
+  color: var(--color-text-main);
+  font-weight: 600;
+}
+
+.pseo-cta-row {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-top: 3rem;
+  max-width: 760px;
+}
+
+@media (min-width: 640px) {
+  .pseo-cta-row { flex-direction: row; }
+}
+
+.btn-secondary {
+  background: transparent;
+  color: var(--color-text-main);
+  border: 1.5px solid var(--color-border);
+  transition: all 0.3s var(--spring-smooth);
+}
+
+.btn-secondary:hover {
+  border-color: var(--color-accent);
+  color: var(--color-accent);
+  background: var(--color-primary-light);
+  text-decoration: none !important;
+}
+
+/* Unser Ansatz section — Light theme override */
+.pseo-content ~ section.py-20.bg-gray-900\/50,
+section.py-20.bg-gray-900\/50 {
+  background: var(--color-bg-alt) !important;
+  border-top: 1px solid var(--color-border) !important;
+  padding: 4rem 0;
+}
+
+@media (max-width: 768px) {
+  .pseo-hero { padding: 4.5rem 0 3rem; }
+  .pseo-meta { gap: 0.75rem; }
+  .pseo-meta-divider { display: none; }
+}
+
 /* ===== Concept Visuals (clean CSS replacements for sci-fi images) ===== */
 
 .concept-caption {
