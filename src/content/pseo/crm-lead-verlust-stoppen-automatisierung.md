@@ -1,9 +1,9 @@
 ---
-title: "Lead-Verlust im CRM stoppen: Automatisierte Follow-ups, die kein Kontakt mehr durchs Raster fällt"
+title: "Leads nicht verlieren: CRM-Automatisierung im Mittelstand"
 keyword: "Crm lead verlust stoppen automatisierung"
 intent: "Leads verschwinden im CRM, weil Follow-ups vergessen werden. Fehlende Transparenz im Lead-Status kostet Umsatz."
 cluster: "probleme"
-description: "Leads verschwinden im CRM, weil Follow-ups vergessen werden. Fehlende Transparenz im Lead-Status kostet Umsatz."
+description: "Qualifizierte Leads gehen verloren, weil Follow-ups fehlen. Wir schließen CRM-Lecks im Mittelstand: Reaktionszeit von 48h auf 4h. Jetzt beraten lassen."
 bafa_badge: false
 roi_data:
   metric: "Gesteigerte Conversion Rate"

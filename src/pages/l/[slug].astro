@@ -162,19 +162,18 @@ const contentFormat = data.content_format || (data.cluster === 'compliance' ? 'c
 
           <!-- ROI Data Point (conditional) -->
           {data.roi_data && (
-            <div class="mb-12 p-6 bg-gradient-to-r from-blue-900/30 to-transparent rounded-xl border border-blue-500/20">
-              <div class="text-sm text-blue-400 uppercase tracking-widest mb-1">Kennzahl</div>
-              <div class="text-3xl font-bold text-white">{data.roi_data.value}</div>
-              <div class="text-gray-400 mt-1">{data.roi_data.metric}</div>
-              {data.roi_data.source && <div class="text-xs text-gray-500 mt-2">Quelle: {data.roi_data.source}</div>}
+            <div class="pseo-metric pseo-metric-blue">
+              <div class="pseo-metric-label">Kennzahl</div>
+              <div class="pseo-metric-value">{data.roi_data.value}</div>
+              <div class="pseo-metric-meta">{data.roi_data.metric}</div>
+              {data.roi_data.source && <div class="pseo-metric-source">Quelle: {data.roi_data.source}</div>}
             </div>
           )}
 
-          {/* --- Savings Range (conditional) --- */}
           {data.savings_range && (
-            <div class="mb-12 p-6 bg-green-900/20 rounded-xl border border-green-500/20">
-              <div class="text-sm text-green-400 uppercase tracking-widest mb-1">Einsparpotential</div>
-              <div class="text-3xl font-bold text-white">
+            <div class="pseo-metric pseo-metric-green">
+              <div class="pseo-metric-label">Einsparpotential</div>
+              <div class="pseo-metric-value">
                 {data.savings_range.min.toLocaleString('de-DE')} – {data.savings_range.max.toLocaleString('de-DE')}
                 {data.savings_range.unit === 'euro_per_year' && ' €/Jahr'}
                 {data.savings_range.unit === 'hours_per_week' && ' Std./Woche'}
@@ -183,19 +182,13 @@ const contentFormat = data.content_format || (data.cluster === 'compliance' ? 'c
             </div>
           )}
 
-          {/* --- Community Context / UGC Injection (Phase 06) --- */}
           {data.community_context && (
-            <div class="mb-12 p-6 bg-gray-800/80 rounded-xl border-l-4 border-l-purple-500 border-t border-r border-b border-gray-700 relative overflow-hidden">
-              <div class="absolute top-0 right-0 p-4 opacity-10">
-                <svg viewBox="0 0 24 24" class="w-16 h-16 fill-current text-white"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z"/></svg>
+            <div class="pseo-insight">
+              <div class="pseo-insight-header">
+                <span class="pseo-insight-label">Markt-Insight</span>
+                <span class="pseo-insight-source">Signal via {data.community_context.platform}</span>
               </div>
-              <div class="flex items-center gap-2 mb-3">
-                <span class="text-xs uppercase tracking-widest text-purple-400 font-semibold">Markt-Insight</span>
-                <span class="flex items-center gap-1 text-xs text-gray-500 bg-gray-900 px-2 py-0.5 rounded-full">
-                  Signal via {data.community_context.platform}
-                </span>
-              </div>
-              <blockquote class="text-gray-300 italic mb-0 relative z-10">
+              <blockquote class="pseo-insight-quote">
                 "{data.community_context.insight}"
               </blockquote>
             </div>
@@ -213,65 +206,61 @@ const contentFormat = data.content_format || (data.cluster === 'compliance' ? 'c
       </section>
 
       <!-- ===== POLYMORPHE "Unser Ansatz" SECTION ===== -->
-      <!-- DOM-Struktur variiert nach content_format, um Template-Fingerprint zu verschleiern -->
-      <section class="py-20 bg-gray-900/50 border-t border-gray-800">
+      <section class="pseo-approach">
           <div class="container">
-              <h2 class="text-3xl font-bold mb-12">Unser Ansatz für {data.keyword}</h2>
+              <span class="section-label">Unser Ansatz</span>
+              <h2 class="pseo-approach-title">Unser Ansatz für {data.keyword}</h2>
 
-              {/* --- Format: Grid Cards (default für 'loesungen') --- */}
               {contentFormat === 'prose' && (
-                <div class="grid md:grid-cols-3 gap-8">
+                <div class="pseo-approach-grid">
                     {approachSteps.map((step) => (
-                        <div class="p-6 bg-gray-800/50 rounded-xl border border-gray-700">
-                            <h3 class="text-xl font-semibold mb-3">{step.title}</h3>
-                            <p class="text-gray-400">{step.text}</p>
+                        <div class="pseo-approach-card">
+                            <h3>{step.title}</h3>
+                            <p>{step.text}</p>
                         </div>
                     ))}
                 </div>
               )}
 
-              {/* --- Format: Definition List (für 'probleme') --- */}
               {contentFormat === 'checklist' && (
-                <dl class="space-y-6 max-w-3xl">
+                <dl class="pseo-approach-dl">
                     {approachSteps.map((step) => (
-                        <div class="border-l-2 border-blue-500 pl-6">
-                            <dt class="text-lg font-semibold text-white">{step.title}</dt>
-                            <dd class="text-gray-400 mt-1">{step.text}</dd>
+                        <div class="pseo-approach-item">
+                            <dt>{step.title}</dt>
+                            <dd>{step.text}</dd>
                         </div>
                     ))}
                 </dl>
               )}
 
-              {/* --- Format: Numbered Steps (für 'foerderung') --- */}
               {contentFormat === 'steps' && (
-                <ol class="space-y-8 max-w-3xl list-none p-0">
+                <ol class="pseo-approach-steps">
                     {approachSteps.map((step, i) => (
-                        <li class="flex gap-4 items-start">
-                            <span class="flex-shrink-0 w-10 h-10 rounded-full bg-blue-600 text-white flex items-center justify-center font-bold text-lg">{i + 1}</span>
+                        <li class="pseo-approach-step">
+                            <span class="pseo-step-num">{i + 1}</span>
                             <div>
-                                <h3 class="text-lg font-semibold text-white">{step.title}</h3>
-                                <p class="text-gray-400 mt-1">{step.text}</p>
+                                <h3>{step.title}</h3>
+                                <p>{step.text}</p>
                             </div>
                         </li>
                     ))}
                 </ol>
               )}
 
-              {/* --- Format: Comparison Table (für 'compliance') --- */}
               {contentFormat === 'comparison' && (
-                <div class="overflow-x-auto">
-                  <table class="w-full max-w-3xl text-left border-collapse">
+                <div class="pseo-approach-table-wrap">
+                  <table class="pseo-approach-table">
                     <thead>
-                      <tr class="border-b border-gray-700">
-                        <th class="pb-3 text-gray-400 font-medium">Phase</th>
-                        <th class="pb-3 text-gray-400 font-medium">Beschreibung</th>
+                      <tr>
+                        <th>Phase</th>
+                        <th>Beschreibung</th>
                       </tr>
                     </thead>
                     <tbody>
                       {approachSteps.map((step) => (
-                        <tr class="border-b border-gray-800">
-                          <td class="py-4 pr-6 font-semibold text-white whitespace-nowrap">{step.title}</td>
-                          <td class="py-4 text-gray-400">{step.text}</td>
+                        <tr>
+                          <td><strong>{step.title}</strong></td>
+                          <td>{step.text}</td>
                         </tr>
                       ))}
                     </tbody>
@@ -281,12 +270,12 @@ const contentFormat = data.content_format || (data.cluster === 'compliance' ? 'c
           </div>
       </section>
 
-      <!-- ===== FAQ SECTION (conditional, für FAQPage Schema) ===== -->
       {data.faq && data.faq.length > 0 && (
-        <section class="py-16 border-t border-gray-800">
-          <div class="container max-w-3xl">
-            <h2 class="text-2xl font-bold mb-8">Häufige Fragen</h2>
-            <div class="space-y-4">
+        <section class="pseo-faq">
+          <div class="container">
+            <span class="section-label">FAQ</span>
+            <h2>Häufige Fragen</h2>
+            <div class="pseo-faq-list">
               {data.faq.map((item) => (
                 <FaqAccordion faqItem={item} />
               ))}
@@ -295,16 +284,15 @@ const contentFormat = data.content_format || (data.cluster === 'compliance' ? 'c
         </section>
       )}
 
-      <!-- ===== SOURCES (conditional) ===== -->
       {data.sources && data.sources.length > 0 && (
-        <aside class="py-8 border-t border-gray-800">
-          <div class="container max-w-3xl">
-            <h3 class="text-sm uppercase tracking-widest text-gray-500 mb-4">Quellen</h3>
-            <ul class="text-sm text-gray-500 space-y-1">
+        <aside class="pseo-sources">
+          <div class="container">
+            <h3 class="pseo-sources-label">Quellen</h3>
+            <ul class="pseo-sources-list">
               {data.sources.map((src) => (
                 <li>
                   {src.url ? (
-                    <a href={src.url} target="_blank" rel="noopener noreferrer" class="hover:text-gray-300 transition-colors">{src.name}</a>
+                    <a href={src.url} target="_blank" rel="noopener noreferrer">{src.name}</a>
                   ) : (
                     <span>{src.name}</span>
                   )}
@@ -315,9 +303,8 @@ const contentFormat = data.content_format || (data.cluster === 'compliance' ? 'c
         </aside>
       )}
 
-      <!-- ===== CONTACT FORM ===== -->
-      <section class="py-20 border-t border-gray-800">
-        <div class="container max-w-2xl">
+      <section class="pseo-contact">
+        <div class="container">
           <ContactForm sourcePage={`/l/${entry.slug}/`} />
         </div>
       </section>

@@ -1185,6 +1185,382 @@ section.py-20.bg-gray-900\/50 {
   .pseo-meta-divider { display: none; }
 }
 
+/* ===== pSEO Metric Boxes ===== */
+.pseo-metric {
+  max-width: 760px;
+  margin: 2rem 0 3rem;
+  padding: 1.75rem 2rem;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border);
+  background: var(--color-surface);
+  position: relative;
+  overflow: hidden;
+}
+
+.pseo-metric::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+}
+
+.pseo-metric-blue::before { background: linear-gradient(180deg, var(--color-accent), var(--color-primary)); }
+.pseo-metric-green::before { background: linear-gradient(180deg, var(--color-success), #047857); }
+
+.pseo-metric-label {
+  font-family: var(--font-heading);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+  margin-bottom: 0.5rem;
+}
+
+.pseo-metric-blue .pseo-metric-label { color: var(--color-accent); }
+.pseo-metric-green .pseo-metric-label { color: var(--color-success); }
+
+.pseo-metric-value {
+  font-family: var(--font-heading);
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--color-text-main);
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+
+.pseo-metric-meta {
+  color: var(--color-text-body);
+  margin-top: 0.5rem;
+  font-size: 0.9375rem;
+}
+
+.pseo-metric-source {
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+  margin-top: 0.75rem;
+}
+
+/* ===== pSEO Insight Box (Community / UGC) ===== */
+.pseo-insight {
+  max-width: 760px;
+  margin: 2rem 0 3rem;
+  padding: 1.75rem 2rem;
+  background: linear-gradient(135deg, rgba(217, 119, 6, 0.05), rgba(251, 191, 36, 0.08));
+  border: 1px solid rgba(217, 119, 6, 0.2);
+  border-left: 4px solid var(--color-warm);
+  border-radius: var(--radius-md);
+  position: relative;
+}
+
+.pseo-insight-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.875rem;
+  flex-wrap: wrap;
+}
+
+.pseo-insight-label {
+  font-family: var(--font-heading);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-warm);
+}
+
+.pseo-insight-source {
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+  background: var(--color-bg-alt);
+  padding: 0.2rem 0.65rem;
+  border-radius: 999px;
+}
+
+.pseo-insight-quote {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 1.125rem;
+  color: var(--color-text-main);
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* ===== pSEO Unser Ansatz ===== */
+.pseo-approach {
+  padding: 4rem 0;
+  background: var(--color-bg-alt);
+  border-top: 1px solid var(--color-border);
+}
+
+.pseo-approach-title {
+  margin-bottom: 2.5rem;
+  font-size: 1.875rem;
+}
+
+/* Format: Prose (Grid) */
+.pseo-approach-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+.pseo-approach-card {
+  padding: 1.75rem;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  transition: all 0.3s var(--spring-smooth);
+}
+
+.pseo-approach-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--elev-3);
+  border-color: rgba(37, 99, 235, 0.2);
+}
+
+.pseo-approach-card h3 {
+  font-size: 1.125rem;
+  margin: 0 0 0.75rem;
+  color: var(--color-text-main);
+}
+
+.pseo-approach-card h3::after { display: none; }
+
+.pseo-approach-card p {
+  color: var(--color-text-body);
+  margin: 0;
+  font-size: 0.9375rem;
+  line-height: 1.7;
+}
+
+/* Format: Checklist (Definition List) */
+.pseo-approach-dl {
+  max-width: 760px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.pseo-approach-item {
+  padding: 1.25rem 1.5rem;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-left: 3px solid var(--color-accent);
+  border-radius: var(--radius-sm);
+  transition: all 0.3s var(--spring-smooth);
+}
+
+.pseo-approach-item:hover {
+  transform: translateX(4px);
+  box-shadow: var(--elev-2);
+}
+
+.pseo-approach-item dt {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  color: var(--color-text-main);
+  font-size: 1.0625rem;
+  margin-bottom: 0.35rem;
+}
+
+.pseo-approach-item dd {
+  color: var(--color-text-body);
+  margin: 0;
+  font-size: 0.9375rem;
+  line-height: 1.65;
+}
+
+/* Format: Steps (Numbered) */
+.pseo-approach-steps {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  max-width: 760px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.pseo-approach-step {
+  display: flex;
+  gap: 1.25rem;
+  align-items: flex-start;
+  padding: 1.25rem 1.5rem;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  transition: all 0.3s var(--spring-smooth);
+}
+
+.pseo-approach-step:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--elev-2);
+  border-color: rgba(217, 119, 6, 0.2);
+}
+
+.pseo-step-num {
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--color-warm), #B45309);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 1rem;
+  box-shadow: 0 4px 10px rgba(217, 119, 6, 0.25);
+}
+
+.pseo-approach-step h3 {
+  font-size: 1.0625rem;
+  margin: 0 0 0.25rem;
+  color: var(--color-text-main);
+}
+
+.pseo-approach-step h3::after { display: none; }
+
+.pseo-approach-step p {
+  margin: 0;
+  color: var(--color-text-body);
+  font-size: 0.9375rem;
+  line-height: 1.65;
+}
+
+/* Format: Comparison Table */
+.pseo-approach-table-wrap {
+  max-width: 860px;
+  overflow-x: auto;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-surface);
+}
+
+.pseo-approach-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.pseo-approach-table thead {
+  background: var(--color-bg-alt);
+}
+
+.pseo-approach-table th {
+  text-align: left;
+  padding: 1rem 1.25rem;
+  font-family: var(--font-heading);
+  font-size: 0.8125rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.pseo-approach-table td {
+  padding: 1rem 1.25rem;
+  border-bottom: 1px solid var(--color-border);
+  color: var(--color-text-body);
+  font-size: 0.9375rem;
+}
+
+.pseo-approach-table tr:last-child td {
+  border-bottom: none;
+}
+
+.pseo-approach-table td strong {
+  font-family: var(--font-heading);
+  color: var(--color-text-main);
+  font-weight: 700;
+}
+
+/* ===== pSEO FAQ ===== */
+.pseo-faq {
+  padding: 4rem 0;
+  background: var(--color-bg);
+  border-top: 1px solid var(--color-border);
+}
+
+.pseo-faq h2 {
+  margin-bottom: 2rem;
+}
+
+.pseo-faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  max-width: 760px;
+}
+
+/* ===== pSEO Sources ===== */
+.pseo-sources {
+  padding: 2.5rem 0;
+  background: var(--color-bg-alt);
+  border-top: 1px solid var(--color-border);
+}
+
+.pseo-sources-label {
+  font-family: var(--font-heading);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+  margin-bottom: 1rem;
+}
+
+.pseo-sources-label::after { display: none; }
+
+.pseo-sources-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  max-width: 760px;
+}
+
+.pseo-sources-list li {
+  font-size: 0.8125rem;
+  color: var(--color-text-muted);
+}
+
+.pseo-sources-list a {
+  color: var(--color-text-muted);
+  transition: color 0.2s ease;
+}
+
+.pseo-sources-list a:hover {
+  color: var(--color-accent);
+}
+
+/* ===== pSEO Contact Section ===== */
+.pseo-contact {
+  padding: 4rem 0 5rem;
+  background: var(--color-bg);
+  border-top: 1px solid var(--color-border);
+}
+
+.pseo-contact .container {
+  max-width: 640px;
+}
+
+@media (max-width: 768px) {
+  .pseo-metric, .pseo-insight {
+    padding: 1.25rem 1.25rem 1.25rem 1.5rem;
+  }
+  .pseo-metric-value { font-size: 1.625rem; }
+  .pseo-approach { padding: 3rem 0; }
+  .pseo-approach-title { font-size: 1.5rem; }
+}
+
 /* ===== Concept Visuals (clean CSS replacements for sci-fi images) ===== */
 
 .concept-caption {
