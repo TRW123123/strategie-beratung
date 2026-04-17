@@ -116,7 +116,13 @@ h1 {
   letter-spacing: -0.035em;
   line-height: 1.1;
   overflow-wrap: break-word;
-  word-break: break-word;
+  hyphens: auto;
+}
+
+@media (max-width: 480px) {
+  h1 {
+    word-break: break-word;
+  }
 }
 
 h2 {
