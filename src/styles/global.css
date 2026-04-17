@@ -686,6 +686,30 @@ a:hover {
   }
 }
 
+/* ===== Legacy Infographic Integration ===== */
+/* Alte Sci-Fi/Neon-Infografiken ins neue Design integrieren */
+img[src*="/images/analysis_"],
+img[src*="/images/blueprint_"],
+img[src*="/images/wertschoepfungskette"],
+img[src*="/images/roi_matrix"],
+img[src*="/images/pilot_matrix"],
+img[src*="/images/phasen_timeline"],
+img[src*="/images/spannungsfeld"] {
+  filter: saturate(0.35) contrast(0.92) brightness(1.02) hue-rotate(-10deg);
+  border-radius: var(--radius-md);
+  box-shadow: var(--elev-2);
+  transition: filter 0.3s ease;
+}
+
+img[src*="/images/analysis_"]:hover,
+img[src*="/images/blueprint_"]:hover,
+img[src*="/images/wertschoepfungskette"]:hover,
+img[src*="/images/roi_matrix"]:hover,
+img[src*="/images/pilot_matrix"]:hover,
+img[src*="/images/phasen_timeline"]:hover {
+  filter: saturate(0.5) contrast(0.95) brightness(1.02);
+}
+
 /* ===== Legacy Dark-Theme Override ===== */
 /* Override old Tailwind dark-theme classes to work with light theme */
 .bg-gray-800\/50,
