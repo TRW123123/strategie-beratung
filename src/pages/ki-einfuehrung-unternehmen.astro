@@ -93,29 +93,29 @@ const faqItems = [
                 arbeiten?").
             </p>
 
-            <div
-                class="my-12 rounded-xl overflow-hidden shadow-2xl border border-[var(--color-border)]"
-            >
-                <picture>
-                    <source
-                        media="(max-width: 768px)"
-                        srcset="/images/blueprint_mobile_v2.png"
-                    />
-                    <img
-                        src="/images/blueprint_desktop_v2.png"
-                        alt="Die KI-Einführungs-Pyramide: Daten > Prozesse > Tools"
-                        class="w-full h-auto"
-                        width="1024"
-                        height="1024"
-                        loading="lazy"
-                    />
-                </picture>
-                <p
-                    class="text-sm text-center text-gray-500 mt-2 p-2 bg-[var(--color-surface-subtle)]"
-                >
-                    Strategische Hierarchie: Solide Infrastruktur und Governance
-                    sind das Fundament für erfolgreiche KI-Tools.
-                </p>
+            <div class="concept-pyramid" role="img" aria-label="Die KI-Einführungs-Pyramide: Daten > Prozesse > Tools">
+                <div class="pyramid-layer pyramid-top">
+                    <span class="pyramid-order">3</span>
+                    <div>
+                        <strong>Tools & Modelle</strong>
+                        <span>Copilots, LLMs, Vector-Stores</span>
+                    </div>
+                </div>
+                <div class="pyramid-layer pyramid-mid">
+                    <span class="pyramid-order">2</span>
+                    <div>
+                        <strong>Prozesse & Governance</strong>
+                        <span>Workflows, Rollen, Policies</span>
+                    </div>
+                </div>
+                <div class="pyramid-layer pyramid-base">
+                    <span class="pyramid-order">1</span>
+                    <div>
+                        <strong>Daten-Fundament</strong>
+                        <span>Qualität, Struktur, Rechtslage</span>
+                    </div>
+                </div>
+                <p class="concept-caption">Strategische Hierarchie: Solide Infrastruktur und Governance sind das Fundament für erfolgreiche KI-Tools.</p>
             </div>
         </section>
 
@@ -194,14 +194,31 @@ const faqItems = [
             <div
                 class="my-12 rounded-xl overflow-hidden shadow-2xl border border-[var(--color-border)]"
             >
-                <img
-                    src="/images/phasen_timeline.png"
-                    alt="Visual: Phasen-Timeline"
-                    class="w-full h-auto"
-                    width="1024"
-                    height="1024"
-                    loading="lazy"
-                />
+                <div class="concept-timeline" role="img" aria-label="Visual: Phasen-Timeline">
+                    <div class="timeline-track">
+                        <div class="timeline-line"></div>
+                        <div class="timeline-step">
+                            <div class="timeline-dot">1</div>
+                            <strong>Fundament</strong>
+                            <span>Wochen 1–2</span>
+                        </div>
+                        <div class="timeline-step">
+                            <div class="timeline-dot">2</div>
+                            <strong>Readiness</strong>
+                            <span>Wochen 3–6</span>
+                        </div>
+                        <div class="timeline-step">
+                            <div class="timeline-dot">3</div>
+                            <strong>Pilot</strong>
+                            <span>Wochen 7–12</span>
+                        </div>
+                        <div class="timeline-step timeline-step-final">
+                            <div class="timeline-dot">4</div>
+                            <strong>Skalierung</strong>
+                            <span>ab Woche 13</span>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <KeyTakeaways
@@ -298,14 +315,28 @@ const faqItems = [
             <div
                 class="my-12 rounded-xl overflow-hidden shadow-2xl border border-[var(--color-border)]"
             >
-                <img
-                    src="/images/pilot_matrix.png"
-                    alt="Visual: Auswahlmatrix für Pilotprojekte"
-                    class="w-full h-auto"
-                    width="1024"
-                    height="1024"
-                    loading="lazy"
-                />
+                <div class="concept-matrix" role="img" aria-label="Visual: Auswahlmatrix für Pilotprojekte">
+                    <div class="matrix-y-label">Business-Impact</div>
+                    <div class="matrix-grid">
+                        <div class="matrix-cell cell-top-left">
+                            <span class="matrix-cell-label">Strategisch wichtig</span>
+                            <span class="matrix-cell-hint">Langfristige Planung</span>
+                        </div>
+                        <div class="matrix-cell cell-top-right cell-highlight">
+                            <span class="matrix-cell-label">Pilot-Kandidaten</span>
+                            <span class="matrix-cell-hint">Hier starten</span>
+                        </div>
+                        <div class="matrix-cell cell-bottom-left">
+                            <span class="matrix-cell-label">Ignorieren</span>
+                            <span class="matrix-cell-hint">Kein ROI</span>
+                        </div>
+                        <div class="matrix-cell cell-bottom-right">
+                            <span class="matrix-cell-label">Quick-Wins</span>
+                            <span class="matrix-cell-hint">Niedriger Aufwand</span>
+                        </div>
+                    </div>
+                    <div class="matrix-x-label">Umsetzbarkeit →</div>
+                </div>
             </div>
         </section>
 

@@ -411,14 +411,39 @@ const faqItems = [
             <div
                 class="my-12 rounded-xl overflow-hidden shadow-2xl border border-[var(--color-border)]"
             >
-                <img
-                    src="/images/wertschoepfungskette.png"
-                    alt="Visual: Wertschöpfungskette & KI-Potenziale"
-                    class="w-full h-auto"
-                    width="1024"
-                    height="1024"
-                    loading="lazy"
-                />
+                <div class="concept-chain" role="img" aria-label="Visual: Wertschöpfungskette & KI-Potenziale">
+                    <div class="chain-step">
+                        <div class="chain-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 7h16M4 12h16M4 17h10"/></svg>
+                        </div>
+                        <strong>Input</strong>
+                        <span>Dokumente, Anfragen, Daten</span>
+                    </div>
+                    <div class="chain-arrow"></div>
+                    <div class="chain-step">
+                        <div class="chain-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M8 11V7a4 4 0 118 0v4m-7 5h6M5 11h14v10H5z"/></svg>
+                        </div>
+                        <strong>Verarbeitung</strong>
+                        <span>KI-gestützt, regelbasiert</span>
+                    </div>
+                    <div class="chain-arrow"></div>
+                    <div class="chain-step chain-step-highlight">
+                        <div class="chain-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
+                        </div>
+                        <strong>Wertschöpfung</strong>
+                        <span>Entscheidung, Qualität, Tempo</span>
+                    </div>
+                    <div class="chain-arrow"></div>
+                    <div class="chain-step">
+                        <div class="chain-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
+                        </div>
+                        <strong>Output</strong>
+                        <span>Ergebnis an Kunde/System</span>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -522,14 +547,28 @@ const faqItems = [
             <div
                 class="my-12 rounded-xl overflow-hidden shadow-2xl border border-[var(--color-border)]"
             >
-                <img
-                    src="/images/roi_matrix.png"
-                    alt="Visual: Kosten-Nutzen-Matrix"
-                    class="w-full h-auto"
-                    width="1024"
-                    height="1024"
-                    loading="lazy"
-                />
+                <div class="concept-matrix" role="img" aria-label="Visual: Kosten-Nutzen-Matrix">
+                    <div class="matrix-y-label">Nutzen</div>
+                    <div class="matrix-grid">
+                        <div class="matrix-cell cell-top-left">
+                            <span class="matrix-cell-label">Strategisch</span>
+                            <span class="matrix-cell-hint">Hoher Aufwand, hoher Nutzen</span>
+                        </div>
+                        <div class="matrix-cell cell-top-right cell-highlight">
+                            <span class="matrix-cell-label">Must-Do</span>
+                            <span class="matrix-cell-hint">Niedriger Aufwand, hoher Nutzen</span>
+                        </div>
+                        <div class="matrix-cell cell-bottom-left">
+                            <span class="matrix-cell-label">Vermeiden</span>
+                            <span class="matrix-cell-hint">Hoher Aufwand, niedriger Nutzen</span>
+                        </div>
+                        <div class="matrix-cell cell-bottom-right">
+                            <span class="matrix-cell-label">Nice-to-Have</span>
+                            <span class="matrix-cell-hint">Niedriger Aufwand, niedriger Nutzen</span>
+                        </div>
+                    </div>
+                    <div class="matrix-x-label">Aufwand →</div>
+                </div>
             </div>
         </section>
 
