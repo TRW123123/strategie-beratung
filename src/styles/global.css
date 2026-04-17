@@ -695,7 +695,7 @@ img[src*="/images/roi_matrix"],
 img[src*="/images/pilot_matrix"],
 img[src*="/images/phasen_timeline"],
 img[src*="/images/spannungsfeld"] {
-  filter: saturate(0.35) contrast(0.92) brightness(1.02) hue-rotate(-10deg);
+  filter: saturate(0.75);
   border-radius: var(--radius-md);
   box-shadow: var(--elev-2);
   transition: filter 0.3s ease;
@@ -707,7 +707,7 @@ img[src*="/images/wertschoepfungskette"]:hover,
 img[src*="/images/roi_matrix"]:hover,
 img[src*="/images/pilot_matrix"]:hover,
 img[src*="/images/phasen_timeline"]:hover {
-  filter: saturate(0.5) contrast(0.95) brightness(1.02);
+  filter: saturate(1);
 }
 
 /* ===== Legacy Dark-Theme Override ===== */
