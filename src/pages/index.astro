@@ -221,7 +221,7 @@ const canonical = new URL(
                     </div>
                 </div>
                 <div class="principle-item">
-                    <div class="principle-icon">
+                    <div class="principle-icon principle-icon-amber">
                         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
                     </div>
                     <div>
@@ -245,8 +245,8 @@ const canonical = new URL(
         <!-- SECTION: Realitätssignale & Förderung -->
         <section class="section-block section-alt reveal">
           <div class="container">
-            <span class="section-label">Staatliche Förderung</span>
-            <h2>Risiko halbiert. ROI verdoppelt. (Staatliche Förderung)</h2>
+            <span class="section-label section-label-amber">Staatliche Förderung</span>
+            <h2 class="h2-amber">Risiko halbiert. ROI verdoppelt. (Staatliche Förderung)</h2>
             <p>
                 Unsere strategischen Beratungsleistungen zur Digitalisierung und Prozessoptimierung sind staatlich förderfähig. Über das offizielle Programm des Bundes („Förderung von Unternehmensberatungen für KMU" der BAFA) können kleine und mittlere Unternehmen einen massiven Teil der Beratungskosten zurückerhalten:
             </p>
@@ -263,7 +263,7 @@ const canonical = new URL(
                     <div class="stat-value">80 %</div>
                     <div class="stat-desc">Zuschuss (max. 2.800 €)</div>
                 </div>
-                <div class="stat-card stat-card-blue">
+                <div class="stat-card stat-card-amber">
                     <div class="stat-label">ROI der Beratung</div>
                     <div class="stat-value">17:1</div>
                     <div class="stat-desc">im ersten Jahr</div>
@@ -304,7 +304,7 @@ const canonical = new URL(
                 </article>
 
                 <!-- Pfad 2: Umsetzung -->
-                <article class="path-card">
+                <article class="path-card path-card-amber">
                     <div class="path-number">2</div>
                     <h3>Strategie & Einführung</h3>
                     <p>
@@ -325,6 +325,7 @@ const canonical = new URL(
         <!-- SECTION: Soft Conversion -->
         <section class="contact-section">
             <div class="container">
+                <span class="section-label" style="background: linear-gradient(90deg, #FBBF24, #F59E0B); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Nächster Schritt</span>
                 <h2>Klares Gespräch statt Vertrieb</h2>
                 <p>
                     Wir glauben nicht an Standardpakete für komplexe
@@ -645,6 +646,11 @@ const canonical = new URL(
         transition: all 0.3s var(--spring-bounce);
     }
 
+    .principle-icon-amber {
+        background: linear-gradient(135deg, var(--color-warm), #B45309);
+        box-shadow: 0 4px 12px rgba(217,119,6,0.25);
+    }
+
     .principle-item:hover .principle-icon {
         transform: rotate(8deg) scale(1.1);
     }
@@ -672,10 +678,12 @@ const canonical = new URL(
 
     .stat-card-green { border-left: 4px solid var(--color-success); }
     .stat-card-blue { border-left: 4px solid var(--color-accent); }
+    .stat-card-amber { border-left: 4px solid var(--color-warm); }
     .stat-label { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--color-text-muted); margin-bottom: 0.5rem; font-weight: 600; }
     .stat-value { font-size: 2.5rem; font-weight: 700; color: var(--color-text-main); line-height: 1; margin-bottom: 0.25rem; }
     .stat-card-green .stat-value { color: var(--color-success); }
     .stat-card-blue .stat-value { color: var(--color-accent); }
+    .stat-card-amber .stat-value { color: var(--color-warm); }
     .stat-desc { color: var(--color-text-muted); font-size: 0.875rem; }
 
     /* ===== Path Cards ===== */
@@ -716,9 +724,30 @@ const canonical = new URL(
         transition: all 0.3s var(--spring-bounce);
     }
 
+    .path-card-amber .path-number {
+        background: var(--color-warm);
+    }
+
+    .path-card-amber:hover {
+        border-color: rgba(217, 119, 6, 0.3) !important;
+    }
+
+    .path-card-amber .btn-primary {
+        background: var(--color-warm);
+    }
+
+    .path-card-amber .btn-primary:hover {
+        background: #B45309;
+        box-shadow: 0 10px 20px rgba(217, 119, 6, 0.25);
+    }
+
     .path-card:hover .path-number {
         transform: scale(1.15);
         box-shadow: 0 6px 16px rgba(37,99,235,0.3);
+    }
+
+    .path-card-amber:hover .path-number {
+        box-shadow: 0 6px 16px rgba(217, 119, 6, 0.3);
     }
 
     .path-card h3 { font-size: 1.25rem; margin-bottom: 0.75rem; }

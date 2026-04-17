@@ -618,6 +618,19 @@ a:hover {
   margin-bottom: 0.75rem;
 }
 
+/* Amber variant for action/warmth sections */
+.section-label-amber {
+  background: linear-gradient(90deg, var(--color-warm) 0%, #F59E0B 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* H2 Underline: Amber variant */
+.h2-amber::after {
+  background: linear-gradient(90deg, var(--color-warm), transparent) !important;
+}
+
 /* ===== Scroll Reveal Animations ===== */
 @keyframes fadeInUp {
   from {
