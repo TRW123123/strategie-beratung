@@ -1,0 +1,117 @@
+{
+  "meta": {
+    "date": "2026-03-31",
+    "domain": "st-automatisierung.de",
+    "purpose": "pSEO Cluster Research - Beratungs-Intent Keywords",
+    "tool": "DataForSEO API v3",
+    "location": "Germany (2276)",
+    "language": "de"
+  },
+  "competitor_serp": {
+    "keyword": "ki beratung mittelstand",
+    "top_competitors": [
+      "mittelstand-digital.de",
+      "statworx.com",
+      "roover.de",
+      "iff.fraunhofer.de",
+      "just-forward.com",
+      "austing-it.de",
+      "ki-unternehmenssteuerung.de",
+      "uandi.com",
+      "visionarydata.de"
+    ]
+  },
+  "keyword_clusters": {
+    "tier1_high_intent": [
+      { "keyword": "ki beratung", "volume": 2400, "cpc": 14.26, "competition": 0.11 },
+      { "keyword": "künstliche intelligenz beratung", "volume": 2400, "cpc": 14.26, "competition": 0.11 },
+      { "keyword": "ki im unternehmen", "volume": 480, "cpc": 13.35, "competition": 0.29 },
+      { "keyword": "ki für unternehmen", "volume": 480, "cpc": 12.93, "competition": 0.30 },
+      { "keyword": "strategie beratung", "volume": 480, "cpc": 8.21, "competition": 0.29 },
+      { "keyword": "ki automatisierung", "volume": 1600, "cpc": 7.41, "competition": 0.63 },
+      { "keyword": "ki lösungen", "volume": 590, "cpc": 6.78, "competition": 0.31 },
+      { "keyword": "ki anbieter", "volume": 590, "cpc": 7.77, "competition": 0.53 }
+    ],
+    "tier2_mittelstand_focus": [
+      { "keyword": "unternehmensberatung mittelstand", "volume": 390, "cpc": 6.12, "competition": 0.22 },
+      { "keyword": "beratung mittelstand", "volume": 260, "cpc": 6.72, "competition": 0.18 },
+      { "keyword": "ki in unternehmen", "volume": 260, "cpc": 11.89, "competition": 0.35 },
+      { "keyword": "strategieberatung mittelstand", "volume": 90, "cpc": 14.30, "competition": 0.28 },
+      { "keyword": "ki beratung mittelstand", "volume": 170, "cpc": 10.44, "competition": 0.27 },
+      { "keyword": "ki in der beratung", "volume": 110, "cpc": 10.89, "competition": 0.32 },
+      { "keyword": "ki mittelstand", "volume": 140, "cpc": 8.45, "competition": 0.55 },
+      { "keyword": "beratung künstliche intelligenz", "volume": 90, "cpc": 0.00, "competition": 0.00 }
+    ],
+    "tier3_bafa_foerderung": [
+      { "keyword": "bafa förderung ki beratung", "volume": 10, "cpc": 0.00, "competition": 0.00, "note": "GSC: bereits Pos 13!" },
+      { "keyword": "bafa förderung unternehmerischen know-hows 2026", "volume": 10, "cpc": 0.00, "competition": 0.00, "note": "GSC: bereits Pos 8!" },
+      { "keyword": "förderung unternehmensberatung", "volume": 140, "cpc": 1.54, "competition": 0.10 },
+      { "keyword": "bafa digitalisierung förderung", "volume": null, "cpc": null, "note": "zu recherchieren" },
+      { "keyword": "foerdermittel digitalisierung mittelstand", "volume": null, "cpc": null, "note": "zu recherchieren" }
+    ],
+    "tier4_ai_act_compliance": [
+      { "keyword": "ki verordnung", "volume": 4400, "cpc": 2.52, "competition": 0.22, "note": "AI Act related - hoher Volume" },
+      { "keyword": "ai act compliance", "volume": null, "cpc": null, "note": "GSC: aktive Page vorhanden" },
+      { "keyword": "compliance checker", "volume": null, "cpc": null, "note": "GSC: 8 Impressionen, Pos 69 - zu optimieren" },
+      { "keyword": "ki datenschutz", "volume": 590, "cpc": 5.14, "competition": 0.42 }
+    ],
+    "tier5_training_schulung": [
+      { "keyword": "ki schulung", "volume": 2400, "cpc": 8.16, "competition": 0.67 },
+      { "keyword": "ki fortbildungen", "volume": 720, "cpc": 6.77, "competition": 0.78 },
+      { "keyword": "ki ausbildung", "volume": 590, "cpc": 5.10, "competition": 0.76 },
+      { "keyword": "schulung ki", "volume": 260, "cpc": 7.25, "competition": 0.58 }
+    ]
+  },
+  "pseo_cluster_recommendations": {
+    "cluster_1_ki_beratung": {
+      "pillar_keyword": "ki beratung mittelstand",
+      "volume": 170,
+      "cpc": 10.44,
+      "intent": "Beratungs-Intent B2B",
+      "differentiator": "ST berät, KI-Automatisieren setzt um",
+      "suggested_pages": [
+        "ki-beratung-mittelstand-strategie",
+        "ki-beratung-handwerk",
+        "ki-beratung-produktion",
+        "ki-beratung-dienstleister",
+        "ki-beratung-einzelhandel"
+      ]
+    },
+    "cluster_2_strategieberatung": {
+      "pillar_keyword": "strategieberatung mittelstand",
+      "volume": 90,
+      "cpc": 14.30,
+      "intent": "High-value B2B - höchster CPC im Set",
+      "suggested_pages": [
+        "ki-strategieberatung-mittelstand",
+        "ki-roadmap-erstellen-unternehmen",
+        "ki-potenzialanalyse-mittelstand",
+        "ki-readiness-check"
+      ]
+    },
+    "cluster_3_bafa": {
+      "pillar_keyword": "bafa förderung ki beratung",
+      "note": "Stärkstes GSC-Signal: 159 Impressionen, Pos 5.9",
+      "intent": "Transaktional - BAFA-Antrag",
+      "suggested_pages": [
+        "bafa-foerderung-ki-strategie-beratung",
+        "bafa-foerderung-digitalisierung-nrw",
+        "bafa-berater-ki-mittelstand",
+        "bafa-antrag-schritt-fuer-schritt"
+      ]
+    },
+    "cluster_4_ai_act": {
+      "pillar_keyword": "ai act compliance unternehmen",
+      "volume": 4400,
+      "note": "Über ki verordnung erschließbar - sehr hoher Volume",
+      "intent": "Regulatorisch-getrieben, Beratungsbedarf hoch",
+      "suggested_pages": [
+        "ai-act-compliance-check-unternehmen",
+        "eu-ki-verordnung-mittelstand-pflichten",
+        "ki-verordnung-risikoklassen-unternehmen",
+        "ai-act-audit-mittelstand"
+      ]
+    }
+  },
+  "raw_data_source": "dataforseo_labs/google/keyword_ideas/live + keywords_data/google_ads/keywords_for_site/live"
+}

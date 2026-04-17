@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(curl -s \"https://xipqyfmzjdrjvrfbqfhs.supabase.co/rest/v1/gsc_daily_summary?domain=eq.st-automatisierung.de&order=date.desc&limit=7&select=date,total_clicks,total_impressions,avg_position\" -H \"apikey: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InhpcHF5Zm16amRyanZyZmJxZmhzIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjA1ODQxMjIsImV4cCI6MjA3NjE2MDEyMn0.OSBkccnzF4CUgGuVeU5MB9sNjbSEmqwxSj1xgB8wB6Q\" -H \"Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InhpcHF5Zm16amRyanZyZmJxZmhzIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjA1ODQxMjIsImV4cCI6MjA3NjE2MDEyMn0.OSBkccnzF4CUgGuVeU5MB9sNjbSEmqwxSj1xgB8wB6Q\")"
+    ]
+  }
+}

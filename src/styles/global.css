@@ -36,7 +36,8 @@
   --color-success-light: #ECFDF5;
 
   /* Typography */
-  --font-heading: 'Space Grotesk', sans-serif;
+  --font-heading: 'Plus Jakarta Sans', 'Space Grotesk', sans-serif;
+  --font-display: 'Instrument Serif', Georgia, serif;
   --font-body: 'Space Grotesk', sans-serif;
 
   /* Spacing & Structure */
@@ -110,10 +111,10 @@ h6 {
 }
 
 h1 {
-  font-size: clamp(1.6rem, 4.5vw, 3.25rem);
-  font-weight: 700;
-  letter-spacing: -0.03em;
-  line-height: 1.15;
+  font-size: clamp(1.6rem, 4.5vw, 3.5rem);
+  font-weight: 800;
+  letter-spacing: -0.035em;
+  line-height: 1.1;
   overflow-wrap: break-word;
   word-break: break-word;
 }
@@ -241,10 +242,15 @@ a:hover {
 }
 
 .hero h1 .keyword-highlight {
-  background: linear-gradient(135deg, #60A5FA 0%, #A78BFA 100%);
+  font-family: var(--font-display);
+  font-style: italic;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  background: linear-gradient(135deg, #FBBF24 0%, #F59E0B 50%, #D97706 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  padding-right: 0.1em;
 }
 
 .hero h2::after {
