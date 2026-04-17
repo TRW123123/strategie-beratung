@@ -82,6 +82,17 @@ body {
   line-height: 1.7;
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
+  font-feature-settings: "kern", "liga", "calt";
+  text-rendering: optimizeLegibility;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
 }
 
 /* Subtle grain texture for tactile quality */
@@ -108,6 +119,7 @@ h6 {
   font-weight: 700;
   margin-bottom: 1rem;
   letter-spacing: -0.02em;
+  font-feature-settings: "kern", "ss01", "ss02", "cv01", "cv11";
 }
 
 h1 {
@@ -171,6 +183,34 @@ a:hover {
   color: var(--color-accent-hover);
   text-decoration: underline;
   text-underline-offset: 4px;
+  text-decoration-thickness: 1.5px;
+  text-decoration-color: var(--color-warm);
+}
+
+/* Preserve no-underline for utility/nav/component links */
+.nav-link,
+.btn,
+.footer-links a,
+.footer-contact a,
+.cluster-card,
+.path-card .btn,
+.trust-badge,
+.card,
+.loesungen-stat,
+[class*="hero-"] a.btn,
+.contact-details a,
+header a.logo {
+  text-decoration: none !important;
+}
+
+.nav-link:hover,
+.btn:hover,
+.footer-links a:hover,
+.footer-contact a:hover,
+.cluster-card:hover,
+.contact-details a:hover,
+header a.logo:hover {
+  text-decoration: none !important;
 }
 
 /* Layout */

@@ -133,6 +133,8 @@ import "@fontsource/instrument-serif/400-italic.css";
     <body>
         <a href="#main-content" class="skip-link">Zum Inhalt springen</a>
 
+        <div class="scroll-progress" id="scroll-progress"></div>
+
         <header class="site-header">
             <div class="container header-inner">
                 <a href="/" class="logo" aria-label="Zur Startseite">
@@ -196,19 +198,31 @@ import "@fontsource/instrument-serif/400-italic.css";
         </footer>
 
         <script is:inline>
-            // Header: transparent → solid on scroll
+            // Header: transparent → solid on scroll + Scroll-Progress
             (function() {
                 const header = document.querySelector('.site-header');
-                if (!header) return;
-                const check = () => {
-                    if (window.scrollY > 80) {
-                        header.classList.add('scrolled');
-                    } else {
-                        header.classList.remove('scrolled');
+                const progress = document.getElementById('scroll-progress');
+                let ticking = false;
+
+                const update = () => {
+                    if (header) {
+                        header.classList.toggle('scrolled', window.scrollY > 80);
                     }
+                    if (progress) {
+                        const h = document.documentElement;
+                        const scrolled = h.scrollTop / (h.scrollHeight - h.clientHeight);
+                        progress.style.width = (scrolled * 100) + '%';
+                    }
+                    ticking = false;
                 };
-                window.addEventListener('scroll', check, { passive: true });
-                check();
+
+                window.addEventListener('scroll', () => {
+                    if (!ticking) {
+                        requestAnimationFrame(update);
+                        ticking = true;
+                    }
+                }, { passive: true });
+                update();
             })();
 
             // Scroll Reveal: IntersectionObserver for .reveal elements
@@ -290,6 +304,19 @@ import "@fontsource/instrument-serif/400-italic.css";
         </script>
 
         <style>
+            /* Scroll Progress Indicator */
+            .scroll-progress {
+                position: fixed;
+                top: 0;
+                left: 0;
+                height: 3px;
+                width: 0%;
+                background: linear-gradient(90deg, var(--color-accent) 0%, var(--color-warm) 100%);
+                z-index: 1001;
+                transition: width 0.05s linear;
+                box-shadow: 0 0 10px rgba(217, 119, 6, 0.4);
+            }
+
             /* Header — dark initially (matches hero), solid white on scroll */
             .site-header {
                 padding: 0;
