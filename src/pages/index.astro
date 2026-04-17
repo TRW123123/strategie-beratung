@@ -409,6 +409,8 @@ const canonical = new URL(
         display: flex;
         flex-direction: column;
         align-items: center;
+        will-change: transform;
+        transition: transform 0.05s linear;
     }
 
     .portrait-glow {
@@ -428,6 +430,15 @@ const canonical = new URL(
         filter: blur(60px);
         border-radius: 50%;
         z-index: -1;
+        animation: portrait-glow-rotate 20s linear infinite;
+    }
+
+    @keyframes portrait-glow-rotate {
+        to { transform: translate(-50%, -50%) rotate(360deg); }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+        .portrait-glow { animation: none; }
     }
 
     .portrait-img {

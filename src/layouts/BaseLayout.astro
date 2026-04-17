@@ -225,6 +225,43 @@ import "@fontsource/instrument-serif/400-italic.css";
                 }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
                 reveals.forEach(el => observer.observe(el));
 
+                // Hero Parallax (portrait subtle scroll drift)
+                const portrait = document.querySelector('.hero-portrait');
+                if (portrait && !matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                    let ticking = false;
+                    window.addEventListener('scroll', () => {
+                        if (!ticking) {
+                            requestAnimationFrame(() => {
+                                const y = window.scrollY;
+                                if (y < 700) {
+                                    portrait.style.transform = `translateY(${y * 0.12}px)`;
+                                }
+                                ticking = false;
+                            });
+                            ticking = true;
+                        }
+                    }, { passive: true });
+                }
+
+                // Hero Mouse-Follow Gradient
+                const hero = document.querySelector('.hero');
+                if (hero && !matchMedia('(prefers-reduced-motion: reduce)').matches && window.matchMedia('(hover: hover)').matches) {
+                    let mouseRaf = false;
+                    hero.addEventListener('mousemove', (e) => {
+                        if (!mouseRaf) {
+                            requestAnimationFrame(() => {
+                                const rect = hero.getBoundingClientRect();
+                                const x = ((e.clientX - rect.left) / rect.width) * 100;
+                                const y = ((e.clientY - rect.top) / rect.height) * 100;
+                                hero.style.setProperty('--mx', x + '%');
+                                hero.style.setProperty('--my', y + '%');
+                                mouseRaf = false;
+                            });
+                            mouseRaf = true;
+                        }
+                    }, { passive: true });
+                }
+
                 // Animated Number Counter (scroll-triggered)
                 const counters = document.querySelectorAll('[data-count-to]');
                 if (counters.length) {
