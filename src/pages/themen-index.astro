@@ -5,20 +5,14 @@ import { getCollection } from 'astro:content';
 const pseoEntries = await getCollection('pseo');
 const isDev = import.meta.env.DEV;
 
-// Phase 08: Bi-Modal Quality Gate (same as [slug].astro)
-// Only build pages that have at least one unique enrichment metric
 const verifiedEntries = pseoEntries.filter(entry => {
   const hasFaq = !!entry.data.faq;
   const hasRoi = !!entry.data.roi_data;
   const isEnriched = hasFaq || hasRoi;
-  
-  if (!isEnriched && !isDev) {
-    return false; // Skip un-enriched pages
-  }
+  if (!isEnriched && !isDev) return false;
   return true;
 });
 
-// Group by cluster
 const groupedEntries = verifiedEntries.reduce((acc, entry) => {
   const cluster = entry.data.cluster || 'sonstige';
   if (!acc[cluster]) acc[cluster] = [];
@@ -26,57 +20,309 @@ const groupedEntries = verifiedEntries.reduce((acc, entry) => {
   return acc;
 }, {} as Record<string, typeof verifiedEntries>);
 
-// Sort entries alphabetically within each cluster
 Object.keys(groupedEntries).forEach(cluster => {
   groupedEntries[cluster].sort((a, b) => a.data.title.localeCompare(b.data.title));
 });
 
-// Define nice titles for known pSEO clusters
 const clusterTitles: Record<string, string> = {
   loesungen: 'Lösungen & Prozesse',
   probleme: 'Geschäftsprobleme & Engpässe',
   foerderung: 'Fördermittel & Zuschüsse',
   compliance: 'Compliance & Regulation'
 };
+
+const totalArticles = verifiedEntries.length;
+const totalClusters = Object.keys(groupedEntries).length;
 ---
 
-<BaseLayout 
+<BaseLayout
   title="Themen-Index: KI & Automatisierung im Mittelstand | ST BERATUNG"
   description="Übersicht aller Fachartikel, Ratgeber und Lösungsansätze für KI-Strategie und Prozessoptimierung im deutschen Mittelstand."
   canonical="https://st-automatisierung.de/themen-index/"
 >
-  <main id="main-content" class="pt-32 pb-20">
-    <div class="container max-w-4xl">
-      <h1 class="text-4xl md:text-5xl font-bold tracking-tight mb-6">Themen-Index</h1>
-      <p class="text-xl text-gray-400 mb-12">
-        Entdecken Sie unsere umfassenden Fachartikel, Lösungsansätze und Ratgeber rund um intelligente Automatisierung und KI-Strategien für den Mittelstand.
-      </p>
+  <main id="main-content">
+    <section class="themen-hero">
+      <div class="container themen-hero-content">
+        <span class="section-label">Wissensdatenbank</span>
+        <h1>Themen-<span class="keyword-highlight">Index</span></h1>
+        <p class="themen-hero-subhead">
+          Entdecken Sie unsere umfassenden Fachartikel, Lösungsansätze und Ratgeber rund um intelligente Automatisierung und KI-Strategien für den Mittelstand.
+        </p>
+        <div class="themen-stats">
+          <div class="themen-stat">
+            <span class="themen-stat-value" data-count-to={totalArticles}>0</span>
+            <span class="themen-stat-label">Fachartikel</span>
+          </div>
+          <div class="themen-stat-divider"></div>
+          <div class="themen-stat">
+            <span class="themen-stat-value" data-count-to={totalClusters}>0</span>
+            <span class="themen-stat-label">Themen-Cluster</span>
+          </div>
+        </div>
+      </div>
+    </section>
 
-      <div class="space-y-16">
+    <section class="themen-content">
+      <div class="container">
         {Object.keys(groupedEntries).sort().map(cluster => (
-          <section>
-            <h2 class="text-2xl font-bold text-white mb-6 flex items-center gap-3">
-              <span class="w-8 h-8 rounded bg-blue-500/10 text-blue-400 flex items-center justify-center text-sm font-mono">
-                #
-              </span>
-              {clusterTitles[cluster] || cluster.charAt(0).toUpperCase() + cluster.slice(1)}
-              <span class="text-sm font-normal text-gray-500 ml-2">({groupedEntries[cluster].length})</span>
-            </h2>
-            <div class="grid md:grid-cols-2 gap-4">
+          <section class={`themen-cluster themen-cluster-${cluster}`}>
+            <div class="themen-cluster-header">
+              <span class="themen-cluster-hash">#</span>
+              <h2 class="themen-cluster-title">
+                {clusterTitles[cluster] || cluster.charAt(0).toUpperCase() + cluster.slice(1)}
+              </h2>
+              <span class="themen-cluster-count">{groupedEntries[cluster].length}</span>
+            </div>
+            <div class="themen-grid">
               {groupedEntries[cluster].map(entry => (
-                <a 
-                  href={`/l/${entry.slug}/`} 
-                  class="group block p-4 bg-gray-800/30 border border-gray-800 rounded-xl hover:bg-gray-800/80 hover:border-gray-700 transition-all duration-200"
-                >
-                  <h3 class="text-gray-200 group-hover:text-blue-400 text-sm font-medium transition-colors leading-relaxed">
-                    {entry.data.title}
-                  </h3>
+                <a href={`/l/${entry.slug}/`} class="themen-card">
+                  <h3 class="themen-card-title">{entry.data.title}</h3>
+                  <span class="themen-card-arrow">→</span>
                 </a>
               ))}
             </div>
           </section>
         ))}
       </div>
-    </div>
+    </section>
   </main>
 </BaseLayout>
+
+<style>
+  .themen-hero {
+    position: relative;
+    padding: 6rem 0 4rem;
+    background: linear-gradient(160deg, #0B1120 0%, #111B2E 50%, #0F1A2E 100%);
+    overflow: hidden;
+    color: #fff;
+  }
+
+  .themen-hero::before {
+    content: "";
+    position: absolute;
+    top: -30%;
+    right: -15%;
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(circle, rgba(37,99,235,0.1) 0%, transparent 60%);
+    pointer-events: none;
+  }
+
+  .themen-hero::after {
+    content: "";
+    position: absolute;
+    bottom: -20%;
+    left: -10%;
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle, rgba(217,119,6,0.06) 0%, transparent 60%);
+    pointer-events: none;
+  }
+
+  .themen-hero-content {
+    position: relative;
+    z-index: 1;
+    max-width: 880px;
+  }
+
+  .themen-hero h1 {
+    color: #FFFFFF;
+    margin-bottom: 1.5rem;
+  }
+
+  .themen-hero h1::after { display: none; }
+
+  .themen-hero .keyword-highlight {
+    font-family: var(--font-display);
+    font-style: italic;
+    font-weight: 400;
+    background: linear-gradient(135deg, #FBBF24 0%, #F59E0B 50%, #D97706 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .themen-hero .section-label {
+    color: var(--color-warm);
+    -webkit-text-fill-color: unset;
+    background: none;
+    font-weight: 700;
+  }
+
+  .themen-hero-subhead {
+    font-size: 1.125rem;
+    color: rgba(255,255,255,0.7);
+    max-width: 620px;
+    line-height: 1.75;
+    margin-bottom: 2.5rem;
+  }
+
+  .themen-stats {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(255,255,255,0.1);
+  }
+
+  .themen-stat {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+
+  .themen-stat-value {
+    font-family: var(--font-heading);
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #fff;
+    line-height: 1;
+  }
+
+  .themen-stat-label {
+    font-size: 0.8125rem;
+    color: rgba(255,255,255,0.5);
+  }
+
+  .themen-stat-divider {
+    width: 1px;
+    height: 32px;
+    background: rgba(255,255,255,0.15);
+  }
+
+  .themen-content {
+    padding: 4rem 0 5rem;
+    background: var(--color-bg);
+  }
+
+  .themen-cluster {
+    position: relative;
+    padding-left: 1.5rem;
+    margin-bottom: 3.5rem;
+  }
+
+  .themen-cluster::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 1rem;
+    bottom: 0.5rem;
+    width: 3px;
+    border-radius: 3px;
+    background: var(--cluster-color, var(--color-accent));
+  }
+
+  .themen-cluster-loesungen { --cluster-color: #2563EB; --cluster-light: #DBEAFE; }
+  .themen-cluster-probleme { --cluster-color: #DC2626; --cluster-light: #FEE2E2; }
+  .themen-cluster-foerderung { --cluster-color: #059669; --cluster-light: #D1FAE5; }
+  .themen-cluster-compliance { --cluster-color: #D97706; --cluster-light: #FEF3C7; }
+
+  .themen-cluster-header {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .themen-cluster-hash {
+    width: 36px;
+    height: 36px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--cluster-light);
+    color: var(--cluster-color);
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 700;
+    font-size: 1rem;
+    flex-shrink: 0;
+  }
+
+  .themen-cluster-title {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--color-text-main);
+    margin: 0;
+    padding: 0;
+    border: none;
+  }
+
+  .themen-cluster-title::after { display: none; }
+
+  .themen-cluster-count {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 28px;
+    height: 24px;
+    padding: 0 0.5rem;
+    font-size: 0.75rem;
+    font-weight: 700;
+    font-family: var(--font-heading);
+    color: var(--cluster-color);
+    background: var(--cluster-light);
+    border-radius: 999px;
+  }
+
+  .themen-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 0.75rem;
+  }
+
+  .themen-card {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 1rem 1.25rem;
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    text-decoration: none !important;
+    transition: all 0.3s var(--spring-smooth);
+  }
+
+  .themen-card:hover {
+    transform: translateX(4px);
+    border-color: var(--cluster-color);
+    box-shadow: 0 6px 18px -6px color-mix(in srgb, var(--cluster-color) 25%, transparent);
+  }
+
+  .themen-card-title {
+    font-family: var(--font-body);
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--color-text-main) !important;
+    margin: 0;
+    padding: 0;
+    border: none;
+    line-height: 1.4;
+  }
+
+  .themen-card-title::after { display: none; }
+
+  .themen-card-arrow {
+    color: var(--cluster-color);
+    font-size: 1rem;
+    opacity: 0;
+    transform: translateX(-4px);
+    transition: all 0.3s var(--spring-smooth);
+    flex-shrink: 0;
+  }
+
+  .themen-card:hover .themen-card-arrow {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  @media (max-width: 640px) {
+    .themen-hero { padding: 4.5rem 0 3rem; }
+    .themen-stats { gap: 1rem; }
+    .themen-stat-divider { display: none; }
+    .themen-stat-value { font-size: 1.5rem; }
+  }
+</style>
