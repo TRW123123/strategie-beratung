@@ -1,9 +1,9 @@
 ---
-title: "Digitalisierungsförderung NRW 2026: BAFA + MID + Digitalbonus optimal kombinieren"
+title: "BAFA-Förderung Digitalisierung NRW: Bis 16.750 € Zuschuss"
 keyword: "bafa foerderung digitalisierung nrw"
 intent: "NRW-KMU maximieren ihre Gesamtförderung durch sequenzielle Kombination von BAFA-Beratung mit NRW-Landesprogrammen (MID-Digitalisierung, Digitalbonus) — ohne Doppelförderungsverbot zu verletzen."
 cluster: "foerderung"
-description: "Digitalisierungsförderung NRW 2026: So kombinieren KMU die BAFA-Beratungsförderung (1.750 €) mit MID-Digitalisierung (15.000 €) und weiteren NRW-Programmen — legal, sequenziell, bis zu 16.750 € Gesamtförderung."
+description: "KMU in NRW kombinieren BAFA-Beratungsförderung (1.750 €) mit MID-Digitalisierung (15.000 €) zu bis zu 16.750 € Gesamtförderung. Jetzt Förderfähigkeit prüfen."
 bafa_badge: true
 content_format: "steps"
 roi_data:
