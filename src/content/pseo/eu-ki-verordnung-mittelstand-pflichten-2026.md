@@ -1,9 +1,9 @@
 ---
-title: "EU KI-Verordnung Mittelstand: Pflichten und Fristen 2026"
+title: "EU KI-Verordnung: Was Mittelstand 2026 jetzt tun muss"
 keyword: "eu ki verordnung mittelstand pflichten"
 intent: "Mittelständler kennen ihre konkreten Pflichten als KI-Betreiber — mit exakten Fristen, Betreiber-Pflichten nach Art. 26 und dem aktuellen Stand des Digital-Omnibus-Pakets."
 cluster: "compliance"
-description: "9 Betreiber-Pflichten nach Art. 26, Bußgelder bis 15 Mio. € oder 3% Umsatz. Fahrplan, aktuelle Fristen und KMU-Regeln für den Mittelstand."
+description: "KI-Kompetenzpflicht gilt JETZT, Hochrisiko-Fristen verschoben. 9 Betreiber-Pflichten, Bußgelder bis 15 Mio. €. Kostenlose Erstberatung."
 content_format: "checklist"
 roi_data:
   metric: "Geschätzte Compliance-Kosten für einen Mittelständler als reiner Betreiber"
