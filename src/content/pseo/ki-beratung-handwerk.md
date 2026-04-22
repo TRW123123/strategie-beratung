@@ -1,9 +1,9 @@
 ---
-title: "KI-Beratung für Handwerksbetriebe: Strategie vor dem ersten Tool"
+title: "KI-Beratung Handwerk: BAFA zahlt 50%, Antrag vor Beginn"
 keyword: "ki beratung handwerk"
-intent: "Handwerksbetriebe erhalten eine strukturierte KI-Strategie — BAFA-gefördert, branchenspezifisch, ohne IT-Vorkenntnisse."
+intent: "Handwerksbetriebe erhalten eine strukturierte KI-Strategie, BAFA-gefördert, branchenspezifisch, ohne IT-Vorkenntnisse."
 cluster: "loesungen"
-description: "KI-Beratung für Handwerk: Wir entwickeln Ihre KI-Strategie — von der Potenzialanalyse bis zum konkreten Umsetzungsplan. BAFA-förderfähig bis 1.750 €."
+description: "Wir analysieren Ihre KI-Potenziale, priorisieren die 3 rentabelsten Use Cases im Handwerk und übernehmen den BAFA-Antrag. Ihr effektiver Aufwand: 1.750 Euro."
 bafa_badge: true
 content_format: "steps"
 roi_data:
@@ -87,4 +87,4 @@ Wir arbeiten mit Handwerksbetrieben ab 5 Mitarbeitern. Unsere Beratung beginnt n
 
 Das Ergebnis nach 3 bis 5 Beratungstagen: Ein schriftlicher KI-Umsetzungsplan mit konkret benannten Tools, geschätzten Implementierungskosten, priorisierten Use Cases und einem Zeitplan. Kein Foliendeck — ein Arbeitsplan.
 
-Savaş Topçu, Inhaber von ST Strategieberatung UG, hat 2024 und 2025 mehr als 20 Mittelstandsbetriebe — darunter Handwerker aus dem Bereich Bau, Elektro und SHK — durch die KI-Strategieentwicklung begleitet. Die häufigste Rückmeldung: "Wir haben endlich Klarheit, wo wir anfangen."
+Safak Tepecik, Inhaber von ST Strategieberatung UG, hat 2024 und 2025 mehr als 20 Mittelstandsbetriebe begleitet, darunter Handwerker aus dem Bereich Bau, Elektro und SHK, durch die KI-Strategieentwicklung. Die häufigste Rückmeldung: "Wir haben endlich Klarheit, wo wir anfangen."
