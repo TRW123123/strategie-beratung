@@ -1,9 +1,9 @@
 ---
-title: "KI-Richtlinie für Ihr Unternehmen erstellen: Vorlage & Anleitung für den Mittelstand"
+title: "KI-Richtlinie Vorlage: AI Act konform für den Mittelstand"
 keyword: "Ki richtlinie unternehmen erstellen vorlage"
 intent: "Eine interne KI-Leitlinie wird unverzichtbar – sie verbindet AI Act mit DSGVO-Pflichten und schafft Rechtssicherheit."
 cluster: "compliance"
-description: "Eine interne KI-Leitlinie wird unverzichtbar – sie verbindet AI Act mit DSGVO-Pflichten und schafft Rechtssicherheit."
+description: "65 % der Unternehmen haben noch keine KI-Richtlinie. Wir liefern Ihre Vorlage nach EU AI Act und DSGVO, inkl. Schatten-KI-Schutz und Mitarbeiterpflichten."
 bafa_badge: false
 roi_data:
   metric: "Vermeidung von Schatten-IT"
